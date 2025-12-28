@@ -1,5 +1,5 @@
 """
-Shared utility functions for the Gel Blaster scraper.
+Shared utility functions for the GSAU.gg scraper.
 """
 
 from typing import Any

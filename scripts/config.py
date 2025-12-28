@@ -1,5 +1,5 @@
 """
-Configuration constants for the Gel Blaster scraper.
+Configuration constants for the GSAU.gg scraper.
 """
 
 from pathlib import Path

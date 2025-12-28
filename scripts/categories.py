@@ -1,5 +1,5 @@
 """
-Category normalization and mapping for the Gel Blaster scraper.
+Category normalization and mapping for the GSAU.gg scraper.
 Maps raw product categories to standardized categories.
 """
 

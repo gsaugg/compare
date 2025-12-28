@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Gel Blaster Price Scraper
+GSAU.gg Price Scraper
 Fetches product data from multiple e-commerce platforms and outputs combined JSON.
 
 Usage:
@@ -352,7 +352,7 @@ def consolidate_products(products: list) -> list:
 def main():
     """Main scraper function."""
     # Parse command line arguments
-    parser = argparse.ArgumentParser(description="Gel Blaster Price Scraper")
+    parser = argparse.ArgumentParser(description="GSAU.gg Price Scraper")
     parser.add_argument(
         "--offline",
         action="store_true",
@@ -361,7 +361,7 @@ def main():
     args = parser.parse_args()
 
     print("=" * 50)
-    print("Gel Blaster Price Scraper")
+    print("GSAU.gg Price Scraper")
     if args.offline:
         print("(OFFLINE MODE - using cached data)")
     print("=" * 50)

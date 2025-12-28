@@ -1,5 +1,5 @@
 """
-Product filtering rules for the Gel Blaster scraper.
+Product filtering rules for the GSAU.gg scraper.
 Contains exclusion lists and filter functions.
 
 Keywords are organized by category for easier maintenance.
