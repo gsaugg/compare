@@ -4,8 +4,24 @@ Consolidates normalization logic that was duplicated across platforms.
 """
 
 import html
+import re
 from abc import ABC, abstractmethod
 from categories import get_best_category
+
+# SEO spam patterns to strip from titles
+TITLE_CLEANUP_PATTERNS = [
+    r"\s*-\s*(Parts\s*&\s*Accessories\s*)?Gel Blaster[s]?\s*(Guns,?\s*)?(Pistols,?\s*)?(Handguns\s*)?(Rifles\s*)?(For Sale)?",
+    r"\s*-\s*Gel Blaster\s*(Parts\s*&\s*Accessories\s*)?(For Sale)?",
+    r"\s*-\s*For Sale\s*$",
+    r"\s*\|\s*.*$",  # Strip anything after pipe
+]
+
+
+def clean_title(title: str) -> str:
+    """Remove SEO spam from product titles."""
+    for pattern in TITLE_CLEANUP_PATTERNS:
+        title = re.sub(pattern, "", title, flags=re.IGNORECASE)
+    return title.strip()
 
 
 def safe_print(*args, **kwargs):
@@ -98,7 +114,8 @@ class ShopifyNormalizer(ProductNormalizer):
         return str(product["id"])
 
     def get_title(self, product: dict) -> str:
-        return product.get("title", "Unknown")
+        title = product.get("title", "Unknown")
+        return clean_title(title)
 
     def get_price(self, product: dict) -> float:
         variants = product.get("variants", [])

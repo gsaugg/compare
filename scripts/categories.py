@@ -200,12 +200,21 @@ CATEGORY_MAP = {
     "grenades & claymores": "Grenades",
     "grenade launcher": "Grenades",
     "grenade & shell": "Grenades",
-    # Brands used as categories -> Parts
+    # Brands used as categories -> appropriate type
     "cowcow": "Pistol Parts",
     "aps": "Parts",
     "lonex": "Parts",
     "dytac": "Parts",
     "classic army": "Parts",
+    "aug": "Rifles",
+    "cyma": "Blasters",
+    "double bell": "Blasters",
+    "golden eagle": "Shotguns",
+    "well": "Blasters",
+    "src": "Blasters",
+    "atomic": "Blasters",
+    "king arms": "Rifles",
+    "a&k": "Rifles",
     # Vague categories
     "general": "Accessories",
     "essentials": "Accessories",
