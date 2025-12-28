@@ -487,6 +487,7 @@ Alpine.data('statusApp', () => ({
   loading: true,
   error: null,
   selectedStore: null,
+  selectedStoreFiltered: null,
 
   // ===== COMPUTED =====
   get theme() {
@@ -547,6 +548,11 @@ Alpine.data('statusApp', () => ({
   // ===== LOG MODAL =====
   showLogs(store) {
     this.selectedStore = store;
+  },
+
+  // ===== FILTERED PRODUCTS MODAL =====
+  showFilteredProducts(store) {
+    this.selectedStoreFiltered = store;
   },
 }));
 

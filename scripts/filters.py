@@ -285,3 +285,57 @@ def is_excluded_by_category(category: str) -> bool:
     for _ in _category_automaton.iter(cat_lower):
         return True
     return False
+
+
+# Reverse lookup: keyword -> category name
+def _build_keyword_to_category_map(keywords_by_category: dict) -> dict:
+    """Build a reverse lookup from keyword to its category name."""
+    result = {}
+    for category_name, keywords in keywords_by_category.items():
+        for keyword in keywords:
+            result[keyword.lower()] = category_name
+    return result
+
+
+_title_keyword_to_category = _build_keyword_to_category_map(EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY)
+_tag_keyword_to_category = _build_keyword_to_category_map(EXCLUDED_TAGS_BY_CATEGORY)
+_category_keyword_to_category = _build_keyword_to_category_map(EXCLUDED_CATEGORIES_BY_CATEGORY)
+
+
+def get_title_exclusion_match(title: str) -> tuple[str, str] | None:
+    """Get the keyword and category that caused title exclusion.
+
+    Returns (keyword, category) or None if not excluded.
+    """
+    title_lower = title.lower()
+    for _, keyword in _title_automaton.iter(title_lower):
+        category = _title_keyword_to_category.get(keyword.lower(), "unknown")
+        return (keyword, category)
+    return None
+
+
+def get_tag_exclusion_match(tags: tuple) -> tuple[str, str] | None:
+    """Get the keyword and category that caused tag exclusion.
+
+    Returns (keyword, category) or None if not excluded.
+    """
+    for tag in tags:
+        tag_lower = tag.lower().strip()
+        for _, keyword in _tag_automaton.iter(tag_lower):
+            category = _tag_keyword_to_category.get(keyword.lower(), "unknown")
+            return (keyword, category)
+    return None
+
+
+def get_category_exclusion_match(category: str) -> tuple[str, str] | None:
+    """Get the keyword and category that caused category exclusion.
+
+    Returns (keyword, filter_category) or None if not excluded.
+    """
+    if not category:
+        return None
+    cat_lower = category.lower()
+    for _, keyword in _category_automaton.iter(cat_lower):
+        filter_category = _category_keyword_to_category.get(keyword.lower(), "unknown")
+        return (keyword, filter_category)
+    return None

@@ -127,16 +127,17 @@ def load_stores():
     return stores
 
 
-def filter_and_normalize(raw_products: list, platform: str, store_name: str, base_url: str) -> tuple[list, int]:
+def filter_and_normalize(raw_products: list, platform: str, store_name: str, base_url: str) -> tuple[list, int, list]:
     """Filter and normalize products using platform-specific validator/normalizer.
 
-    Returns (normalized_products, filtered_count).
+    Returns (normalized_products, filtered_count, filtered_products_details).
     """
     validator = get_validator(platform)
     normalizer = get_normalizer(platform, store_name, base_url)
 
     products = []
     filtered_count = 0
+    filtered_products = []
 
     for product in raw_products:
         if validator.is_valid(product):
@@ -145,8 +146,17 @@ def filter_and_normalize(raw_products: list, platform: str, store_name: str, bas
                 products.append(normalized)
         else:
             filtered_count += 1
+            # Capture why this product was filtered
+            reason = validator.get_exclusion_reason(product)
+            if reason:
+                filtered_products.append({
+                    "title": reason["title"],
+                    "reason": reason["type"],
+                    "keyword": reason["keyword"],
+                    "filterCategory": reason["category"],
+                })
 
-    return products, filtered_count
+    return products, filtered_count, filtered_products
 
 
 def fetch_store_products(store: dict) -> tuple[list, dict]:
@@ -163,11 +173,12 @@ def fetch_store_products(store: dict) -> tuple[list, dict]:
     save_raw_data(store_name, platform, raw_products)
 
     # Filter and normalize products
-    products, filtered_count = filter_and_normalize(raw_products, platform, store_name, base_url)
+    products, filtered_count, filtered_products = filter_and_normalize(raw_products, platform, store_name, base_url)
 
     # Update stats with filtering info
     in_stock = count_in_stock(products)
     stats["filtered"] = filtered_count
+    stats["filteredProducts"] = filtered_products
     stats["final"] = len(products)
     stats["inStock"] = in_stock
     stats["outOfStock"] = len(products) - in_stock
@@ -197,6 +208,7 @@ def process_cached_products(store: dict) -> tuple[list, dict]:
             "platform": platform,
             "fetched": 0,
             "filtered": 0,
+            "filteredProducts": [],
             "final": 0,
             "inStock": 0,
             "outOfStock": 0,
@@ -208,7 +220,7 @@ def process_cached_products(store: dict) -> tuple[list, dict]:
     raw_products = cache_data.get("products", [])
 
     # Filter and normalize products
-    products, filtered_count = filter_and_normalize(raw_products, platform, store_name, base_url)
+    products, filtered_count, filtered_products = filter_and_normalize(raw_products, platform, store_name, base_url)
 
     duration = time.time() - start_time
     in_stock = count_in_stock(products)
@@ -220,6 +232,7 @@ def process_cached_products(store: dict) -> tuple[list, dict]:
         "platform": platform,
         "fetched": len(raw_products),
         "filtered": filtered_count,
+        "filteredProducts": filtered_products,
         "final": len(products),
         "inStock": in_stock,
         "outOfStock": len(products) - in_stock,

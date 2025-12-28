@@ -216,10 +216,15 @@
                           class="text-right tabular-nums"
                           x-text="store.fetched.toLocaleString()"
                         ></td>
-                        <td
-                          class="text-right tabular-nums"
-                          x-text="store.filtered.toLocaleString()"
-                        ></td>
+                        <td class="text-right tabular-nums">
+                          <button
+                            x-show="store.filtered > 0"
+                            @click="showFilteredProducts(store)"
+                            class="link link-primary"
+                            x-text="store.filtered.toLocaleString()"
+                          ></button>
+                          <span x-show="store.filtered === 0">0</span>
+                        </td>
                         <td
                           class="text-right tabular-nums"
                           x-text="store.final.toLocaleString()"
@@ -313,6 +318,41 @@
                 </div>
                 <form method="dialog" class="modal-backdrop">
                   <button @click="selectedStore = null">close</button>
+                </form>
+              </dialog>
+
+              <!-- Filtered Products Modal -->
+              <dialog id="filteredModal" class="modal" :class="{'modal-open': selectedStoreFiltered}">
+                <div class="modal-box max-w-3xl">
+                  <h3 class="text-lg font-bold">
+                    <span x-text="selectedStoreFiltered?.name"></span> - Filtered Products
+                    <span class="badge badge-neutral ml-2" x-text="selectedStoreFiltered?.filteredProducts?.length || 0"></span>
+                  </h3>
+                  <div class="mt-4 max-h-[60vh] overflow-y-auto">
+                    <template x-if="selectedStoreFiltered?.filteredProducts?.length > 0">
+                      <div class="space-y-2">
+                        <template x-for="(item, i) in selectedStoreFiltered.filteredProducts" :key="i">
+                          <div class="bg-base-200 rounded-lg p-3">
+                            <div class="font-medium" x-text="item.title"></div>
+                            <div class="text-base-content/70 mt-1 text-sm">
+                              <span class="capitalize" x-text="item.reason"></span>
+                              matched "<span class="font-mono text-warning" x-text="item.keyword"></span>"
+                              <span class="opacity-60">(<span x-text="item.filterCategory"></span>)</span>
+                            </div>
+                          </div>
+                        </template>
+                      </div>
+                    </template>
+                    <template x-if="!selectedStoreFiltered?.filteredProducts?.length">
+                      <p class="text-base-content/50 text-center py-8">No filtered products data available</p>
+                    </template>
+                  </div>
+                  <div class="modal-action">
+                    <button class="btn" @click="selectedStoreFiltered = null">Close</button>
+                  </div>
+                </div>
+                <form method="dialog" class="modal-backdrop">
+                  <button @click="selectedStoreFiltered = null">close</button>
                 </form>
               </dialog>
 

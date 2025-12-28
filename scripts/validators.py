@@ -5,7 +5,14 @@ Consolidates validation logic that was duplicated across platforms.
 
 from abc import ABC, abstractmethod
 from config import MIN_PRICE
-from filters import is_excluded_by_title, is_excluded_by_tags, is_excluded_by_category
+from filters import (
+    is_excluded_by_title,
+    is_excluded_by_tags,
+    is_excluded_by_category,
+    get_title_exclusion_match,
+    get_tag_exclusion_match,
+    get_category_exclusion_match,
+)
 
 
 class ProductValidator(ABC):
@@ -57,6 +64,51 @@ class ProductValidator(ABC):
             return False
 
         return True
+
+    def get_exclusion_reason(self, product: dict) -> dict | None:
+        """Get the reason why a product was excluded.
+
+        Returns dict with keys: type, keyword, category, title
+        Or None if the product is not excluded.
+        """
+        title = self.get_title(product)
+
+        # Check title exclusion
+        match = get_title_exclusion_match(title)
+        if match:
+            keyword, category = match
+            return {
+                "type": "title",
+                "keyword": keyword,
+                "category": category,
+                "title": title,
+            }
+
+        # Check category exclusion
+        for cat in self.get_categories(product):
+            match = get_category_exclusion_match(cat)
+            if match:
+                keyword, filter_category = match
+                return {
+                    "type": "category",
+                    "keyword": keyword,
+                    "category": filter_category,
+                    "title": title,
+                }
+
+        # Check tag exclusion
+        tags = tuple(self.get_tags(product))
+        match = get_tag_exclusion_match(tags)
+        if match:
+            keyword, category = match
+            return {
+                "type": "tag",
+                "keyword": keyword,
+                "category": category,
+                "title": title,
+            }
+
+        return None
 
 
 class ShopifyValidator(ProductValidator):
