@@ -26,4 +26,4 @@ MAX_TAGS = 10  # Maximum tags per product
 MAX_ID_LENGTH = 50  # Maximum length for product IDs
 
 # User agent for requests
-USER_AGENT = "GelBlasterCompare/1.0 (price comparison site)"
+USER_AGENT = "GSAU.gg/1.0 (+https://gsau.gg; gel blaster price comparison for Australian retailers)"
