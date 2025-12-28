@@ -28,7 +28,8 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "tonka", "bulldozer", "beyblade", "building set", "blind bag",
     ],
     "rc_parts_and_brands": [
-        "du-bro", "dubro", "traxxas", "helion", "team magic", "dualsky", "g-force",
+        "du-bro", "dubro", "traxxas", "helion", "team magic", "dualsky",
+        "g-force 0", "g-force 1", "g-force superflex",  # RC brand product codes
         "1/10 scale", "1/8 scale", "1/16 scale", "servo extension", "rc car", "rc plane",
         "oneway shim", "motor mount select", "body post select", "river hobby",
         "hpi ", " hpi", "ball bearing", "slipper clutch", "battery post set",
