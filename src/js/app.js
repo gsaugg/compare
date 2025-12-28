@@ -98,6 +98,7 @@ Alpine.data('productApp', () => ({
   searchTags: false,
   expandedProducts: {},
   _searchCache: new Map(),
+  showScrollTop: false,
 
   // ===== COMPUTED =====
   get theme() {
@@ -146,6 +147,9 @@ Alpine.data('productApp', () => ({
 
     // Setup infinite scroll
     this.setupInfiniteScroll();
+
+    // Setup scroll-to-top button
+    this.setupScrollTopButton();
   },
 
   // ===== KEYBOARD SHORTCUTS =====
@@ -181,6 +185,21 @@ Alpine.data('productApp', () => ({
     );
 
     observer.observe(sentinel);
+  },
+
+  // ===== SCROLL TO TOP =====
+  setupScrollTopButton() {
+    window.addEventListener(
+      'scroll',
+      () => {
+        this.showScrollTop = window.scrollY > 400;
+      },
+      { passive: true }
+    );
+  },
+
+  scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   },
 
   // ===== DATA LOADING =====
