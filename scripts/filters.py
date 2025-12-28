@@ -47,7 +47,7 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "huina", "actros",
     ],
     "model_kits": [
-        "tamiya ", " tamiya", "tamiya ts-", "tamiya 1/", "lacquer spray", "model kit",
+        "tamiya ts-", "tamiya 1/", "lacquer spray", "model kit",
         "finishing abrasive", "modeler's knife", "design knife", "italeri",
         "plastic model cement", "model cement", "zap pt-", "epoxy",
         "foam cure glue", "epp foam", "bob smith industries",
@@ -155,7 +155,7 @@ EXCLUDED_TAGS_BY_CATEGORY = {
     ],
     "warhammer": [
         "warhammer", "warhammer40", "warhammer 40k", "games workshop", "citadel",
-        "kill team", "space marines", "chaos space marines", "orks", "necrons",
+        "kill team", "space marines", "chaos space marines", "necrons",
         "xenos", "tau empire", "t'au empire", "astra militarum", "adepta sororitas",
         "armies of imperium", "armies of chaos", "army of xenos", "xenos armies",
         "warhammer single figure", "scenery", "citadel paint brush", "citadel accessories",
@@ -201,7 +201,7 @@ EXCLUDED_CATEGORIES_BY_CATEGORY = {
         "fillers", "putties", "sand paper", "paint remover", "grease",
     ],
     "apparel_merch": [
-        "shirt", "t-shirt", "cap", "hat", "pants", "shorts", "jacket",
+        "shirt", "t-shirt", "hat", "pants", "shorts", "jacket",
         "singlet", "tank top", "uniform", "clothes", "clothing", "apparel",
         "patch", "sticker", "keyring", "keychain", "necklace", "bracelet",
         "memorabilia", "merch", "collectable",
