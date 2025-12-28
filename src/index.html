@@ -426,11 +426,58 @@
                 <span class="skeleton h-4 w-32"></span>
               </template>
             </span>
-            <span
-              class="text-base-content/70 text-sm"
-              x-show="lastUpdated"
-              x-text="`Updated: ${lastUpdated}`"
-            ></span>
+            <div class="flex items-center gap-2">
+              <span
+                class="text-base-content/70 text-sm"
+                x-show="lastUpdated"
+                x-text="`Updated: ${lastUpdated}`"
+              ></span>
+              <!-- View toggle -->
+              <div class="flex gap-1">
+                <button
+                  @click="viewMode = 'card'"
+                  class="btn btn-ghost btn-sm btn-square"
+                  :class="{ 'btn-active': viewMode === 'card' }"
+                  aria-label="Card view"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"
+                    />
+                  </svg>
+                </button>
+                <button
+                  @click="viewMode = 'list'"
+                  class="btn btn-ghost btn-sm btn-square"
+                  :class="{ 'btn-active': viewMode === 'list' }"
+                  aria-label="List view"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
           </div>
 
           <!-- Screen reader announcements -->
@@ -493,7 +540,11 @@
             <!-- Products -->
             <template x-if="!loading && !error && filteredProducts.length > 0">
               <div>
-                <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+                <!-- Card view -->
+                <div
+                  x-show="viewMode === 'card'"
+                  class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                >
                   <template x-for="product in displayedProducts" :key="product.title">
                     <article
                       class="card bg-base-100 shadow-md transition-all duration-200 hover:scale-[1.02] hover:shadow-lg"
@@ -621,6 +672,124 @@
                           </div>
                         </template>
                       </div>
+                    </article>
+                  </template>
+                </div>
+
+                <!-- List view -->
+                <div x-show="viewMode === 'list'" class="space-y-2">
+                  <template x-for="product in displayedProducts" :key="product.title">
+                    <article
+                      class="card bg-base-100 shadow-sm transition-shadow hover:shadow-md"
+                      :class="{ 'opacity-60': !product.inStock }"
+                    >
+                      <div class="flex items-center">
+                        <figure class="bg-base-300 h-20 w-20 shrink-0">
+                          <img
+                            x-show="product.image"
+                            :src="product.image"
+                            :alt="product.title"
+                            class="h-full w-full object-contain"
+                            loading="lazy"
+                          />
+                          <div
+                            class="text-base-content/30 flex h-full w-full items-center justify-center text-xs"
+                            :class="product.image ? 'hidden' : ''"
+                          >
+                            No Img
+                          </div>
+                        </figure>
+                        <div class="flex flex-1 items-center gap-4 p-3">
+                          <div class="min-w-0 flex-1">
+                            <a
+                              :href="product.vendors?.[0]?.url || '#'"
+                              target="_blank"
+                              rel="noopener"
+                              class="hover:text-primary line-clamp-1 font-medium"
+                              x-text="product.title"
+                            ></a>
+                            <p class="text-base-content/70 text-xs">
+                              <span x-text="product.vendors?.[0]?.name || ''"></span>
+                              <button
+                                x-show="product.vendors?.length > 1 && showVendors === 'best'"
+                                @click.prevent="toggleExpanded(product.id)"
+                                class="badge badge-ghost badge-xs hover:badge-primary ml-1 cursor-pointer"
+                                x-text="isExpanded(product.id) ? 'collapse' : `+${product.vendors.length - 1} more`"
+                              ></button>
+                            </p>
+                          </div>
+                          <div class="shrink-0 text-right">
+                            <span
+                              class="text-primary font-bold"
+                              x-text="`$${product.lowestPrice.toFixed(2)}`"
+                            ></span>
+                            <template x-if="product.vendors?.[0]?.comparePrice">
+                              <span
+                                class="text-base-content/60 ml-1 text-xs line-through"
+                                x-text="`$${product.vendors[0].comparePrice.toFixed(2)}`"
+                              ></span>
+                            </template>
+                          </div>
+                          <template x-if="getDiscountPercent(product) >= 1">
+                            <span
+                              class="badge badge-error badge-sm"
+                              x-text="`${Math.round(getDiscountPercent(product))}%`"
+                            ></span>
+                          </template>
+                          <span
+                            class="badge badge-sm"
+                            :class="product.inStock ? 'badge-success' : 'badge-error'"
+                            x-text="product.inStock ? 'In Stock' : 'OOS'"
+                          ></span>
+                          <a
+                            :href="product.vendors?.[0]?.url || '#'"
+                            target="_blank"
+                            rel="noopener"
+                            class="btn btn-primary btn-sm"
+                          >
+                            View
+                          </a>
+                        </div>
+                      </div>
+                      <!-- Expanded vendors in list view -->
+                      <template
+                        x-if="(showVendors === 'all' || isExpanded(product.id)) && product.vendors?.length > 1"
+                      >
+                        <div class="border-base-200 mx-3 mb-3 space-y-1 border-t pt-2">
+                          <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
+                            <a
+                              :href="vendor.url"
+                              target="_blank"
+                              rel="noopener"
+                              class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
+                              :class="{ 'opacity-50': !vendor.inStock }"
+                            >
+                              <span x-text="vendor.name" class="truncate"></span>
+                              <span class="flex items-center gap-1.5">
+                                <span
+                                  x-text="`$${vendor.price.toFixed(2)}`"
+                                  class="font-semibold"
+                                ></span>
+                                <template x-if="vendor.comparePrice">
+                                  <span
+                                    class="text-base-content/60 line-through"
+                                    x-text="`$${vendor.comparePrice.toFixed(2)}`"
+                                  ></span>
+                                </template>
+                                <span
+                                  class="tooltip tooltip-left"
+                                  :data-tip="vendor.inStock ? 'In Stock' : 'Out of Stock'"
+                                >
+                                  <span
+                                    class="inline-block h-2 w-2 rounded-full"
+                                    :class="vendor.inStock ? 'bg-success' : 'bg-error'"
+                                  ></span>
+                                </span>
+                              </span>
+                            </a>
+                          </template>
+                        </div>
+                      </template>
                     </article>
                   </template>
                 </div>

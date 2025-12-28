@@ -99,6 +99,7 @@ Alpine.data('productApp', () => ({
   expandedProducts: {},
   _searchCache: new Map(),
   showScrollTop: false,
+  viewMode: 'card',
 
   // ===== COMPUTED =====
   get theme() {
@@ -138,6 +139,7 @@ Alpine.data('productApp', () => ({
     this.$watch('searchTags', () => this.rebuildFuseIndex());
     this.$watch('minPrice', () => this.applyFilters());
     this.$watch('maxPrice', () => this.applyFilters());
+    this.$watch('viewMode', () => this.updateURL());
 
     // Setup keyboard shortcuts
     this.setupKeyboardShortcuts();
@@ -451,6 +453,7 @@ Alpine.data('productApp', () => ({
     if (params.get('searchTags') === 'true') this.searchTags = true;
     if (params.get('minPrice')) this.minPrice = parseFloat(params.get('minPrice'));
     if (params.get('maxPrice')) this.maxPrice = parseFloat(params.get('maxPrice'));
+    if (params.get('view')) this.viewMode = params.get('view');
   },
 
   updateURL() {
@@ -465,6 +468,7 @@ Alpine.data('productApp', () => ({
     if (this.searchTags) params.set('searchTags', 'true');
     if (this.minPrice) params.set('minPrice', this.minPrice);
     if (this.maxPrice) params.set('maxPrice', this.maxPrice);
+    if (this.viewMode !== 'card') params.set('view', this.viewMode);
 
     const url = params.toString() ? `?${params}` : window.location.pathname;
     history.replaceState(null, '', url);
