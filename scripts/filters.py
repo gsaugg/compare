@@ -32,7 +32,7 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "g-force 0", "g-force 1", "g-force superflex",  # RC brand product codes
         "1/10 scale", "1/8 scale", "1/16 scale", "servo extension", "rc car", "rc plane",
         "oneway shim", "motor mount select", "body post select", "river hobby",
-        "hpi ", " hpi", "ball bearing", "slipper clutch", "battery post set",
+        "hpi ", " hpi", "slipper clutch", "battery post set", "remo hobby",
         "killerbody", "rc body", "rc bodies", "clear body",
         "wltoys", "udirc", "rc rock crawler", "1/24 2.4g", "1/22 electric",
         "1:22 electric", "brushless yellow",
