@@ -387,8 +387,14 @@ Alpine.data('productApp', () => ({
   calculateBestDiscount(product, type = 'percent') {
     if (!product?.vendors?.length) return 0;
 
+    // Only consider in-stock vendors for discount calculation
+    // This ensures the displayed discount matches what customers can actually buy
+    // Falls back to all vendors if none are in stock
+    const inStockVendors = product.vendors.filter((v) => v.inStock);
+    const vendorsToCheck = inStockVendors.length > 0 ? inStockVendors : product.vendors;
+
     let maxDiscount = 0;
-    for (const vendor of product.vendors) {
+    for (const vendor of vendorsToCheck) {
       if (!vendor.comparePrice || vendor.price >= vendor.comparePrice) continue;
 
       const discount =
