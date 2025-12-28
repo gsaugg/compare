@@ -1,0 +1,40 @@
+{
+  "name": "gsau-compare",
+  "version": "1.0.0",
+  "description": "Price comparison tool for Australian gel blaster products",
+  "type": "module",
+  "license": "AGPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gsaugg/compare.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gsaugg/compare/issues"
+  },
+  "homepage": "https://www.gsau.gg",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/"
+  },
+  "devDependencies": {
+    "@tailwindcss/typography": "^0.5.19",
+    "@tailwindcss/vite": "^4.1.18",
+    "daisyui": "^5.5.14",
+    "eslint": "^9.39.2",
+    "prettier": "^3.7.4",
+    "prettier-plugin-tailwindcss": "^0.7.2",
+    "tailwindcss": "^4.1.18",
+    "vite": "^7.3.0"
+  },
+  "dependencies": {
+    "alpinejs": "^3.15.3",
+    "fuse.js": "^7.1.0"
+  }
+}

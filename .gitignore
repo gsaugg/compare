@@ -1,0 +1,32 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node.js
+node_modules/
+dist/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Cached raw data (for offline mode)
+.cache/
+
+# Environment variables
+.env
+.env.*
+!.env.example
+
+# Claude
+CLAUDE.md
+
+# Ruff cache
+.ruff_cache/

@@ -1,0 +1,105 @@
+name: Update Product Data
+
+on:
+  schedule:
+    - cron: '*/30 * * * *'
+  push:
+    branches:
+      - main
+    paths:
+      - 'scripts/**'
+      - 'stores.json'
+  workflow_dispatch: # Allow manual trigger
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  scrape:
+    runs-on: ubuntu-latest
+    concurrency:
+      group: scrape
+      cancel-in-progress: false
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v7
+
+      - name: Setup Tailscale
+        uses: tailscale/github-action@v4
+        with:
+          oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
+          oauth-secret: ${{ secrets.TS_OAUTH_SECRET }}
+          tags: tag:gsaugg-compare
+
+      - name: Run scraper via exit node
+        run: |
+          sudo tailscale set --exit-node=simnas
+          echo "Routing through: $(curl -s ifconfig.me)"
+          uv run python scripts/scrape.py
+          sudo tailscale set --exit-node=
+
+      - name: Commit and push if changed
+        id: commit
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add public/data/
+          if git diff --staged --quiet; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+          else
+            git commit -m "Update product data"
+            git push
+            echo "changed=true" >> $GITHUB_OUTPUT
+          fi
+
+  build:
+    runs-on: ubuntu-latest
+    needs: scrape
+    if: needs.scrape.outputs.changed == 'true'
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          ref: main
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v4
+        with:
+          path: dist
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    concurrency:
+      group: pages
+      cancel-in-progress: true
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

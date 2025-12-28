@@ -1,0 +1,21 @@
+[project]
+name = "gsau-compare"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = [
+    "requests>=2.32.5",
+    "rapidfuzz>=3.14.0",
+    "pyahocorasick>=2.0.0",
+]
+
+[tool.ruff]
+line-length = 100
+
+[tool.ruff.lint]
+# E402: module level import not at top - needed for local imports after logging setup
+ignore = ["E402"]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.10",
+]

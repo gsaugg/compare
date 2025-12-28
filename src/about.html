@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - GSAU.gg</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body class="bg-base-200 min-h-screen">
+    <div x-data class="flex min-h-screen flex-col">
+      <!-- Header -->
+      <header class="navbar bg-primary text-primary-content shadow-lg">
+        <div class="flex-1">
+          <a href="index.html" class="text-xl font-bold hover:opacity-80">GSAU.gg</a>
+          <p class="ml-4 hidden text-sm opacity-80 sm:block">About This Project</p>
+        </div>
+        <div class="flex-none">
+          <!-- Theme selector dropdown -->
+          <div class="dropdown dropdown-end">
+            <div
+              tabindex="0"
+              role="button"
+              class="btn btn-ghost btn-sm gap-1"
+              aria-label="Select theme"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-5 w-5"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
+                />
+              </svg>
+              <span x-text="$store.theme.current" class="hidden capitalize sm:inline"></span>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M19 9l-7 7-7-7"
+                />
+              </svg>
+            </div>
+            <ul
+              tabindex="0"
+              class="dropdown-content menu rounded-box border-base-300 bg-base-100 text-base-content z-50 mt-2 w-52 border p-2 shadow-lg"
+            >
+              <template x-for="t in $store.theme.themes" :key="t">
+                <li>
+                  <button
+                    @click="$store.theme.set(t)"
+                    class="capitalize"
+                    :class="{ 'bg-primary text-primary-content': $store.theme.current === t }"
+                    x-text="t"
+                  ></button>
+                </li>
+              </template>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <!-- Main content -->
+      <main class="flex-1 p-4">
+        <div class="mx-auto max-w-3xl">
+          <article class="prose prose-lg bg-base-100 rounded-box mx-auto p-8 shadow-md">
+            <h1>About This Project</h1>
+
+            <p>
+              <strong>GSAU.gg</strong> is an official Gelsoft AU Discord community project that helps
+              Australian gel blaster enthusiasts find the best prices across multiple online retailers.
+            </p>
+
+            <h2>Community</h2>
+            <p>
+              This project is maintained by the <strong>Gelsoft AU Discord</strong> community and is
+              available for everyone to use. Join us to chat with fellow gel blaster enthusiasts:
+            </p>
+            <p>
+              <a
+                href="https://discord.gg/fxsqEP3"
+                target="_blank"
+                rel="noopener"
+                class="btn btn-primary btn-sm"
+              >
+                Join Gelsoft AU Discord
+              </a>
+            </p>
+
+            <h2>What We Do</h2>
+            <p>
+              We automatically collect publicly available product and pricing information from
+              Australian gel blaster retailers and present it in an easy-to-compare format. This
+              helps you make informed purchasing decisions without having to manually check multiple
+              websites.
+            </p>
+
+            <h2>Data Sources</h2>
+            <p>
+              All product information displayed on this site is sourced from publicly accessible
+              APIs and web pages provided by the retailers themselves. We do not have any special
+              access or partnerships with these stores.
+            </p>
+
+            <h2>Disclaimer</h2>
+            <ul>
+              <li>
+                <strong>Accuracy:</strong> While we strive to keep information up-to-date, prices
+                and availability can change at any time. Always verify details on the retailer's
+                website before making a purchase.
+              </li>
+              <li>
+                <strong>Affiliation:</strong> This site is not affiliated with, endorsed by, or
+                officially connected to any of the retailers listed.
+              </li>
+              <li>
+                <strong>Copyright:</strong> All product names, images, descriptions, and trademarks
+                are the property of their respective owners. We use this information under fair use
+                for price comparison purposes.
+              </li>
+              <li>
+                <strong>No Warranty:</strong> This service is provided "as is" without any
+                warranties. We are not responsible for any purchasing decisions made based on
+                information displayed here.
+              </li>
+            </ul>
+
+            <h2>Privacy</h2>
+            <p>
+              We don't collect any personal information. Your theme preference is stored locally in
+              your browser. No cookies, no tracking, no analytics.
+            </p>
+
+            <h2>Open Source</h2>
+            <p>
+              This project is open source under the
+              <a href="https://www.gnu.org/licenses/agpl-3.0.html" target="_blank" rel="noopener"
+                >AGPL-3.0 license</a
+              >. You can view the source code, report issues, or contribute on
+              <a href="https://github.com/gsaugg/compare" target="_blank" rel="noopener"
+                >GitHub</a
+              >.
+            </p>
+
+            <h2>Contact</h2>
+            <p>
+              If you have questions or concerns, please
+              <a
+                href="https://github.com/gsaugg/compare/issues"
+                target="_blank"
+                rel="noopener"
+                >open an issue on GitHub</a
+              >.
+            </p>
+          </article>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer class="footer footer-center bg-base-300 text-base-content p-4">
+        <div class="flex flex-wrap justify-center gap-4">
+          <a href="index.html" class="link link-primary">Price Comparison</a>
+          <a href="status.html" class="link link-primary">Scraper Status</a>
+          <span class="opacity-70">About</span>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/theme.js"></script>
+  </body>
+</html>
