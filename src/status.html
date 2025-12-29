@@ -189,7 +189,12 @@
                           <template x-if="store.error">
                             <span class="text-error" x-text="store.error"></span>
                           </template>
-                          <template x-if="!store.error">
+                          <template x-if="store.warning">
+                            <span class="tooltip text-warning" :data-tip="store.warning">
+                              ⚠️ <span x-text="formatCacheAge(store.cached_at)"></span>
+                            </span>
+                          </template>
+                          <template x-if="!store.error && !store.warning">
                             <span class="text-success">✓</span>
                           </template>
                         </td>

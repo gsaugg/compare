@@ -36,7 +36,7 @@ from normalizers import get_normalizer
 from utils import count_in_stock, build_error_stats
 from price_history import (
     load_history, save_history, track_price_changes,
-    prune_old_entries, cleanup_orphaned_products
+    prune_old_entries
 )
 
 # Initialize log collector
@@ -174,8 +174,9 @@ def fetch_store_products(store: dict) -> tuple[list, dict]:
     fetcher = get_fetcher(platform, store_name, base_url)
     raw_products, stats = fetcher.fetch()
 
-    # Save raw products to cache
-    save_raw_data(store_name, platform, raw_products)
+    # Only save to cache if fetch was successful (has products, no error)
+    if raw_products and not stats.get("error"):
+        save_raw_data(store_name, platform, raw_products)
 
     # Filter and normalize products
     products, filtered_count, filtered_products = filter_and_normalize(raw_products, platform, store_name, base_url)
@@ -194,8 +195,13 @@ def fetch_store_products(store: dict) -> tuple[list, dict]:
     return products, stats
 
 
-def process_cached_products(store: dict) -> tuple[list, dict]:
-    """Process products from cache. Returns (products, stats)."""
+def process_cached_products(store: dict, max_age_hours: float | None = None) -> tuple[list, dict]:
+    """Process products from cache. Returns (products, stats).
+
+    Args:
+        store: Store configuration dict
+        max_age_hours: Maximum cache age in hours. If None, any age is accepted.
+    """
     store_name = store["name"]
     base_url = store["url"].rstrip("/")
     platform = store.get("platform", "shopify")
@@ -221,6 +227,29 @@ def process_cached_products(store: dict) -> tuple[list, dict]:
             "duration": 0,
             "logs": []
         }
+
+    # Check cache age if max_age specified
+    if max_age_hours is not None:
+        fetched_at = cache_data.get("fetched_at")
+        if fetched_at:
+            cache_time = datetime.fromisoformat(fetched_at.replace("Z", "+00:00"))
+            age_hours = (datetime.now(timezone.utc) - cache_time).total_seconds() / 3600
+            if age_hours > max_age_hours:
+                safe_print(f"  Cache too old ({age_hours:.1f}h > {max_age_hours}h)")
+                return [], {
+                    "name": store_name,
+                    "url": base_url,
+                    "platform": platform,
+                    "fetched": 0,
+                    "filtered": 0,
+                    "filteredProducts": [],
+                    "final": 0,
+                    "inStock": 0,
+                    "outOfStock": 0,
+                    "error": f"Cache too old ({age_hours:.1f}h)",
+                    "duration": 0,
+                    "logs": []
+                }
 
     raw_products = cache_data.get("products", [])
 
@@ -417,7 +446,11 @@ def main():
     if args.offline:
         print("Processing cached data...")
     else:
-        print(f"Fetching with {MAX_WORKERS} parallel workers...")
+        # Separate Shopify stores (run sequentially due to shared rate limit)
+        shopify_stores = [s for s in stores if s.get("platform", "shopify") == "shopify"]
+        other_stores = [s for s in stores if s.get("platform", "shopify") != "shopify"]
+        print(f"Fetching {len(shopify_stores)} Shopify stores sequentially, "
+              f"{len(other_stores)} others in parallel...")
     print()
 
     # Fetch or process all products in parallel
@@ -427,11 +460,50 @@ def main():
     # Choose the processing function based on mode
     process_func = process_cached_products if args.offline else fetch_store_products
 
+    # In online mode, run Shopify stores sequentially to avoid shared rate limits
+    if not args.offline:
+        shopify_stores = [s for s in stores if s.get("platform", "shopify") == "shopify"]
+        other_stores = [s for s in stores if s.get("platform", "shopify") != "shopify"]
+
+        # Process Shopify stores one at a time
+        for store in shopify_stores:
+            try:
+                products, stats = process_func(store)
+                if stats.get("error") and len(products) == 0:
+                    safe_print(f"  {store['name']} failed: {stats['error']}")
+                    cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
+                    if cached_products:
+                        cached_stats["warning"] = f"Using cache: {stats['error']}"
+                        cached_stats["error"] = None
+                        all_products.extend(cached_products)
+                        store_stats.append(cached_stats)
+                        continue
+                all_products.extend(products)
+                store_stats.append(stats)
+            except Exception as e:
+                safe_print(f"  Error fetching {store['name']}: {e}")
+                cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
+                if cached_products:
+                    cached_stats["warning"] = f"Using cache: {e}"
+                    cached_stats["error"] = None
+                    all_products.extend(cached_products)
+                    store_stats.append(cached_stats)
+                else:
+                    store_stats.append(build_error_stats(
+                        store["name"], store["url"], store.get("platform", "unknown"),
+                        str(e)
+                    ))
+
+        # Process other platforms in parallel
+        stores_to_process = other_stores
+    else:
+        stores_to_process = stores
+
     with ThreadPoolExecutor(max_workers=MAX_WORKERS) as executor:
         # Submit all store fetches/processing
         future_to_store = {
             executor.submit(process_func, store): store
-            for store in stores
+            for store in stores_to_process
         }
 
         # Collect results as they complete
@@ -439,18 +511,45 @@ def main():
             store = future_to_store[future]
             try:
                 products, stats = future.result(timeout=FUTURE_TIMEOUT)
+                # Check if fetch returned an error with no/few products - try cache fallback
+                if stats.get("error") and len(products) == 0 and not args.offline:
+                    safe_print(f"  {store['name']} failed: {stats['error']}")
+                    cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
+                    if cached_products:
+                        cached_stats["warning"] = f"Using cache: {stats['error']}"
+                        cached_stats["error"] = None
+                        all_products.extend(cached_products)
+                        store_stats.append(cached_stats)
+                        continue
                 all_products.extend(products)
                 store_stats.append(stats)
             except TimeoutError:
                 error_msg = f"Timeout after {FUTURE_TIMEOUT}s"
                 safe_print(f"  Timeout fetching {store['name']} (exceeded {FUTURE_TIMEOUT}s)")
-                store_stats.append(build_error_stats(
-                    store["name"], store["url"], store.get("platform", "unknown"),
-                    error_msg, duration=FUTURE_TIMEOUT
-                ))
+                # Try cache fallback (max 24h old)
+                cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
+                if cached_products:
+                    cached_stats["warning"] = f"Using cache: {error_msg}"
+                    cached_stats["error"] = None
+                    all_products.extend(cached_products)
+                    store_stats.append(cached_stats)
+                else:
+                    store_stats.append(build_error_stats(
+                        store["name"], store["url"], store.get("platform", "unknown"),
+                        error_msg, duration=FUTURE_TIMEOUT
+                    ))
             except Exception as e:
                 action = "processing" if args.offline else "fetching"
                 safe_print(f"  Error {action} {store['name']}: {e}")
+                # Try cache fallback (max 24h old) - skip in offline mode
+                if not args.offline:
+                    cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
+                    if cached_products:
+                        cached_stats["warning"] = f"Using cache: {e}"
+                        cached_stats["error"] = None
+                        all_products.extend(cached_products)
+                        store_stats.append(cached_stats)
+                        continue
                 store_stats.append(build_error_stats(
                     store["name"], store["url"], store.get("platform", "unknown"),
                     str(e)
@@ -501,14 +600,12 @@ def main():
     print("\nTracking price changes...")
     history_data = load_history()
     price_stats = track_price_changes(all_products, history_data)
-    current_product_ids = {p["id"] for p in all_products}
-    cleanup_orphaned_products(history_data, current_product_ids)
-    prune_old_entries(history_data)
+    prune_old_entries(history_data)  # Cleans up entries >30 days old
     save_history(history_data)
-    v = price_stats["vendors"]
-    l = price_stats["lowest"]
-    print(f"  Vendors: {v['new']} new, {v['changed']} changed, {v['unchanged']} unchanged")
-    print(f"  Lowest:  {l['new']} new, {l['changed']} changed, {l['unchanged']} unchanged")
+    vs = price_stats["vendors"]
+    lp = price_stats["lowest"]
+    print(f"  Vendors: {vs['new']} new, {vs['changed']} changed, {vs['unchanged']} unchanged")
+    print(f"  Lowest:  {lp['new']} new, {lp['changed']} changed, {lp['unchanged']} unchanged")
 
     # Add price history stats to stats output
     stats_output["priceHistory"] = price_stats

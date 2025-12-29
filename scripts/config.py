@@ -18,6 +18,7 @@ HISTORY_RETENTION_DAYS = 30  # Keep price history for this many days
 
 # Request settings
 REQUEST_DELAY = 1.0  # seconds between requests (be respectful)
+SHOPIFY_REQUEST_DELAY = 3.0  # longer delay for Shopify (shared rate limit across stores)
 REQUEST_TIMEOUT = 30  # seconds
 MAX_PAGES = 40  # max pages per store (safety limit)
 MAX_WORKERS = 5  # parallel store fetches (don't set too high)

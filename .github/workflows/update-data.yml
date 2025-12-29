@@ -9,7 +9,16 @@ on:
     paths:
       - 'scripts/**'
       - 'stores.json'
-  workflow_dispatch: # Allow manual trigger
+  workflow_dispatch:
+    inputs:
+      use_tailscale:
+        description: 'Route through Tailscale exit node'
+        required: false
+        default: 'true'
+        type: choice
+        options:
+          - 'true'
+          - 'false'
 
 permissions:
   contents: write
@@ -33,6 +42,7 @@ jobs:
         uses: astral-sh/setup-uv@v7
 
       - name: Setup Tailscale
+        if: github.event_name != 'workflow_dispatch' || github.event.inputs.use_tailscale != 'false'
         uses: tailscale/github-action@v4
         with:
           oauth-client-id: ${{ secrets.TS_OAUTH_CLIENT_ID }}
@@ -40,11 +50,18 @@ jobs:
           tags: tag:gsaugg-compare
 
       - name: Run scraper via exit node
+        if: github.event_name != 'workflow_dispatch' || github.event.inputs.use_tailscale != 'false'
         run: |
           sudo tailscale set --exit-node=simnas
           echo "Routing through: $(curl -s ifconfig.me)"
           uv run python scripts/scrape.py
           sudo tailscale set --exit-node=
+
+      - name: Run scraper directly
+        if: github.event_name == 'workflow_dispatch' && github.event.inputs.use_tailscale == 'false'
+        run: |
+          echo "Running directly from: $(curl -s ifconfig.me)"
+          uv run python scripts/scrape.py
 
       - name: Commit and push if changed
         id: commit

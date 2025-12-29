@@ -813,6 +813,17 @@ Alpine.data('statusApp', () => ({
     return new Date(dateString).toLocaleString();
   },
 
+  formatCacheAge(dateString) {
+    if (!dateString) return 'cached';
+    const cacheTime = new Date(dateString);
+    const now = new Date();
+    const diffMs = now - cacheTime;
+    const diffMins = Math.floor(diffMs / 60000);
+    if (diffMins < 60) return `cached ${diffMins}m ago`;
+    const diffHours = Math.floor(diffMins / 60);
+    return `cached ${diffHours}h ago`;
+  },
+
   // ===== LOG MODAL =====
   showLogs(store) {
     this.selectedStore = store;
