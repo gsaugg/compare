@@ -289,7 +289,10 @@ Alpine.data('productApp', () => ({
           const hoursOld = Math.round(dataAge / (60 * 60 * 1000));
           this.showToast(`Data is ${hoursOld}+ hours old. Prices may be outdated.`, 'warning', {
             text: 'Refresh',
-            handler: () => window.location.reload(),
+            handler: () => {
+              // Force bypass browser cache
+              window.location.href = window.location.pathname + '?_=' + Date.now();
+            },
           });
         }
       }
