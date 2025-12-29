@@ -539,11 +539,16 @@ Alpine.data('productApp', () => ({
       if (this._searchCache.has(searchTerm)) {
         baseProducts = this._searchCache.get(searchTerm);
       } else {
-        // Find exact substring matches first (always include these)
-        const searchLower = searchTerm.toLowerCase();
-        const exactMatches = this.allProducts.filter(
-          (p) => p._searchText && p._searchText.toLowerCase().includes(searchLower),
-        );
+        // Find word-based matches first (all search words must appear in title)
+        const searchWords = searchTerm.toLowerCase().split(/\s+/).filter((w) => w.length >= 2);
+        const exactMatches =
+          searchWords.length > 0
+            ? this.allProducts.filter((p) => {
+                if (!p._searchText) return false;
+                const textLower = p._searchText.toLowerCase();
+                return searchWords.every((word) => textLower.includes(word));
+              })
+            : [];
         const exactIds = new Set(exactMatches.map((p) => p.id));
 
         // Then get fuzzy matches (excluding exact matches to avoid duplicates)
