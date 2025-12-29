@@ -412,7 +412,7 @@ Alpine.data('productApp', () => ({
             time: {
               unit: 'day',
               displayFormats: { day: 'MMM d' },
-              tooltipFormat: 'MMM d, yyyy',
+              tooltipFormat: 'MMM d, yyyy h:mm a',
             },
             min: Date.now() - 30 * 24 * 60 * 60 * 1000, // 30 days ago
             max: Date.now() + 2 * 24 * 60 * 60 * 1000, // 2 days ahead for padding
