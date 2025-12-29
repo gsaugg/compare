@@ -147,7 +147,7 @@ class ProductNormalizer(ABC):
                 "url": self.get_url(product),
                 "vendor": self.store_name,
                 "category": category,
-                "tags": tags[:10],  # Limit tags
+                "tags": sorted(tags)[:10],  # Sort and limit tags for stable storage
                 "inStock": self.get_in_stock(product),
             }
         except (KeyError, ValueError, TypeError) as e:
@@ -187,7 +187,7 @@ class ProductNormalizer(ABC):
                     "url": self.get_url(product),
                     "vendor": self.store_name,
                     "category": category,
-                    "tags": tags[:10],
+                    "tags": sorted(tags)[:10],  # Sort and limit tags for stable storage
                     "inStock": self.get_variant_in_stock(product, variant),
                 }
                 items.append(item)

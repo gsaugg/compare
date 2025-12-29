@@ -21,11 +21,13 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "collectible figure", "vinyl figure", "action figure", "figurine",
         "bitty pop", "dragon shield", "ultra pro", "pop figure", "money box",
         "cosbaby", "bag clips", "nano vehicles", "walking dead", "mcfarlane",
+        "mystery minis", "mystery mini", "blind box",
     ],
     "general_toys": [
         "plush", "keychain", "card sleeve", "deck box", "card binder",
         "mystery box", "commander deck", "star wars socks", "r2d2 sock",
         "tonka", "bulldozer", "beyblade", "building set", "blind bag",
+        "piece construction set", "maserati",
     ],
     "rc_parts_and_brands": [
         "du-bro", "dubro", "traxxas", "helion", "team magic", "dualsky",
@@ -38,6 +40,8 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "1:22 electric", "brushless yellow",
         "hobbywing", "absima", "4wd rtr", "high speed truck",
         "rc tire glue", "hobby knife set", "servo horn", "servo saver",
+        # Nitro RC fuel
+        "glo-max", "nitro fuel", "% nitro",
     ],
     "rc_tanks": [
         "rc tank 2.4ghz", "rc tank 1/16", "sherman usa m4", "tiger i rc", "panzer rc",
@@ -52,13 +56,17 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "finishing abrasive", "modeler's knife", "design knife", "italeri",
         "plastic model cement", "model cement", "zap pt-", "epoxy",
         "foam cure glue", "epp foam", "bob smith industries",
+        # Tamiya model supplies (not connectors/adapters)
+        "tamiya acrylic", "tamiya ps-", "tamiya as-", "tamiya xf-", "tamiya x-",
+        "tamiya lp-", "tamiya weathering", "tamiya cement", "tamiya thinner",
+        "tamiya polishing", "tamiya putty", "paint mixing jar", "paint stirrer",
     ],
     "glue_supplies": [
         "zap-a-gap", "zap glue", "zap a gap", "rail-zip", "zap-a-dap", "flexible sealant",
     ],
     "star_wars_sabers": [
         "darth maul", "lightsaber", "battle saber", "saber blade", "youngling",
-        "episode vii", "force awakens",
+        "episode vii", "force awakens", "saber hilt necklace",
     ],
     "diecast_cars": [
         "1:24 scale", "road runner", "fast and furious",
@@ -68,7 +76,7 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "chef's knife", "chef knife", "kitchen knife", "sheepdog knife",
     ],
     "puzzles_games": [
-        "jigsaw puzzle", "chess set", "1000 piece",
+        "jigsaw puzzle", "chess set", "1000 piece", "pc jigsaw",
         "catan", "soccer table", "football table", "table top game", "air soccer",
         "push rod soccer", "monopoly", "mousetrap", "top trumps", "uno ", " uno",
         "cluedo", "skip bo", "skipbo", "bop it", "scalextric",
@@ -132,8 +140,18 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "top loaders", "card dividers", "inner sleeves", "ultimate guard",
         "card protector", "deck protector",
         "angus beef", "caramelised onion", "kettles",
-        "retroarms sticker", "assorted sticker", "fridge magnet",
+        "retroarms sticker", "assorted sticker", "fridge magnet", "custom sticker",
         "card holder", "pro hobbies",
+    ],
+    "gift_cards": [
+        "gift card", "giftcard",
+    ],
+    "services_fees": [
+        "tech job", "workshop inspection", "workshop labour", "labour charge",
+        "raffle ticket", "hire gels", "hire mask", "hire equip", "consumables fee",
+    ],
+    "display_replicas": [
+        "(model only)", "model only)",
     ],
 }
 
@@ -148,7 +166,7 @@ EXCLUDED_TITLE_KEYWORDS = [
 EXCLUDED_TAGS_BY_CATEGORY = {
     "collectibles": [
         "rc parts", "pop funko", "funko pop", "pop figure", "pop vinyl", "pop!",
-        "funko", "2nd hand", "money box", "pro hobbies",
+        "funko", "2nd hand", "money box",
     ],
     "model_kits": [
         "model kit", "model kits", "model kit plane",
