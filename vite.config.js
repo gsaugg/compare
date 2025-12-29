@@ -15,6 +15,7 @@ export default defineConfig({
         main: resolve(__dirname, 'src/index.html'),
         status: resolve(__dirname, 'src/status.html'),
         about: resolve(__dirname, 'src/about.html'),
+        tracker: resolve(__dirname, 'src/tracker.html'),
       },
     },
   },

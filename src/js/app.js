@@ -809,5 +809,222 @@ Alpine.data('statusApp', () => ({
   },
 }));
 
+// ========== TRACKER APP COMPONENT ==========
+Alpine.data('trackerApp', () => ({
+  // ===== STATE =====
+  priceHistory: {},
+  products: {},
+  loading: true,
+  error: null,
+
+  // ===== COMPUTED =====
+  get theme() {
+    return this.$store.theme.current;
+  },
+
+  get cutoffTimestamp() {
+    return Math.floor(Date.now() / 1000) - 24 * 60 * 60;
+  },
+
+  get priceChanges() {
+    const changes = [];
+
+    for (const [productId, history] of Object.entries(this.priceHistory)) {
+      const product = this.products[productId];
+      if (!product) continue;
+
+      // Process vendor-level changes
+      if (history.vendors) {
+        for (const [vendor, entries] of Object.entries(history.vendors)) {
+          for (const entry of entries) {
+            if (entry.prev !== undefined && entry.t >= this.cutoffTimestamp) {
+              const vendorData = product.vendors?.find((v) => v.name === vendor);
+              changes.push({
+                id: `${productId}-${vendor}-${entry.t}`,
+                type: 'price',
+                productId,
+                productTitle: product.title,
+                productImage: product.image,
+                productCategory: product.category,
+                vendor,
+                vendorUrl: vendorData?.url || '#',
+                timestamp: entry.t,
+                oldPrice: entry.prev,
+                newPrice: entry.p,
+                percentChange: ((entry.prev - entry.p) / entry.prev) * 100,
+                direction: entry.prev > entry.p ? 'down' : 'up',
+              });
+            }
+          }
+        }
+      }
+    }
+
+    return changes.sort((a, b) => b.timestamp - a.timestamp);
+  },
+
+  get newProducts() {
+    const newItems = [];
+    // Baseline: ignore products first seen before this (initial tracking load)
+    const trackingBaseline = 1766971879; // 2025-12-29 ~10:30am AEST
+
+    for (const [productId, product] of Object.entries(this.products)) {
+      const history = this.priceHistory[productId];
+
+      // No history = brand new (just added, not yet scraped into history)
+      if (!history) {
+        const firstVendor = product.vendors?.[0];
+        newItems.push({
+          id: `new-${productId}`,
+          type: 'new',
+          productId,
+          productTitle: product.title,
+          productImage: product.image,
+          productCategory: product.category,
+          vendor: firstVendor?.name || 'Unknown',
+          vendorUrl: firstVendor?.url || '#',
+          timestamp: Math.floor(Date.now() / 1000),
+          price: product.lowestPrice,
+        });
+        continue;
+      }
+
+      // Find earliest timestamp in history
+      let earliestTimestamp = Infinity;
+      if (history.lowest?.length > 0) {
+        earliestTimestamp = Math.min(earliestTimestamp, history.lowest[0].t);
+      }
+      if (history.vendors) {
+        for (const entries of Object.values(history.vendors)) {
+          if (entries.length > 0) {
+            earliestTimestamp = Math.min(earliestTimestamp, entries[0].t);
+          }
+        }
+      }
+
+      // Show as "new" if first seen AFTER baseline AND within 24 hours
+      if (
+        earliestTimestamp > trackingBaseline &&
+        earliestTimestamp >= this.cutoffTimestamp &&
+        earliestTimestamp !== Infinity
+      ) {
+        const firstVendor = product.vendors?.[0];
+        newItems.push({
+          id: `new-${productId}`,
+          type: 'new',
+          productId,
+          productTitle: product.title,
+          productImage: product.image,
+          productCategory: product.category,
+          vendor: firstVendor?.name || 'Unknown',
+          vendorUrl: firstVendor?.url || '#',
+          timestamp: earliestTimestamp,
+          price: product.lowestPrice,
+        });
+      }
+    }
+
+    return newItems.sort((a, b) => b.timestamp - a.timestamp);
+  },
+
+  get allChanges() {
+    // Combine price changes and new products, sorted by time
+    return [...this.priceChanges, ...this.newProducts].sort((a, b) => b.timestamp - a.timestamp);
+  },
+
+  get stats() {
+    return {
+      drops: this.priceChanges.filter((c) => c.direction === 'down').length,
+      increases: this.priceChanges.filter((c) => c.direction === 'up').length,
+      newItems: this.newProducts.length,
+    };
+  },
+
+  // ===== LIFECYCLE =====
+  async init() {
+    this.$store.theme.init();
+    await this.loadData();
+  },
+
+  // ===== DATA LOADING =====
+  async loadData() {
+    try {
+      this.loading = true;
+
+      const [historyRes, productsRes] = await Promise.all([
+        this.fetchWithTimeout('./data/price-history.json', FETCH_TIMEOUT_MS),
+        this.fetchWithTimeout('./data/products.json', FETCH_TIMEOUT_MS),
+      ]);
+
+      if (!historyRes.ok) throw new Error('Failed to load price history');
+      if (!productsRes.ok) throw new Error('Failed to load products');
+
+      const historyData = await historyRes.json();
+      const productsData = await productsRes.json();
+
+      this.priceHistory = historyData.history || {};
+
+      // Build product lookup map by ID
+      this.products = {};
+      for (const p of productsData.products) {
+        this.products[p.id] = p;
+      }
+    } catch (err) {
+      console.error('Error loading data:', err);
+      this.error = err?.message ?? 'An unknown error occurred';
+    } finally {
+      this.loading = false;
+    }
+  },
+
+  async fetchWithTimeout(url, timeout) {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), timeout);
+    try {
+      return await fetch(url, { signal: controller.signal });
+    } finally {
+      clearTimeout(timeoutId);
+    }
+  },
+
+  // ===== UTILITIES =====
+  formatRelativeTime(timestamp) {
+    const seconds = Math.floor(Date.now() / 1000) - timestamp;
+    if (seconds < 60) return 'just now';
+    if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`;
+    if (seconds < 86400) return `${Math.floor(seconds / 3600)}h ago`;
+    return `${Math.floor(seconds / 86400)}d ago`;
+  },
+
+  formatDate(timestamp) {
+    return new Date(timestamp * 1000).toLocaleString();
+  },
+
+  getProductSearchUrl(title) {
+    return `index.html?q=${encodeURIComponent(title)}`;
+  },
+
+  // ===== REFERRAL TRACKING =====
+  addReferral(url) {
+    if (!url || url === '#') return url;
+    try {
+      const u = new URL(url);
+      u.searchParams.set('utm_source', 'gsau.gg');
+      u.searchParams.set('utm_medium', 'referral');
+      return u.toString();
+    } catch {
+      return url;
+    }
+  },
+
+  trackStoreClick(storeName) {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'store_click', {
+        store_name: storeName,
+      });
+    }
+  },
+}));
+
 // ========== START ALPINE ==========
 Alpine.start();
