@@ -203,7 +203,7 @@ def cleanup_orphaned_products(history_data: dict, current_product_ids: set[str])
         del history_data["history"][pid]
 
     if orphaned:
-        logger.info(f"Cleaned up {len(orphaned)} orphaned products from history")
+        logger.info(f"Cleaned up {len(orphaned)} orphaned products from history: {orphaned[:5]}")
 
     return len(orphaned)
 
