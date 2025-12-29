@@ -22,6 +22,7 @@ Price comparison tool for Australian gel blaster products. Aggregates pricing fr
 ## Tech Stack
 
 - **Frontend:** Alpine.js, Tailwind CSS, DaisyUI, Fuse.js, Chart.js
+- **Analytics:** Google Analytics 4 (with store click tracking)
 - **Scraper:** Python (requests, rapidfuzz, pyahocorasick)
 - **Build:** Vite
 - **Hosting:** GitHub Pages
@@ -60,6 +61,12 @@ uv run ruff check scripts/
    ```
 2. Run scraper to test
 3. Add exclusion keywords to `scripts/filters.py` if needed
+
+## Contact
+
+- **Email:** hello@gsau.gg
+- **Discord:** [Gelsoft AU](https://discord.gg/rmfZtWD95f)
+- **Issues:** [GitHub Issues](https://github.com/gsaugg/compare/issues)
 
 ## License
 
