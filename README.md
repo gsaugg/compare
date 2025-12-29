@@ -1,6 +1,6 @@
 # GSAU.gg
 
-Price comparison tool for Australian gel blaster products. Aggregates pricing from 14+ retailers and updates every 30 minutes.
+Price comparison tool for Australian gel blaster products. Aggregates pricing from 14+ retailers and updates hourly.
 
 **Live site:** https://www.gsau.gg
 
@@ -18,6 +18,7 @@ Price comparison tool for Australian gel blaster products. Aggregates pricing fr
 - 32 themes with auto-detect light/dark mode
 - Keyboard shortcuts (`/` to search, `Esc` to close sidebar)
 - [Scraper status dashboard](https://www.gsau.gg/status.html) with per-store logs
+- [Price tracker](https://www.gsau.gg/tracker.html) showing recent price drops/increases and new products
 
 ## Tech Stack
 
@@ -53,6 +54,7 @@ uv run ruff check scripts/
 1. Add entry to `stores.json`:
    ```json
    {
+     "id": "st",
      "name": "Store Name",
      "url": "https://store.com",
      "platform": "shopify|woocommerce|squarespace",

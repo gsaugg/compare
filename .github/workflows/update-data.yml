@@ -2,7 +2,7 @@ name: Update Product Data
 
 on:
   schedule:
-    - cron: '*/30 * * * *'
+    - cron: '0 * * * *'
   push:
     branches:
       - main
