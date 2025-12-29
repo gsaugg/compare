@@ -1,1911 +1,7 @@
 {
-  "lastUpdated": "2025-12-29T07:36:12.506345+00:00",
-  "duration": 139.86,
+  "lastUpdated": "2025-12-29T08:02:26.478144+00:00",
+  "duration": 438.38,
   "stores": [
-    {
-      "name": "Azraels Armoury",
-      "url": "https://www.azraelsarmoury.com",
-      "platform": "shopify",
-      "fetched": 639,
-      "filtered": 5,
-      "final": 634,
-      "inStock": 564,
-      "outOfStock": 70,
-      "error": null,
-      "duration": 8.63,
-      "filteredProducts": [
-        {
-          "title": "HPA tank refill",
-          "reason": "category",
-          "keyword": "services",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Labour - 0.5hr",
-          "reason": "category",
-          "keyword": "labour",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Gel Blaster Service",
-          "reason": "category",
-          "keyword": "labour",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Armoury Factory Re-Tuning",
-          "reason": "category",
-          "keyword": "labour",
-          "filterCategory": "misc"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:33:52",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:33:54",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:33:57",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:33:59",
-          "level": "INFO",
-          "message": "Page 3: 139 products"
-        },
-        {
-          "time": "07:34:01",
-          "level": "INFO",
-          "message": "Done: 639 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "WAT Int",
-      "url": "https://watint.com.au",
-      "platform": "shopify",
-      "fetched": 944,
-      "filtered": 7,
-      "final": 937,
-      "inStock": 641,
-      "outOfStock": 296,
-      "error": null,
-      "duration": 10.91,
-      "filteredProducts": [
-        {
-          "title": "Iain Sinclair CardSharp Travel Wallet Knife",
-          "reason": "category",
-          "keyword": "knife",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "LDT HK416-Large",
-          "reason": "category",
-          "keyword": "clothing",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "AW Custom\u2122 Sticker",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EMG Operator Profile PVC Hex Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "LDT MP5 SELECTOR SWITCH-LARGE",
-          "reason": "category",
-          "keyword": "clothing",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "LDT HK CLASSIC MP5-LARGE",
-          "reason": "category",
-          "keyword": "clothing",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "WAT Gift Cards",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:33:52",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:33:54",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:33:56",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:33:59",
-          "level": "INFO",
-          "message": "Page 3: 250 products"
-        },
-        {
-          "time": "07:34:01",
-          "level": "INFO",
-          "message": "Page 4: 194 products"
-        },
-        {
-          "time": "07:34:03",
-          "level": "INFO",
-          "message": "Done: 944 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "Tactical Edge Hobbies",
-      "url": "https://tacticaledge.com.au",
-      "platform": "shopify",
-      "fetched": 1084,
-      "filtered": 67,
-      "final": 1017,
-      "inStock": 897,
-      "outOfStock": 120,
-      "error": null,
-      "duration": 13.15,
-      "filteredProducts": [
-        {
-          "title": "Deadpool Head Keychain",
-          "reason": "title",
-          "keyword": "keychain",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "Chiappa Rhino 60DS Revolver Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Python 357 Break Glass Revolver Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Python 357 Series Revolver Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "FN SA58 FAL Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "MP5-SD Sub Machine Gun Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAA .45 Peacemaker Revolver Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "WW2 Webley Mk IV .38/200 Revolver Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Desert Eagle 50cal Sidearm Imitation Framed Memorabilia Military",
-          "reason": "category",
-          "keyword": "memorabilia",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Master Mace Windu Lightsaber Framed Memorabilia Star Wars",
-          "reason": "title",
-          "keyword": "lightsaber",
-          "filterCategory": "star_wars_sabers"
-        },
-        {
-          "title": "Kylo Wren Crossguard Lightsaber Framed Memorabilia Star Wars",
-          "reason": "title",
-          "keyword": "lightsaber",
-          "filterCategory": "star_wars_sabers"
-        },
-        {
-          "title": "Tactical Edge Snap Back Hats",
-          "reason": "category",
-          "keyword": "hat",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Huss Security Polo Shirt",
-          "reason": "category",
-          "keyword": "uniform",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "TEH Killeroo Tee",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Operator Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Huss Singlet - AUSCAM",
-          "reason": "category",
-          "keyword": "uniform",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Bravo Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Fallout Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "New Zealand Velcro Rubber Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Huss Security Peak Cap",
-          "reason": "category",
-          "keyword": "hat",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Classic Army Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Milsig Worker Talon 15 dart Straight Stefan/Short Dart Magazine",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "BOYA Soft Dart G-Series 18 - Black/Red",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Boya Soft Dart Replacement Darts & Shells",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Trident Gelsoft Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Amomax Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Frog Suit Tactical Uniform - Typhon",
-          "reason": "category",
-          "keyword": "uniform",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Double Bell Deadpool DP17 Gas Blow Back Gel Blaster",
-          "reason": "category",
-          "keyword": "custom shop",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Boya Soft Dart G-Series 18 - Blue/White",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Bayonet Style Rubber Knife",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Squid Games Keychain",
-          "reason": "title",
-          "keyword": "keychain",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "RC Quadcopter with Camera",
-          "reason": "title",
-          "keyword": "rc quadcopter",
-          "filterCategory": "quadcopters"
-        },
-        {
-          "title": "Huss Australia Flag Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Worker MOD 200pcs Gen3+ Stefan Short Darts",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Gelsoft Team Bravo Pin",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Edge Flex Fit Visor",
-          "reason": "category",
-          "keyword": "hat",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Edge Hobbies Gift Card",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Gelsoft Team Charlie Keyring",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Viking Skull Keyring",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Velcro Cloth Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Duramax Padlock Brass Plated 25mm Padlock",
-          "reason": "category",
-          "keyword": "padlock",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "TEH Killeroo Tee Women's",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "The Rats Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Sassy Squirrel Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Delta Keyring",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Edge Beanie with Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "APS F1 Logo Hex Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Kangaroo Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Shooters Only Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Girl Power Gelsoft Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Hakkotsu Pin",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Alpha Pin",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Tee",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Key Ring - Bronze",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Delta Pin",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Charlie Pin",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Bravo Keyring",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Kids Tactical Uniform - Multicam",
-          "reason": "category",
-          "keyword": "uniform",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Patch Square 2.0",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Glow Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Australia Hat - Black Peak Cap Embroidered Multi Size",
-          "reason": "category",
-          "keyword": "hat",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Delta Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Team Charlie Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Gelsoft Australia Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Key Ring",
-          "reason": "category",
-          "keyword": "keyring",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tac Edge Team Patch - Round",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:33:52",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:33:54",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:33:56",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:33:59",
-          "level": "INFO",
-          "message": "Page 3: 250 products"
-        },
-        {
-          "time": "07:34:01",
-          "level": "INFO",
-          "message": "Page 4: 250 products"
-        },
-        {
-          "time": "07:34:03",
-          "level": "INFO",
-          "message": "Page 5: 84 products"
-        },
-        {
-          "time": "07:34:05",
-          "level": "INFO",
-          "message": "Done: 1084 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "Cyber Trigger",
-      "url": "https://www.cybertrigger.com.au",
-      "platform": "woocommerce",
-      "fetched": 297,
-      "filtered": 0,
-      "final": 297,
-      "inStock": 266,
-      "outOfStock": 31,
-      "error": null,
-      "duration": 12.73,
-      "filteredProducts": [],
-      "logs": [
-        {
-          "time": "07:34:01",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:34:05",
-          "level": "INFO",
-          "message": "Page 1: 100 products"
-        },
-        {
-          "time": "07:34:09",
-          "level": "INFO",
-          "message": "Page 2: 100 products"
-        },
-        {
-          "time": "07:34:14",
-          "level": "INFO",
-          "message": "Page 3: 97 products"
-        },
-        {
-          "time": "07:34:14",
-          "level": "INFO",
-          "message": "Done: 297 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "Gel Ball Undercover",
-      "url": "https://www.gelballundercover.com.au",
-      "platform": "shopify",
-      "fetched": 2304,
-      "filtered": 28,
-      "final": 2276,
-      "inStock": 815,
-      "outOfStock": 1461,
-      "error": null,
-      "duration": 27.7,
-      "filteredProducts": [
-        {
-          "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
-          "reason": "title",
-          "keyword": "foam dart blaster",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Red Kids Double Barrel Action Shotgun - Foam Dart Blaster (Red)",
-          "reason": "title",
-          "keyword": "foam dart blaster",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Fidget Toy - Spin Wheel",
-          "reason": "title",
-          "keyword": "fidget toy",
-          "filterCategory": "fidget_toys"
-        },
-        {
-          "title": "Fidget Anti-Anxiety Karambit Toy",
-          "reason": "title",
-          "keyword": "karambit toy",
-          "filterCategory": "fidget_toys"
-        },
-        {
-          "title": "DEMON SLAYER - KIMETSU NO YAIBA SHINAZUGAWA SANEMI SAMURAI SWORD",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - Kimetsu no Yaiba Nichirin Mini Sword + Sword Stand (Collectors)",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - Kimetsu no Yaiba Nichirin Mini Sword + Sword Stand (Collectors)",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - KIMETSU NO YAIBA BLADE (Bamboo Training Series)",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - Cryptic Star BLADE (Bamboo Training Series)",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Heavy Dueling Battle Saber With Alloy Hilt",
-          "reason": "title",
-          "keyword": "battle saber",
-          "filterCategory": "star_wars_sabers"
-        },
-        {
-          "title": "Code Mini RC Race Car 2.4G (Bluetooth/ App)",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "DEMON SLAYER - (LONG) SHINOBU KOCHO SWORD AND SCABBARD",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - RED FURY BLADE",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - ZISU SWORD",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - MUICHIRO METAL KATANA",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - ZENITSU AGATSUMA'S NICHIRIN SWORD",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "DEMON SLAYER - TSUGIKUNI YORIICHII KATANA",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Official \"300\" Leonidas Spartan War Sword",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "\"Survivor\" Twin Ninja Swords - Two-Piece Set (Matte Black)",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "\u201cThe Last Samurai\u201d Japanese Samurai Sword Katana Wakizashi Tanto Blade set of 3",
-          "reason": "category",
-          "keyword": "sword",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "One Piece \"Roronoa Zoro\" Sandai Kitetsu Sword (Purple Version)",
-          "reason": "title",
-          "keyword": "sandai kitetsu",
-          "filterCategory": "anime_weapons"
-        },
-        {
-          "title": "PRO M1A2 USA ABRAMS Metal RC Tank",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "Sherman USA M4A3 RC Tank 2.4Ghz 1/16 (3898-1PRO)",
-          "reason": "title",
-          "keyword": "sherman usa m4",
-          "filterCategory": "rc_tanks"
-        },
-        {
-          "title": "RH SMAX Upgraded Off-Road Brushed Monster Truck 1/16",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "RH EMU 4x4 Brushless 1/10 4WD (Red)",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "RH EMU 4x4 Brushless 1/10 4WD (Blue)",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "\"Darth Maul\" GBU Custom - Gel Blaster (Metal)",
-          "reason": "title",
-          "keyword": "darth maul",
-          "filterCategory": "star_wars_sabers"
-        },
-        {
-          "title": "Gift Card",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:33:52",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:33:54",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:33:57",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:34:00",
-          "level": "INFO",
-          "message": "Page 3: 250 products"
-        },
-        {
-          "time": "07:34:03",
-          "level": "INFO",
-          "message": "Page 4: 250 products"
-        },
-        {
-          "time": "07:34:05",
-          "level": "INFO",
-          "message": "Page 5: 250 products"
-        },
-        {
-          "time": "07:34:08",
-          "level": "INFO",
-          "message": "Page 6: 250 products"
-        },
-        {
-          "time": "07:34:11",
-          "level": "INFO",
-          "message": "Page 7: 250 products"
-        },
-        {
-          "time": "07:34:14",
-          "level": "INFO",
-          "message": "Page 8: 250 products"
-        },
-        {
-          "time": "07:34:16",
-          "level": "INFO",
-          "message": "Page 9: 250 products"
-        },
-        {
-          "time": "07:34:18",
-          "level": "INFO",
-          "message": "Page 10: 54 products"
-        },
-        {
-          "time": "07:34:20",
-          "level": "INFO",
-          "message": "Done: 2304 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "Armoured Heaven",
-      "url": "https://armouredheaven.com.au",
-      "platform": "shopify",
-      "fetched": 1317,
-      "filtered": 16,
-      "final": 1301,
-      "inStock": 621,
-      "outOfStock": 680,
-      "error": null,
-      "duration": 16.65,
-      "filteredProducts": [
-        {
-          "title": "CZ Shadow 2 T Shirt XL-5XL Sizes",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Metal Gear Solid Diamond Dogs T Shirt XL-4XL Sizes",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Metal Gear Solid MGS1 T Shirt XL-4XL Sizes",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Biohazard Resident Evil 2 RPD Leon Kennedy Uniform Set (Size L) - Cosplay",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Biohazard Resident Evil 2 RPD Soft Armour Vest - Cosplay",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tokyo Marui HK MP5 T Shirt XXL",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Gun Belt w/Quick Release Metal Buckle - Large Size",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "AA12 Shell Eject Soft Dart Blaster",
-          "reason": "title",
-          "keyword": "soft dart blaster",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Jing Tai Melodie 3516 \"Malorian Arms\" Cyberpunk Soft Dart Blaster",
-          "reason": "title",
-          "keyword": "soft dart blaster",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Tokyo Marui 5.1 DOR Hi-Capa Gel Blaster",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Star Wars Socks - Boba Fett",
-          "reason": "title",
-          "keyword": "star wars socks",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "Star Wars Socks - R2D2",
-          "reason": "title",
-          "keyword": "star wars socks",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Woodland",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Multicam",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Black Multicam",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "DMgear Tactical Vest Bikini Armour",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:34:05",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:34:08",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:34:10",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:34:13",
-          "level": "INFO",
-          "message": "Page 3: 250 products"
-        },
-        {
-          "time": "07:34:15",
-          "level": "INFO",
-          "message": "Page 4: 250 products"
-        },
-        {
-          "time": "07:34:18",
-          "level": "INFO",
-          "message": "Page 5: 250 products"
-        },
-        {
-          "time": "07:34:20",
-          "level": "INFO",
-          "message": "Page 6: 67 products"
-        },
-        {
-          "time": "07:34:22",
-          "level": "INFO",
-          "message": "Done: 1317 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "ViperTac",
-      "url": "https://vipertac.com.au",
-      "platform": "shopify",
-      "fetched": 762,
-      "filtered": 84,
-      "final": 678,
-      "inStock": 652,
-      "outOfStock": 26,
-      "error": null,
-      "duration": 13.03,
-      "filteredProducts": [
-        {
-          "title": "GSH-18 Shell Ejecting Laser Pistol \u2013 Realistic Training & Display Model",
-          "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
-        },
-        {
-          "title": "KELe Luger P08 Shell Ejecting Laser Pistol \u2013 WWII Replica Training Model",
-          "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
-        },
-        {
-          "title": "ViperTac Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Pirate Penguin Embroidered Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "CrossFit 5.11 \u201cNow Who Wears The Pants\u201d Femme Fatale PVC Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Rubber Knife - Green",
-          "reason": "category",
-          "keyword": "knife",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Gel Blaster Maintenance \u2013 100% Silicone Grease (100gm Jar)",
-          "reason": "category",
-          "keyword": "grease",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Molle Belt Loop Hanging Water Bottle Holder - Tan",
-          "reason": "title",
-          "keyword": "water bottle",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Molle Belt Loop Hanging Water Bottle Holder - Black",
-          "reason": "title",
-          "keyword": "water bottle",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "WeTech G17 CNC Rocket/Poppet Valve - Gold",
-          "reason": "category",
-          "keyword": "pop",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "T238 Metal Decal Stickers - Silver",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Kriss Vector Decal Sticker Kit",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Silver",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Gold",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "PolarStar Fusion Engine V2 Switchboard (Gen 2) \u2013 Replacement Trigger Board",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "ViperTac Venoms Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Special Forces Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Punisher Skull Decal Badge Sticker - Silver",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Keep Staring I May Do A Trick Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Deadpool Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Cute But Psycho Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ace of Spades Grim Reaper Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ace of Spades Vendetta Iron-On Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ace of Spades Death Card Iron-On Patch - Tan",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ace of Spades Death Card Iron-On Patch - Black",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Metal Snake Decal Sticker - Gold",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Metal Cobra Snake Decal Sticker - Silver",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Metal Skull Decal Sticker - Silver",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Metal Skull Decal Sticker - Gold",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Water Bottle Holder with Additional Pouch and Shoulder Strap - Multi-cam",
-          "reason": "title",
-          "keyword": "water bottle",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Star Wars Boba Fett #08 Funko Pop Vinyl Figure",
-          "reason": "title",
-          "keyword": "funko",
-          "filterCategory": "collectibles"
-        },
-        {
-          "title": "Puff Dino Camouflage Paint For Gel Blasters - 220ml Can - 4 x Colours",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Army Green Camouflage",
-          "reason": "category",
-          "keyword": "jacket",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Woodland",
-          "reason": "category",
-          "keyword": "jacket",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "4DRC V2 Mini Foldable Drone",
-          "reason": "category",
-          "keyword": "drone",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Tool Kit - 25 Piece Precision Screwdriver Set",
-          "reason": "title",
-          "keyword": "precision screwdriver set",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Polarstar Universal Plugboard",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Drone Explorers HJ14W Wi-Fi Remote Control Aerial Photography Drone",
-          "reason": "category",
-          "keyword": "drone",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Rearhorse Mini R16 4K HD Camera Aerial Photography Drone - Black",
-          "reason": "category",
-          "keyword": "drone",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Dog Tag Pendant Necklace - Ghost Recon",
-          "reason": "category",
-          "keyword": "necklace",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Dog Tag Pendant Necklace - Tribal Design",
-          "reason": "category",
-          "keyword": "necklace",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Plastic US Army M16 / M4 Knife / Bayonet with Scabbard Replica",
-          "reason": "category",
-          "keyword": "knife",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "HPA Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Camouflage Shorts",
-          "reason": "category",
-          "keyword": "shorts",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "CP Camouflage Fast Dry T-shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Pants - Desert",
-          "reason": "category",
-          "keyword": "pants",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Sports HD DV Mini Camera - SQ11",
-          "reason": "category",
-          "keyword": "sports camera",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Short Sleeve Military Tactical Shirt - Tan and CP Multi-Cam",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Long Sleeve Frog Suit Top",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Uniform - Desert Python Kryptek",
-          "reason": "category",
-          "keyword": "uniform",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Amomax 9 Pouch Low Profile Chest Rig - Black",
-          "reason": "category",
-          "keyword": "clothes",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Sticker - Live Without Limits",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Python Kryptek",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Camouflage",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SpeedQB Velcro Patches",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Short Sleeve Shirt - Olive Drab",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Military Style Cargo Pants - Black",
-          "reason": "category",
-          "keyword": "pants",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Military Style Cargo Pants - Black Camouflage",
-          "reason": "category",
-          "keyword": "pants",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Military Style Cargo Pants - Black Python Kryptec",
-          "reason": "category",
-          "keyword": "pants",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Short Sleeve Military Tactical Shirt - Black Python Kryptek",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Cosplay Plastic Knife",
-          "reason": "category",
-          "keyword": "knife",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Short Sleeve Military Tactical Shirt - Black",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Short Sleeve Military Tactical Shirt - Black Camouflage",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Shirt - Long Sleeve Military Style - Black",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "ViperTac Gift Card",
-          "reason": "category",
-          "keyword": "gift card",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Tactical Shirt - Long Sleeve Military Style - Multi-cam",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Short Sleeve Military Tactical Shirt - Multi-cam",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Long Sleeve Quick Dry Camouflage Shirt",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ladies Urban Camouflage Tank Top",
-          "reason": "category",
-          "keyword": "tank top",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ladies Urban Camouflage Singlet",
-          "reason": "category",
-          "keyword": "singlet",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ladies V Neck Urban Camouflage T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Electric Blue Urban Camouflage T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Ladies Star T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Sig Sauer Logo T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "ViperTac Customs for the Hardcore Velcro Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Short Sleeve Shirt - Desert",
-          "reason": "category",
-          "keyword": "shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "3D Metal Bat Decal Sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Paracord Survival Bracelet",
-          "reason": "category",
-          "keyword": "bracelet",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Mil-Tec Grey Urban Camouflage T-shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Mossimo & Co Urban Camouflage T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Military Shemagh - Tactical Scarf/Shawl",
-          "reason": "category",
-          "keyword": "clothes",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Special Forces T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Vietnam Airforce T-Shirt",
-          "reason": "category",
-          "keyword": "t-shirt",
-          "filterCategory": "apparel_merch"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:34:20",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:34:22",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:34:25",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:34:29",
-          "level": "INFO",
-          "message": "Page 3: 250 products"
-        },
-        {
-          "time": "07:34:31",
-          "level": "INFO",
-          "message": "Page 4: 12 products"
-        },
-        {
-          "time": "07:34:33",
-          "level": "INFO",
-          "message": "Done: 762 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "AusGel",
-      "url": "https://ausgel.com.au",
-      "platform": "shopify",
-      "fetched": 563,
-      "filtered": 2,
-      "final": 561,
-      "inStock": 298,
-      "outOfStock": 263,
-      "error": null,
-      "duration": 8.62,
-      "filteredProducts": [
-        {
-          "title": "Water Bottle & Holder w/belt attachment",
-          "reason": "title",
-          "keyword": "water bottle",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "STAINLESS STEEL VACUUM WATER BOTTLE 500ml",
-          "reason": "title",
-          "keyword": "water bottle",
-          "filterCategory": "misc"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:34:33",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:34:35",
-          "level": "INFO",
-          "message": "Page 1: 250 products"
-        },
-        {
-          "time": "07:34:38",
-          "level": "INFO",
-          "message": "Page 2: 250 products"
-        },
-        {
-          "time": "07:34:40",
-          "level": "INFO",
-          "message": "Page 3: 63 products"
-        },
-        {
-          "time": "07:34:42",
-          "level": "INFO",
-          "message": "Done: 563 products fetched"
-        }
-      ]
-    },
-    {
-      "name": "Urban Gel Ball",
-      "url": "https://www.urbangelball.com.au",
-      "platform": "squarespace",
-      "fetched": 341,
-      "filtered": 33,
-      "final": 308,
-      "inStock": 256,
-      "outOfStock": 52,
-      "error": null,
-      "duration": 24.37,
-      "filteredProducts": [
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        }
-      ],
-      "logs": [
-        {
-          "time": "07:34:22",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "07:34:25",
-          "level": "INFO",
-          "message": "Offset 0: 89 products"
-        },
-        {
-          "time": "07:34:29",
-          "level": "INFO",
-          "message": "Offset 20: 69 products"
-        },
-        {
-          "time": "07:34:32",
-          "level": "INFO",
-          "message": "Offset 40: 60 products"
-        },
-        {
-          "time": "07:34:35",
-          "level": "INFO",
-          "message": "Offset 60: 54 products"
-        },
-        {
-          "time": "07:34:38",
-          "level": "INFO",
-          "message": "Offset 80: 41 products"
-        },
-        {
-          "time": "07:34:41",
-          "level": "INFO",
-          "message": "Offset 100: 23 products"
-        },
-        {
-          "time": "07:34:44",
-          "level": "INFO",
-          "message": "Offset 120: 5 products"
-        },
-        {
-          "time": "07:34:47",
-          "level": "INFO",
-          "message": "Done: 341 products fetched"
-        }
-      ]
-    },
     {
       "name": "Command Elite Hobbies",
       "url": "https://www.commandelitehobbies.com",
@@ -1916,7 +12,7 @@
       "inStock": 1210,
       "outOfStock": 614,
       "error": null,
-      "duration": 63.15,
+      "duration": 115.14,
       "filteredProducts": [
         {
           "title": "Pokemon TCG - Scarlet & Violet Surging Sparks Booster Pack",
@@ -28357,139 +26453,1744 @@
       ],
       "logs": [
         {
-          "time": "07:33:52",
+          "time": "07:55:08",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:33:54",
+          "time": "07:55:09",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "07:33:56",
+          "time": "07:55:15",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "07:33:59",
+          "time": "07:55:19",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "07:34:01",
+          "time": "07:55:24",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "07:34:03",
+          "time": "07:55:29",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "07:34:05",
+          "time": "07:55:33",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "07:34:08",
+          "time": "07:55:38",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "07:34:10",
+          "time": "07:55:42",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "07:34:13",
+          "time": "07:55:47",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "07:34:15",
+          "time": "07:55:51",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "07:34:18",
+          "time": "07:55:56",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "07:34:21",
+          "time": "07:56:00",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "07:34:23",
+          "time": "07:56:05",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "07:34:25",
+          "time": "07:56:10",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "07:34:28",
+          "time": "07:56:14",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "07:34:30",
+          "time": "07:56:19",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "07:34:33",
+          "time": "07:56:23",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "07:34:36",
+          "time": "07:56:28",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "07:34:38",
+          "time": "07:56:32",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "07:34:41",
+          "time": "07:56:37",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "07:34:44",
+          "time": "07:56:41",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "07:34:46",
+          "time": "07:56:46",
           "level": "INFO",
           "message": "Page 22: 250 products"
         },
         {
-          "time": "07:34:48",
+          "time": "07:56:50",
           "level": "INFO",
           "message": "Page 23: 250 products"
         },
         {
-          "time": "07:34:51",
+          "time": "07:56:54",
           "level": "INFO",
           "message": "Page 24: 250 products"
         },
         {
-          "time": "07:34:53",
+          "time": "07:56:59",
           "level": "INFO",
           "message": "Page 25: 230 products"
         },
         {
-          "time": "07:34:55",
+          "time": "07:57:03",
           "level": "INFO",
           "message": "Done: 6230 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Gel Ball Undercover",
+      "url": "https://www.gelballundercover.com.au",
+      "platform": "shopify",
+      "fetched": 2306,
+      "filtered": 28,
+      "final": 2278,
+      "inStock": 817,
+      "outOfStock": 1461,
+      "error": null,
+      "duration": 43.88,
+      "filteredProducts": [
+        {
+          "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
+          "reason": "title",
+          "keyword": "foam dart blaster",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Red Kids Double Barrel Action Shotgun - Foam Dart Blaster (Red)",
+          "reason": "title",
+          "keyword": "foam dart blaster",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Fidget Toy - Spin Wheel",
+          "reason": "title",
+          "keyword": "fidget toy",
+          "filterCategory": "fidget_toys"
+        },
+        {
+          "title": "Fidget Anti-Anxiety Karambit Toy",
+          "reason": "title",
+          "keyword": "karambit toy",
+          "filterCategory": "fidget_toys"
+        },
+        {
+          "title": "DEMON SLAYER - KIMETSU NO YAIBA SHINAZUGAWA SANEMI SAMURAI SWORD",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - Kimetsu no Yaiba Nichirin Mini Sword + Sword Stand (Collectors)",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - Kimetsu no Yaiba Nichirin Mini Sword + Sword Stand (Collectors)",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - KIMETSU NO YAIBA BLADE (Bamboo Training Series)",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - Cryptic Star BLADE (Bamboo Training Series)",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Heavy Dueling Battle Saber With Alloy Hilt",
+          "reason": "title",
+          "keyword": "battle saber",
+          "filterCategory": "star_wars_sabers"
+        },
+        {
+          "title": "Code Mini RC Race Car 2.4G (Bluetooth/ App)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "DEMON SLAYER - (LONG) SHINOBU KOCHO SWORD AND SCABBARD",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - RED FURY BLADE",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - ZISU SWORD",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - MUICHIRO METAL KATANA",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - ZENITSU AGATSUMA'S NICHIRIN SWORD",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "DEMON SLAYER - TSUGIKUNI YORIICHII KATANA",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Official \"300\" Leonidas Spartan War Sword",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "\"Survivor\" Twin Ninja Swords - Two-Piece Set (Matte Black)",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "\u201cThe Last Samurai\u201d Japanese Samurai Sword Katana Wakizashi Tanto Blade set of 3",
+          "reason": "category",
+          "keyword": "sword",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "One Piece \"Roronoa Zoro\" Sandai Kitetsu Sword (Purple Version)",
+          "reason": "title",
+          "keyword": "sandai kitetsu",
+          "filterCategory": "anime_weapons"
+        },
+        {
+          "title": "PRO M1A2 USA ABRAMS Metal RC Tank",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Sherman USA M4A3 RC Tank 2.4Ghz 1/16 (3898-1PRO)",
+          "reason": "title",
+          "keyword": "sherman usa m4",
+          "filterCategory": "rc_tanks"
+        },
+        {
+          "title": "RH SMAX Upgraded Off-Road Brushed Monster Truck 1/16",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "RH EMU 4x4 Brushless 1/10 4WD (Red)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "RH EMU 4x4 Brushless 1/10 4WD (Blue)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "\"Darth Maul\" GBU Custom - Gel Blaster (Metal)",
+          "reason": "title",
+          "keyword": "darth maul",
+          "filterCategory": "star_wars_sabers"
+        },
+        {
+          "title": "Gift Card",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:57:03",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:57:05",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:57:09",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:57:13",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "07:57:18",
+          "level": "INFO",
+          "message": "Page 4: 250 products"
+        },
+        {
+          "time": "07:57:22",
+          "level": "INFO",
+          "message": "Page 5: 250 products"
+        },
+        {
+          "time": "07:57:26",
+          "level": "INFO",
+          "message": "Page 6: 250 products"
+        },
+        {
+          "time": "07:57:31",
+          "level": "INFO",
+          "message": "Page 7: 250 products"
+        },
+        {
+          "time": "07:57:35",
+          "level": "INFO",
+          "message": "Page 8: 250 products"
+        },
+        {
+          "time": "07:57:39",
+          "level": "INFO",
+          "message": "Page 9: 250 products"
+        },
+        {
+          "time": "07:57:43",
+          "level": "INFO",
+          "message": "Page 10: 56 products"
+        },
+        {
+          "time": "07:57:47",
+          "level": "INFO",
+          "message": "Done: 2306 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Azraels Armoury",
+      "url": "https://www.azraelsarmoury.com",
+      "platform": "shopify",
+      "fetched": 639,
+      "filtered": 5,
+      "final": 634,
+      "inStock": 564,
+      "outOfStock": 70,
+      "error": null,
+      "duration": 14.11,
+      "filteredProducts": [
+        {
+          "title": "HPA tank refill",
+          "reason": "category",
+          "keyword": "services",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Labour - 0.5hr",
+          "reason": "category",
+          "keyword": "labour",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Gel Blaster Service",
+          "reason": "category",
+          "keyword": "labour",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Armoury Factory Re-Tuning",
+          "reason": "category",
+          "keyword": "labour",
+          "filterCategory": "misc"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:57:47",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:57:49",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:57:54",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:57:58",
+          "level": "INFO",
+          "message": "Page 3: 139 products"
+        },
+        {
+          "time": "07:58:02",
+          "level": "INFO",
+          "message": "Done: 639 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Tactical Edge Hobbies",
+      "url": "https://tacticaledge.com.au",
+      "platform": "shopify",
+      "fetched": 1084,
+      "filtered": 67,
+      "final": 1017,
+      "inStock": 897,
+      "outOfStock": 120,
+      "error": null,
+      "duration": 22.26,
+      "filteredProducts": [
+        {
+          "title": "Deadpool Head Keychain",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Chiappa Rhino 60DS Revolver Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Python 357 Break Glass Revolver Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Python 357 Series Revolver Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "FN SA58 FAL Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "MP5-SD Sub Machine Gun Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAA .45 Peacemaker Revolver Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "WW2 Webley Mk IV .38/200 Revolver Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Desert Eagle 50cal Sidearm Imitation Framed Memorabilia Military",
+          "reason": "category",
+          "keyword": "memorabilia",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Master Mace Windu Lightsaber Framed Memorabilia Star Wars",
+          "reason": "title",
+          "keyword": "lightsaber",
+          "filterCategory": "star_wars_sabers"
+        },
+        {
+          "title": "Kylo Wren Crossguard Lightsaber Framed Memorabilia Star Wars",
+          "reason": "title",
+          "keyword": "lightsaber",
+          "filterCategory": "star_wars_sabers"
+        },
+        {
+          "title": "Tactical Edge Snap Back Hats",
+          "reason": "category",
+          "keyword": "hat",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Huss Security Polo Shirt",
+          "reason": "category",
+          "keyword": "uniform",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "TEH Killeroo Tee",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Operator Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Huss Singlet - AUSCAM",
+          "reason": "category",
+          "keyword": "uniform",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Bravo Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Fallout Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "New Zealand Velcro Rubber Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Huss Security Peak Cap",
+          "reason": "category",
+          "keyword": "hat",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Classic Army Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Milsig Worker Talon 15 dart Straight Stefan/Short Dart Magazine",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "BOYA Soft Dart G-Series 18 - Black/Red",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Boya Soft Dart Replacement Darts & Shells",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Trident Gelsoft Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Amomax Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Frog Suit Tactical Uniform - Typhon",
+          "reason": "category",
+          "keyword": "uniform",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Double Bell Deadpool DP17 Gas Blow Back Gel Blaster",
+          "reason": "category",
+          "keyword": "custom shop",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Boya Soft Dart G-Series 18 - Blue/White",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Bayonet Style Rubber Knife",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Squid Games Keychain",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "RC Quadcopter with Camera",
+          "reason": "title",
+          "keyword": "rc quadcopter",
+          "filterCategory": "quadcopters"
+        },
+        {
+          "title": "Huss Australia Flag Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Worker MOD 200pcs Gen3+ Stefan Short Darts",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Gelsoft Team Bravo Pin",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Edge Flex Fit Visor",
+          "reason": "category",
+          "keyword": "hat",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Edge Hobbies Gift Card",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Gelsoft Team Charlie Keyring",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Viking Skull Keyring",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Velcro Cloth Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Duramax Padlock Brass Plated 25mm Padlock",
+          "reason": "category",
+          "keyword": "padlock",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "TEH Killeroo Tee Women's",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "The Rats Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Sassy Squirrel Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Delta Keyring",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Edge Beanie with Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "APS F1 Logo Hex Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Kangaroo Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Shooters Only Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Girl Power Gelsoft Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Hakkotsu Pin",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Alpha Pin",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Tee",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Key Ring - Bronze",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Delta Pin",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Charlie Pin",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Bravo Keyring",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Kids Tactical Uniform - Multicam",
+          "reason": "category",
+          "keyword": "uniform",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Patch Square 2.0",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Glow Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Australia Hat - Black Peak Cap Embroidered Multi Size",
+          "reason": "category",
+          "keyword": "hat",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Delta Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Team Charlie Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Gelsoft Australia Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Key Ring",
+          "reason": "category",
+          "keyword": "keyring",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tac Edge Team Patch - Round",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:58:02",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:58:03",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:58:07",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:58:12",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "07:58:16",
+          "level": "INFO",
+          "message": "Page 4: 250 products"
+        },
+        {
+          "time": "07:58:20",
+          "level": "INFO",
+          "message": "Page 5: 84 products"
+        },
+        {
+          "time": "07:58:24",
+          "level": "INFO",
+          "message": "Done: 1084 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "WAT Int",
+      "url": "https://watint.com.au",
+      "platform": "shopify",
+      "fetched": 944,
+      "filtered": 7,
+      "final": 937,
+      "inStock": 641,
+      "outOfStock": 296,
+      "error": null,
+      "duration": 18.59,
+      "filteredProducts": [
+        {
+          "title": "Iain Sinclair CardSharp Travel Wallet Knife",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "LDT HK416-Large",
+          "reason": "category",
+          "keyword": "clothing",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "AW Custom\u2122 Sticker",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EMG Operator Profile PVC Hex Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "LDT MP5 SELECTOR SWITCH-LARGE",
+          "reason": "category",
+          "keyword": "clothing",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "LDT HK CLASSIC MP5-LARGE",
+          "reason": "category",
+          "keyword": "clothing",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "WAT Gift Cards",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:58:24",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:58:25",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:58:30",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:58:34",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "07:58:39",
+          "level": "INFO",
+          "message": "Page 4: 194 products"
+        },
+        {
+          "time": "07:58:43",
+          "level": "INFO",
+          "message": "Done: 944 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Armoured Heaven",
+      "url": "https://armouredheaven.com.au",
+      "platform": "shopify",
+      "fetched": 1317,
+      "filtered": 16,
+      "final": 1301,
+      "inStock": 621,
+      "outOfStock": 680,
+      "error": null,
+      "duration": 29.77,
+      "filteredProducts": [
+        {
+          "title": "CZ Shadow 2 T Shirt XL-5XL Sizes",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Metal Gear Solid Diamond Dogs T Shirt XL-4XL Sizes",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Metal Gear Solid MGS1 T Shirt XL-4XL Sizes",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Biohazard Resident Evil 2 RPD Leon Kennedy Uniform Set (Size L) - Cosplay",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Biohazard Resident Evil 2 RPD Soft Armour Vest - Cosplay",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tokyo Marui HK MP5 T Shirt XXL",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Gun Belt w/Quick Release Metal Buckle - Large Size",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "AA12 Shell Eject Soft Dart Blaster",
+          "reason": "title",
+          "keyword": "soft dart blaster",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Jing Tai Melodie 3516 \"Malorian Arms\" Cyberpunk Soft Dart Blaster",
+          "reason": "title",
+          "keyword": "soft dart blaster",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Tokyo Marui 5.1 DOR Hi-Capa Gel Blaster",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Star Wars Socks - Boba Fett",
+          "reason": "title",
+          "keyword": "star wars socks",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Star Wars Socks - R2D2",
+          "reason": "title",
+          "keyword": "star wars socks",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Woodland",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Multicam",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Emersongear Gen3 Advanced Tactical Combat Pants Black Multicam",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "DMgear Tactical Vest Bikini Armour",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:58:43",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:58:45",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:58:50",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:58:55",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "07:58:59",
+          "level": "INFO",
+          "message": "Page 4: 250 products"
+        },
+        {
+          "time": "07:59:04",
+          "level": "INFO",
+          "message": "Page 5: 250 products"
+        },
+        {
+          "time": "07:59:08",
+          "level": "INFO",
+          "message": "Page 6: 67 products"
+        },
+        {
+          "time": "07:59:12",
+          "level": "INFO",
+          "message": "Done: 1317 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "ViperTac",
+      "url": "https://vipertac.com.au",
+      "platform": "shopify",
+      "fetched": 762,
+      "filtered": 84,
+      "final": 678,
+      "inStock": 652,
+      "outOfStock": 26,
+      "error": null,
+      "duration": 20.66,
+      "filteredProducts": [
+        {
+          "title": "GSH-18 Shell Ejecting Laser Pistol \u2013 Realistic Training & Display Model",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "KELe Luger P08 Shell Ejecting Laser Pistol \u2013 WWII Replica Training Model",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "ViperTac Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Pirate Penguin Embroidered Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "CrossFit 5.11 \u201cNow Who Wears The Pants\u201d Femme Fatale PVC Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Rubber Knife - Green",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Gel Blaster Maintenance \u2013 100% Silicone Grease (100gm Jar)",
+          "reason": "category",
+          "keyword": "grease",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Molle Belt Loop Hanging Water Bottle Holder - Tan",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Molle Belt Loop Hanging Water Bottle Holder - Black",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "WeTech G17 CNC Rocket/Poppet Valve - Gold",
+          "reason": "category",
+          "keyword": "pop",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "T238 Metal Decal Stickers - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Kriss Vector Decal Sticker Kit",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "PolarStar Fusion Engine V2 Switchboard (Gen 2) \u2013 Replacement Trigger Board",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "ViperTac Venoms Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Special Forces Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Punisher Skull Decal Badge Sticker - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Keep Staring I May Do A Trick Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Deadpool Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Cute But Psycho Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Grim Reaper Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Vendetta Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Death Card Iron-On Patch - Tan",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Death Card Iron-On Patch - Black",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Snake Decal Sticker - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Cobra Snake Decal Sticker - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Skull Decal Sticker - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Skull Decal Sticker - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Water Bottle Holder with Additional Pouch and Shoulder Strap - Multi-cam",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Star Wars Boba Fett #08 Funko Pop Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Puff Dino Camouflage Paint For Gel Blasters - 220ml Can - 4 x Colours",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Army Green Camouflage",
+          "reason": "category",
+          "keyword": "jacket",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Woodland",
+          "reason": "category",
+          "keyword": "jacket",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "4DRC V2 Mini Foldable Drone",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Tool Kit - 25 Piece Precision Screwdriver Set",
+          "reason": "title",
+          "keyword": "precision screwdriver set",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Polarstar Universal Plugboard",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Drone Explorers HJ14W Wi-Fi Remote Control Aerial Photography Drone",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Rearhorse Mini R16 4K HD Camera Aerial Photography Drone - Black",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Dog Tag Pendant Necklace - Ghost Recon",
+          "reason": "category",
+          "keyword": "necklace",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Dog Tag Pendant Necklace - Tribal Design",
+          "reason": "category",
+          "keyword": "necklace",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Plastic US Army M16 / M4 Knife / Bayonet with Scabbard Replica",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "HPA Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Camouflage Shorts",
+          "reason": "category",
+          "keyword": "shorts",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "CP Camouflage Fast Dry T-shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Pants - Desert",
+          "reason": "category",
+          "keyword": "pants",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Sports HD DV Mini Camera - SQ11",
+          "reason": "category",
+          "keyword": "sports camera",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Tan and CP Multi-Cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Long Sleeve Frog Suit Top",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Uniform - Desert Python Kryptek",
+          "reason": "category",
+          "keyword": "uniform",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Amomax 9 Pouch Low Profile Chest Rig - Black",
+          "reason": "category",
+          "keyword": "clothes",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Sticker - Live Without Limits",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Python Kryptek",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Camouflage",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SpeedQB Velcro Patches",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Short Sleeve Shirt - Olive Drab",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black",
+          "reason": "category",
+          "keyword": "pants",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black Camouflage",
+          "reason": "category",
+          "keyword": "pants",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black Python Kryptec",
+          "reason": "category",
+          "keyword": "pants",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black Python Kryptek",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Cosplay Plastic Knife",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black Camouflage",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve Military Style - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "ViperTac Gift Card",
+          "reason": "category",
+          "keyword": "gift card",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve Military Style - Multi-cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Multi-cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Long Sleeve Quick Dry Camouflage Shirt",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ladies Urban Camouflage Tank Top",
+          "reason": "category",
+          "keyword": "tank top",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ladies Urban Camouflage Singlet",
+          "reason": "category",
+          "keyword": "singlet",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ladies V Neck Urban Camouflage T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Electric Blue Urban Camouflage T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ladies Star T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Sig Sauer Logo T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "ViperTac Customs for the Hardcore Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Short Sleeve Shirt - Desert",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Bat Decal Sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Paracord Survival Bracelet",
+          "reason": "category",
+          "keyword": "bracelet",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Mil-Tec Grey Urban Camouflage T-shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Mossimo & Co Urban Camouflage T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Military Shemagh - Tactical Scarf/Shawl",
+          "reason": "category",
+          "keyword": "clothes",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Special Forces T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Vietnam Airforce T-Shirt",
+          "reason": "category",
+          "keyword": "t-shirt",
+          "filterCategory": "apparel_merch"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:59:13",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:59:15",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:59:20",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:59:25",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "07:59:29",
+          "level": "INFO",
+          "message": "Page 4: 12 products"
+        },
+        {
+          "time": "07:59:33",
+          "level": "INFO",
+          "message": "Done: 762 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "AusGel",
+      "url": "https://ausgel.com.au",
+      "platform": "shopify",
+      "fetched": 563,
+      "filtered": 2,
+      "final": 561,
+      "inStock": 298,
+      "outOfStock": 263,
+      "error": null,
+      "duration": 14.07,
+      "filteredProducts": [
+        {
+          "title": "Water Bottle & Holder w/belt attachment",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "STAINLESS STEEL VACUUM WATER BOTTLE 500ml",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "misc"
+        }
+      ],
+      "logs": [
+        {
+          "time": "07:59:33",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "07:59:35",
+          "level": "INFO",
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "07:59:39",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "07:59:43",
+          "level": "INFO",
+          "message": "Page 3: 63 products"
+        },
+        {
+          "time": "07:59:47",
+          "level": "INFO",
+          "message": "Done: 563 products fetched"
         }
       ]
     },
@@ -28503,7 +28204,7 @@
       "inStock": 422,
       "outOfStock": 155,
       "error": null,
-      "duration": 8.3,
+      "duration": 13.93,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -28610,27 +28311,27 @@
       ],
       "logs": [
         {
-          "time": "07:34:56",
+          "time": "07:59:47",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:34:57",
+          "time": "07:59:49",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "07:35:00",
+          "time": "07:59:53",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "07:35:02",
+          "time": "07:59:57",
           "level": "INFO",
           "message": "Page 3: 94 products"
         },
         {
-          "time": "07:35:04",
+          "time": "08:00:01",
           "level": "INFO",
           "message": "Done: 594 products fetched"
         }
@@ -28646,7 +28347,7 @@
       "inStock": 411,
       "outOfStock": 362,
       "error": null,
-      "duration": 10.59,
+      "duration": 17.95,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -28723,34 +28424,333 @@
       ],
       "logs": [
         {
-          "time": "07:35:04",
+          "time": "08:00:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:35:06",
+          "time": "08:00:03",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "07:35:09",
+          "time": "08:00:07",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "07:35:11",
+          "time": "08:00:12",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "07:35:13",
+          "time": "08:00:16",
           "level": "INFO",
           "message": "Page 4: 35 products"
         },
         {
-          "time": "07:35:15",
+          "time": "08:00:19",
           "level": "INFO",
           "message": "Done: 785 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Cyber Trigger",
+      "url": "https://www.cybertrigger.com.au",
+      "platform": "woocommerce",
+      "fetched": 297,
+      "filtered": 0,
+      "final": 297,
+      "inStock": 266,
+      "outOfStock": 31,
+      "error": null,
+      "duration": 15.22,
+      "filteredProducts": [],
+      "logs": [
+        {
+          "time": "08:00:19",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "08:00:25",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "08:00:29",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "08:00:35",
+          "level": "INFO",
+          "message": "Page 3: 97 products"
+        },
+        {
+          "time": "08:00:35",
+          "level": "INFO",
+          "message": "Done: 297 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Urban Gel Ball",
+      "url": "https://www.urbangelball.com.au",
+      "platform": "squarespace",
+      "fetched": 341,
+      "filtered": 33,
+      "final": 308,
+      "inStock": 256,
+      "outOfStock": 52,
+      "error": null,
+      "duration": 24.15,
+      "filteredProducts": [
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        }
+      ],
+      "logs": [
+        {
+          "time": "08:00:19",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "08:00:23",
+          "level": "INFO",
+          "message": "Offset 0: 89 products"
+        },
+        {
+          "time": "08:00:26",
+          "level": "INFO",
+          "message": "Offset 20: 69 products"
+        },
+        {
+          "time": "08:00:29",
+          "level": "INFO",
+          "message": "Offset 40: 60 products"
+        },
+        {
+          "time": "08:00:32",
+          "level": "INFO",
+          "message": "Offset 60: 54 products"
+        },
+        {
+          "time": "08:00:36",
+          "level": "INFO",
+          "message": "Offset 80: 41 products"
+        },
+        {
+          "time": "08:00:38",
+          "level": "INFO",
+          "message": "Offset 100: 23 products"
+        },
+        {
+          "time": "08:00:41",
+          "level": "INFO",
+          "message": "Offset 120: 5 products"
+        },
+        {
+          "time": "08:00:44",
+          "level": "INFO",
+          "message": "Done: 341 products fetched"
         }
       ]
     },
@@ -28764,7 +28764,7 @@
       "inStock": 266,
       "outOfStock": 491,
       "error": null,
-      "duration": 34.71,
+      "duration": 35.27,
       "filteredProducts": [
         {
           "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
@@ -28853,52 +28853,52 @@
       ],
       "logs": [
         {
-          "time": "07:34:42",
+          "time": "08:00:19",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:34:49",
+          "time": "08:00:26",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "07:34:53",
+          "time": "08:00:31",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "07:34:57",
+          "time": "08:00:35",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "07:35:01",
+          "time": "08:00:39",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "07:35:05",
+          "time": "08:00:43",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "07:35:09",
+          "time": "08:00:47",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "07:35:13",
+          "time": "08:00:51",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "07:35:17",
+          "time": "08:00:55",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "07:35:17",
+          "time": "08:00:55",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         }
@@ -28914,7 +28914,7 @@
       "inStock": 1103,
       "outOfStock": 308,
       "error": null,
-      "duration": 64.57,
+      "duration": 63.63,
       "filteredProducts": [
         {
           "title": "FIRST STRIKE ROUNDS (150 ROUNDS) .68 CALIBER Green",
@@ -29777,92 +29777,92 @@
       ],
       "logs": [
         {
-          "time": "07:34:14",
+          "time": "08:00:19",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:34:19",
+          "time": "08:00:25",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "07:34:23",
+          "time": "08:00:29",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "07:34:27",
+          "time": "08:00:33",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "07:34:31",
+          "time": "08:00:37",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "07:34:35",
+          "time": "08:00:41",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "07:34:40",
+          "time": "08:00:45",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "07:34:44",
+          "time": "08:00:49",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "07:34:48",
+          "time": "08:00:53",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "07:34:52",
+          "time": "08:00:57",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "07:34:56",
+          "time": "08:01:01",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "07:34:59",
+          "time": "08:01:05",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "07:35:04",
+          "time": "08:01:09",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "07:35:07",
+          "time": "08:01:13",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "07:35:11",
+          "time": "08:01:16",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "07:35:15",
+          "time": "08:01:20",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "07:35:18",
+          "time": "08:01:23",
           "level": "INFO",
           "message": "Page 16: 60 products"
         },
         {
-          "time": "07:35:18",
+          "time": "08:01:23",
           "level": "INFO",
           "message": "Done: 1560 products fetched"
         }
@@ -29878,7 +29878,7 @@
       "inStock": 1118,
       "outOfStock": 154,
       "error": null,
-      "duration": 52.99,
+      "duration": 52.77,
       "filteredProducts": [
         {
           "title": "CNC Drop Stock Adapter V2 With Adjustable Angle Function &#8211; IHOBBY CUSTOMS",
@@ -32079,97 +32079,97 @@
       ],
       "logs": [
         {
-          "time": "07:34:47",
+          "time": "08:00:35",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:34:50",
+          "time": "08:00:38",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "07:34:53",
+          "time": "08:00:41",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "07:34:56",
+          "time": "08:00:44",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "07:34:59",
+          "time": "08:00:47",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "07:35:02",
+          "time": "08:00:50",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "07:35:05",
+          "time": "08:00:53",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "07:35:08",
+          "time": "08:00:56",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "07:35:11",
+          "time": "08:00:59",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "07:35:14",
+          "time": "08:01:02",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "07:35:18",
+          "time": "08:01:06",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "07:35:21",
+          "time": "08:01:09",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "07:35:24",
+          "time": "08:01:12",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "07:35:28",
+          "time": "08:01:16",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "07:35:31",
+          "time": "08:01:19",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "07:35:34",
+          "time": "08:01:22",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "07:35:37",
+          "time": "08:01:25",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "07:35:40",
+          "time": "08:01:28",
           "level": "INFO",
           "message": "Page 17: 38 products"
         },
         {
-          "time": "07:35:40",
+          "time": "08:01:28",
           "level": "INFO",
           "message": "Done: 1638 products fetched"
         }
@@ -32182,10 +32182,10 @@
       "fetched": 2690,
       "filtered": 214,
       "final": 2476,
-      "inStock": 1521,
-      "outOfStock": 955,
+      "inStock": 1520,
+      "outOfStock": 956,
       "error": null,
-      "duration": 118.94,
+      "duration": 116.93,
       "filteredProducts": [
         {
           "title": "Classic Western Black Leather Gun Belt &#8211; Ornate Cowboy Design",
@@ -33468,147 +33468,147 @@
       ],
       "logs": [
         {
-          "time": "07:34:03",
+          "time": "08:00:19",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "07:34:09",
+          "time": "08:00:25",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "07:34:14",
+          "time": "08:00:30",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "07:34:18",
+          "time": "08:00:34",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "07:34:24",
+          "time": "08:00:39",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "07:34:28",
+          "time": "08:00:43",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "07:34:33",
+          "time": "08:00:48",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "07:34:38",
+          "time": "08:00:53",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "07:34:43",
+          "time": "08:00:58",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "07:34:48",
+          "time": "08:01:02",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "07:34:52",
+          "time": "08:01:07",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "07:34:56",
+          "time": "08:01:11",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "07:35:00",
+          "time": "08:01:15",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "07:35:05",
+          "time": "08:01:19",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "07:35:09",
+          "time": "08:01:23",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "07:35:14",
+          "time": "08:01:27",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "07:35:18",
+          "time": "08:01:31",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "07:35:22",
+          "time": "08:01:36",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "07:35:26",
+          "time": "08:01:40",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "07:35:31",
+          "time": "08:01:44",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "07:35:35",
+          "time": "08:01:48",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "07:35:39",
+          "time": "08:01:52",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "07:35:43",
+          "time": "08:01:56",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "07:35:47",
+          "time": "08:02:00",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "07:35:51",
+          "time": "08:02:05",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "07:35:54",
+          "time": "08:02:09",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "07:35:58",
+          "time": "08:02:12",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "07:36:02",
+          "time": "08:02:16",
           "level": "INFO",
           "message": "Page 27: 90 products"
         },
         {
-          "time": "07:36:02",
+          "time": "08:02:16",
           "level": "INFO",
           "message": "Done: 2690 products fetched"
         }
@@ -33616,21 +33616,21 @@
     }
   ],
   "totals": {
-    "rawProducts": 22519,
-    "afterFilter": 17099,
-    "uniqueProducts": 13095,
+    "rawProducts": 22521,
+    "afterFilter": 17101,
+    "uniqueProducts": 13097,
     "fuzzyMatches": 2909,
-    "inStock": 8430,
-    "outOfStock": 4665
+    "inStock": 8431,
+    "outOfStock": 4666
   },
   "priceHistory": {
     "vendors": {
-      "new": 1,
+      "new": 3,
       "changed": 0,
       "unchanged": 14147
     },
     "lowest": {
-      "new": 1,
+      "new": 3,
       "changed": 0,
       "unchanged": 13094
     }
