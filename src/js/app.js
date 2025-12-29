@@ -9,6 +9,25 @@ Chart.register(...registerables);
 // ========== CONSTANTS ==========
 const TOAST_DURATION_MS = 5000;
 const FUSE_THRESHOLD = 0.2;
+
+// ========== SEARCH HELPERS ==========
+/**
+ * Normalize text for search matching.
+ * Converts hyphens/dashes to spaces so "KS-1", "KS 1", and "KS1" all match.
+ * Returns both spaced and compact versions for comprehensive matching.
+ */
+function normalizeForSearch(text, includeCompact = true) {
+  if (!text) return '';
+  const withSpaces = text
+    .replace(/[-–—]/g, ' ') // Replace hyphens/dashes with spaces
+    .replace(/\s+/g, ' ') // Collapse multiple spaces
+    .toLowerCase()
+    .trim();
+  if (!includeCompact) return withSpaces;
+  // Include compact version (no spaces) to match "KS1" against "KS-1"
+  const compact = withSpaces.replace(/\s+/g, '');
+  return `${withSpaces} ${compact}`;
+}
 const DEFAULT_PER_PAGE = 60;
 const FETCH_TIMEOUT_MS = 10000;
 const MAX_SEARCH_CACHE_SIZE = 10;
@@ -230,12 +249,18 @@ Alpine.data('productApp', () => ({
       }
 
       // Process products with pre-computed values
-      this.allProducts = data.products.map((p) => ({
-        ...p,
-        _vendorNames: p.vendors?.map((v) => v.name).join(' ') ?? '',
-        _discountPercent: this.calculateBestDiscount(p, 'percent'),
-        _discountDollars: this.calculateBestDiscount(p, 'dollars'),
-      }));
+      this.allProducts = data.products.map((p) => {
+        const vendorNames = p.vendors?.map((v) => v.name).join(' ') ?? '';
+        return {
+          ...p,
+          _vendorNames: vendorNames,
+          _searchText: normalizeForSearch(
+            [p.title, p.category, vendorNames].filter(Boolean).join(' ')
+          ),
+          _discountPercent: this.calculateBestDiscount(p, 'percent'),
+          _discountDollars: this.calculateBestDiscount(p, 'dollars'),
+        };
+      });
 
       // Cache categories and vendors (computed once)
       this.categories = [...new Set(this.allProducts.map((p) => p.category))]
@@ -445,9 +470,8 @@ Alpine.data('productApp', () => ({
   // ===== SEARCH INDEX =====
   rebuildFuseIndex() {
     const keys = [
-      { name: 'title', weight: 3.0 },
-      { name: 'category', weight: 0.5 },
-      { name: '_vendorNames', weight: 0.3 },
+      { name: '_searchText', weight: 1.0 }, // Normalized field for hyphen/space matching
+      { name: 'title', weight: 0.5 }, // Keep original for exact matches
     ];
 
     // Only include tags if searchTags is enabled
@@ -474,7 +498,8 @@ Alpine.data('productApp', () => ({
 
   // ===== FILTERING & SORTING =====
   applyFilters() {
-    const searchTerm = this.search.trim();
+    const rawSearch = this.search.trim();
+    const searchTerm = normalizeForSearch(rawSearch, false); // Don't include compact for query
     let sortBy = this.sort;
     let baseProducts;
 

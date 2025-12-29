@@ -15,7 +15,8 @@ export default [
         localStorage: "readonly",
         Alpine: "readonly",
         AbortController: "readonly",
-        IntersectionObserver: "readonly"
+        IntersectionObserver: "readonly",
+        URL: "readonly"
       }
     },
     rules: {
