@@ -10,7 +10,7 @@ from typing import Any
 
 import requests
 
-from config import REQUEST_DELAY, REQUEST_TIMEOUT, USER_AGENT, MAX_PAGES
+from config import REQUEST_DELAY, REQUEST_TIMEOUT, REQUEST_RETRIES, RETRY_DELAY, USER_AGENT, MAX_PAGES
 from utils import count_in_stock
 
 logger = logging.getLogger(__name__)
@@ -87,24 +87,38 @@ class BaseFetcher(ABC):
         while page <= MAX_PAGES:
             url = self._build_page_url(page)
 
-            try:
-                response = self._make_request(url)
+            # Retry loop for network failures
+            data = None
+            last_error = None
+            for attempt in range(REQUEST_RETRIES + 1):
+                try:
+                    response = self._make_request(url)
 
-                # Let subclass handle rate limiting
-                response = self._handle_rate_limit(response, url)
-                if response is None:
-                    break  # Subclass decided to stop
+                    # Let subclass handle rate limiting
+                    response = self._handle_rate_limit(response, url)
+                    if response is None:
+                        break  # Subclass decided to stop
 
-                response.raise_for_status()
-                data = self._parse_response(response)
+                    response.raise_for_status()
+                    data = self._parse_response(response)
+                    break  # Success, exit retry loop
 
-            except requests.RequestException as e:
-                self.log.error(f"Page {page} failed: {e}")
-                self.error = str(e)
-                break
-            except json.JSONDecodeError as e:
-                self.log.error(f"JSON parse error: {e}")
-                self.error = str(e)
+                except requests.RequestException as e:
+                    last_error = e
+                    if attempt < REQUEST_RETRIES:
+                        self.log.warning(f"Page {page} failed (attempt {attempt + 1}), retrying in {RETRY_DELAY}s...")
+                        time.sleep(RETRY_DELAY)
+                    else:
+                        self.log.error(f"Page {page} failed after {REQUEST_RETRIES + 1} attempts: {e}")
+                except json.JSONDecodeError as e:
+                    last_error = e
+                    self.log.error(f"JSON parse error: {e}")
+                    break  # Don't retry JSON errors
+
+            # If all retries failed, record error and stop
+            if data is None:
+                if last_error:
+                    self.error = str(last_error)
                 break
 
             page_products = self._extract_products(data)

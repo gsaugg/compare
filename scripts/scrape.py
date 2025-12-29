@@ -469,7 +469,8 @@ def main():
         for store in shopify_stores:
             try:
                 products, stats = process_func(store)
-                if stats.get("error") and len(products) == 0:
+                # On any error, try cache fallback (even with partial data)
+                if stats.get("error"):
                     safe_print(f"  {store['name']} failed: {stats['error']}")
                     cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
                     if cached_products:
@@ -511,8 +512,8 @@ def main():
             store = future_to_store[future]
             try:
                 products, stats = future.result(timeout=FUTURE_TIMEOUT)
-                # Check if fetch returned an error with no/few products - try cache fallback
-                if stats.get("error") and len(products) == 0 and not args.offline:
+                # On any error, try cache fallback (even with partial data)
+                if stats.get("error") and not args.offline:
                     safe_print(f"  {store['name']} failed: {stats['error']}")
                     cached_products, cached_stats = process_cached_products(store, max_age_hours=24)
                     if cached_products:
