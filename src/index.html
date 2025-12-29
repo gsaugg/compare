@@ -1,18 +1,7 @@
 <!doctype html>
 <html lang="en" data-theme="light">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>GSAU.gg - Price Comparison</title>
-    <link rel="stylesheet" href="./css/main.css" />
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWFG91LVXL"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-GWFG91LVXL');
-    </script>
+    {{> head}}
   </head>
   <body class="bg-base-200 min-h-screen">
     <div x-data="productApp" class="flex min-h-screen flex-col">
@@ -39,60 +28,7 @@
           />
         </div>
         <div class="flex-none">
-          <!-- Theme selector dropdown -->
-          <div class="dropdown dropdown-end">
-            <div
-              tabindex="0"
-              role="button"
-              class="btn btn-ghost btn-sm gap-1"
-              aria-label="Select theme"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-5 w-5"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01"
-                />
-              </svg>
-              <span x-text="$store.theme.current" class="hidden capitalize sm:inline"></span>
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="h-4 w-4"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  stroke-width="2"
-                  d="M19 9l-7 7-7-7"
-                />
-              </svg>
-            </div>
-            <ul
-              tabindex="0"
-              class="dropdown-content menu rounded-box border-base-300 bg-base-100 text-base-content z-50 mt-2 w-52 border p-2 shadow-lg"
-            >
-              <template x-for="t in $store.theme.themes" :key="t">
-                <li>
-                  <button
-                    @click="$store.theme.set(t)"
-                    class="capitalize"
-                    :class="{ 'bg-primary text-primary-content': $store.theme.current === t }"
-                    x-text="t"
-                  ></button>
-                </li>
-              </template>
-            </ul>
-          </div>
+          {{> theme-selector}}
         </div>
       </header>
 
@@ -875,20 +811,7 @@
         </div>
       </main>
 
-      <!-- Footer -->
-      <footer class="footer footer-center bg-base-300 text-base-content p-4">
-        <div class="flex flex-wrap justify-center gap-4 text-sm">
-          <a href="tracker.html" class="link link-hover">Price Tracker</a>
-          <a href="status.html" class="link link-hover">Status</a>
-          <a href="about.html" class="link link-hover">About</a>
-          <a
-            href="https://discord.gg/rmfZtWD95f"
-            target="_blank"
-            rel="noopener"
-            class="link link-hover"
-          >Discord</a>
-        </div>
-      </footer>
+      {{> footer}}
 
       <!-- Price History Chart Modal -->
       <template x-if="chartModal">
