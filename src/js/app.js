@@ -494,6 +494,19 @@ Alpine.data('productApp', () => ({
     return !!this.expandedProducts[productId];
   },
 
+  // ===== REFERRAL TRACKING =====
+  addReferral(url) {
+    if (!url || url === '#') return url;
+    try {
+      const u = new URL(url);
+      u.searchParams.set('utm_source', 'gsau.gg');
+      u.searchParams.set('utm_medium', 'referral');
+      return u.toString();
+    } catch {
+      return url;
+    }
+  },
+
   // ===== NOTIFICATIONS =====
   showToast(message, type = 'info') {
     this.toast = { message, type };

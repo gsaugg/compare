@@ -551,7 +551,7 @@
                       :class="{ 'opacity-60': !product.inStock }"
                     >
                       <a
-                        :href="product.vendors?.[0]?.url || '#'"
+                        :href="addReferral(product.vendors?.[0]?.url) || '#'"
                         target="_blank"
                         rel="noopener"
                         class="block"
@@ -583,7 +583,7 @@
                       </a>
                       <div class="card-body p-4">
                         <a
-                          :href="product.vendors?.[0]?.url || '#'"
+                          :href="addReferral(product.vendors?.[0]?.url) || '#'"
                           target="_blank"
                           rel="noopener"
                           class="card-title hover:text-primary line-clamp-2 text-sm"
@@ -624,7 +624,7 @@
 
                         <!-- View at Store button -->
                         <a
-                          :href="product.vendors?.[0]?.url || '#'"
+                          :href="addReferral(product.vendors?.[0]?.url) || '#'"
                           target="_blank"
                           rel="noopener"
                           class="btn btn-primary btn-sm mt-2 w-full"
@@ -639,7 +639,7 @@
                           <div class="border-base-200 mt-3 space-y-1 border-t pt-3">
                             <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
                               <a
-                                :href="vendor.url"
+                                :href="addReferral(vendor.url)"
                                 target="_blank"
                                 rel="noopener"
                                 class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
@@ -702,7 +702,7 @@
                         <div class="flex flex-1 items-center gap-4 p-3">
                           <div class="min-w-0 flex-1">
                             <a
-                              :href="product.vendors?.[0]?.url || '#'"
+                              :href="addReferral(product.vendors?.[0]?.url) || '#'"
                               target="_blank"
                               rel="noopener"
                               class="hover:text-primary line-clamp-1 font-medium"
@@ -742,7 +742,7 @@
                             x-text="product.inStock ? 'In Stock' : 'OOS'"
                           ></span>
                           <a
-                            :href="product.vendors?.[0]?.url || '#'"
+                            :href="addReferral(product.vendors?.[0]?.url) || '#'"
                             target="_blank"
                             rel="noopener"
                             class="btn btn-primary btn-sm"
@@ -758,7 +758,7 @@
                         <div class="border-base-200 mx-3 mb-3 space-y-1 border-t pt-2">
                           <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
                             <a
-                              :href="vendor.url"
+                              :href="addReferral(vendor.url)"
                               target="_blank"
                               rel="noopener"
                               class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
