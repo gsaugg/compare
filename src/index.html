@@ -921,6 +921,21 @@
             }"
           >
             <span x-text="toast.message"></span>
+            <a
+              x-show="toast.action"
+              href="#"
+              @click.prevent="toast.action?.handler?.()"
+              class="link font-semibold"
+              x-text="toast.action?.text"
+            ></a>
+            <button
+              x-show="toast.action"
+              @click="dismissToast()"
+              class="btn btn-ghost btn-xs"
+              aria-label="Dismiss"
+            >
+              ✕
+            </button>
           </div>
         </div>
       </template>

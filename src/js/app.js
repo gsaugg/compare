@@ -8,6 +8,7 @@ Chart.register(...registerables);
 
 // ========== CONSTANTS ==========
 const TOAST_DURATION_MS = 5000;
+const STALE_DATA_THRESHOLD_MS = 60 * 60 * 1000; // 1 hour - scraper runs every 30min
 const FUSE_THRESHOLD = 0.2;
 
 // ========== SEARCH HELPERS ==========
@@ -280,6 +281,18 @@ Alpine.data('productApp', () => ({
 
       // Update last updated time
       this.lastUpdated = data.lastUpdated ? new Date(data.lastUpdated).toLocaleString() : '';
+
+      // Check for stale data (>1 hour old = 2+ missed scraper runs)
+      if (data.lastUpdated) {
+        const dataAge = Date.now() - new Date(data.lastUpdated).getTime();
+        if (dataAge > STALE_DATA_THRESHOLD_MS) {
+          const hoursOld = Math.round(dataAge / (60 * 60 * 1000));
+          this.showToast(`Data is ${hoursOld}+ hours old. Prices may be outdated.`, 'warning', {
+            text: 'Refresh',
+            handler: () => window.location.reload(),
+          });
+        }
+      }
 
       this.applyFilters();
     } catch (err) {
@@ -694,11 +707,18 @@ Alpine.data('productApp', () => ({
   },
 
   // ===== NOTIFICATIONS =====
-  showToast(message, type = 'info') {
-    this.toast = { message, type };
-    setTimeout(() => {
-      this.toast = null;
-    }, TOAST_DURATION_MS);
+  showToast(message, type = 'info', action = null) {
+    this.toast = { message, type, action };
+    // Don't auto-dismiss if there's an action (user needs to interact or dismiss)
+    if (!action) {
+      setTimeout(() => {
+        this.toast = null;
+      }, TOAST_DURATION_MS);
+    }
+  },
+
+  dismissToast() {
+    this.toast = null;
   },
 }));
 
