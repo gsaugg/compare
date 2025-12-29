@@ -556,7 +556,7 @@
                         rel="noopener"
                         class="block"
                       >
-                        <figure class="bg-base-300 relative h-48">
+                        <figure class="bg-base-300 relative h-48 overflow-visible">
                           <img
                             x-show="product.image"
                             :src="product.image"
@@ -578,6 +578,21 @@
                                 x-text="`${Math.round(getDiscountPercent(product))}% OFF`"
                               ></span>
                             </div>
+                          </template>
+                          <!-- Price change badge -->
+                          <template x-if="getPriceChange(product)">
+                            <button
+                              @click.prevent="openPriceChart(product)"
+                              class="badge absolute top-2 left-2 font-bold tooltip tooltip-bottom tooltip-wrap cursor-pointer hover:scale-110 transition-transform z-10"
+                              :class="getPriceChange(product).direction === 'down' ? 'badge-success' : 'badge-warning'"
+                              :data-tip="getPriceChange(product).direction === 'down'
+                                ? `Price dropped from $${getPriceChange(product).previousPrice.toFixed(2)} this week`
+                                : `Price increased from $${getPriceChange(product).previousPrice.toFixed(2)} this week`"
+                            >
+                              <span
+                                x-text="(getPriceChange(product).direction === 'down' ? '↓' : '↑') + Math.round(getPriceChange(product).percent) + '%'"
+                              ></span>
+                            </button>
                           </template>
                         </figure>
                       </a>
@@ -615,6 +630,18 @@
                               x-text="`$${product.vendors[0].comparePrice.toFixed(2)}`"
                             ></span>
                           </template>
+                          <!-- Price chart button -->
+                          <button
+                            x-show="priceHistory[product.id]"
+                            @click.prevent="openPriceChart(product)"
+                            class="btn btn-ghost btn-xs btn-circle"
+                            aria-label="View price history"
+                            title="View price history"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                            </svg>
+                          </button>
                           <span
                             class="badge ml-auto"
                             :class="product.inStock ? 'badge-success' : 'badge-error'"
@@ -736,11 +763,35 @@
                               x-text="`${Math.round(getDiscountPercent(product))}%`"
                             ></span>
                           </template>
+                          <!-- Price change badge (list view) -->
+                          <template x-if="getPriceChange(product)">
+                            <button
+                              @click.prevent="openPriceChart(product)"
+                              class="badge badge-sm tooltip tooltip-bottom tooltip-wrap cursor-pointer hover:scale-110 transition-transform"
+                              :class="getPriceChange(product).direction === 'down' ? 'badge-success' : 'badge-warning'"
+                              :data-tip="getPriceChange(product).direction === 'down'
+                                ? `Price dropped from $${getPriceChange(product).previousPrice.toFixed(2)} this week`
+                                : `Price increased from $${getPriceChange(product).previousPrice.toFixed(2)} this week`"
+                              x-text="(getPriceChange(product).direction === 'down' ? '↓' : '↑') + Math.round(getPriceChange(product).percent) + '%'"
+                            ></button>
+                          </template>
                           <span
                             class="badge badge-sm"
                             :class="product.inStock ? 'badge-success' : 'badge-error'"
                             x-text="product.inStock ? 'In Stock' : 'OOS'"
                           ></span>
+                          <!-- Price chart button (list view) -->
+                          <button
+                            x-show="priceHistory[product.id]"
+                            @click.prevent="openPriceChart(product)"
+                            class="btn btn-ghost btn-xs btn-circle"
+                            aria-label="View price history"
+                            title="View price history"
+                          >
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                            </svg>
+                          </button>
                           <a
                             :href="addReferral(product.vendors?.[0]?.url) || '#'"
                             target="_blank"
@@ -824,6 +875,38 @@
           >Discord</a>
         </div>
       </footer>
+
+      <!-- Price History Chart Modal -->
+      <template x-if="chartModal">
+        <div
+          class="fixed inset-0 z-50 flex items-center justify-center bg-black/50 p-4"
+          @click.self="closePriceChart()"
+          @keydown.escape.window="closePriceChart()"
+        >
+          <div class="bg-base-100 w-full max-w-3xl rounded-lg shadow-xl">
+            <div class="border-base-300 flex items-center justify-between border-b p-4">
+              <h3 class="line-clamp-1 text-lg font-semibold" x-text="chartModal.product.title"></h3>
+              <button
+                @click="closePriceChart()"
+                class="btn btn-ghost btn-sm btn-circle"
+                aria-label="Close"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              </button>
+            </div>
+            <div class="p-4">
+              <div class="h-80">
+                <canvas x-init="$nextTick(() => $nextTick(() => renderPriceChart($el)))"></canvas>
+              </div>
+              <p class="text-base-content/60 mt-2 text-center text-xs">
+                Price history over the last 30 days. Click legend to toggle vendors.
+              </p>
+            </div>
+          </div>
+        </div>
+      </template>
 
       <!-- Toast notification -->
       <template x-if="toast">

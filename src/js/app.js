@@ -1,5 +1,10 @@
 import Alpine from 'alpinejs';
 import Fuse from 'fuse.js';
+import { Chart, registerables } from 'chart.js';
+import 'chartjs-adapter-date-fns';
+
+// Register Chart.js components
+Chart.register(...registerables);
 
 // ========== CONSTANTS ==========
 const TOAST_DURATION_MS = 5000;
@@ -7,6 +12,7 @@ const FUSE_THRESHOLD = 0.2;
 const DEFAULT_PER_PAGE = 60;
 const FETCH_TIMEOUT_MS = 10000;
 const MAX_SEARCH_CACHE_SIZE = 10;
+const PRICE_CHANGE_DAYS = 7; // Show price changes from last 7 days
 
 // ========== THEME STORE (shared across components) ==========
 Alpine.store('theme', {
@@ -100,6 +106,9 @@ Alpine.data('productApp', () => ({
   _searchCache: new Map(),
   showScrollTop: false,
   viewMode: 'card',
+  priceHistory: {},
+  chartModal: null, // { product, chart } when open
+  _chartInstance: null,
 
   // ===== COMPUTED =====
   get theme() {
@@ -144,8 +153,8 @@ Alpine.data('productApp', () => ({
     // Setup keyboard shortcuts
     this.setupKeyboardShortcuts();
 
-    // Load products
-    await this.loadProducts();
+    // Load products and price history in parallel
+    await Promise.all([this.loadProducts(), this.loadPriceHistory()]);
 
     // Setup infinite scroll
     this.setupInfiniteScroll();
@@ -279,6 +288,158 @@ Alpine.data('productApp', () => ({
       }
       throw err;
     }
+  },
+
+  // ===== PRICE HISTORY =====
+  async loadPriceHistory() {
+    try {
+      const response = await this.fetchWithTimeout('./data/price-history.json', FETCH_TIMEOUT_MS);
+      if (!response.ok) {
+        console.warn('Price history not available');
+        return;
+      }
+      const data = await response.json();
+      this.priceHistory = data.history || {};
+    } catch (err) {
+      // Price history is optional, don't show error to user
+      console.warn('Could not load price history:', err.message);
+    }
+  },
+
+  getPriceChange(product) {
+    // Returns { percent, direction, previousPrice } or null if no recent change
+    const history = this.priceHistory[product.id];
+    if (!history?.lowest?.length) return null;
+
+    const cutoff = Math.floor(Date.now() / 1000) - PRICE_CHANGE_DAYS * 24 * 60 * 60;
+    const entries = history.lowest;
+
+    // Find the most recent entry with a previous price
+    for (let i = entries.length - 1; i >= 0; i--) {
+      const entry = entries[i];
+      if (entry.t >= cutoff && entry.prev !== undefined) {
+        const percent = ((entry.prev - entry.p) / entry.prev) * 100;
+        return {
+          percent: Math.abs(percent),
+          direction: percent > 0 ? 'down' : 'up',
+          previousPrice: entry.prev,
+          currentPrice: entry.p,
+        };
+      }
+    }
+    return null;
+  },
+
+  openPriceChart(product) {
+    this.chartModal = { product };
+    // Chart will be rendered by Alpine x-init on the canvas
+  },
+
+  closePriceChart() {
+    if (this._chartInstance) {
+      this._chartInstance.destroy();
+      this._chartInstance = null;
+    }
+    this.chartModal = null;
+  },
+
+  renderPriceChart(canvas) {
+    if (!this.chartModal || !canvas) return;
+
+    const product = this.chartModal.product;
+    const history = this.priceHistory[product.id];
+    if (!history) return;
+
+    // Prepare datasets for each vendor
+    const datasets = [];
+    const colors = [
+      '#3b82f6', // blue
+      '#10b981', // green
+      '#f59e0b', // amber
+      '#ef4444', // red
+      '#8b5cf6', // purple
+      '#ec4899', // pink
+    ];
+
+    let colorIndex = 0;
+
+    // Add vendor lines
+    if (history.vendors) {
+      for (const [vendor, entries] of Object.entries(history.vendors)) {
+        if (entries.length === 0) continue;
+        const color = colors[colorIndex % colors.length];
+        colorIndex++;
+
+        datasets.push({
+          label: vendor,
+          data: entries.map((e) => ({ x: e.t * 1000, y: e.p })),
+          borderColor: color,
+          backgroundColor: color + '20',
+          tension: 0.1,
+          pointRadius: 3,
+        });
+      }
+    }
+
+    // Add lowest price line if we have it
+    if (history.lowest?.length > 0) {
+      datasets.unshift({
+        label: 'Lowest Price',
+        data: history.lowest.map((e) => ({ x: e.t * 1000, y: e.p })),
+        borderColor: '#22c55e',
+        backgroundColor: '#22c55e20',
+        borderWidth: 3,
+        tension: 0.1,
+        pointRadius: 4,
+      });
+    }
+
+    if (datasets.length === 0) return;
+
+    this._chartInstance = new Chart(canvas, {
+      type: 'line',
+      data: { datasets },
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        interaction: {
+          intersect: false,
+          mode: 'index',
+        },
+        scales: {
+          x: {
+            type: 'time',
+            time: {
+              unit: 'day',
+              displayFormats: { day: 'MMM d' },
+              tooltipFormat: 'MMM d, yyyy',
+            },
+            min: Date.now() - 30 * 24 * 60 * 60 * 1000, // 30 days ago
+            max: Date.now() + 2 * 24 * 60 * 60 * 1000, // 2 days ahead for padding
+            ticks: {
+              maxTicksLimit: 10,
+            },
+            title: { display: true, text: 'Date' },
+          },
+          y: {
+            title: { display: true, text: 'Price ($)' },
+            ticks: {
+              callback: (value) => '$' + value.toFixed(2),
+            },
+          },
+        },
+        plugins: {
+          tooltip: {
+            callbacks: {
+              label: (ctx) => `${ctx.dataset.label}: $${ctx.parsed.y.toFixed(2)}`,
+            },
+          },
+          legend: {
+            position: 'bottom',
+          },
+        },
+      },
+    });
   },
 
   // ===== SEARCH INDEX =====

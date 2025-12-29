@@ -9,6 +9,7 @@ Usage:
 """
 
 import argparse
+import hashlib
 import ipaddress
 import json
 import logging
@@ -25,7 +26,7 @@ logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # Import from local modules
 from config import (
-    STORES_FILE, OUTPUT_FILE, STATS_FILE, RAW_DATA_DIR,
+    STORES_FILE, OUTPUT_FILE, STATS_FILE, RAW_DATA_DIR, HISTORY_FILE,
     FUZZY_THRESHOLD, MAX_WORKERS, FUTURE_TIMEOUT, MAX_TAGS, MAX_ID_LENGTH
 )
 from fetchers import get_fetcher
@@ -33,6 +34,10 @@ from log_collector import get_collector, get_store_logs
 from validators import get_validator
 from normalizers import get_normalizer
 from utils import count_in_stock, build_error_stats
+from price_history import (
+    load_history, save_history, track_price_changes,
+    prune_old_entries, cleanup_orphaned_products
+)
 
 # Initialize log collector
 log_collector = get_collector()
@@ -256,6 +261,24 @@ def normalize_title(title: str) -> str:
     return title.strip()
 
 
+def generate_product_id(normalized_title: str) -> str:
+    """Generate a unique product ID from normalized title.
+
+    If the title is longer than MAX_ID_LENGTH, appends a short hash
+    to ensure uniqueness while keeping the ID readable.
+    """
+    base_id = normalized_title.replace(" ", "-")
+
+    if len(base_id) <= MAX_ID_LENGTH:
+        return base_id
+
+    # Truncate and add hash suffix for uniqueness
+    hash_suffix = hashlib.md5(normalized_title.encode()).hexdigest()[:8]
+    # Leave room for dash and 8-char hash
+    truncated = base_id[:MAX_ID_LENGTH - 9]
+    return f"{truncated}-{hash_suffix}"
+
+
 def find_matching_group(title: str, grouped: dict, grouped_keys: list) -> str | None:
     """Find existing group that fuzzy-matches this title.
 
@@ -289,7 +312,10 @@ def consolidate_products(products: list) -> list:
     grouped_keys = []  # Maintain list for efficient fuzzy matching
     fuzzy_matches = 0
 
-    for product in products:
+    # Sort products for deterministic fuzzy matching (prevents vendor flip-flopping)
+    sorted_products = sorted(products, key=lambda p: (normalize_title(p["title"]), p["vendor"]))
+
+    for product in sorted_products:
         normalized = normalize_title(product["title"])
 
         # Find matching group (exact or fuzzy)
@@ -299,7 +325,7 @@ def consolidate_products(products: list) -> list:
             # New product group
             key = normalized
             grouped[key] = {
-                "id": key.replace(" ", "-")[:MAX_ID_LENGTH],
+                "id": generate_product_id(key),
                 "title": product["title"],
                 "image": product["image"],
                 "category": product["category"],
@@ -471,6 +497,22 @@ def main():
         }
     }
 
+    # Track price history
+    print("\nTracking price changes...")
+    history_data = load_history()
+    price_stats = track_price_changes(all_products, history_data)
+    current_product_ids = {p["id"] for p in all_products}
+    cleanup_orphaned_products(history_data, current_product_ids)
+    prune_old_entries(history_data)
+    save_history(history_data)
+    v = price_stats["vendors"]
+    l = price_stats["lowest"]
+    print(f"  Vendors: {v['new']} new, {v['changed']} changed, {v['unchanged']} unchanged")
+    print(f"  Lowest:  {l['new']} new, {l['changed']} changed, {l['unchanged']} unchanged")
+
+    # Add price history stats to stats output
+    stats_output["priceHistory"] = price_stats
+
     # Write outputs
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
     with open(OUTPUT_FILE, "w") as f:
@@ -483,6 +525,7 @@ def main():
     print("=" * 50)
     print(f"Done! Saved {len(all_products)} products to {OUTPUT_FILE}")
     print(f"Stats saved to {STATS_FILE}")
+    print(f"Price history saved to {HISTORY_FILE}")
     print("=" * 50)
 
 
