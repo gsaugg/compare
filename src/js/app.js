@@ -539,8 +539,19 @@ Alpine.data('productApp', () => ({
       if (this._searchCache.has(searchTerm)) {
         baseProducts = this._searchCache.get(searchTerm);
       } else {
-        const results = this.fuse.search(searchTerm);
-        baseProducts = results.map((r) => r.item);
+        // Find exact substring matches first (always include these)
+        const searchLower = searchTerm.toLowerCase();
+        const exactMatches = this.allProducts.filter(
+          (p) => p._searchText && p._searchText.toLowerCase().includes(searchLower),
+        );
+        const exactIds = new Set(exactMatches.map((p) => p.id));
+
+        // Then get fuzzy matches (excluding exact matches to avoid duplicates)
+        const fuzzyResults = this.fuse.search(searchTerm);
+        const fuzzyMatches = fuzzyResults.map((r) => r.item).filter((p) => !exactIds.has(p.id));
+
+        // Combine: exact matches first, then fuzzy
+        baseProducts = [...exactMatches, ...fuzzyMatches];
 
         // Cache search result (limit cache size)
         if (this._searchCache.size >= MAX_SEARCH_CACHE_SIZE) {
