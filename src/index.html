@@ -676,40 +676,39 @@
                         </figure>
                         <!-- Content -->
                         <div class="min-w-0 flex-1">
-                          <!-- Row 1: Title + Price + View -->
-                          <div class="flex items-start justify-between gap-2">
+                          <!-- Row 1: Title -->
+                          <a
+                            :href="addReferral(product.vendors?.[0]?.url) || '#'"
+                            target="_blank"
+                            rel="noopener"
+                            class="hover:text-primary line-clamp-2 font-medium sm:line-clamp-1"
+                            x-text="product.title"
+                          ></a>
+                          <!-- Row 2: Price + View -->
+                          <div class="mt-1 flex items-center justify-between gap-2">
+                            <div>
+                              <span
+                                class="text-primary font-bold"
+                                x-text="`$${product.lowestPrice.toFixed(2)}`"
+                              ></span>
+                              <template x-if="product.vendors?.[0]?.regularPrice">
+                                <span
+                                  class="text-base-content/60 ml-1 text-xs line-through"
+                                  x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
+                                ></span>
+                              </template>
+                            </div>
                             <a
                               :href="addReferral(product.vendors?.[0]?.url) || '#'"
+                              @click="trackStoreClick(product.vendors?.[0]?.name)"
                               target="_blank"
                               rel="noopener"
-                              class="hover:text-primary line-clamp-2 min-w-0 flex-1 font-medium sm:line-clamp-1"
-                              x-text="product.title"
-                            ></a>
-                            <div class="flex shrink-0 items-center gap-2">
-                              <div class="text-right">
-                                <span
-                                  class="text-primary font-bold"
-                                  x-text="`$${product.lowestPrice.toFixed(2)}`"
-                                ></span>
-                                <template x-if="product.vendors?.[0]?.regularPrice">
-                                  <span
-                                    class="text-base-content/60 ml-1 text-xs line-through"
-                                    x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
-                                  ></span>
-                                </template>
-                              </div>
-                              <a
-                                :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                                @click="trackStoreClick(product.vendors?.[0]?.name)"
-                                target="_blank"
-                                rel="noopener"
-                                class="btn btn-primary btn-sm"
-                              >
-                                View
-                              </a>
-                            </div>
+                              class="btn btn-primary btn-sm"
+                            >
+                              View
+                            </a>
                           </div>
-                          <!-- Row 2: Store + Badges -->
+                          <!-- Row 3: Store + Badges -->
                           <div class="text-base-content/70 mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
                             <span x-text="product.vendors?.[0]?.name || ''"></span>
                             <button
