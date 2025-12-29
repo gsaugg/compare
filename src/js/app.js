@@ -9,7 +9,7 @@ Chart.register(...registerables);
 // ========== CONSTANTS ==========
 const TOAST_DURATION_MS = 5000;
 const STALE_DATA_THRESHOLD_MS = 3 * 60 * 60 * 1000; // 3 hours - scraper runs hourly
-const FUSE_THRESHOLD = 0.2;
+const FUSE_THRESHOLD = 0.3;
 
 // ========== SEARCH HELPERS ==========
 /**
