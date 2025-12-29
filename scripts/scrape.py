@@ -9,7 +9,6 @@ Usage:
 """
 
 import argparse
-import hashlib
 import ipaddress
 import json
 import logging
@@ -19,28 +18,39 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from urllib.parse import urlparse
-from rapidfuzz import fuzz, process
 
 # Configure logging for fetchers
 logging.basicConfig(level=logging.INFO, format='%(message)s')
 
 # Import from local modules
 from config import (
-    STORES_FILE, OUTPUT_FILE, STATS_FILE, RAW_DATA_DIR, HISTORY_FILE,
-    FUZZY_THRESHOLD, MAX_WORKERS, FUTURE_TIMEOUT, MAX_TAGS, MAX_ID_LENGTH
+    STORES_FILE, RAW_DATA_DIR, PROJECT_ROOT,
+    MAX_WORKERS, FUTURE_TIMEOUT
 )
 from fetchers import get_fetcher
 from log_collector import get_collector, get_store_logs
 from validators import get_validator
 from normalizers import get_normalizer
 from utils import count_in_stock, build_error_stats
-from price_history import (
-    load_history, save_history, track_price_changes,
-    prune_old_entries
+from matching import match_items, get_match_stats
+from item_history import (
+    load_history as load_item_history,
+    save_history as save_item_history,
+    track_items,
+    prune_old_entries,
+    cleanup_orphaned_items,
+    ITEM_HISTORY_FILE,
 )
+from generate_frontend import generate_frontend_data
 
 # Initialize log collector
 log_collector = get_collector()
+
+# Data file paths
+DATA_DIR = PROJECT_ROOT / "public" / "data"
+ITEMS_FILE = DATA_DIR / "items.json"
+MATCHES_FILE = DATA_DIR / "matches.json"
+STATS_FILE = DATA_DIR / "stats.json"
 
 # Thread-safe printing
 _print_lock = threading.Lock()
@@ -132,23 +142,26 @@ def load_stores():
     return stores
 
 
-def filter_and_normalize(raw_products: list, platform: str, store_name: str, base_url: str) -> tuple[list, int, list]:
+def filter_and_normalize(
+    raw_products: list, platform: str, store_name: str, base_url: str, store_id: str
+) -> tuple[list, int, list]:
     """Filter and normalize products using platform-specific validator/normalizer.
 
-    Returns (normalized_products, filtered_count, filtered_products_details).
+    Returns (items_list, filtered_count, filtered_products_details).
+    Items are at variant level with composite IDs (storeId|productId|variantId).
     """
     validator = get_validator(platform)
-    normalizer = get_normalizer(platform, store_name, base_url)
+    normalizer = get_normalizer(platform, store_name, base_url, store_id)
 
-    products = []
+    items = []
     filtered_count = 0
     filtered_products = []
 
     for product in raw_products:
         if validator.is_valid(product):
-            normalized = normalizer.normalize(product)
-            if normalized:
-                products.append(normalized)
+            # Use normalize_all to get variant-level items
+            normalized_items = normalizer.normalize_all(product)
+            items.extend(normalized_items)
         else:
             filtered_count += 1
             # Capture why this product was filtered
@@ -161,12 +174,13 @@ def filter_and_normalize(raw_products: list, platform: str, store_name: str, bas
                     "filterCategory": reason["category"],
                 })
 
-    return products, filtered_count, filtered_products
+    return items, filtered_count, filtered_products
 
 
 def fetch_store_products(store: dict) -> tuple[list, dict]:
-    """Fetch products using the appropriate fetcher. Returns (products, stats)."""
+    """Fetch products using the appropriate fetcher. Returns (items, stats)."""
     store_name = store["name"]
+    store_id = store.get("id", store_name.lower().replace(" ", "-"))
     base_url = store["url"].rstrip("/")
     platform = store.get("platform", "shopify")
 
@@ -178,31 +192,34 @@ def fetch_store_products(store: dict) -> tuple[list, dict]:
     if raw_products and not stats.get("error"):
         save_raw_data(store_name, platform, raw_products)
 
-    # Filter and normalize products
-    products, filtered_count, filtered_products = filter_and_normalize(raw_products, platform, store_name, base_url)
+    # Filter and normalize to items (variant-level)
+    items, filtered_count, filtered_products = filter_and_normalize(
+        raw_products, platform, store_name, base_url, store_id
+    )
 
     # Update stats with filtering info
-    in_stock = count_in_stock(products)
+    in_stock = count_in_stock(items)
     stats["filtered"] = filtered_count
     stats["filteredProducts"] = filtered_products
-    stats["final"] = len(products)
+    stats["final"] = len(items)
     stats["inStock"] = in_stock
-    stats["outOfStock"] = len(products) - in_stock
+    stats["outOfStock"] = len(items) - in_stock
 
     # Attach logs for this store
     stats["logs"] = get_store_logs(store_name)
 
-    return products, stats
+    return items, stats
 
 
 def process_cached_products(store: dict, max_age_hours: float | None = None) -> tuple[list, dict]:
-    """Process products from cache. Returns (products, stats).
+    """Process products from cache. Returns (items, stats).
 
     Args:
         store: Store configuration dict
         max_age_hours: Maximum cache age in hours. If None, any age is accepted.
     """
     store_name = store["name"]
+    store_id = store.get("id", store_name.lower().replace(" ", "-"))
     base_url = store["url"].rstrip("/")
     platform = store.get("platform", "shopify")
     start_time = time.time()
@@ -253,12 +270,14 @@ def process_cached_products(store: dict, max_age_hours: float | None = None) -> 
 
     raw_products = cache_data.get("products", [])
 
-    # Filter and normalize products
-    products, filtered_count, filtered_products = filter_and_normalize(raw_products, platform, store_name, base_url)
+    # Filter and normalize to items (variant-level)
+    items, filtered_count, filtered_products = filter_and_normalize(
+        raw_products, platform, store_name, base_url, store_id
+    )
 
     duration = time.time() - start_time
-    in_stock = count_in_stock(products)
-    safe_print(f"  Processed: {len(products)} products ({filtered_count} filtered)")
+    in_stock = count_in_stock(items)
+    safe_print(f"  Processed: {len(items)} items ({filtered_count} filtered)")
 
     stats = {
         "name": store_name,
@@ -267,154 +286,15 @@ def process_cached_products(store: dict, max_age_hours: float | None = None) -> 
         "fetched": len(raw_products),
         "filtered": filtered_count,
         "filteredProducts": filtered_products,
-        "final": len(products),
+        "final": len(items),
         "inStock": in_stock,
-        "outOfStock": len(products) - in_stock,
+        "outOfStock": len(items) - in_stock,
         "error": None,
         "duration": round(duration, 2),
         "cached_at": cache_data.get("fetched_at"),
         "logs": [{"time": "cache", "level": "INFO", "message": f"Loaded from cache ({cache_data.get('fetched_at', 'unknown')})"}]
     }
-    return products, stats
-
-
-def normalize_title(title: str) -> str:
-    """Normalize title for matching - strips colors, punctuation, etc."""
-    title = title.lower().strip()
-    # Remove common color suffixes
-    title = re.sub(r'\s*[-–]\s*(black|tan|od|green|fde|grey|gray|white|red|blue|pink|orange|camo|multicam)\s*$', '', title, flags=re.IGNORECASE)
-    # Remove punctuation except hyphens in product codes
-    title = re.sub(r'[^\w\s-]', '', title)
-    # Normalize whitespace
-    title = re.sub(r'\s+', ' ', title)
-    return title.strip()
-
-
-def generate_product_id(normalized_title: str) -> str:
-    """Generate a unique product ID from normalized title.
-
-    If the title is longer than MAX_ID_LENGTH, appends a short hash
-    to ensure uniqueness while keeping the ID readable.
-    """
-    base_id = normalized_title.replace(" ", "-")
-
-    if len(base_id) <= MAX_ID_LENGTH:
-        return base_id
-
-    # Truncate and add hash suffix for uniqueness
-    hash_suffix = hashlib.md5(normalized_title.encode()).hexdigest()[:8]
-    # Leave room for dash and 8-char hash
-    truncated = base_id[:MAX_ID_LENGTH - 9]
-    return f"{truncated}-{hash_suffix}"
-
-
-def find_matching_group(title: str, grouped: dict, grouped_keys: list) -> str | None:
-    """Find existing group that fuzzy-matches this title.
-
-    Uses RapidFuzz's optimized extractOne for O(N) instead of manual O(N) loop,
-    with significant constant-factor speedup from C extensions.
-    """
-    normalized = normalize_title(title)
-
-    # First try exact match (fast path - O(1) dict lookup)
-    if normalized in grouped:
-        return normalized
-
-    # No keys to match against
-    if not grouped_keys:
-        return None
-
-    # Use RapidFuzz's optimized extractOne (C extension, early termination)
-    result = process.extractOne(
-        normalized,
-        grouped_keys,
-        scorer=fuzz.ratio,
-        score_cutoff=FUZZY_THRESHOLD
-    )
-
-    return result[0] if result else None
-
-
-def consolidate_products(products: list) -> list:
-    """Group products by title (with fuzzy matching), combining vendor info."""
-    grouped = {}
-    grouped_keys = []  # Maintain list for efficient fuzzy matching
-    fuzzy_matches = 0
-
-    # Sort products for deterministic fuzzy matching (prevents vendor flip-flopping)
-    sorted_products = sorted(products, key=lambda p: (normalize_title(p["title"]), p["vendor"]))
-
-    for product in sorted_products:
-        normalized = normalize_title(product["title"])
-
-        # Find matching group (exact or fuzzy)
-        match_key = find_matching_group(product["title"], grouped, grouped_keys)
-
-        if match_key is None:
-            # New product group
-            key = normalized
-            grouped[key] = {
-                "id": generate_product_id(key),
-                "title": product["title"],
-                "image": product["image"],
-                "category": product["category"],
-                "tags": list(set(product.get("tags", [])))[:MAX_TAGS],
-                "vendors": []
-            }
-            grouped_keys.append(key)  # Track for fuzzy matching
-        else:
-            key = match_key
-            if key != normalized:
-                fuzzy_matches += 1
-
-        # Add vendor info (skip if this vendor already exists for this product)
-        existing_vendors = [v["name"] for v in grouped[key]["vendors"]]
-        if product["vendor"] not in existing_vendors:
-            grouped[key]["vendors"].append({
-                "name": product["vendor"],
-                "price": product["price"],
-                "comparePrice": product.get("comparePrice"),
-                "url": product["url"],
-                "inStock": product["inStock"]
-            })
-
-        # Use image if current is None
-        if grouped[key]["image"] is None and product["image"]:
-            grouped[key]["image"] = product["image"]
-
-        # Use category from other store if current is Uncategorized
-        if grouped[key]["category"] == "Uncategorized" and product["category"] != "Uncategorized":
-            grouped[key]["category"] = product["category"]
-
-        # Merge tags
-        grouped[key]["tags"] = list(set(grouped[key]["tags"] + product.get("tags", [])))[:MAX_TAGS]
-
-    safe_print(f"  Fuzzy matches found: {fuzzy_matches}")
-
-    # Calculate lowest price and stock status
-    result = []
-    for item in grouped.values():
-        # Skip products with no vendors (shouldn't happen, but guard against it)
-        if not item["vendors"]:
-            continue
-
-        # Sort vendors: in-stock first, then by price
-        item["vendors"].sort(key=lambda v: (not v["inStock"], v["price"]))
-
-        # Get all valid prices (non-None, positive)
-        all_prices = [v["price"] for v in item["vendors"] if v["price"] is not None and v["price"] > 0]
-        in_stock_prices = [v["price"] for v in item["vendors"] if v["inStock"] and v["price"] is not None and v["price"] > 0]
-
-        # Skip products with no valid prices
-        if not all_prices:
-            continue
-
-        # Prefer lowest in-stock price, fall back to lowest overall if all OOS
-        item["lowestPrice"] = min(in_stock_prices) if in_stock_prices else min(all_prices)
-        item["inStock"] = any(v["inStock"] for v in item["vendors"])
-        result.append(item)
-
-    return result, fuzzy_matches
+    return items, stats
 
 
 def main():
@@ -556,74 +436,100 @@ def main():
                     str(e)
                 ))
 
-    raw_count = len(all_products)
+    # Note: all_products is now a list of items (variant-level)
+    all_items = all_products  # Rename for clarity
+    raw_count = len(all_items)
     total_fetched = sum(s["fetched"] for s in store_stats)
 
-    # Consolidate duplicates across stores
+    # Convert items list to dict (keyed by item_id)
     print()
-    print("Consolidating products across stores...")
-    all_products, fuzzy_matches = consolidate_products(all_products)
-    print(f"  {raw_count} listings -> {len(all_products)} unique products")
+    print("Building items dict...")
+    items_dict = {}
+    for item in all_items:
+        item_id = item.get("id")
+        if item_id:
+            items_dict[item_id] = item
+    print(f"  {raw_count} items from all stores")
 
-    # Sort by lowest price
-    all_products.sort(key=lambda p: p["lowestPrice"])
+    # Match items across stores (SKU + fuzzy title)
+    print()
+    print("Matching items across stores...")
+    matches = match_items(items_dict)
+    match_stats = get_match_stats(matches)
+    print(f"  {len(items_dict)} items -> {len(matches)} product groups")
+    print(f"  SKU matches: {match_stats['sku_matched']}, "
+          f"Title matches: {match_stats['title_matched']}")
+    print(f"  Cross-store: {match_stats['multi_vendor']}, "
+          f"Single-store: {match_stats['single_vendor']}")
 
     scrape_duration = time.time() - scrape_start
+    last_updated = datetime.now(timezone.utc).isoformat()
 
-    # Build output
-    output = {
-        "lastUpdated": datetime.now(timezone.utc).isoformat(),
-        "storeCount": len(stores),
-        "productCount": len(all_products),
-        "products": all_products,
+    # Track item-level price history
+    print()
+    print("Tracking price changes...")
+    history_data = load_item_history()
+    price_stats = track_items(items_dict, history_data)
+    prune_old_entries(history_data)
+    cleanup_orphaned_items(history_data, set(items_dict.keys()))
+    save_item_history(history_data)
+    print(f"  {price_stats['new']} new, {price_stats['changed']} changed, "
+          f"{price_stats['unchanged']} unchanged")
+
+    # Generate frontend files (products.json, price-history.json)
+    print()
+    print("Generating frontend data...")
+    products, _ = generate_frontend_data(
+        items_dict, matches, history_data, last_updated, len(stores)
+    )
+
+    # Calculate stock totals from products
+    total_in_stock = count_in_stock(products)
+    total_out_of_stock = len(products) - total_in_stock
+
+    # Save items.json and matches.json (internal format)
+    DATA_DIR.mkdir(parents=True, exist_ok=True)
+
+    items_output = {
+        "lastUpdated": last_updated,
+        "items": items_dict,
     }
+    with open(ITEMS_FILE, "w") as f:
+        json.dump(items_output, f, separators=(",", ":"))
 
-    # Calculate stock totals from unique products (not per-store sums)
-    total_in_stock = count_in_stock(all_products)
-    total_out_of_stock = len(all_products) - total_in_stock
+    matches_output = {
+        "lastUpdated": last_updated,
+        "matches": matches,
+    }
+    with open(MATCHES_FILE, "w") as f:
+        json.dump(matches_output, f, separators=(",", ":"))
 
-    # Build stats output
+    # Build and save stats output
     stats_output = {
-        "lastUpdated": datetime.now(timezone.utc).isoformat(),
+        "lastUpdated": last_updated,
         "duration": round(scrape_duration, 2),
         "stores": store_stats,
         "totals": {
             "rawProducts": total_fetched,
             "afterFilter": raw_count,
-            "uniqueProducts": len(all_products),
-            "fuzzyMatches": fuzzy_matches,
+            "uniqueItems": len(items_dict),
+            "productGroups": len(matches),
+            "skuMatched": match_stats["sku_matched"],
+            "titleMatched": match_stats["title_matched"],
+            "multiVendor": match_stats["multi_vendor"],
             "inStock": total_in_stock,
-            "outOfStock": total_out_of_stock
-        }
+            "outOfStock": total_out_of_stock,
+        },
+        "priceHistory": price_stats,
     }
-
-    # Track price history
-    print("\nTracking price changes...")
-    history_data = load_history()
-    price_stats = track_price_changes(all_products, history_data)
-    prune_old_entries(history_data)  # Cleans up entries >30 days old
-    save_history(history_data)
-    vs = price_stats["vendors"]
-    lp = price_stats["lowest"]
-    print(f"  Vendors: {vs['new']} new, {vs['changed']} changed, {vs['unchanged']} unchanged")
-    print(f"  Lowest:  {lp['new']} new, {lp['changed']} changed, {lp['unchanged']} unchanged")
-
-    # Add price history stats to stats output
-    stats_output["priceHistory"] = price_stats
-
-    # Write outputs
-    OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    with open(OUTPUT_FILE, "w") as f:
-        json.dump(output, f, indent=2)
-
     with open(STATS_FILE, "w") as f:
         json.dump(stats_output, f, indent=2)
 
     print()
     print("=" * 50)
-    print(f"Done! Saved {len(all_products)} products to {OUTPUT_FILE}")
+    print(f"Done! {len(items_dict)} items -> {len(matches)} products -> {len(products)} unique")
     print(f"Stats saved to {STATS_FILE}")
-    print(f"Price history saved to {HISTORY_FILE}")
+    print(f"Item history saved to {ITEM_HISTORY_FILE}")
     print("=" * 50)
 
 

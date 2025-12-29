@@ -88,7 +88,7 @@
                 <div class="card bg-base-100 p-4 text-center shadow-md">
                   <div
                     class="text-3xl font-bold tabular-nums"
-                    x-text="stats.totals.uniqueProducts.toLocaleString()"
+                    x-text="(stats.totals.productGroups || 0).toLocaleString()"
                   ></div>
                   <div class="text-base-content/70 text-sm">Unique Products</div>
                 </div>
