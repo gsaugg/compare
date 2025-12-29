@@ -660,7 +660,7 @@ Alpine.data('productApp', () => ({
     if (params.get('q')) this.search = params.get('q');
     if (params.get('category')) this.category = params.get('category');
     if (params.get('stores')) this.selectedVendors = params.get('stores').split(',');
-    if (params.get('stock')) this.stock = params.get('stock');
+    if (params.has('stock')) this.stock = params.get('stock');
     if (params.get('sort')) {
       this.sort = params.get('sort');
       this.previousSort = params.get('sort');
@@ -892,7 +892,7 @@ Alpine.data('trackerApp', () => ({
   get newProducts() {
     const newItems = [];
     // Baseline: ignore products first seen before this (initial tracking load)
-    const trackingBaseline = 1766971879; // 2025-12-29 ~10:30am AEST
+    const trackingBaseline = 1767011758; // 2025-12-29 - baseline for production deploy
 
     for (const [productId, product] of Object.entries(this.products)) {
       const history = this.priceHistory[productId];
@@ -1027,7 +1027,7 @@ Alpine.data('trackerApp', () => ({
   },
 
   getProductSearchUrl(title) {
-    return `index.html?q=${encodeURIComponent(title)}`;
+    return `index.html?q=${encodeURIComponent(title)}&stock=`;
   },
 
   // ===== REFERRAL TRACKING =====
