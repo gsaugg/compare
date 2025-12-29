@@ -76,7 +76,7 @@ class ProductNormalizer(ABC):
         pass
 
     @abstractmethod
-    def get_compare_price(self, product: dict) -> float | None:
+    def get_regular_price(self, product: dict) -> float | None:
         """Extract compare/original price if on sale."""
         pass
 
@@ -116,7 +116,7 @@ class ProductNormalizer(ABC):
         pass
 
     @abstractmethod
-    def get_variant_compare_price(self, product: dict, variant: dict) -> float | None:
+    def get_variant_regular_price(self, product: dict, variant: dict) -> float | None:
         """Extract compare price for a specific variant."""
         pass
 
@@ -142,7 +142,7 @@ class ProductNormalizer(ABC):
                 "id": f"{self.store_id_prefix}-{self.get_id(product)}",
                 "title": title,
                 "price": self.get_price(product),
-                "comparePrice": self.get_compare_price(product),
+                "regularPrice": self.get_regular_price(product),
                 "image": self.get_image(product),
                 "url": self.get_url(product),
                 "vendor": self.store_name,
@@ -182,7 +182,7 @@ class ProductNormalizer(ABC):
                     "title": title,
                     "sku": self.get_sku(product, variant),
                     "price": self.get_variant_price(product, variant),
-                    "comparePrice": self.get_variant_compare_price(product, variant),
+                    "regularPrice": self.get_variant_regular_price(product, variant),
                     "image": self.get_variant_image(product, variant),
                     "url": self.get_url(product),
                     "vendor": self.store_name,
@@ -236,14 +236,14 @@ class ShopifyNormalizer(ProductNormalizer):
     def get_variant_price(self, product: dict, variant: dict) -> float:
         return float(variant.get("price", 0))
 
-    def get_compare_price(self, product: dict) -> float | None:
+    def get_regular_price(self, product: dict) -> float | None:
         variants = product.get("variants", [])
         if not variants:
             return None
         compare_price = variants[0].get("compare_at_price")
         return float(compare_price) if compare_price else None
 
-    def get_variant_compare_price(self, product: dict, variant: dict) -> float | None:
+    def get_variant_regular_price(self, product: dict, variant: dict) -> float | None:
         compare_price = variant.get("compare_at_price")
         return float(compare_price) if compare_price else None
 
@@ -334,15 +334,15 @@ class WooCommerceNormalizer(ProductNormalizer):
     def get_variant_price(self, product: dict, variant: dict) -> float:
         return self.get_price(product)
 
-    def get_compare_price(self, product: dict) -> float | None:
+    def get_regular_price(self, product: dict) -> float | None:
         prices = product.get("prices", {})
         price = int(prices.get("price", 0)) / 100
         regular_price = int(prices.get("regular_price", 0)) / 100
         # Compare price only if there's a discount
         return regular_price if regular_price > price else None
 
-    def get_variant_compare_price(self, product: dict, variant: dict) -> float | None:
-        return self.get_compare_price(product)
+    def get_variant_regular_price(self, product: dict, variant: dict) -> float | None:
+        return self.get_regular_price(product)
 
     def get_image(self, product: dict) -> str | None:
         images = product.get("images", [])
@@ -423,8 +423,8 @@ class SquarespaceNormalizer(ProductNormalizer):
     def get_variant_price(self, product: dict, variant: dict) -> float:
         return self._get_variant_price(variant)
 
-    def _get_variant_compare_price(self, variant: dict) -> float | None:
-        """Get compare price from a variant."""
+    def _get_variant_regular_price(self, variant: dict) -> float | None:
+        """Get regular price from a variant (the non-sale price)."""
         price = float(variant.get("priceMoney", {}).get("value", 0))
         sale_price_str = variant.get("salePriceMoney", {}).get("value", "0")
         sale_price = float(sale_price_str) if sale_price_str else 0
@@ -434,12 +434,12 @@ class SquarespaceNormalizer(ProductNormalizer):
             return price
         return None
 
-    def get_compare_price(self, product: dict) -> float | None:
+    def get_regular_price(self, product: dict) -> float | None:
         variant = self._get_variant(product)
-        return self._get_variant_compare_price(variant)
+        return self._get_variant_regular_price(variant)
 
-    def get_variant_compare_price(self, product: dict, variant: dict) -> float | None:
-        return self._get_variant_compare_price(variant)
+    def get_variant_regular_price(self, product: dict, variant: dict) -> float | None:
+        return self._get_variant_regular_price(variant)
 
     def get_image(self, product: dict) -> str | None:
         return product.get("assetUrl")

@@ -10,10 +10,15 @@ Structure:
     "history": {
         "ceh|123|456": [
             {"t": 1703880000, "p": 319.00},
-            {"t": 1704052800, "p": 299.00}
+            {"t": 1704052800, "p": 299.00, "rp": 350.00}
         ]
     }
 }
+
+Fields:
+- t: timestamp
+- p: price (current/sale price)
+- rp: regular price (optional, only when on sale)
 
 Each item_id is: storeId|productId|variantId
 This uniquely identifies a specific variant at a specific store.
@@ -76,34 +81,53 @@ def get_last_price(history_data: dict, item_id: str) -> float | None:
     return entries[-1]["p"]
 
 
-def record_price(history_data: dict, item_id: str, price: float) -> bool:
+def record_price(
+    history_data: dict, item_id: str, price: float, regular_price: float | None = None
+) -> bool:
     """Record a price for an item if it changed.
 
     Args:
         history_data: The history data dict
         item_id: Item identifier (storeId|productId|variantId)
-        price: Current price
+        price: Current price (sale price when on sale)
+        regular_price: Regular/compare price (optional, only when on sale)
 
     Returns:
-        True if a new entry was recorded (price changed or new item)
+        True if a new entry was recorded (price or regular_price changed, or new item)
     """
     if "history" not in history_data:
         history_data["history"] = {}
 
     price = round(price, 2)
+    rp = round(regular_price, 2) if regular_price else None
     now = int(time.time())
 
     entries = history_data["history"].get(item_id)
 
     if entries is None:
         # New item
-        history_data["history"][item_id] = [{"t": now, "p": price}]
+        entry = {"t": now, "p": price}
+        if rp:
+            entry["rp"] = rp
+        history_data["history"][item_id] = [entry]
         return True
 
-    # Check if price changed from last entry
-    last_price = entries[-1]["p"]
-    if abs(price - last_price) >= 0.01:
-        entries.append({"t": now, "p": price})
+    # Check if price or regular_price changed from last entry
+    last = entries[-1]
+    last_price = last["p"]
+    last_rp = last.get("rp")
+
+    price_changed = abs(price - last_price) >= 0.01
+    # rp changed if: both exist and differ, or one exists and other doesn't
+    rp_changed = (rp is not None and last_rp is not None and abs(rp - last_rp) >= 0.01) or (
+        (rp is None) != (last_rp is None)
+    )
+
+    if price_changed or rp_changed:
+        entry = {"t": now, "p": price}
+        if rp:
+            entry["rp"] = rp
+        entries.append(entry)
         return True
 
     return False
@@ -162,7 +186,7 @@ def track_items(items: dict, history_data: dict) -> dict:
     """Track price changes for all items.
 
     Args:
-        items: Dict of item_id -> item data (must have 'price' field)
+        items: Dict of item_id -> item data (must have 'price' field, optionally 'regularPrice')
         history_data: The history data dict to update
 
     Returns:
@@ -175,12 +199,13 @@ def track_items(items: dict, history_data: dict) -> dict:
         if price is None:
             continue
 
+        regular_price = item.get("regularPrice")
         last_price = get_last_price(history_data, item_id)
 
         if last_price is None:
-            record_price(history_data, item_id, price)
+            record_price(history_data, item_id, price, regular_price)
             stats["new"] += 1
-        elif record_price(history_data, item_id, price):
+        elif record_price(history_data, item_id, price, regular_price):
             stats["changed"] += 1
         else:
             stats["unchanged"] += 1

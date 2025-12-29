@@ -569,10 +569,10 @@
                             class="text-primary text-lg font-bold"
                             x-text="`$${product.lowestPrice.toFixed(2)}`"
                           ></span>
-                          <template x-if="product.vendors?.[0]?.comparePrice">
+                          <template x-if="product.vendors?.[0]?.regularPrice">
                             <span
                               class="text-base-content/60 text-sm line-through"
-                              x-text="`$${product.vendors[0].comparePrice.toFixed(2)}`"
+                              x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
                             ></span>
                           </template>
                           <!-- Price chart button -->
@@ -625,10 +625,10 @@
                                     x-text="`$${vendor.price.toFixed(2)}`"
                                     class="font-semibold"
                                   ></span>
-                                  <template x-if="vendor.comparePrice">
+                                  <template x-if="vendor.regularPrice">
                                     <span
                                       class="text-base-content/60 line-through"
-                                      x-text="`$${vendor.comparePrice.toFixed(2)}`"
+                                      x-text="`$${vendor.regularPrice.toFixed(2)}`"
                                     ></span>
                                   </template>
                                   <span
@@ -697,10 +697,10 @@
                               class="text-primary font-bold"
                               x-text="`$${product.lowestPrice.toFixed(2)}`"
                             ></span>
-                            <template x-if="product.vendors?.[0]?.comparePrice">
+                            <template x-if="product.vendors?.[0]?.regularPrice">
                               <span
                                 class="text-base-content/60 ml-1 text-xs line-through"
-                                x-text="`$${product.vendors[0].comparePrice.toFixed(2)}`"
+                                x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
                               ></span>
                             </template>
                           </div>
@@ -770,10 +770,10 @@
                                   x-text="`$${vendor.price.toFixed(2)}`"
                                   class="font-semibold"
                                 ></span>
-                                <template x-if="vendor.comparePrice">
+                                <template x-if="vendor.regularPrice">
                                   <span
                                     class="text-base-content/60 line-through"
-                                    x-text="`$${vendor.comparePrice.toFixed(2)}`"
+                                    x-text="`$${vendor.regularPrice.toFixed(2)}`"
                                   ></span>
                                 </template>
                                 <span

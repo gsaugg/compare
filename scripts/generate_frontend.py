@@ -91,7 +91,7 @@ def generate_product(match: dict, items: dict, store_names: dict) -> dict | None
         vendor = {
             "name": store_name,
             "price": item["price"],
-            "comparePrice": item.get("comparePrice"),
+            "regularPrice": item.get("regularPrice"),
             "url": item["url"],
             "inStock": item.get("inStock", True),
         }
@@ -189,6 +189,9 @@ def generate_price_history(item_history: dict, matches: list, items: dict, store
                 prev_price = None
                 for entry in item_entries:
                     vendor_entry = {"t": entry["t"], "p": entry["p"]}
+                    # Include regular price if present (for detecting fake sales)
+                    if "rp" in entry:
+                        vendor_entry["rp"] = entry["rp"]
                     # Add prev field if price changed
                     if prev_price is not None and abs(entry["p"] - prev_price) >= 0.01:
                         vendor_entry["prev"] = prev_price

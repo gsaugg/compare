@@ -411,12 +411,17 @@ Alpine.data('productApp', () => ({
         const color = colors[colorIndex % colors.length];
         colorIndex++;
 
+        const data = entries.map((e) => ({ x: e.t * 1000, y: e.p }));
+        // Extend line to "now" with last known price
+        if (data.length > 0) {
+          data.push({ x: Date.now(), y: data[data.length - 1].y });
+        }
         datasets.push({
           label: vendor,
-          data: entries.map((e) => ({ x: e.t * 1000, y: e.p })),
+          data,
           borderColor: color,
           backgroundColor: color + '20',
-          tension: 0.1,
+          stepped: 'after',
           pointRadius: 3,
         });
       }
@@ -424,13 +429,18 @@ Alpine.data('productApp', () => ({
 
     // Add lowest price line if we have it
     if (history.lowest?.length > 0) {
+      const lowestData = history.lowest.map((e) => ({ x: e.t * 1000, y: e.p }));
+      // Extend line to "now" with last known price
+      if (lowestData.length > 0) {
+        lowestData.push({ x: Date.now(), y: lowestData[lowestData.length - 1].y });
+      }
       datasets.unshift({
         label: 'Lowest Price',
-        data: history.lowest.map((e) => ({ x: e.t * 1000, y: e.p })),
+        data: lowestData,
         borderColor: '#22c55e',
         backgroundColor: '#22c55e20',
         borderWidth: 3,
-        tension: 0.1,
+        stepped: 'after',
         pointRadius: 4,
       });
     }
@@ -649,12 +659,12 @@ Alpine.data('productApp', () => ({
 
     let maxDiscount = 0;
     for (const vendor of vendorsToCheck) {
-      if (!vendor.comparePrice || vendor.price >= vendor.comparePrice) continue;
+      if (!vendor.regularPrice || vendor.price >= vendor.regularPrice) continue;
 
       const discount =
         type === 'percent'
-          ? ((vendor.comparePrice - vendor.price) / vendor.comparePrice) * 100
-          : vendor.comparePrice - vendor.price;
+          ? ((vendor.regularPrice - vendor.price) / vendor.regularPrice) * 100
+          : vendor.regularPrice - vendor.price;
 
       maxDiscount = Math.max(maxDiscount, discount);
     }
