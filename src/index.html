@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>GSAU.gg - Price Comparison</title>
     <link rel="stylesheet" href="./css/main.css" />
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GWFG91LVXL"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-GWFG91LVXL');
+    </script>
   </head>
   <body class="bg-base-200 min-h-screen">
     <div x-data="productApp" class="flex min-h-screen flex-col">
@@ -652,6 +660,7 @@
                         <!-- View at Store button -->
                         <a
                           :href="addReferral(product.vendors?.[0]?.url) || '#'"
+                          @click="trackStoreClick(product.vendors?.[0]?.name)"
                           target="_blank"
                           rel="noopener"
                           class="btn btn-primary btn-sm mt-2 w-full"
@@ -667,6 +676,7 @@
                             <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
                               <a
                                 :href="addReferral(vendor.url)"
+                                @click="trackStoreClick(vendor.name)"
                                 target="_blank"
                                 rel="noopener"
                                 class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
@@ -794,6 +804,7 @@
                           </button>
                           <a
                             :href="addReferral(product.vendors?.[0]?.url) || '#'"
+                            @click="trackStoreClick(product.vendors?.[0]?.name)"
                             target="_blank"
                             rel="noopener"
                             class="btn btn-primary btn-sm"
@@ -810,6 +821,7 @@
                           <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
                             <a
                               :href="addReferral(vendor.url)"
+                              @click="trackStoreClick(vendor.name)"
                               target="_blank"
                               rel="noopener"
                               class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"

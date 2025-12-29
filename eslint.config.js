@@ -16,7 +16,8 @@ export default [
         Alpine: "readonly",
         AbortController: "readonly",
         IntersectionObserver: "readonly",
-        URL: "readonly"
+        URL: "readonly",
+        gtag: "readonly"
       }
     },
     rules: {

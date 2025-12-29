@@ -709,6 +709,14 @@ Alpine.data('productApp', () => ({
     }
   },
 
+  trackStoreClick(storeName) {
+    if (typeof gtag !== 'undefined') {
+      gtag('event', 'store_click', {
+        store_name: storeName,
+      });
+    }
+  },
+
   // ===== NOTIFICATIONS =====
   showToast(message, type = 'info', action = null) {
     this.toast = { message, type, action };
