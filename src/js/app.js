@@ -892,7 +892,7 @@ Alpine.data('trackerApp', () => ({
   get newProducts() {
     const newItems = [];
     // Baseline: ignore products first seen before this (initial tracking load)
-    const trackingBaseline = 1767011758; // 2025-12-29 - baseline for production deploy
+    const trackingBaseline = 1767013292; // 2025-12-29 - after initial production scrape
 
     for (const [productId, product] of Object.entries(this.products)) {
       const history = this.priceHistory[productId];
