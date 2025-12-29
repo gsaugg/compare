@@ -437,6 +437,19 @@ Alpine.data('productApp', () => ({
 
     if (datasets.length === 0) return;
 
+    // Calculate axis bounds from actual data
+    const allPoints = datasets.flatMap((ds) => ds.data);
+    const timestamps = allPoints.map((p) => p.x);
+    const prices = allPoints.map((p) => p.y);
+
+    const minTime = Math.min(...timestamps);
+    const maxTime = Math.max(...timestamps);
+    const timePadding = (maxTime - minTime) * 0.05 || 24 * 60 * 60 * 1000; // 5% or 1 day min
+
+    const minPrice = Math.min(...prices);
+    const maxPrice = Math.max(...prices);
+    const pricePadding = (maxPrice - minPrice) * 0.1 || 1; // 10% or $1 min
+
     this._chartInstance = new Chart(canvas, {
       type: 'line',
       data: { datasets },
@@ -455,14 +468,16 @@ Alpine.data('productApp', () => ({
               displayFormats: { day: 'MMM d' },
               tooltipFormat: 'MMM d, yyyy h:mm a',
             },
-            min: Date.now() - 30 * 24 * 60 * 60 * 1000, // 30 days ago
-            max: Date.now() + 2 * 24 * 60 * 60 * 1000, // 2 days ahead for padding
+            min: minTime - timePadding,
+            max: maxTime + timePadding,
             ticks: {
               maxTicksLimit: 10,
             },
             title: { display: true, text: 'Date' },
           },
           y: {
+            min: Math.max(0, minPrice - pricePadding),
+            max: maxPrice + pricePadding,
             title: { display: true, text: 'Price ($)' },
             ticks: {
               callback: (value) => '$' + value.toFixed(2),
