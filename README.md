@@ -6,8 +6,10 @@ Price comparison tool for Australian gel blaster products. Aggregates pricing fr
 
 ## Features
 
-- Search and filter across 11,500+ products from 15 stores
+- Search and filter across 13,000+ products from 16 stores
 - Compare prices from multiple stores side-by-side
+- **30-day price history** with interactive charts per vendor
+- **Price change badges** (↓/↑ %) for changes within the last 7 days
 - Filter by category, multiple stores, stock status, and price range
 - Sort by price, discount percentage, or name
 - Infinite scroll with auto-loading
@@ -19,7 +21,7 @@ Price comparison tool for Australian gel blaster products. Aggregates pricing fr
 
 ## Tech Stack
 
-- **Frontend:** Alpine.js, Tailwind CSS, DaisyUI, Fuse.js
+- **Frontend:** Alpine.js, Tailwind CSS, DaisyUI, Fuse.js, Chart.js
 - **Scraper:** Python (requests, rapidfuzz, pyahocorasick)
 - **Build:** Vite
 - **Hosting:** GitHub Pages
