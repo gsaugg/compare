@@ -13,6 +13,7 @@ TITLE_CLEANUP_PATTERNS = [
     r"\s*-\s*(Parts\s*&\s*Accessories\s*)?Gel Blaster[s]?\s*(Guns,?\s*)?(Pistols,?\s*)?(Handguns\s*)?(Rifles\s*)?(For Sale)?",
     r"\s*-\s*Gel Blaster\s*(Parts\s*&\s*Accessories\s*)?(For Sale)?",
     r"\s*-\s*For Sale\s*$",
+    r",?\s*(Rifles?|Blasters?|Pistols?)\s*For Sale.*$",  # Strip ", Rifles For Sale" suffix
     r"\s*\|\s*.*$",  # Strip anything after pipe
 ]
 

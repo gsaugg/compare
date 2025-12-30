@@ -15,6 +15,7 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
     "trading_cards": [
         "magic the gathering", "magic: the gathering", "mtg ", " mtg", "pokemon", "pokémon",
         "yu-gi-oh", "yugioh", "trading card", "booster", "tcg", "lorcana",
+        "ixalan", "caverns of", "fist of suns",
     ],
     "collectibles": [
         "funko", "pop vinyl", "anime figure", "marvel legends", "disney figure",
@@ -76,7 +77,7 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "chef's knife", "chef knife", "kitchen knife", "sheepdog knife",
     ],
     "puzzles_games": [
-        "jigsaw puzzle", "chess set", "1000 piece", "pc jigsaw",
+        "jigsaw puzzle", "jigsaw", "chess set", "1000 piece", "pc jigsaw",
         "catan", "soccer table", "football table", "table top game", "air soccer",
         "push rod soccer", "monopoly", "mousetrap", "top trumps", "uno ", " uno",
         "cluedo", "skip bo", "skipbo", "bop it", "scalextric",
@@ -132,6 +133,13 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "polyester cap", "military cap hat", "tactical t-shirt",
         "shirt childrens", "pants childrens", "childrens shorts",
         "childrens/kids caps",
+        # General clothing
+        "t-shirt", "tee shirt", "tank top", "singlet", "hoodie", "sweater",
+        "polo shirt", "jersey", "tracksuit", "trackpants",
+        "combat pants", "combat shorts", "cargo pants", "cargo shorts",
+        "jacket", "windbreaker", "raincoat",
+        "underwear", "socks", "shoes", "boots",
+        "baseball cap", "trucker cap", "snapback",
     ],
     "misc": [
         "water bottle", "summer cat badge",
@@ -142,6 +150,18 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "angus beef", "caramelised onion", "kettles",
         "retroarms sticker", "assorted sticker", "fridge magnet", "custom sticker",
         "card holder", "pro hobbies",
+        # Non-gel-blaster hobby items
+        "cotton swab", "craft cement", "quick-set cement", "epoxy glue",
+        "spray paint", "acrylic paint", "enamel paint",
+        "vallejo", "citadel paint",
+        "storage bottle", "ammunition storage",
+        "soft disc blaster", "foam dart",
+        # Merchandise / promotional items
+        "stubby cooler", "stubby holder", "drink cooler",
+        "thinner 250ml", "acrylic thinner", "x-20a thinner",
+        "graphic design sticker",
+        # RC/hobby glue not for gel blasters
+        "tire glue", "jconcepts",
     ],
     "gift_cards": [
         "gift card", "giftcard",
