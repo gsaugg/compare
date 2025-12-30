@@ -438,7 +438,7 @@
           <section id="products">
             <!-- Loading skeletons -->
             <template x-if="loading">
-              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 grid-6xl">
                 <template x-for="i in 8" :key="i">
                   <div class="card bg-base-100 shadow-md">
                     <figure class="skeleton h-48 w-full"></figure>
@@ -488,7 +488,7 @@
                 <!-- Card view -->
                 <div
                   x-show="viewMode === 'card'"
-                  class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4"
+                  class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 grid-6xl"
                 >
                   <template x-for="product in displayedProducts" :key="product.title">
                     <article

@@ -4,6 +4,17 @@
   themes: all;
 }
 
+@theme {
+  --breakpoint-3xl: 1800px;
+}
+
+/* Force 6 columns on ultrawide - Tailwind v4 breakpoint ordering workaround */
+@media (min-width: 1800px) {
+  .grid-6xl {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
 /* Skeleton animation for loading states */
 @keyframes skeleton-pulse {
   0%,
