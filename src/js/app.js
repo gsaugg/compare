@@ -404,15 +404,15 @@ Alpine.data('productApp', () => ({
 
     let colorIndex = 0;
 
-    // Add vendor lines
+    // Add vendor lines (sale price + regular price)
     if (history.vendors) {
       for (const [vendor, entries] of Object.entries(history.vendors)) {
         if (entries.length === 0) continue;
         const color = colors[colorIndex % colors.length];
         colorIndex++;
 
+        // Sale price line
         const data = entries.map((e) => ({ x: e.t * 1000, y: e.p }));
-        // Extend line to "now" with last known price
         if (data.length > 0) {
           data.push({ x: Date.now(), y: data[data.length - 1].y });
         }
@@ -422,8 +422,26 @@ Alpine.data('productApp', () => ({
           borderColor: color,
           backgroundColor: color + '20',
           stepped: 'after',
-          pointRadius: 3,
+          pointRadius: data.map((_, i) => (i === data.length - 1 ? 6 : 3)),
         });
+
+        // Regular price line - only if any entry has rp different from p
+        const hasRegularPrice = entries.some((e) => e.rp && e.rp !== e.p);
+        if (hasRegularPrice) {
+          const regularPriceData = entries.map((e) => ({ x: e.t * 1000, y: e.rp || e.p }));
+          if (regularPriceData.length > 0) {
+            regularPriceData.push({ x: Date.now(), y: regularPriceData[regularPriceData.length - 1].y });
+          }
+          datasets.push({
+            label: `${vendor} (Non-discount)`,
+            data: regularPriceData,
+            borderColor: color + '80',
+            backgroundColor: 'transparent',
+            borderDash: [5, 5],
+            stepped: 'after',
+            pointRadius: 0,
+          });
+        }
       }
     }
 
@@ -441,9 +459,12 @@ Alpine.data('productApp', () => ({
         backgroundColor: '#22c55e20',
         borderWidth: 3,
         stepped: 'after',
-        pointRadius: 4,
+        pointRadius: lowestData.map((_, i) => (i === lowestData.length - 1 ? 8 : 4)),
       });
     }
+
+    // Current time for "now" line
+    const now = Date.now();
 
     if (datasets.length === 0) return;
 
@@ -460,9 +481,52 @@ Alpine.data('productApp', () => ({
     const maxPrice = Math.max(...prices);
     const pricePadding = (maxPrice - minPrice) * 0.1 || 1; // 10% or $1 min
 
+    // Plugin for "Now" line and price labels
+    const nowLinePlugin = {
+      id: 'nowLine',
+      afterDraw: (chart) => {
+        const { ctx, scales } = chart;
+        const xScale = scales.x;
+        const yScale = scales.y;
+        const nowX = xScale.getPixelForValue(now);
+
+        // Draw vertical "Now" line
+        ctx.save();
+        ctx.beginPath();
+        ctx.setLineDash([5, 5]);
+        ctx.strokeStyle = '#888';
+        ctx.lineWidth = 1;
+        ctx.moveTo(nowX, yScale.top);
+        ctx.lineTo(nowX, yScale.bottom);
+        ctx.stroke();
+
+        // "Now" label at top
+        ctx.fillStyle = '#888';
+        ctx.font = '11px sans-serif';
+        ctx.textAlign = 'center';
+        ctx.fillText('Now', nowX, yScale.top - 5);
+
+        // Price labels at endpoints
+        chart.data.datasets.forEach((dataset) => {
+          if (dataset.data.length === 0 || dataset.label.includes('Non-discount')) return;
+          const lastPoint = dataset.data[dataset.data.length - 1];
+          const x = xScale.getPixelForValue(lastPoint.x);
+          const y = yScale.getPixelForValue(lastPoint.y);
+
+          ctx.fillStyle = dataset.borderColor;
+          ctx.font = 'bold 11px sans-serif';
+          ctx.textAlign = 'left';
+          ctx.fillText(`$${lastPoint.y.toFixed(2)}`, x + 10, y + 4);
+        });
+
+        ctx.restore();
+      },
+    };
+
     this._chartInstance = new Chart(canvas, {
       type: 'line',
       data: { datasets },
+      plugins: [nowLinePlugin],
       options: {
         responsive: true,
         maintainAspectRatio: false,
