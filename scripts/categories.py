@@ -849,8 +849,12 @@ TITLE_CATEGORY_PATTERNS = [
     # Gearbox parts not caught by current patterns
     (r"\banti[- ]?reverse\b|\breverse latch\b", "Gearboxes"),
     (r"\bsector\s*(gear|delay|chip)\b", "Gearboxes"),
-    (r"\bshim\s*(set|kit)?\b", "Internals"),
+    (r"\bshims?\b", "Internals"),  # shim or shims anywhere
     (r"\bpinion\s*gear\b", "Gearboxes"),
+    (r"\bdetent\b", "Gearboxes"),  # anti-reverse detent
+    (r"\bgears?\s*-\s*(shs|cnc|spiral|bevel|pinion|\d+:\d+)", "Gearboxes"),  # "Gears - SHS 12:1" format
+    (r"\b(stainless\s*)?return\b.*\bspring\b|\bspring\b.*\b(stainless\s*)?return\b", "Springs"),  # return springs
+    (r"\bbush(es|ings?)?\s*-\s*\d+\s*mm\b", "Internals"),  # "Bushes - 6mm" format
 
     # Pistol parts
     (r"\bmag\s*lips?\b", "Pistol Parts"),
