@@ -196,7 +196,7 @@ def generate_tracker_data(item_history: dict, matches: list, items: dict, store_
                     if "rp" in entry:
                         vendor_entry["rp"] = entry["rp"]
                     # Add prev field if price changed
-                    if prev_price is not None and abs(entry["p"] - prev_price) >= 0.01:
+                    if prev_price is not None and abs(entry["p"] - prev_price) > 0.005:
                         vendor_entry["prev"] = prev_price
                     # Track stock transitions
                     current_stock = entry.get("s")

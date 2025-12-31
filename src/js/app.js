@@ -387,7 +387,7 @@ Alpine.data('productApp', () => ({
     // Filter to lowest price if "Best Price Only" is selected
     if (this.showVendors === 'best' && vendors.length > 0) {
       const lowestPrice = Math.min(...vendors.map((v) => v.price));
-      vendors = vendors.filter((v) => Math.abs(v.price - lowestPrice) < 0.01);
+      vendors = vendors.filter((v) => Math.abs(v.price - lowestPrice) < 0.005);
     }
 
     // Sort by price, then shuffle within same-price groups for fairness
@@ -398,7 +398,7 @@ Alpine.data('productApp', () => ({
     while (i < vendors.length) {
       // Collect vendors with the same price
       const group = [vendors[i]];
-      while (i + 1 < vendors.length && Math.abs(vendors[i + 1].price - vendors[i].price) < 0.01) {
+      while (i + 1 < vendors.length && Math.abs(vendors[i + 1].price - vendors[i].price) < 0.005) {
         i++;
         group.push(vendors[i]);
       }
@@ -427,7 +427,8 @@ Alpine.data('productApp', () => ({
 
   isLowestPrice(product, vendor) {
     // Check if this vendor is at the lowest price for the product
-    return Math.abs(vendor.price - product.lowestPrice) < 0.01;
+    // Use 0.005 tolerance (half a cent) to avoid floating point issues with 1-cent differences
+    return Math.abs(vendor.price - product.lowestPrice) < 0.005;
   },
 
   openPriceChart(product) {

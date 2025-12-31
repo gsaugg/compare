@@ -123,9 +123,9 @@ def record_item(
     last_rp = last.get("rp")
     last_stock = last.get("s", True)  # Default True for legacy entries
 
-    price_changed = abs(price - last_price) >= 0.01
+    price_changed = abs(price - last_price) > 0.005
     # rp changed if: both exist and differ, or one exists and other doesn't
-    rp_changed = (rp is not None and last_rp is not None and abs(rp - last_rp) >= 0.01) or (
+    rp_changed = (rp is not None and last_rp is not None and abs(rp - last_rp) > 0.005) or (
         (rp is None) != (last_rp is None)
     )
     stock_changed = in_stock != last_stock
