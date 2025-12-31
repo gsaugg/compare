@@ -473,86 +473,32 @@
                       class="card bg-base-100 shadow-md transition-all duration-200 hover:scale-[1.02] hover:shadow-lg"
                       :class="{ 'opacity-60': !product.inStock }"
                     >
-                      <a
-                        :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                        target="_blank"
-                        rel="noopener"
-                        class="block"
-                      >
-                        <figure class="bg-base-300 relative h-48 overflow-visible">
-                          <img
-                            x-show="product.image"
-                            :src="product.image"
-                            :alt="product.title"
-                            class="h-full w-full object-contain"
-                            loading="lazy"
-                            @error="$el.classList.add('hidden'); $el.nextElementSibling.classList.remove('hidden')"
-                          />
-                          <div
-                            class="text-base-content/30 flex h-full w-full items-center justify-center"
-                            :class="product.image ? 'hidden' : ''"
-                          >
-                            No Image
-                          </div>
-                          <!-- Discount badge -->
-                          <template x-if="getDiscountPercent(product) >= 1">
-                            <div class="badge badge-error absolute top-2 right-2 font-bold">
-                              <span
-                                x-text="`${Math.round(getDiscountPercent(product))}% OFF`"
-                              ></span>
-                            </div>
-                          </template>
-                          <!-- Price change badge -->
-                          <template x-if="getPriceChange(product)">
-                            <button
-                              @click.prevent="openPriceChart(product)"
-                              class="badge absolute top-2 left-2 font-bold tooltip tooltip-bottom tooltip-wrap cursor-pointer hover:scale-110 transition-transform z-10"
-                              :class="getPriceChange(product).direction === 'down' ? 'badge-success' : 'badge-warning'"
-                              :data-tip="getPriceChange(product).direction === 'down'
-                                ? `Price dropped from $${getPriceChange(product).previousPrice.toFixed(2)} this week`
-                                : `Price increased from $${getPriceChange(product).previousPrice.toFixed(2)} this week`"
-                            >
-                              <span
-                                x-text="(getPriceChange(product).direction === 'down' ? '↓' : '↑') + Math.round(getPriceChange(product).percent) + '%'"
-                              ></span>
-                            </button>
-                          </template>
-                        </figure>
-                      </a>
+                      <figure class="bg-base-300 relative h-48 overflow-visible">
+                        <img
+                          x-show="product.image"
+                          :src="product.image"
+                          :alt="product.title"
+                          class="h-full w-full object-contain"
+                          loading="lazy"
+                          @error="$el.classList.add('hidden'); $el.nextElementSibling.classList.remove('hidden')"
+                        />
+                        <div
+                          class="text-base-content/30 flex h-full w-full items-center justify-center"
+                          :class="product.image ? 'hidden' : ''"
+                        >
+                          No Image
+                        </div>
+                      </figure>
                       <div class="card-body p-4">
-                        <a
-                          :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                          target="_blank"
-                          rel="noopener"
-                          class="card-title hover:text-primary line-clamp-2 text-sm"
+                        <h2
+                          class="card-title line-clamp-2 text-sm"
                           x-text="product.title"
-                        ></a>
-                        <p class="text-base-content/70 text-xs">
-                          <span x-text="product.vendors?.[0]?.name || ''"></span>
-                          <button
-                            x-show="product.vendors?.length > 1 && showVendors === 'best'"
-                            @click.prevent="toggleExpanded(product.id)"
-                            class="badge badge-ghost badge-xs hover:badge-primary ml-1 cursor-pointer"
-                            x-text="isExpanded(product.id) ? 'collapse' : `+${product.vendors.length - 1} more`"
-                          ></button>
-                        </p>
-                        <template x-if="product.category">
-                          <span
-                            class="badge badge-outline badge-sm"
-                            x-text="product.category"
-                          ></span>
-                        </template>
+                        ></h2>
                         <div class="mt-2 flex flex-wrap items-center gap-2">
                           <span
                             class="text-primary text-lg font-bold"
                             x-text="`$${product.lowestPrice.toFixed(2)}`"
                           ></span>
-                          <template x-if="product.vendors?.[0]?.regularPrice > product.lowestPrice">
-                            <span
-                              class="text-base-content/60 text-sm line-through"
-                              x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
-                            ></span>
-                          </template>
                           <!-- Price chart button -->
                           <button
                             x-show="trackerData[product.id]"
@@ -565,64 +511,63 @@
                               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                             </svg>
                           </button>
+                          <template x-if="product.category">
+                            <span
+                              class="badge badge-outline badge-sm"
+                              x-text="product.category"
+                            ></span>
+                          </template>
                           <span
-                            class="badge ml-auto"
-                            :class="product.inStock ? 'badge-success' : 'badge-error'"
-                            x-text="product.inStock ? 'In Stock' : 'Out of Stock'"
+                            class="text-base-content/60 text-sm"
+                            x-text="`· ${product.vendors.length} ${product.vendors.length === 1 ? 'store' : 'stores'} (${product.vendors.filter(v => v.inStock !== false).length} in stock)`"
                           ></span>
                         </div>
 
-                        <!-- View at Store button -->
-                        <a
-                          :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                          @click="trackStoreClick(product.vendors?.[0]?.name)"
-                          target="_blank"
-                          rel="noopener"
-                          class="btn btn-primary btn-sm mt-2 w-full"
-                        >
-                          View at Store →
-                        </a>
-
-                        <!-- Other vendors -->
-                        <template
-                          x-if="(showVendors === 'all' || isExpanded(product.id)) && product.vendors?.length > 1"
-                        >
-                          <div class="border-base-200 mt-3 space-y-1 border-t pt-3">
-                            <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
-                              <a
-                                :href="addReferral(vendor.url)"
-                                @click="trackStoreClick(vendor.name)"
-                                target="_blank"
-                                rel="noopener"
-                                class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
-                                :class="{ 'opacity-50': !vendor.inStock }"
-                              >
+                        <!-- Vendor buttons -->
+                        <div class="mt-2 space-y-1" x-data="{ get vendors() { return getDisplayVendors(product) } }">
+                          <template x-for="vendor in vendors" :key="vendor.url">
+                            <a
+                              :href="addReferral(vendor.url)"
+                              @click="trackStoreClick(vendor.name)"
+                              target="_blank"
+                              rel="noopener"
+                              class="btn w-full flex justify-between items-center flex-wrap gap-y-1 h-auto min-h-0 py-2"
+                              :class="{
+                                'btn-primary btn-sm': isLowestPrice(product, vendor),
+                                'btn-outline btn-xs': !isLowestPrice(product, vendor)
+                              }"
+                            >
+                              <span class="flex items-center gap-1.5">
+                                <!-- Stock indicator -->
+                                <span
+                                  class="inline-block h-2 w-2 rounded-full flex-shrink-0"
+                                  :class="vendor.inStock ? 'bg-success' : 'bg-error'"
+                                ></span>
                                 <span x-text="vendor.name" class="truncate"></span>
-                                <span class="flex items-center gap-1.5">
+                                <!-- Price change badge (only on cheapest) -->
+                                <template x-if="isLowestPrice(product, vendor) && getVendorPriceChange(product, vendor.name)">
                                   <span
-                                    x-text="`$${vendor.price.toFixed(2)}`"
-                                    class="font-semibold"
+                                    class="badge badge-xs"
+                                    :class="getVendorPriceChange(product, vendor.name).direction === 'down' ? 'badge-success' : 'badge-warning'"
+                                    x-text="(getVendorPriceChange(product, vendor.name).direction === 'down' ? '↓' : '↑') + Math.round(getVendorPriceChange(product, vendor.name).percent) + '% ' + (getVendorPriceChange(product, vendor.name).direction === 'down' ? 'drop' : 'rise')"
                                   ></span>
-                                  <template x-if="vendor.regularPrice > vendor.price">
-                                    <span
-                                      class="text-base-content/60 line-through"
-                                      x-text="`$${vendor.regularPrice.toFixed(2)}`"
-                                    ></span>
-                                  </template>
+                                </template>
+                                <!-- Discount badge (only on cheapest) -->
+                                <template x-if="isLowestPrice(product, vendor) && getVendorDiscountPercent(vendor) >= 1">
                                   <span
-                                    class="tooltip tooltip-left"
-                                    :data-tip="vendor.inStock ? 'In Stock' : 'Out of Stock'"
-                                  >
-                                    <span
-                                      class="inline-block h-2 w-2 rounded-full"
-                                      :class="vendor.inStock ? 'bg-success' : 'bg-error'"
-                                    ></span>
-                                  </span>
-                                </span>
-                              </a>
-                            </template>
-                          </div>
-                        </template>
+                                    class="badge badge-success badge-xs whitespace-nowrap"
+                                    x-text="Math.round(getVendorDiscountPercent(vendor)) + '% off'"
+                                  ></span>
+                                </template>
+                              </span>
+                              <span class="whitespace-nowrap" x-text="`$${vendor.price.toFixed(2)}`"></span>
+                            </a>
+                          </template>
+                          <!-- No vendors message -->
+                          <template x-if="vendors.length === 0">
+                            <span class="text-base-content/50 text-xs">No vendors in stock</span>
+                          </template>
+                        </div>
                       </div>
                     </article>
                   </template>
@@ -655,67 +600,15 @@
                         <!-- Content -->
                         <div class="min-w-0 flex-1">
                           <!-- Row 1: Title -->
-                          <a
-                            :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                            target="_blank"
-                            rel="noopener"
-                            class="hover:text-primary line-clamp-2 font-medium sm:line-clamp-1"
+                          <h2
+                            class="line-clamp-2 font-medium sm:line-clamp-1"
                             x-text="product.title"
-                          ></a>
-                          <!-- Row 2: Price + View -->
-                          <div class="mt-1 flex items-center justify-between gap-2">
-                            <div>
-                              <span
-                                class="text-primary font-bold"
-                                x-text="`$${product.lowestPrice.toFixed(2)}`"
-                              ></span>
-                              <template x-if="product.vendors?.[0]?.regularPrice > product.lowestPrice">
-                                <span
-                                  class="text-base-content/60 ml-1 text-xs line-through"
-                                  x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
-                                ></span>
-                              </template>
-                            </div>
-                            <a
-                              :href="addReferral(product.vendors?.[0]?.url) || '#'"
-                              @click="trackStoreClick(product.vendors?.[0]?.name)"
-                              target="_blank"
-                              rel="noopener"
-                              class="btn btn-primary btn-sm"
-                            >
-                              View
-                            </a>
-                          </div>
-                          <!-- Row 3: Store + Badges -->
-                          <div class="text-base-content/70 mt-1 flex flex-wrap items-center gap-x-2 gap-y-1 text-xs">
-                            <span x-text="product.vendors?.[0]?.name || ''"></span>
-                            <button
-                              x-show="product.vendors?.length > 1 && showVendors === 'best'"
-                              @click.prevent="toggleExpanded(product.id)"
-                              class="badge badge-ghost badge-xs hover:badge-primary cursor-pointer"
-                              x-text="isExpanded(product.id) ? 'collapse' : `+${product.vendors.length - 1} more`"
-                            ></button>
-                            <!-- Discount badge -->
-                            <template x-if="getDiscountPercent(product) >= 1">
-                              <span
-                                class="badge badge-error badge-sm"
-                                x-text="`${Math.round(getDiscountPercent(product))}%`"
-                              ></span>
-                            </template>
-                            <!-- Price change badge -->
-                            <template x-if="getPriceChange(product)">
-                              <button
-                                @click.prevent="openPriceChart(product)"
-                                class="badge badge-sm cursor-pointer transition-transform hover:scale-110"
-                                :class="getPriceChange(product).direction === 'down' ? 'badge-success' : 'badge-warning'"
-                                x-text="(getPriceChange(product).direction === 'down' ? '↓' : '↑') + Math.round(getPriceChange(product).percent) + '%'"
-                              ></button>
-                            </template>
-                            <!-- Stock badge -->
+                          ></h2>
+                          <!-- Row 2: Price + Chart + Category + Store count -->
+                          <div class="mt-1 flex flex-wrap items-center gap-2">
                             <span
-                              class="badge badge-sm"
-                              :class="product.inStock ? 'badge-success' : 'badge-error'"
-                              x-text="product.inStock ? 'In Stock' : 'OOS'"
+                              class="text-primary font-bold"
+                              x-text="`$${product.lowestPrice.toFixed(2)}`"
                             ></span>
                             <!-- Price chart button -->
                             <button
@@ -729,49 +622,64 @@
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
                               </svg>
                             </button>
+                            <template x-if="product.category">
+                              <span
+                                class="badge badge-outline badge-sm"
+                                x-text="product.category"
+                              ></span>
+                            </template>
+                            <span
+                              class="text-base-content/60 text-sm"
+                              x-text="`· ${product.vendors.length} ${product.vendors.length === 1 ? 'store' : 'stores'} (${product.vendors.filter(v => v.inStock !== false).length} in stock)`"
+                            ></span>
+                          </div>
+                          <!-- Vendor buttons -->
+                          <div class="mt-2 space-y-1" x-data="{ get vendors() { return getDisplayVendors(product) } }">
+                            <template x-for="vendor in vendors" :key="vendor.url">
+                              <a
+                                :href="addReferral(vendor.url)"
+                                @click="trackStoreClick(vendor.name)"
+                                target="_blank"
+                                rel="noopener"
+                                class="flex items-center justify-between rounded px-2 flex-wrap gap-y-1"
+                                :class="{
+                                  'bg-primary text-primary-content py-1.5 text-sm font-semibold': isLowestPrice(product, vendor),
+                                  'border border-base-300 hover:bg-base-200 py-1 text-xs': !isLowestPrice(product, vendor)
+                                }"
+                              >
+                                <span class="flex items-center gap-1.5">
+                                  <!-- Stock indicator -->
+                                  <span
+                                    class="inline-block h-2 w-2 rounded-full flex-shrink-0"
+                                    :class="vendor.inStock ? 'bg-success' : 'bg-error'"
+                                  ></span>
+                                  <span x-text="vendor.name" class="truncate"></span>
+                                  <!-- Price change badge (only on cheapest) -->
+                                  <template x-if="isLowestPrice(product, vendor) && getVendorPriceChange(product, vendor.name)">
+                                    <span
+                                      class="badge badge-xs"
+                                      :class="getVendorPriceChange(product, vendor.name).direction === 'down' ? 'badge-success' : 'badge-warning'"
+                                      x-text="(getVendorPriceChange(product, vendor.name).direction === 'down' ? '↓' : '↑') + Math.round(getVendorPriceChange(product, vendor.name).percent) + '% ' + (getVendorPriceChange(product, vendor.name).direction === 'down' ? 'drop' : 'rise')"
+                                    ></span>
+                                  </template>
+                                  <!-- Discount badge (only on cheapest) -->
+                                  <template x-if="isLowestPrice(product, vendor) && getVendorDiscountPercent(vendor) >= 1">
+                                    <span
+                                      class="badge badge-success badge-xs whitespace-nowrap"
+                                      x-text="Math.round(getVendorDiscountPercent(vendor)) + '% off'"
+                                    ></span>
+                                  </template>
+                                </span>
+                                <span class="whitespace-nowrap font-semibold" x-text="`$${vendor.price.toFixed(2)}`"></span>
+                              </a>
+                            </template>
+                            <!-- No vendors message -->
+                            <template x-if="vendors.length === 0">
+                              <span class="text-base-content/50 text-xs">No vendors in stock</span>
+                            </template>
                           </div>
                         </div>
                       </div>
-                      <!-- Expanded vendors in list view -->
-                      <template
-                        x-if="(showVendors === 'all' || isExpanded(product.id)) && product.vendors?.length > 1"
-                      >
-                        <div class="border-base-200 mx-3 mb-3 space-y-1 border-t pt-2">
-                          <template x-for="vendor in product.vendors.slice(1)" :key="vendor.url">
-                            <a
-                              :href="addReferral(vendor.url)"
-                              @click="trackStoreClick(vendor.name)"
-                              target="_blank"
-                              rel="noopener"
-                              class="bg-base-200/50 hover:bg-base-200 flex items-center justify-between rounded px-2 py-1 text-xs"
-                              :class="{ 'opacity-50': !vendor.inStock }"
-                            >
-                              <span x-text="vendor.name" class="truncate"></span>
-                              <span class="flex items-center gap-1.5">
-                                <span
-                                  x-text="`$${vendor.price.toFixed(2)}`"
-                                  class="font-semibold"
-                                ></span>
-                                <template x-if="vendor.regularPrice > vendor.price">
-                                  <span
-                                    class="text-base-content/60 line-through"
-                                    x-text="`$${vendor.regularPrice.toFixed(2)}`"
-                                  ></span>
-                                </template>
-                                <span
-                                  class="tooltip tooltip-left"
-                                  :data-tip="vendor.inStock ? 'In Stock' : 'Out of Stock'"
-                                >
-                                  <span
-                                    class="inline-block h-2 w-2 rounded-full"
-                                    :class="vendor.inStock ? 'bg-success' : 'bg-error'"
-                                  ></span>
-                                </span>
-                              </span>
-                            </a>
-                          </template>
-                        </div>
-                      </template>
                     </article>
                   </template>
                 </div>

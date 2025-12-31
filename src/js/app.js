@@ -122,7 +122,6 @@ Alpine.data('productApp', () => ({
   toast: null,
   showVendors: 'best',
   searchTags: false,
-  expandedProducts: {},
   _searchCache: new Map(),
   showScrollTop: false,
   viewMode: 'card',
@@ -347,45 +346,88 @@ Alpine.data('productApp', () => ({
     }
   },
 
-  getPriceChange(product) {
-    // Returns { percent, direction, previousPrice } or null if no recent change
+  getVendorPriceChange(product, vendorName) {
+    // Returns { percent, direction, previousPrice, currentPrice } or null
     const history = this.trackerData[product.id];
-    if (!history?.lowest?.length) return null;
+    if (!history?.vendors?.[vendorName]) return null;
 
     const cutoff = Math.floor(Date.now() / 1000) - PRICE_CHANGE_DAYS * 24 * 60 * 60;
-    const entries = history.lowest;
+    const entries = history.vendors[vendorName];
+    if (entries.length < 2) return null;
 
-    // Find the most recent entry with a previous price
-    for (let i = entries.length - 1; i >= 0; i--) {
-      const entry = entries[i];
-      if (entry.t >= cutoff && entry.prev !== undefined) {
-        const percent = ((entry.prev - entry.p) / entry.prev) * 100;
-        const direction = percent > 0 ? 'down' : 'up';
-
-        // For price increases, only show if the SAME vendor raised their price
-        // (not when a sale ended at a different store and the lowest shifted)
-        if (direction === 'up') {
-          if (i > 0) {
-            const prevEntry = entries[i - 1];
-            // If vendor changed, don't show increase (it's a sale ending elsewhere)
-            if (prevEntry.v && entry.v && prevEntry.v !== entry.v) {
-              return null;
-            }
-          } else {
-            // No previous entry to compare - can't verify same vendor, don't show increase
-            return null;
-          }
-        }
-
+    // Find the most recent price change within the cutoff period
+    for (let i = entries.length - 1; i >= 1; i--) {
+      const current = entries[i];
+      const previous = entries[i - 1];
+      // Check if the change happened within the cutoff period and prices differ
+      if (current.t >= cutoff && current.p !== previous.p) {
+        const percent = ((previous.p - current.p) / previous.p) * 100;
         return {
           percent: Math.abs(percent),
-          direction,
-          previousPrice: entry.prev,
-          currentPrice: entry.p,
+          direction: percent > 0 ? 'down' : 'up',
+          previousPrice: previous.p,
+          currentPrice: current.p,
         };
       }
     }
     return null;
+  },
+
+  getDisplayVendors(product) {
+    // Returns vendors to display based on showVendors and stock filters
+    if (!product.vendors?.length) return [];
+
+    let vendors = [...product.vendors];
+
+    // Filter by stock if "In Stock Only" is selected
+    if (this.stock === 'instock') {
+      vendors = vendors.filter((v) => v.inStock !== false);
+    }
+
+    // Filter to lowest price if "Best Price Only" is selected
+    if (this.showVendors === 'best' && vendors.length > 0) {
+      const lowestPrice = Math.min(...vendors.map((v) => v.price));
+      vendors = vendors.filter((v) => Math.abs(v.price - lowestPrice) < 0.01);
+    }
+
+    // Sort by price, then shuffle within same-price groups for fairness
+    // Within each price group: in-stock first (shuffled), then out-of-stock (shuffled)
+    vendors.sort((a, b) => a.price - b.price);
+    const result = [];
+    let i = 0;
+    while (i < vendors.length) {
+      // Collect vendors with the same price
+      const group = [vendors[i]];
+      while (i + 1 < vendors.length && Math.abs(vendors[i + 1].price - vendors[i].price) < 0.01) {
+        i++;
+        group.push(vendors[i]);
+      }
+      // Split into in-stock and out-of-stock
+      const inStock = group.filter((v) => v.inStock !== false);
+      const outOfStock = group.filter((v) => v.inStock === false);
+      // Shuffle each subgroup (Fisher-Yates)
+      const shuffle = (arr) => {
+        for (let j = arr.length - 1; j > 0; j--) {
+          const k = Math.floor(Math.random() * (j + 1));
+          [arr[j], arr[k]] = [arr[k], arr[j]];
+        }
+        return arr;
+      };
+      result.push(...shuffle(inStock), ...shuffle(outOfStock));
+      i++;
+    }
+
+    return result;
+  },
+
+  getVendorDiscountPercent(vendor) {
+    if (!vendor.regularPrice || vendor.price >= vendor.regularPrice) return 0;
+    return ((vendor.regularPrice - vendor.price) / vendor.regularPrice) * 100;
+  },
+
+  isLowestPrice(product, vendor) {
+    // Check if this vendor is at the lowest price for the product
+    return Math.abs(vendor.price - product.lowestPrice) < 0.01;
   },
 
   openPriceChart(product) {
@@ -752,15 +794,6 @@ Alpine.data('productApp', () => ({
     return maxDiscount;
   },
 
-  // Keep these for template compatibility (use pre-computed values)
-  getDiscountPercent(product) {
-    return product._discountPercent ?? 0;
-  },
-
-  getDiscountDollars(product) {
-    return product._discountDollars ?? 0;
-  },
-
   // ===== URL HANDLING =====
   loadFiltersFromURL() {
     const params = new URLSearchParams(window.location.search);
@@ -785,8 +818,8 @@ Alpine.data('productApp', () => ({
     if (this.search.trim()) params.set('q', this.search.trim());
     if (this.category) params.set('category', this.category);
     if (this.selectedVendors.length > 0) params.set('stores', this.selectedVendors.join(','));
-    if (this.stock) params.set('stock', this.stock);
-    if (this.sort && this.sort !== 'relevance') params.set('sort', this.sort);
+    if (this.stock !== 'instock') params.set('stock', this.stock);
+    if (this.sort !== 'discount-pct') params.set('sort', this.sort);
     if (this.perPage !== String(DEFAULT_PER_PAGE)) params.set('perPage', this.perPage);
     if (this.showVendors !== 'best') params.set('showVendors', this.showVendors);
     if (this.searchTags) params.set('searchTags', 'true');
@@ -808,14 +841,6 @@ Alpine.data('productApp', () => ({
     this.maxPrice = null;
     this.sort = 'discount-pct';
     this.searchTags = false;
-  },
-
-  toggleExpanded(productId) {
-    this.expandedProducts[productId] = !this.expandedProducts[productId];
-  },
-
-  isExpanded(productId) {
-    return !!this.expandedProducts[productId];
   },
 
   // ===== REFERRAL TRACKING =====
