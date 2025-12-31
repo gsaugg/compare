@@ -43,6 +43,11 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "rc tire glue", "hobby knife set", "servo horn", "servo saver",
         # Nitro RC fuel
         "glo-max", "nitro fuel", "% nitro",
+        # Additional RC brands and products
+        "rc4wd", "hobao", "henglong", "t-rc 1/10",
+        "monster truck", "touring car", "semi truck", "high speed car",
+        "rc boat", "rc racing boat", "rowing boat",
+        "fms 1:10", "fms 1/10", "scissor jack",
     ],
     "rc_tanks": [
         "rc tank 2.4ghz", "rc tank 1/16", "sherman usa m4", "tiger i rc", "panzer rc",
@@ -173,6 +178,9 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
     "display_replicas": [
         "(model only)", "model only)",
     ],
+    "gaming_consoles": [
+        "retro gaming console", "gaming console", "game console",
+    ],
 }
 
 # Flatten for use in filtering
@@ -213,6 +221,9 @@ EXCLUDED_TAGS_BY_CATEGORY = {
     ],
     "diecast": [
         "fast & furious", "dice set",
+    ],
+    "gaming": [
+        "retro gaming",
     ],
 }
 
@@ -258,6 +269,9 @@ EXCLUDED_CATEGORIES_BY_CATEGORY = {
         "2nd hand", "custom shop", "mini blind bags", "tape", "knife",
         "energy drinks", "cosplay corner", "hobby and sport", "hobbies and sports",
         "camouflage netting", "laser pistols", "laser pistol",
+    ],
+    "gaming": [
+        "console",
     ],
 }
 

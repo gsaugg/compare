@@ -360,9 +360,26 @@ Alpine.data('productApp', () => ({
       const entry = entries[i];
       if (entry.t >= cutoff && entry.prev !== undefined) {
         const percent = ((entry.prev - entry.p) / entry.prev) * 100;
+        const direction = percent > 0 ? 'down' : 'up';
+
+        // For price increases, only show if the SAME vendor raised their price
+        // (not when a sale ended at a different store and the lowest shifted)
+        if (direction === 'up') {
+          if (i > 0) {
+            const prevEntry = entries[i - 1];
+            // If vendor changed, don't show increase (it's a sale ending elsewhere)
+            if (prevEntry.v && entry.v && prevEntry.v !== entry.v) {
+              return null;
+            }
+          } else {
+            // No previous entry to compare - can't verify same vendor, don't show increase
+            return null;
+          }
+        }
+
         return {
           percent: Math.abs(percent),
-          direction: percent > 0 ? 'down' : 'up',
+          direction,
           previousPrice: entry.prev,
           currentPrice: entry.p,
         };
