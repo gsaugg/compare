@@ -425,10 +425,10 @@ Alpine.data('productApp', () => ({
           pointRadius: data.map((_, i) => (i === data.length - 1 ? 6 : 3)),
         });
 
-        // Regular price line - only if any entry has rp different from p
-        const hasRegularPrice = entries.some((e) => e.rp && e.rp !== e.p);
+        // Regular price line - only if any entry has rp greater than p (valid discount)
+        const hasRegularPrice = entries.some((e) => e.rp && e.rp > e.p);
         if (hasRegularPrice) {
-          const regularPriceData = entries.map((e) => ({ x: e.t * 1000, y: e.rp || e.p }));
+          const regularPriceData = entries.filter((e) => e.rp > e.p).map((e) => ({ x: e.t * 1000, y: e.rp }));
           if (regularPriceData.length > 0) {
             regularPriceData.push({ x: Date.now(), y: regularPriceData[regularPriceData.length - 1].y });
           }

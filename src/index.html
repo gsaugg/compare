@@ -569,7 +569,7 @@
                             class="text-primary text-lg font-bold"
                             x-text="`$${product.lowestPrice.toFixed(2)}`"
                           ></span>
-                          <template x-if="product.vendors?.[0]?.regularPrice">
+                          <template x-if="product.vendors?.[0]?.regularPrice > product.lowestPrice">
                             <span
                               class="text-base-content/60 text-sm line-through"
                               x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
@@ -625,7 +625,7 @@
                                     x-text="`$${vendor.price.toFixed(2)}`"
                                     class="font-semibold"
                                   ></span>
-                                  <template x-if="vendor.regularPrice">
+                                  <template x-if="vendor.regularPrice > vendor.price">
                                     <span
                                       class="text-base-content/60 line-through"
                                       x-text="`$${vendor.regularPrice.toFixed(2)}`"
@@ -691,7 +691,7 @@
                                 class="text-primary font-bold"
                                 x-text="`$${product.lowestPrice.toFixed(2)}`"
                               ></span>
-                              <template x-if="product.vendors?.[0]?.regularPrice">
+                              <template x-if="product.vendors?.[0]?.regularPrice > product.lowestPrice">
                                 <span
                                   class="text-base-content/60 ml-1 text-xs line-through"
                                   x-text="`$${product.vendors[0].regularPrice.toFixed(2)}`"
@@ -774,7 +774,7 @@
                                   x-text="`$${vendor.price.toFixed(2)}`"
                                   class="font-semibold"
                                 ></span>
-                                <template x-if="vendor.regularPrice">
+                                <template x-if="vendor.regularPrice > vendor.price">
                                   <span
                                     class="text-base-content/60 line-through"
                                     x-text="`$${vendor.regularPrice.toFixed(2)}`"
