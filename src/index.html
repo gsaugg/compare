@@ -13,24 +13,7 @@
         Skip to products
       </a>
 
-      <!-- Header -->
-      <header class="navbar bg-primary text-primary-content shadow-lg sticky top-0 z-40">
-        <div class="flex-none">
-          <a href="#" @click.prevent="window.scrollTo({top: 0, behavior: 'smooth'})" class="text-xl font-bold hover:opacity-80 cursor-pointer">GSAU.gg</a>
-        </div>
-        <div class="mx-4 max-w-md flex-1">
-          <input
-            type="text"
-            id="search"
-            x-model.debounce.300ms="search"
-            placeholder="Search products... (press /)"
-            class="input input-sm input-bordered bg-primary-content/10 text-primary-content placeholder:text-primary-content/50 w-full"
-          />
-        </div>
-        <div class="flex-none">
-          {{> theme-selector}}
-        </div>
-      </header>
+      {{> header}}
 
       <!-- Main content -->
       <main class="flex flex-1 flex-col lg:flex-row">
@@ -325,11 +308,6 @@
               </div>
               <div class="text-base-content/70 mt-2 text-center text-xs" x-show="lastUpdated">
                 Updated: <span x-text="lastUpdated"></span>
-              </div>
-              <div class="mt-2 flex flex-wrap justify-center gap-3 text-xs">
-                <a href="tracker.html" class="link link-primary">Price Tracker</a>
-                <a href="status.html" class="link link-primary">Status</a>
-                <a href="about.html" class="link link-primary">About</a>
               </div>
             </div>
 
@@ -814,8 +792,6 @@
           </section>
         </div>
       </main>
-
-      {{> footer}}
 
       <!-- Price History Chart Modal -->
       <template x-if="chartModal">

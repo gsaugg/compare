@@ -5,16 +5,7 @@
   </head>
   <body class="bg-base-200 min-h-screen">
     <div x-data class="flex min-h-screen flex-col">
-      <!-- Header -->
-      <header class="navbar bg-primary text-primary-content shadow-lg">
-        <div class="flex-1">
-          <a href="index.html" class="text-xl font-bold hover:opacity-80">GSAU.gg</a>
-          <p class="ml-4 hidden text-sm opacity-80 sm:block">About This Project</p>
-        </div>
-        <div class="flex-none">
-          {{> theme-selector}}
-        </div>
-      </header>
+      {{> header}}
 
       <!-- Main content -->
       <main class="flex-1 p-4">
@@ -121,7 +112,6 @@
         </div>
       </main>
 
-      {{> footer}}
     </div>
 
     <script type="module" src="./js/theme.js"></script>

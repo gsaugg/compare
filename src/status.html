@@ -5,18 +5,7 @@
   </head>
   <body class="bg-base-200 min-h-screen">
     <div x-data="statusApp" class="flex min-h-screen flex-col">
-      <!-- Header -->
-      <header class="navbar bg-primary text-primary-content shadow-lg">
-        <div class="flex-1">
-          <h1 class="text-xl font-bold">Scraper Status</h1>
-          <p class="ml-4 hidden text-sm opacity-80 sm:block">
-            <a href="index.html" class="hover:underline">GSAU.gg</a> - Store Statistics
-          </p>
-        </div>
-        <div class="flex-none">
-          {{> theme-selector}}
-        </div>
-      </header>
+      {{> header}}
 
       <!-- Main content -->
       <main class="flex-1 p-4">
@@ -316,7 +305,6 @@
         </div>
       </main>
 
-      {{> footer}}
     </div>
 
     <script type="module" src="./js/app.js"></script>
