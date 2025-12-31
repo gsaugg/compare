@@ -38,7 +38,8 @@
             </svg>
             <span
               >Times shown are when we detected changes, not when stores updated prices. We scan
-              roughly every hour. Filter updates may occasionally cause items to appear as new.</span
+              roughly every hour. "New" means new to our tracker—when we add a new store, all their
+              products appear as new.</span
             >
           </div>
 
@@ -46,8 +47,8 @@
           <template x-if="loading">
             <div class="space-y-6">
               <!-- Summary skeletons -->
-              <div class="grid grid-cols-3 gap-4">
-                <template x-for="i in 3" :key="i">
+              <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
+                <template x-for="i in 4" :key="i">
                   <div class="card bg-base-100 p-4 shadow-md">
                     <div class="skeleton mx-auto h-8 w-16"></div>
                     <div class="skeleton mx-auto mt-2 h-3 w-20"></div>
@@ -87,7 +88,7 @@
           <template x-if="!loading && !error">
             <div class="space-y-6">
               <!-- Summary cards -->
-              <div class="grid grid-cols-3 gap-4">
+              <div class="grid grid-cols-2 gap-4 sm:grid-cols-4">
                 <div class="card bg-base-100 p-4 text-center shadow-md">
                   <div class="text-success text-3xl font-bold tabular-nums">
                     <span class="mr-1">↓</span><span x-text="stats.drops"></span>
@@ -105,6 +106,12 @@
                     <span class="mr-1">+</span><span x-text="stats.newItems"></span>
                   </div>
                   <div class="text-base-content/70 text-sm">New Products</div>
+                </div>
+                <div class="card bg-base-100 p-4 text-center shadow-md">
+                  <div class="text-secondary text-3xl font-bold tabular-nums">
+                    <span class="mr-1">⟳</span><span x-text="stats.stockChanges"></span>
+                  </div>
+                  <div class="text-base-content/70 text-sm">Stock Changes</div>
                 </div>
               </div>
 
@@ -145,6 +152,12 @@
                             </template>
                             <template x-if="change.type === 'price' && change.direction === 'up'">
                               <span class="badge badge-warning whitespace-nowrap">↑ Rise</span>
+                            </template>
+                            <template x-if="change.type === 'back-in-stock'">
+                              <span class="badge badge-success whitespace-nowrap">✓ Back in Stock</span>
+                            </template>
+                            <template x-if="change.type === 'out-of-stock'">
+                              <span class="badge badge-error whitespace-nowrap">✗ Out of Stock</span>
                             </template>
                           </td>
                           <td>
@@ -199,7 +212,12 @@
                           </td>
                           <td class="text-right">
                             <template x-if="change.type === 'new'">
-                              <span class="font-semibold tabular-nums" x-text="`$${change.price.toFixed(2)}`"></span>
+                              <div class="flex flex-col items-end">
+                                <span class="font-semibold tabular-nums" x-text="`$${change.price.toFixed(2)}`"></span>
+                                <template x-if="change.inStock === false">
+                                  <span class="text-error text-xs">Out of Stock</span>
+                                </template>
+                              </div>
                             </template>
                             <template x-if="change.type === 'price'">
                               <div class="flex flex-col items-end">
@@ -216,6 +234,9 @@
                                   x-text="`${change.direction === 'down' ? '↓' : '↑'}${Math.abs(change.percentChange).toFixed(1)}%`"
                                 ></span>
                               </div>
+                            </template>
+                            <template x-if="change.type === 'back-in-stock' || change.type === 'out-of-stock'">
+                              <span class="font-semibold tabular-nums" x-text="`$${change.price.toFixed(2)}`"></span>
                             </template>
                           </td>
                         </tr>

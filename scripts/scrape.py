@@ -476,7 +476,7 @@ def main():
     print(f"  {price_stats['new']} new, {price_stats['changed']} changed, "
           f"{price_stats['unchanged']} unchanged")
 
-    # Generate frontend files (products.json, price-history.json)
+    # Generate frontend files (products.json, tracker-data.json)
     print()
     print("Generating frontend data...")
     products, _ = generate_frontend_data(
@@ -520,7 +520,7 @@ def main():
             "inStock": total_in_stock,
             "outOfStock": total_out_of_stock,
         },
-        "priceHistory": price_stats,
+        "tracking": price_stats,
     }
     with open(STATS_FILE, "w") as f:
         json.dump(stats_output, f, indent=2)

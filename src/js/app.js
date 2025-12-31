@@ -126,7 +126,7 @@ Alpine.data('productApp', () => ({
   _searchCache: new Map(),
   showScrollTop: false,
   viewMode: 'card',
-  priceHistory: {},
+  trackerData: {},
   chartModal: null, // { product, chart } when open
   _chartInstance: null,
 
@@ -334,13 +334,13 @@ Alpine.data('productApp', () => ({
   // ===== PRICE HISTORY =====
   async loadPriceHistory() {
     try {
-      const response = await this.fetchWithTimeout('./data/price-history.json', FETCH_TIMEOUT_MS);
+      const response = await this.fetchWithTimeout('./data/tracker-data.json', FETCH_TIMEOUT_MS);
       if (!response.ok) {
         console.warn('Price history not available');
         return;
       }
       const data = await response.json();
-      this.priceHistory = data.history || {};
+      this.trackerData = data.history || {};
     } catch (err) {
       // Price history is optional, don't show error to user
       console.warn('Could not load price history:', err.message);
@@ -349,7 +349,7 @@ Alpine.data('productApp', () => ({
 
   getPriceChange(product) {
     // Returns { percent, direction, previousPrice } or null if no recent change
-    const history = this.priceHistory[product.id];
+    const history = this.trackerData[product.id];
     if (!history?.lowest?.length) return null;
 
     const cutoff = Math.floor(Date.now() / 1000) - PRICE_CHANGE_DAYS * 24 * 60 * 60;
@@ -388,7 +388,7 @@ Alpine.data('productApp', () => ({
     if (!this.chartModal || !canvas) return;
 
     const product = this.chartModal.product;
-    const history = this.priceHistory[product.id];
+    const history = this.trackerData[product.id];
     if (!history) return;
 
     // Prepare datasets for each vendor
@@ -928,7 +928,7 @@ Alpine.data('statusApp', () => ({
 // ========== TRACKER APP COMPONENT ==========
 Alpine.data('trackerApp', () => ({
   // ===== STATE =====
-  priceHistory: {},
+  trackerData: {},
   products: {},
   loading: true,
   error: null,
@@ -945,7 +945,7 @@ Alpine.data('trackerApp', () => ({
   get priceChanges() {
     const changes = [];
 
-    for (const [productId, history] of Object.entries(this.priceHistory)) {
+    for (const [productId, history] of Object.entries(this.trackerData)) {
       const product = this.products[productId];
       if (!product) continue;
 
@@ -985,7 +985,7 @@ Alpine.data('trackerApp', () => ({
     const trackingBaseline = 1767013292; // 2025-12-29 - after initial production scrape
 
     for (const [productId, product] of Object.entries(this.products)) {
-      const history = this.priceHistory[productId];
+      const history = this.trackerData[productId];
 
       // No history = brand new (just added, not yet scraped into history)
       if (!history) {
@@ -1001,6 +1001,7 @@ Alpine.data('trackerApp', () => ({
           vendorUrl: firstVendor?.url || '#',
           timestamp: Math.floor(Date.now() / 1000),
           price: product.lowestPrice,
+          inStock: product.inStock,
         });
         continue;
       }
@@ -1036,6 +1037,7 @@ Alpine.data('trackerApp', () => ({
           vendorUrl: firstVendor?.url || '#',
           timestamp: earliestTimestamp,
           price: product.lowestPrice,
+          inStock: product.inStock,
         });
       }
     }
@@ -1043,9 +1045,47 @@ Alpine.data('trackerApp', () => ({
     return newItems.sort((a, b) => b.timestamp - a.timestamp);
   },
 
+  get stockChanges() {
+    const changes = [];
+    // Baseline: ignore stock changes before stock tracking was deployed
+    const stockBaseline = 1767149439; // 2025-12-31 - stock tracking deployment
+
+    for (const [productId, history] of Object.entries(this.trackerData)) {
+      const product = this.products[productId];
+      if (!product) continue;
+
+      for (const [vendor, entries] of Object.entries(history.vendors || {})) {
+        for (const entry of entries) {
+          if (
+            entry.stockPrev !== undefined &&
+            entry.t >= this.cutoffTimestamp &&
+            entry.t > stockBaseline
+          ) {
+            const vendorData = product.vendors?.find((v) => v.name === vendor);
+            changes.push({
+              id: `stock-${productId}-${vendor}-${entry.t}`,
+              type: entry.s ? 'back-in-stock' : 'out-of-stock',
+              productId,
+              productTitle: product.title,
+              productImage: product.image,
+              productCategory: product.category,
+              vendor,
+              vendorUrl: vendorData?.url || '#',
+              timestamp: entry.t,
+              price: entry.p,
+            });
+          }
+        }
+      }
+    }
+    return changes.sort((a, b) => b.timestamp - a.timestamp);
+  },
+
   get allChanges() {
-    // Combine price changes and new products, sorted by time
-    return [...this.priceChanges, ...this.newProducts].sort((a, b) => b.timestamp - a.timestamp);
+    // Combine price changes, stock changes, and new products, sorted by time
+    return [...this.priceChanges, ...this.stockChanges, ...this.newProducts].sort(
+      (a, b) => b.timestamp - a.timestamp,
+    );
   },
 
   get stats() {
@@ -1053,6 +1093,7 @@ Alpine.data('trackerApp', () => ({
       drops: this.priceChanges.filter((c) => c.direction === 'down').length,
       increases: this.priceChanges.filter((c) => c.direction === 'up').length,
       newItems: this.newProducts.length,
+      stockChanges: this.stockChanges.length,
     };
   },
 
@@ -1068,7 +1109,7 @@ Alpine.data('trackerApp', () => ({
       this.loading = true;
 
       const [historyRes, productsRes] = await Promise.all([
-        this.fetchWithTimeout('./data/price-history.json', FETCH_TIMEOUT_MS),
+        this.fetchWithTimeout('./data/tracker-data.json', FETCH_TIMEOUT_MS),
         this.fetchWithTimeout('./data/products.json', FETCH_TIMEOUT_MS),
       ]);
 
@@ -1078,7 +1119,7 @@ Alpine.data('trackerApp', () => ({
       const historyData = await historyRes.json();
       const productsData = await productsRes.json();
 
-      this.priceHistory = historyData.history || {};
+      this.trackerData = historyData.history || {};
 
       // Build product lookup map by ID
       this.products = {};

@@ -10,7 +10,6 @@ PROJECT_ROOT = SCRIPT_DIR.parent
 STORES_FILE = PROJECT_ROOT / "stores.json"
 OUTPUT_FILE = PROJECT_ROOT / "public" / "data" / "products.json"
 STATS_FILE = PROJECT_ROOT / "public" / "data" / "stats.json"
-HISTORY_FILE = PROJECT_ROOT / "public" / "data" / "price-history.json"
 RAW_DATA_DIR = PROJECT_ROOT / ".cache" / "raw"  # Cache for offline mode
 
 # Price history settings

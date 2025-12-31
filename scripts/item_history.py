@@ -1,5 +1,5 @@
 """
-Item-level price history tracking.
+Item-level history tracking (price and stock).
 
 Simpler flat structure: one entry list per item_id.
 Items are tracked at variant level with stable IDs.
@@ -10,7 +10,7 @@ Structure:
     "history": {
         "ceh|123|456": [
             {"t": 1703880000, "p": 319.00},
-            {"t": 1704052800, "p": 299.00, "rp": 350.00}
+            {"t": 1704052800, "p": 299.00, "rp": 350.00, "s": true}
         ]
     }
 }
@@ -19,6 +19,7 @@ Fields:
 - t: timestamp
 - p: price (current/sale price)
 - rp: regular price (optional, only when on sale)
+- s: stock status (optional, only when tracking or changed)
 
 Each item_id is: storeId|productId|variantId
 This uniquely identifies a specific variant at a specific store.
@@ -71,29 +72,33 @@ def save_history(history_data: dict) -> None:
     )
 
 
-def get_last_price(history_data: dict, item_id: str) -> float | None:
-    """Get the most recent price for an item."""
+def get_last_entry(history_data: dict, item_id: str) -> dict | None:
+    """Get the most recent history entry for an item."""
     entries = history_data.get("history", {}).get(item_id)
     if not entries:
         return None
 
-    # Return the last entry's price
-    return entries[-1]["p"]
+    return entries[-1]
 
 
-def record_price(
-    history_data: dict, item_id: str, price: float, regular_price: float | None = None
+def record_item(
+    history_data: dict,
+    item_id: str,
+    price: float,
+    regular_price: float | None = None,
+    in_stock: bool = True,
 ) -> bool:
-    """Record a price for an item if it changed.
+    """Record item state if it changed.
 
     Args:
         history_data: The history data dict
         item_id: Item identifier (storeId|productId|variantId)
         price: Current price (sale price when on sale)
         regular_price: Regular/compare price (optional, only when on sale)
+        in_stock: Whether item is in stock
 
     Returns:
-        True if a new entry was recorded (price or regular_price changed, or new item)
+        True if a new entry was recorded (price, regular_price, or stock changed, or new item)
     """
     if "history" not in history_data:
         history_data["history"] = {}
@@ -105,28 +110,33 @@ def record_price(
     entries = history_data["history"].get(item_id)
 
     if entries is None:
-        # New item
-        entry = {"t": now, "p": price}
+        # New item - always record initial stock
+        entry = {"t": now, "p": price, "s": in_stock}
         if rp:
             entry["rp"] = rp
         history_data["history"][item_id] = [entry]
         return True
 
-    # Check if price or regular_price changed from last entry
+    # Check if price, regular_price, or stock changed from last entry
     last = entries[-1]
     last_price = last["p"]
     last_rp = last.get("rp")
+    last_stock = last.get("s", True)  # Default True for legacy entries
 
     price_changed = abs(price - last_price) >= 0.01
     # rp changed if: both exist and differ, or one exists and other doesn't
     rp_changed = (rp is not None and last_rp is not None and abs(rp - last_rp) >= 0.01) or (
         (rp is None) != (last_rp is None)
     )
+    stock_changed = in_stock != last_stock
 
-    if price_changed or rp_changed:
+    if price_changed or rp_changed or stock_changed:
         entry = {"t": now, "p": price}
         if rp:
             entry["rp"] = rp
+        # Include stock if changed or if we're already tracking it
+        if stock_changed or last.get("s") is not None:
+            entry["s"] = in_stock
         entries.append(entry)
         return True
 
@@ -183,10 +193,10 @@ def cleanup_orphaned_items(history_data: dict, current_item_ids: set[str]) -> in
 
 
 def track_items(items: dict, history_data: dict) -> dict:
-    """Track price changes for all items.
+    """Track item changes (price and stock) for all items.
 
     Args:
-        items: Dict of item_id -> item data (must have 'price' field, optionally 'regularPrice')
+        items: Dict of item_id -> item data (must have 'price' field, optionally 'regularPrice', 'inStock')
         history_data: The history data dict to update
 
     Returns:
@@ -200,18 +210,19 @@ def track_items(items: dict, history_data: dict) -> dict:
             continue
 
         regular_price = item.get("regularPrice")
-        last_price = get_last_price(history_data, item_id)
+        in_stock = item.get("inStock", True)
+        last_entry = get_last_entry(history_data, item_id)
 
-        if last_price is None:
-            record_price(history_data, item_id, price, regular_price)
+        if last_entry is None:
+            record_item(history_data, item_id, price, regular_price, in_stock)
             stats["new"] += 1
-        elif record_price(history_data, item_id, price, regular_price):
+        elif record_item(history_data, item_id, price, regular_price, in_stock):
             stats["changed"] += 1
         else:
             stats["unchanged"] += 1
 
     logger.info(
-        f"Price tracking: {stats['new']} new, {stats['changed']} changed, "
+        f"Item tracking: {stats['new']} new, {stats['changed']} changed, "
         f"{stats['unchanged']} unchanged"
     )
 

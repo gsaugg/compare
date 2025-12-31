@@ -577,7 +577,7 @@
                           </template>
                           <!-- Price chart button -->
                           <button
-                            x-show="priceHistory[product.id]"
+                            x-show="trackerData[product.id]"
                             @click.prevent="openPriceChart(product)"
                             class="btn btn-ghost btn-xs btn-circle"
                             aria-label="View price history"
@@ -741,7 +741,7 @@
                             ></span>
                             <!-- Price chart button -->
                             <button
-                              x-show="priceHistory[product.id]"
+                              x-show="trackerData[product.id]"
                               @click.prevent="openPriceChart(product)"
                               class="btn btn-ghost btn-xs btn-circle"
                               aria-label="View price history"

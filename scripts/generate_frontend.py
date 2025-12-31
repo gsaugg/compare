@@ -2,7 +2,7 @@
 Frontend data generator.
 
 Transforms normalized data (items, matches, item-history) into
-denormalized frontend files (products.json, price-history.json).
+denormalized frontend files (products.json, tracker-data.json).
 
 The frontend consumes the same format as before - this module
 handles the conversion from our internal normalized structure.
@@ -19,7 +19,7 @@ DATA_DIR = PROJECT_ROOT / "public" / "data"
 ITEMS_FILE = DATA_DIR / "items.json"
 MATCHES_FILE = DATA_DIR / "matches.json"
 PRODUCTS_FILE = DATA_DIR / "products.json"
-PRICE_HISTORY_FILE = DATA_DIR / "price-history.json"
+TRACKER_DATA_FILE = DATA_DIR / "tracker-data.json"
 
 
 def load_store_names() -> dict[str, str]:
@@ -145,19 +145,20 @@ def generate_products(items: dict, matches: list, store_names: dict) -> list:
     return products
 
 
-def generate_price_history(item_history: dict, matches: list, items: dict, store_names: dict) -> dict:
-    """Generate price-history.json from item history and matches.
+def generate_tracker_data(item_history: dict, matches: list, items: dict, store_names: dict) -> dict:
+    """Generate tracker-data.json from item history and matches.
 
     Transforms per-item history into per-product history with vendor breakdown.
+    Includes price changes and stock transitions.
 
     Args:
-        item_history: Dict with 'history' key containing per-item price history
+        item_history: Dict with 'history' key containing per-item history
         matches: List of match groups
         items: Dict of item_id -> item data
         store_names: Store ID -> name mapping
 
     Returns:
-        Price history dict in frontend format
+        Tracker data dict in frontend format
     """
     history_entries = item_history.get("history", {})
 
@@ -185,8 +186,10 @@ def generate_price_history(item_history: dict, matches: list, items: dict, store
 
             if item_entries:
                 # Convert to vendor history format with prev field for price changes
+                # and stockPrev field for stock transitions
                 vendor_history = []
                 prev_price = None
+                prev_stock = None
                 for entry in item_entries:
                     vendor_entry = {"t": entry["t"], "p": entry["p"]}
                     # Include regular price if present (for detecting fake sales)
@@ -195,6 +198,13 @@ def generate_price_history(item_history: dict, matches: list, items: dict, store
                     # Add prev field if price changed
                     if prev_price is not None and abs(entry["p"] - prev_price) >= 0.01:
                         vendor_entry["prev"] = prev_price
+                    # Track stock transitions
+                    current_stock = entry.get("s")
+                    if current_stock is not None:
+                        vendor_entry["s"] = current_stock
+                        if prev_stock is not None and current_stock != prev_stock:
+                            vendor_entry["stockPrev"] = prev_stock
+                        prev_stock = current_stock
                     vendor_history.append(vendor_entry)
                     prev_price = entry["p"]
 
@@ -262,14 +272,14 @@ def save_products(products: list, last_updated: str, store_count: int) -> None:
     logger.info(f"Saved {len(products)} products to {PRODUCTS_FILE}")
 
 
-def save_price_history(price_history: dict) -> None:
-    """Save price-history.json."""
+def save_tracker_data(tracker_data: dict) -> None:
+    """Save tracker-data.json."""
     DATA_DIR.mkdir(parents=True, exist_ok=True)
-    with open(PRICE_HISTORY_FILE, "w") as f:
-        json.dump(price_history, f, separators=(",", ":"))
+    with open(TRACKER_DATA_FILE, "w") as f:
+        json.dump(tracker_data, f, separators=(",", ":"))
 
-    product_count = len(price_history.get("history", {}))
-    logger.info(f"Saved price history for {product_count} products to {PRICE_HISTORY_FILE}")
+    product_count = len(tracker_data.get("history", {}))
+    logger.info(f"Saved tracker data for {product_count} products to {TRACKER_DATA_FILE}")
 
 
 def generate_frontend_data(
@@ -284,24 +294,24 @@ def generate_frontend_data(
     Args:
         items: Dict of item_id -> item data
         matches: List of match groups
-        item_history: Item-level price history
+        item_history: Item-level history (price and stock)
         last_updated: ISO timestamp
         store_count: Number of enabled stores
 
     Returns:
-        Tuple of (products list, price_history dict)
+        Tuple of (products list, tracker_data dict)
     """
     store_names = load_store_names()
 
     # Generate products
     products = generate_products(items, matches, store_names)
 
-    # Generate price history
-    price_history = generate_price_history(item_history, matches, items, store_names)
-    price_history["lastUpdated"] = last_updated
+    # Generate tracker data (price and stock history)
+    tracker_data = generate_tracker_data(item_history, matches, items, store_names)
+    tracker_data["lastUpdated"] = last_updated
 
     # Save files
     save_products(products, last_updated, store_count)
-    save_price_history(price_history)
+    save_tracker_data(tracker_data)
 
-    return products, price_history
+    return products, tracker_data
