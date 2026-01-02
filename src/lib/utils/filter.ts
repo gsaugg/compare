@@ -50,10 +50,55 @@ export function filterProducts(products: Product[], filters: FilterState): Produ
 	return result;
 }
 
+/**
+ * Get the best discount for a product across all vendors
+ * Returns { dollars, percent } where dollars is the absolute savings
+ */
+function getBestDiscount(product: Product): { dollars: number; percent: number } {
+	let bestDollars = 0;
+	let bestPercent = 0;
+
+	for (const vendor of product.vendors) {
+		if (vendor.regularPrice && vendor.regularPrice > vendor.price) {
+			const dollars = vendor.regularPrice - vendor.price;
+			const percent = (dollars / vendor.regularPrice) * 100;
+
+			if (dollars > bestDollars) {
+				bestDollars = dollars;
+				bestPercent = percent;
+			}
+		}
+	}
+
+	return { dollars: bestDollars, percent: bestPercent };
+}
+
 function sortProducts(products: Product[], sortBy: FilterState['sortBy']): Product[] {
 	const sorted = [...products];
 
 	switch (sortBy) {
+		case 'discount-$':
+			sorted.sort((a, b) => {
+				const discountA = getBestDiscount(a).dollars;
+				const discountB = getBestDiscount(b).dollars;
+				// Items with no discount go to bottom
+				if (discountA === 0 && discountB === 0) return 0;
+				if (discountA === 0) return 1;
+				if (discountB === 0) return -1;
+				return discountB - discountA;
+			});
+			break;
+		case 'discount-%':
+			sorted.sort((a, b) => {
+				const discountA = getBestDiscount(a).percent;
+				const discountB = getBestDiscount(b).percent;
+				// Items with no discount go to bottom
+				if (discountA === 0 && discountB === 0) return 0;
+				if (discountA === 0) return 1;
+				if (discountB === 0) return -1;
+				return discountB - discountA;
+			});
+			break;
 		case 'price-asc':
 			sorted.sort((a, b) => a.lowestPrice - b.lowestPrice);
 			break;

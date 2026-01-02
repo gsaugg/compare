@@ -205,68 +205,85 @@
 				</p>
 			</div>
 
-			<!-- View toggle (mobile only) -->
-			{#if !showSidebar}
-				<div
-					class="flex items-center gap-1 rounded-md border border-border p-0.5"
-					role="group"
-					aria-label="View mode"
+			<div class="flex items-center gap-2">
+				<!-- Sort dropdown -->
+				<select
+					value={filters.value.sortBy}
+					onchange={(e) => filters.setSortBy(e.currentTarget.value as typeof filters.value.sortBy)}
+					class="h-8 rounded-md border border-input bg-background px-2 text-sm focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"
+					aria-label="Sort products"
 				>
-					<button
-						type="button"
-						onclick={() => viewMode.set('grid')}
-						class="flex h-7 w-7 items-center justify-center rounded transition-colors {viewMode.value ===
-						'grid'
-							? 'bg-primary text-primary-foreground'
-							: 'text-muted-foreground hover:bg-muted hover:text-foreground'}"
-						aria-label="Grid view"
-						aria-pressed={viewMode.value === 'grid'}
+					<option value="discount-$">Best Deals ($)</option>
+					<option value="discount-%">Best Deals (%)</option>
+					<option value="price-asc">Price: Low → High</option>
+					<option value="price-desc">Price: High → Low</option>
+					<option value="name-asc">Name: A → Z</option>
+					<option value="name-desc">Name: Z → A</option>
+				</select>
+
+				<!-- View toggle (mobile only) -->
+				{#if !showSidebar}
+					<div
+						class="flex items-center gap-1 rounded-md border border-border p-0.5"
+						role="group"
+						aria-label="View mode"
 					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+						<button
+							type="button"
+							onclick={() => viewMode.set('grid')}
+							class="flex h-7 w-7 items-center justify-center rounded transition-colors {viewMode.value ===
+							'grid'
+								? 'bg-primary text-primary-foreground'
+								: 'text-muted-foreground hover:bg-muted hover:text-foreground'}"
+							aria-label="Grid view"
+							aria-pressed={viewMode.value === 'grid'}
 						>
-							<rect width="7" height="7" x="3" y="3" rx="1" />
-							<rect width="7" height="7" x="14" y="3" rx="1" />
-							<rect width="7" height="7" x="14" y="14" rx="1" />
-							<rect width="7" height="7" x="3" y="14" rx="1" />
-						</svg>
-					</button>
-					<button
-						type="button"
-						onclick={() => viewMode.set('list')}
-						class="flex h-7 w-7 items-center justify-center rounded transition-colors {viewMode.value ===
-						'list'
-							? 'bg-primary text-primary-foreground'
-							: 'text-muted-foreground hover:bg-muted hover:text-foreground'}"
-						aria-label="List view"
-						aria-pressed={viewMode.value === 'list'}
-					>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="16"
-							height="16"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							stroke-width="2"
-							stroke-linecap="round"
-							stroke-linejoin="round"
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<rect width="7" height="7" x="3" y="3" rx="1" />
+								<rect width="7" height="7" x="14" y="3" rx="1" />
+								<rect width="7" height="7" x="14" y="14" rx="1" />
+								<rect width="7" height="7" x="3" y="14" rx="1" />
+							</svg>
+						</button>
+						<button
+							type="button"
+							onclick={() => viewMode.set('list')}
+							class="flex h-7 w-7 items-center justify-center rounded transition-colors {viewMode.value ===
+							'list'
+								? 'bg-primary text-primary-foreground'
+								: 'text-muted-foreground hover:bg-muted hover:text-foreground'}"
+							aria-label="List view"
+							aria-pressed={viewMode.value === 'list'}
 						>
-							<line x1="3" x2="21" y1="6" y2="6" />
-							<line x1="3" x2="21" y1="12" y2="12" />
-							<line x1="3" x2="21" y1="18" y2="18" />
-						</svg>
-					</button>
-				</div>
-			{/if}
+							<svg
+								xmlns="http://www.w3.org/2000/svg"
+								width="16"
+								height="16"
+								viewBox="0 0 24 24"
+								fill="none"
+								stroke="currentColor"
+								stroke-width="2"
+								stroke-linecap="round"
+								stroke-linejoin="round"
+							>
+								<line x1="3" x2="21" y1="6" y2="6" />
+								<line x1="3" x2="21" y1="12" y2="12" />
+								<line x1="3" x2="21" y1="18" y2="18" />
+							</svg>
+						</button>
+					</div>
+				{/if}
+			</div>
 		</div>
 
 		<!-- Main content with optional sidebar -->

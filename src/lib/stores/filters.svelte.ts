@@ -10,7 +10,14 @@ export interface FilterState {
 	maxPrice: number | null;
 	inStockOnly: boolean;
 	onSaleOnly: boolean;
-	sortBy: 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc' | 'newest';
+	sortBy:
+		| 'discount-$'
+		| 'discount-%'
+		| 'price-asc'
+		| 'price-desc'
+		| 'name-asc'
+		| 'name-desc'
+		| 'newest';
 }
 
 // Default filter state
@@ -22,11 +29,13 @@ export const defaultFilters: FilterState = {
 	maxPrice: null,
 	inStockOnly: true,
 	onSaleOnly: false,
-	sortBy: 'price-asc'
+	sortBy: 'discount-$'
 };
 
 // Valid sort options for validation
 const VALID_SORT_OPTIONS: FilterState['sortBy'][] = [
+	'discount-$',
+	'discount-%',
 	'price-asc',
 	'price-desc',
 	'name-asc',
@@ -51,7 +60,7 @@ function parseSortBy(value: string | null): FilterState['sortBy'] {
 	if (value && VALID_SORT_OPTIONS.includes(value as FilterState['sortBy'])) {
 		return value as FilterState['sortBy'];
 	}
-	return 'price-asc';
+	return 'discount-$';
 }
 
 /**
@@ -170,7 +179,7 @@ function syncToUrl(state: FilterState) {
 	if (state.maxPrice !== null) params.set('max', String(state.maxPrice));
 	if (!state.inStockOnly) params.set('instock', '0');
 	if (state.onSaleOnly) params.set('sale', '1');
-	if (state.sortBy !== 'price-asc') params.set('sort', state.sortBy);
+	if (state.sortBy !== 'discount-$') params.set('sort', state.sortBy);
 
 	const url = params.toString() ? `?${params.toString()}` : window.location.pathname;
 	replaceState(url, {});
