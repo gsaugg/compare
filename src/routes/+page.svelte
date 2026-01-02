@@ -296,7 +296,7 @@
 			{/if}
 
 			<!-- Product grid/list section -->
-			<section class="flex-1" aria-label="Product listings">
+			<section class="min-w-0 flex-1" aria-label="Product listings">
 				<VirtualProductGrid
 					products={filteredProducts}
 					{columns}

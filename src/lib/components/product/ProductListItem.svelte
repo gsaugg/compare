@@ -64,7 +64,7 @@
 </script>
 
 <!-- List item container -->
-<div class="flex w-full gap-3 rounded-lg border border-border bg-card p-3 pr-5">
+<div class="flex w-full gap-3 rounded-lg border border-border bg-card p-3">
 	<!-- Thumbnail - tapping opens price history modal -->
 	<button
 		type="button"
