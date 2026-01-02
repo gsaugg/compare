@@ -49,11 +49,12 @@ function applyTheme(theme: Theme): void {
 
 function createThemeStore() {
 	// Initialize from localStorage or default to 'system'
-	let currentTheme = $state<Theme>(getStoredTheme() ?? 'system');
+	const initialTheme = getStoredTheme() ?? 'system';
+	let currentTheme = $state<Theme>(initialTheme);
 
-	// Apply initial theme
+	// Apply initial theme (use initialTheme to avoid reactive state warning)
 	if (browser) {
-		applyTheme(currentTheme);
+		applyTheme(initialTheme);
 
 		// Listen for system preference changes
 		// Use a named function so we can properly reference it
