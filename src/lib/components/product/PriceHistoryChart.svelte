@@ -440,8 +440,8 @@
 					<Table.Row>
 						<Table.Head>Date</Table.Head>
 						<Table.Head>Vendor</Table.Head>
-						<Table.Head class="text-right">Sale</Table.Head>
-						<Table.Head class="text-right">Regular</Table.Head>
+						<Table.Head class="text-right">Price</Table.Head>
+						<Table.Head class="text-right">Was</Table.Head>
 					</Table.Row>
 				</Table.Header>
 				<Table.Body>
@@ -453,12 +453,12 @@
 							<Table.Cell
 								class="text-right tabular-nums {isOnSale
 									? 'font-medium text-price-drop'
-									: 'text-muted-foreground'}"
+									: 'font-medium'}"
 							>
-								{isOnSale ? formatPrice(row.price) : '-'}
+								{formatPrice(row.price)}
 							</Table.Cell>
-							<Table.Cell class="text-right font-medium tabular-nums">
-								{formatPrice(row.regularPrice ?? row.price)}
+							<Table.Cell class="text-right tabular-nums text-muted-foreground">
+								{isOnSale ? formatPrice(row.regularPrice!) : '-'}
 							</Table.Cell>
 						</Table.Row>
 					{/each}
