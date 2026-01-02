@@ -376,7 +376,6 @@ CATEGORY_MAP = {
     "ar7 l.e.": "Parts",
     "40 max": "Parts",
     "aw": "Pistol Parts",
-    "aw custom": "Pistol Parts",
     "rc": "Parts",
     "summer cat": "Parts",
     # Blaster model categories

@@ -41,19 +41,31 @@ def is_valid_sku(sku: str | None) -> bool:
     return True
 
 
+def normalize_sku(sku: str) -> str:
+    """Normalize SKU for matching.
+
+    - Uppercase for case-insensitive matching
+    - Strip parenthetical suffixes with leading space (e.g., "G296A (Short)" -> "G296A")
+
+    Examples:
+        "G296A (Short)" -> "G296A"
+        "BYT-05T (TAN)" -> "BYT-05T"
+        "M938-20 (NYLON)" -> "M938-20"
+        "CAPA-01(BK)" -> "CAPA-01(BK)" (no space, kept as-is)
+    """
+    sku = sku.upper().strip()
+    # Remove parenthetical suffix only if preceded by space
+    sku = re.sub(r"\s+\([^)]+\)\s*$", "", sku)
+    return sku
+
+
 def normalize_title(title: str) -> str:
     """Normalize title for fuzzy matching.
 
-    Strips colors, punctuation, normalizes whitespace.
+    Removes punctuation (except hyphens), normalizes whitespace and case.
+    Colors are preserved to ensure exact product matching.
     """
     title = title.lower().strip()
-    # Remove common color suffixes
-    title = re.sub(
-        r"\s*[-–]\s*(black|tan|od|green|fde|grey|gray|white|red|blue|pink|orange|camo|multicam)\s*$",
-        "",
-        title,
-        flags=re.IGNORECASE,
-    )
     # Remove punctuation except hyphens in product codes
     title = re.sub(r"[^\w\s-]", "", title)
     # Normalize whitespace
@@ -61,14 +73,19 @@ def normalize_title(title: str) -> str:
     return title.strip()
 
 
-def generate_title_id(title: str) -> str:
+def generate_title_id(title: str, use_raw: bool = False) -> str:
     """Generate a stable ID from title using hash.
 
     Uses first 8 chars of MD5 hash for reasonable uniqueness
     while keeping IDs short.
+
+    Args:
+        title: The product title
+        use_raw: If True, use raw title instead of normalized (for unique IDs
+                 when same-store items have similar normalized titles)
     """
-    normalized = normalize_title(title)
-    hash_str = hashlib.md5(normalized.encode()).hexdigest()[:8]
+    text = title.lower().strip() if use_raw else normalize_title(title)
+    hash_str = hashlib.md5(text.encode()).hexdigest()[:8]
     return f"title-{hash_str}"
 
 
@@ -102,13 +119,16 @@ def match_items(items: dict) -> list[dict]:
     # normalized_title -> match group (for title-based matching)
     title_groups: dict[str, dict] = {}
 
+    # Track which stores are in each group (group_id -> set of store_ids)
+    group_stores: dict[str, set] = {}
+
     # Track all matches for efficient lookup
     all_matches: list[dict] = []
 
     # Keys for fuzzy matching (normalized titles)
     title_keys: list[str] = []
 
-    stats = {"sku_matches": 0, "fuzzy_matches": 0, "new_groups": 0}
+    stats = {"sku_matches": 0, "fuzzy_matches": 0, "new_groups": 0, "same_store_skipped": 0}
 
     # Sort items for deterministic matching
     sorted_items = sorted(items.items(), key=lambda x: (normalize_title(x[1]["title"]), x[0]))
@@ -116,58 +136,89 @@ def match_items(items: dict) -> list[dict]:
     for item_id, item in sorted_items:
         sku = item.get("sku")
         title = item.get("title", "")
+        store_id = item.get("storeId")
         normalized = normalize_title(title)
 
         matched = False
 
         # 1. Try SKU match first (if item has valid SKU)
         if is_valid_sku(sku):
-            sku_upper = sku.upper()  # Normalize SKU case
-            if sku_upper in sku_groups:
-                # Found SKU match
-                sku_groups[sku_upper]["items"].append(item_id)
-                stats["sku_matches"] += 1
-                matched = True
+            sku_normalized = normalize_sku(sku)
+            if sku_normalized in sku_groups:
+                match_group = sku_groups[sku_normalized]
+                # Only match if from a different store (cross-store matching only)
+                if store_id not in group_stores.get(match_group["id"], set()):
+                    match_group["items"].append(item_id)
+                    group_stores[match_group["id"]].add(store_id)
+                    stats["sku_matches"] += 1
+                    matched = True
+                else:
+                    stats["same_store_skipped"] += 1
 
         # 2. Try fuzzy title match (if no SKU match)
+        # Use token_sort_ratio to ignore word order differences
         if not matched and title_keys:
             result = process.extractOne(
-                normalized, title_keys, scorer=fuzz.ratio, score_cutoff=FUZZY_THRESHOLD
+                normalized, title_keys, scorer=fuzz.token_sort_ratio, score_cutoff=FUZZY_THRESHOLD
             )
             if result:
                 match_key = result[0]
                 match_group = title_groups[match_key]
-                match_group["items"].append(item_id)
 
-                # Also register this item's SKU for future matches
-                if is_valid_sku(sku):
-                    sku_upper = sku.upper()
-                    if sku_upper not in sku_groups:
-                        sku_groups[sku_upper] = match_group
-                        # Upgrade match type to SKU if it was title-based
-                        if match_group["matchedBy"] == "title":
-                            match_group["matchedBy"] = "sku"
-                            match_group["id"] = f"sku-{sku_upper}"
+                # Only match if from a different store (cross-store matching only)
+                old_group_id = match_group["id"]
+                if store_id not in group_stores.get(old_group_id, set()):
+                    match_group["items"].append(item_id)
+                    group_stores[old_group_id].add(store_id)
 
-                stats["fuzzy_matches"] += 1
-                matched = True
+                    # Also register this item's SKU for future matches
+                    if is_valid_sku(sku):
+                        sku_normalized = normalize_sku(sku)
+                        if sku_normalized not in sku_groups:
+                            sku_groups[sku_normalized] = match_group
+                            # Upgrade match type to SKU if it was title-based
+                            if match_group["matchedBy"] == "title":
+                                match_group["matchedBy"] = "sku"
+                                new_group_id = f"sku-{sku_normalized}"
+                                match_group["id"] = new_group_id
+                                # Update group_stores with new ID
+                                group_stores[new_group_id] = group_stores.pop(old_group_id)
+
+                    stats["fuzzy_matches"] += 1
+                    matched = True
+                else:
+                    stats["same_store_skipped"] += 1
 
         # 3. Create new group if no match found
         if not matched:
             if is_valid_sku(sku):
-                sku_upper = sku.upper()
-                match_id = f"sku-{sku_upper}"
+                sku_normalized = normalize_sku(sku)
+                match_id = f"sku-{sku_normalized}"
                 match_type = "sku"
             else:
                 match_id = generate_title_id(title)
+                # If ID already exists (same-store items with similar normalized titles),
+                # use raw title to generate a unique ID
+                if match_id in group_stores:
+                    match_id = generate_title_id(title, use_raw=True)
                 match_type = "title"
+
+            # Ensure ID is unique by adding counter suffix if needed
+            base_id = match_id
+            counter = 1
+            while match_id in group_stores:
+                counter += 1
+                match_id = f"{base_id}-{counter}"
 
             new_group = {"id": match_id, "matchedBy": match_type, "items": [item_id]}
             all_matches.append(new_group)
 
+            # Track which stores are in this group
+            group_stores[match_id] = {store_id}
+
             # Register in appropriate lookup
             if is_valid_sku(sku):
-                sku_groups[sku.upper()] = new_group
+                sku_groups[sku_normalized] = new_group
 
             title_groups[normalized] = new_group
             title_keys.append(normalized)
@@ -176,7 +227,8 @@ def match_items(items: dict) -> list[dict]:
 
     log.info(
         f"Matching complete: {stats['new_groups']} groups, "
-        f"{stats['sku_matches']} SKU matches, {stats['fuzzy_matches']} fuzzy matches"
+        f"{stats['sku_matches']} SKU matches, {stats['fuzzy_matches']} fuzzy matches, "
+        f"{stats['same_store_skipped']} same-store skipped"
     )
 
     return all_matches

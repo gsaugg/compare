@@ -67,15 +67,13 @@ def generate_product(match: dict, items: dict, store_names: dict) -> dict | None
     }
 
     # Build vendors list from all items
-    seen_vendors = set()
+    # Track vendors we've added and collect all their SKUs
+    vendor_entries = {}  # store_name -> vendor dict
+    vendor_skus = {}  # store_name -> set of SKUs
+
     for item in match_items:
         store_id = item.get("storeId")
         store_name = store_names.get(store_id, store_id)
-
-        # Skip duplicate vendors (shouldn't happen, but guard against it)
-        if store_name in seen_vendors:
-            continue
-        seen_vendors.add(store_name)
 
         # Update product fields if better than current
         if product["image"] is None and item.get("image"):
@@ -87,6 +85,16 @@ def generate_product(match: dict, items: dict, store_names: dict) -> dict | None
         # Merge tags
         product["tags"] = list(set(product["tags"] + item.get("tags", [])))[:MAX_TAGS]
 
+        # Collect SKU even from duplicate vendor items
+        if item.get("sku"):
+            if store_name not in vendor_skus:
+                vendor_skus[store_name] = set()
+            vendor_skus[store_name].add(item["sku"])
+
+        # Only add vendor entry if not already seen
+        if store_name in vendor_entries:
+            continue
+
         # Add vendor entry
         vendor = {
             "name": store_name,
@@ -96,9 +104,16 @@ def generate_product(match: dict, items: dict, store_names: dict) -> dict | None
             "inStock": item.get("inStock", True),
         }
 
-        # Optional: include SKU for debugging
-        if item.get("sku"):
-            vendor["sku"] = item["sku"]
+        vendor_entries[store_name] = vendor
+
+    # Add all collected SKUs to each vendor entry
+    for store_name, vendor in vendor_entries.items():
+        skus = vendor_skus.get(store_name, set())
+        if len(skus) == 1:
+            vendor["sku"] = next(iter(skus))
+        elif len(skus) > 1:
+            # Multiple SKUs - join them for searchability
+            vendor["sku"] = " ".join(sorted(skus))
 
         product["vendors"].append(vendor)
 

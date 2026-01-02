@@ -1,118 +1,118 @@
 {
-  "stores": [
-    {
-      "id": "ceh",
-      "name": "Command Elite Hobbies",
-      "url": "https://www.commandelitehobbies.com",
-      "enabled": true
-    },
-    {
-      "id": "gbu",
-      "name": "Gel Ball Undercover",
-      "url": "https://www.gelballundercover.com.au",
-      "enabled": true
-    },
-    {
-      "id": "aa",
-      "name": "Azraels Armoury",
-      "url": "https://www.azraelsarmoury.com",
-      "enabled": true
-    },
-    {
-      "id": "teh",
-      "name": "Tactical Edge Hobbies",
-      "url": "https://tacticaledge.com.au",
-      "enabled": true
-    },
-    {
-      "id": "tt",
-      "name": "TacToys",
-      "url": "https://www.tactoys.com.au",
-      "enabled": false
-    },
-    {
-      "id": "wat",
-      "name": "WAT Int",
-      "url": "https://watint.com.au",
-      "enabled": true
-    },
-    {
-      "id": "ct",
-      "name": "Cyber Trigger",
-      "url": "https://www.cybertrigger.com.au",
-      "enabled": true,
-      "platform": "woocommerce"
-    },
-    {
-      "id": "xft",
-      "name": "X-Force Tactical",
-      "url": "https://x-forcetactical.com.au",
-      "enabled": true,
-      "platform": "woocommerce"
-    },
-    {
-      "id": "ah",
-      "name": "Armoured Heaven",
-      "url": "https://armouredheaven.com.au",
-      "enabled": true
-    },
-    {
-      "id": "szt",
-      "name": "Safari Zoomer Tactical",
-      "url": "https://safarizoomertactical.com",
-      "enabled": true,
-      "platform": "woocommerce"
-    },
-    {
-      "id": "vt",
-      "name": "ViperTac",
-      "url": "https://vipertac.com.au",
-      "enabled": true
-    },
-    {
-      "id": "ugb",
-      "name": "Urban Gel Ball",
-      "url": "https://www.urbangelball.com.au",
-      "enabled": true,
-      "platform": "squarespace"
-    },
-    {
-      "id": "ag",
-      "name": "AusGel",
-      "url": "https://ausgel.com.au",
-      "enabled": true
-    },
-    {
-      "id": "bbt",
-      "name": "Big Boss Tactical",
-      "url": "https://bigbosstactical.com.au",
-      "enabled": true,
-      "platform": "woocommerce"
-    },
-    {
-      "id": "ih",
-      "name": "iHobby",
-      "url": "https://www.ihobby.com.au",
-      "enabled": true,
-      "platform": "woocommerce"
-    },
-    {
-      "id": "gt",
-      "name": "Gel Tactical",
-      "url": "https://geltactical.com.au",
-      "enabled": true
-    },
-    {
-      "id": "sot",
-      "name": "Sting Ops Tactical",
-      "url": "https://www.stingopstactical.com.au",
-      "enabled": true
-    },
-    {
-      "id": "akgb",
-      "name": "AK Gelblaster AU",
-      "url": "https://akgelblasterau.com",
-      "enabled": true
-    }
-  ]
+	"stores": [
+		{
+			"id": "ceh",
+			"name": "Command Elite Hobbies",
+			"url": "https://www.commandelitehobbies.com",
+			"enabled": true
+		},
+		{
+			"id": "gbu",
+			"name": "Gel Ball Undercover",
+			"url": "https://www.gelballundercover.com.au",
+			"enabled": true
+		},
+		{
+			"id": "aa",
+			"name": "Azraels Armoury",
+			"url": "https://www.azraelsarmoury.com",
+			"enabled": true
+		},
+		{
+			"id": "teh",
+			"name": "Tactical Edge Hobbies",
+			"url": "https://tacticaledge.com.au",
+			"enabled": true
+		},
+		{
+			"id": "tt",
+			"name": "TacToys",
+			"url": "https://www.tactoys.com.au",
+			"enabled": false
+		},
+		{
+			"id": "wat",
+			"name": "WAT Int",
+			"url": "https://watint.com.au",
+			"enabled": true
+		},
+		{
+			"id": "ct",
+			"name": "Cyber Trigger",
+			"url": "https://www.cybertrigger.com.au",
+			"enabled": true,
+			"platform": "woocommerce"
+		},
+		{
+			"id": "xft",
+			"name": "X-Force Tactical",
+			"url": "https://x-forcetactical.com.au",
+			"enabled": true,
+			"platform": "woocommerce"
+		},
+		{
+			"id": "ah",
+			"name": "Armoured Heaven",
+			"url": "https://armouredheaven.com.au",
+			"enabled": true
+		},
+		{
+			"id": "szt",
+			"name": "Safari Zoomer Tactical",
+			"url": "https://safarizoomertactical.com",
+			"enabled": true,
+			"platform": "woocommerce"
+		},
+		{
+			"id": "vt",
+			"name": "ViperTac",
+			"url": "https://vipertac.com.au",
+			"enabled": true
+		},
+		{
+			"id": "ugb",
+			"name": "Urban Gel Ball",
+			"url": "https://www.urbangelball.com.au",
+			"enabled": true,
+			"platform": "squarespace"
+		},
+		{
+			"id": "ag",
+			"name": "AusGel",
+			"url": "https://ausgel.com.au",
+			"enabled": true
+		},
+		{
+			"id": "bbt",
+			"name": "Big Boss Tactical",
+			"url": "https://bigbosstactical.com.au",
+			"enabled": true,
+			"platform": "woocommerce"
+		},
+		{
+			"id": "ih",
+			"name": "iHobby",
+			"url": "https://www.ihobby.com.au",
+			"enabled": true,
+			"platform": "woocommerce"
+		},
+		{
+			"id": "gt",
+			"name": "Gel Tactical",
+			"url": "https://geltactical.com.au",
+			"enabled": true
+		},
+		{
+			"id": "sot",
+			"name": "Sting Ops Tactical",
+			"url": "https://www.stingopstactical.com.au",
+			"enabled": true
+		},
+		{
+			"id": "akgb",
+			"name": "AK Gelblaster AU",
+			"url": "https://akgelblasterau.com",
+			"enabled": true
+		}
+	]
 }

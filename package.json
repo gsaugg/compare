@@ -1,49 +1,57 @@
 {
-  "name": "gsau-compare",
-  "version": "1.0.0",
-  "description": "Price comparison tool for Australian gel blaster products",
-  "type": "module",
-  "license": "AGPL-3.0",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gsaugg/compare.git"
-  },
-  "bugs": {
-    "url": "https://github.com/gsaugg/compare/issues"
-  },
-  "homepage": "https://www.gsau.gg",
-  "engines": {
-    "node": ">=22"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "lint": "eslint src/",
-    "lint:fix": "eslint src/ --fix",
-    "format": "prettier --write src/"
-  },
-  "devDependencies": {
-    "@tailwindcss/typography": "^0.5.19",
-    "@tailwindcss/vite": "^4.1.18",
-    "daisyui": "^5.5.14",
-    "eslint": "^9.39.2",
-    "prettier": "^3.7.4",
-    "prettier-plugin-tailwindcss": "^0.7.2",
-    "tailwindcss": "^4.1.18",
-    "vite": "^7.3.0",
-    "vite-plugin-handlebars": "^2.0.0"
-  },
-  "dependencies": {
-    "alpinejs": "^3.15.3",
-    "chart.js": "^4.5.1",
-    "chartjs-adapter-date-fns": "^3.0.0",
-    "date-fns": "^4.1.0",
-    "fuse.js": "^7.1.0"
-  },
-  "overrides": {
-    "vite-plugin-handlebars": {
-      "vite": "$vite"
-    }
-  }
+	"name": "gsau-compare",
+	"version": "2.0.0",
+	"private": true,
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json",
+		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
+		"format": "prettier --write .",
+		"format:check": "prettier --check .",
+		"prepare": "husky"
+	},
+	"lint-staged": {
+		"*.{js,ts,svelte}": [
+			"prettier --write"
+		],
+		"*.{json,md,css}": [
+			"prettier --write"
+		]
+	},
+	"type": "module",
+	"devDependencies": {
+		"@internationalized/date": "^3.10.1",
+		"@lucide/svelte": "^0.561.0",
+		"@sveltejs/adapter-static": "^3.0.0",
+		"@sveltejs/kit": "^2.0.0",
+		"@sveltejs/vite-plugin-svelte": "^5.0.0",
+		"@tailwindcss/typography": "^0.5.19",
+		"@tailwindcss/vite": "^4.1.18",
+		"husky": "^9.1.7",
+		"lint-staged": "^16.2.7",
+		"prettier": "^3.7.4",
+		"prettier-plugin-svelte": "^3.4.1",
+		"svelte": "^5.0.0",
+		"svelte-check": "^4.0.0",
+		"tailwind-variants": "^3.2.2",
+		"tailwindcss": "^4.1.18",
+		"typescript": "^5.0.0",
+		"vite": "^6.0.0"
+	},
+	"dependencies": {
+		"@tanstack/svelte-query": "^6.0.14",
+		"@tanstack/svelte-virtual": "^3.13.14",
+		"bits-ui": "^2.14.4",
+		"chart.js": "^4.5.1",
+		"chartjs-adapter-date-fns": "^3.0.0",
+		"clsx": "^2.1.1",
+		"date-fns": "^4.1.0",
+		"fuse.js": "^7.1.0",
+		"sparkline-svelte": "^0.1.18",
+		"sveltekit-superforms": "^2.29.1",
+		"tailwind-merge": "^3.4.0",
+		"zod": "^4.3.4"
+	}
 }
