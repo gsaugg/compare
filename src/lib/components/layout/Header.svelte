@@ -307,7 +307,7 @@
 					value={searchInput}
 					oninput={handleSearch}
 					onkeydown={handleKeydown}
-					class="flex-1 bg-transparent text-foreground placeholder:text-muted-foreground focus:outline-none"
+					class="flex-1 bg-transparent text-base text-foreground placeholder:text-muted-foreground focus:outline-none"
 				/>
 				{#if searchInput}
 					<button
