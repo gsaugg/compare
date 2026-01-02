@@ -20,7 +20,7 @@
 
 <QueryClientProvider client={queryClient}>
 	<Tooltip.Provider>
-		<div class="min-h-screen bg-background text-foreground">
+		<div class="min-h-screen overflow-x-hidden bg-background text-foreground">
 			<!-- Skip to main content link (accessibility) -->
 			<a
 				href="#main-content"

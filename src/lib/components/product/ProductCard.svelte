@@ -140,7 +140,7 @@
 		</div>
 
 		<!-- Vendor buttons -->
-		<div class="flex flex-col gap-2">
+		<div class="flex min-w-0 flex-col gap-2">
 			{#each sortedVendors as vendor (vendor.name)}
 				<VendorButton {vendor} isLowest={isLowestPrice(vendor)} />
 			{/each}
