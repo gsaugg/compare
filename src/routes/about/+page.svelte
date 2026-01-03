@@ -82,9 +82,18 @@
 		<p class="text-muted-foreground">
 			Beyond the main product comparison, you can use the
 			<a href="/tracker" class="text-primary hover:underline">Tracker page</a> to see price drops
-			and new products from the last 24 hours, and the
+			and new products from the last 24 hours, the
+			<a href="/map" class="text-primary hover:underline">Map page</a> to find stores and fields
+			near you, and the
 			<a href="/status" class="text-primary hover:underline">Status page</a> to see detailed scraper logs
 			and store health.
+		</p>
+		<h3 class="mt-4 text-lg font-medium text-foreground">Map</h3>
+		<p class="text-muted-foreground">
+			The <a href="/map" class="text-primary hover:underline">Map page</a> shows gel blaster stores and
+			fields across Australia. You can filter by type (store or field) and state, click on markers to
+			see details and get directions via Google Maps, and use the "Locate me" button to find locations
+			near you sorted by distance. Some locations are both a store and a field.
 		</p>
 		<h3 class="mt-4 text-lg font-medium text-foreground">Search</h3>
 		<p class="text-muted-foreground">
@@ -238,6 +247,10 @@
 				class="text-primary hover:underline">GitHub</a
 			>, or
 			<a href="mailto:hello@gsau.gg" class="text-primary hover:underline">hello@gsau.gg</a>.
+		</p>
+		<p class="mt-3 text-muted-foreground">
+			<strong class="text-foreground">Note:</strong> The Gelsoft AU Discord community has no relation
+			or affiliation to the "Gelsoft Australia" field operated by Tactical Edge Hobbies.
 		</p>
 		<a
 			href="https://discord.gg/rmfZtWD95f"

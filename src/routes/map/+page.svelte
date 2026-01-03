@@ -101,6 +101,17 @@
 		);
 	}
 
+	// Auto-fetch location if permission already granted
+	$effect(() => {
+		if (!browser || !navigator.permissions) return;
+
+		navigator.permissions.query({ name: 'geolocation' }).then((result) => {
+			if (result.state === 'granted') {
+				locateUser();
+			}
+		});
+	});
+
 	// Initialize from URL params
 	$effect(() => {
 		if (!browser) return;
