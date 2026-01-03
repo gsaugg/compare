@@ -122,6 +122,27 @@ export const ItemHistoryDataSchema = z.object({
 	history: z.record(z.string(), z.array(PricePointSchema))
 });
 
+// Location schema for map feature
+export const LocationSchema = z.object({
+	id: z.string(),
+	types: z.array(z.enum(['store', 'field'])),
+	name: z.string(),
+	coordinates: z.object({
+		lat: z.number().min(-45).max(-10), // Australia latitude bounds
+		lng: z.number().min(110).max(155) // Australia longitude bounds
+	}),
+	state: z.enum(['NSW', 'QLD', 'VIC', 'SA', 'WA', 'TAS', 'NT', 'ACT']),
+	website: z.string().url().optional(),
+	fieldWebsite: z.string().url().optional(),
+	storeId: z.string().optional(),
+	googleMapsUrl: z.string().url().optional()
+});
+
+// Locations data schema
+export const LocationsDataSchema = z.object({
+	locations: z.array(LocationSchema)
+});
+
 // Type exports (inferred from schemas)
 export type VendorZ = z.infer<typeof VendorSchema>;
 export type ProductZ = z.infer<typeof ProductSchema>;
@@ -135,3 +156,5 @@ export type StatsZ = z.infer<typeof StatsSchema>;
 export type ItemZ = z.infer<typeof ItemSchema>;
 export type ItemsDataZ = z.infer<typeof ItemsDataSchema>;
 export type ItemHistoryDataZ = z.infer<typeof ItemHistoryDataSchema>;
+export type LocationZ = z.infer<typeof LocationSchema>;
+export type LocationsDataZ = z.infer<typeof LocationsDataSchema>;

@@ -5,14 +5,16 @@ import type {
 	TrackerDataResponse,
 	ItemsData,
 	ItemHistoryData,
-	Stats
+	Stats,
+	LocationsData
 } from './types';
 import {
 	ProductsDataSchema,
 	TrackerDataResponseSchema,
 	ItemsDataSchema,
 	ItemHistoryDataSchema,
-	StatsSchema
+	StatsSchema,
+	LocationsDataSchema
 } from './schemas';
 import { ZodError } from 'zod';
 
@@ -111,5 +113,9 @@ export const dataProvider: DataProvider = {
 
 	async getStats(): Promise<Stats> {
 		return fetchWithRetry('/data/stats.json', (data) => StatsSchema.parse(data));
+	},
+
+	async getLocations(): Promise<LocationsData> {
+		return fetchWithRetry('/data/locations.json', (data) => LocationsDataSchema.parse(data));
 	}
 };
