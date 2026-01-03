@@ -326,6 +326,7 @@
 				locations={filteredLocations}
 				{selectedLocation}
 				onSelectLocation={handleSelectLocation}
+				{userLocation}
 			/>
 			<UserLocationMarker {map} {userLocation} />
 		</div>

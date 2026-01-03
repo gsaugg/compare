@@ -9,9 +9,10 @@
 		locations: Location[];
 		selectedLocation: Location | null;
 		onSelectLocation: (location: Location) => void;
+		userLocation?: { lat: number; lng: number } | null;
 	}
 
-	let { map, locations, selectedLocation, onSelectLocation }: Props = $props();
+	let { map, locations, selectedLocation, onSelectLocation, userLocation = null }: Props = $props();
 
 	let L: typeof import('leaflet') | null = $state(null);
 	let markerLayer: LayerGroup | null = null;
@@ -69,8 +70,8 @@
 			markersMap.set(location.id, marker);
 		}
 
-		// Fit bounds to show all markers on initial load
-		if (!initialFitDone && locations.length > 0) {
+		// Fit bounds to show all markers on initial load (skip if user location is available)
+		if (!initialFitDone && locations.length > 0 && !userLocation) {
 			const bounds = L.latLngBounds(
 				locations.map((loc) => [loc.coordinates.lat, loc.coordinates.lng])
 			);
