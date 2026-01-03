@@ -44,6 +44,7 @@
 	let locatingUser = $state(false);
 	let locationError = $state<string | null>(null);
 	let errorTimeoutId: ReturnType<typeof setTimeout> | null = null;
+	let pendingZoom = false; // Track if we need to zoom when map becomes ready
 
 	// Request user location
 	function locateUser() {
@@ -66,6 +67,9 @@
 				// Center map on user location with reasonable zoom
 				if (map) {
 					map.setView([userLocation.lat, userLocation.lng], 10);
+				} else {
+					// Map not ready yet, zoom when it becomes available
+					pendingZoom = true;
 				}
 			},
 			(error) => {
@@ -110,6 +114,14 @@
 				locateUser();
 			}
 		});
+	});
+
+	// Zoom to user location when map becomes ready (for auto-fetch case)
+	$effect(() => {
+		if (map && userLocation && pendingZoom) {
+			map.setView([userLocation.lat, userLocation.lng], 10);
+			pendingZoom = false;
+		}
 	});
 
 	// Initialize from URL params

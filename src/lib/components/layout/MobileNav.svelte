@@ -9,8 +9,8 @@
 
 	const navItems: NavItem[] = [
 		{ href: '/', label: 'Products', icon: 'home' },
-		{ href: '/map', label: 'Map', icon: 'map-pin' },
 		{ href: '/tracker', label: 'Tracker', icon: 'trending-up' },
+		{ href: '/map', label: 'Map', icon: 'map-pin' },
 		{ href: '/status', label: 'Status', icon: 'activity' },
 		{ href: '/about', label: 'About', icon: 'info' }
 	];

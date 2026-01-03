@@ -11,8 +11,8 @@
 
 	const navItems: NavItem[] = [
 		{ href: '/', label: 'Products' },
-		{ href: '/map', label: 'Map' },
 		{ href: '/tracker', label: 'Tracker' },
+		{ href: '/map', label: 'Map' },
 		{ href: '/status', label: 'Status' },
 		{ href: '/about', label: 'About' }
 	];
