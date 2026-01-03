@@ -56,13 +56,16 @@
 
 			if (!mapContainer) return;
 
-			// Create map
+			// Create map (disable default zoom control, we'll add it to top-right)
 			mapInstance = L.map(mapContainer, {
 				center: AUSTRALIA_CENTER,
 				zoom: DEFAULT_ZOOM,
-				zoomControl: true,
+				zoomControl: false,
 				attributionControl: true
 			});
+
+			// Add zoom control to top-right to avoid sidebar overlap
+			L.control.zoom({ position: 'topright' }).addTo(mapInstance);
 
 			// Determine initial tile URL based on theme
 			const resolved = getResolvedTheme(theme.value);
