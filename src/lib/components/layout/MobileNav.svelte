@@ -9,6 +9,7 @@
 
 	const navItems: NavItem[] = [
 		{ href: '/', label: 'Products', icon: 'home' },
+		{ href: '/map', label: 'Map', icon: 'map-pin' },
 		{ href: '/tracker', label: 'Tracker', icon: 'trending-up' },
 		{ href: '/status', label: 'Status', icon: 'activity' },
 		{ href: '/about', label: 'About', icon: 'info' }
@@ -19,7 +20,7 @@
 
 <!-- Mobile bottom navigation - hidden on lg screens -->
 <nav
-	class="fixed inset-x-0 bottom-0 z-50 border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 lg:hidden"
+	class="fixed inset-x-0 bottom-0 z-[1200] border-t border-border bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/80 lg:hidden"
 >
 	<div class="mx-auto flex h-16 max-w-lg items-center justify-around px-4">
 		{#each navItems as item}
@@ -43,6 +44,23 @@
 					>
 						<path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
 						<polyline points="9 22 9 12 15 12 15 22" />
+					</svg>
+				{:else if item.icon === 'map-pin'}
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						stroke-width="2"
+						stroke-linecap="round"
+						stroke-linejoin="round"
+					>
+						<path
+							d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+						/>
+						<circle cx="12" cy="10" r="3" />
 					</svg>
 				{:else if item.icon === 'trending-up'}
 					<svg

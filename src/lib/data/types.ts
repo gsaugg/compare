@@ -119,6 +119,26 @@ export interface ItemHistoryData {
 	};
 }
 
+// Location types for map feature
+export type LocationType = 'store' | 'field';
+export type AustralianState = 'NSW' | 'QLD' | 'VIC' | 'SA' | 'WA' | 'TAS' | 'NT' | 'ACT';
+
+export interface Location {
+	id: string;
+	types: LocationType[]; // ['store'], ['field'], or ['store', 'field']
+	name: string;
+	coordinates: { lat: number; lng: number };
+	state: AustralianState;
+	website?: string; // Primary website (usually store)
+	fieldWebsite?: string; // Separate field website (for combo locations)
+	storeId?: string; // Links to stores.json for retailers
+	googleMapsUrl?: string; // Direct link to Google Maps listing
+}
+
+export interface LocationsData {
+	locations: Location[];
+}
+
 // Data provider interface for abstraction
 export interface DataProvider {
 	getProducts(): Promise<ProductsData>;
@@ -126,4 +146,5 @@ export interface DataProvider {
 	getItems(): Promise<ItemsData>;
 	getItemHistory(): Promise<ItemHistoryData>;
 	getStats(): Promise<Stats>;
+	getLocations(): Promise<LocationsData>;
 }

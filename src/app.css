@@ -152,3 +152,39 @@ body {
 		--ring: #2dd4bf;
 	}
 }
+
+/* Leaflet map z-index fixes */
+.leaflet-pane {
+	z-index: 400;
+}
+.leaflet-top,
+.leaflet-bottom {
+	z-index: 500;
+}
+.dark .leaflet-popup-content-wrapper {
+	background: var(--background);
+	color: var(--foreground);
+}
+.dark .leaflet-popup-tip {
+	background: var(--background);
+}
+
+/* Custom marker styles */
+.custom-location-marker {
+	background: transparent;
+	border: none;
+}
+.location-marker.selected {
+	animation: marker-pulse 2s ease-in-out infinite;
+}
+@keyframes marker-pulse {
+	0%,
+	100% {
+		transform: scale(1);
+		filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
+	}
+	50% {
+		transform: scale(1.05);
+		filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.25));
+	}
+}
