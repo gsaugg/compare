@@ -66,7 +66,7 @@
 				a fallback. This lets you compare the same product across multiple retailers.
 			</li>
 			<li>
-				<strong class="text-foreground">Price Tracking:</strong> We record price changes over a 30-day
+				<strong class="text-foreground">Price Tracking:</strong> We record price changes over a 1-year
 				rolling window, tracking both sale prices and regular prices to help identify genuine discounts.
 			</li>
 		</ul>

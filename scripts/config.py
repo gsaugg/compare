@@ -13,7 +13,7 @@ STATS_FILE = PROJECT_ROOT / "public" / "data" / "stats.json"
 RAW_DATA_DIR = PROJECT_ROOT / ".cache" / "raw"  # Cache for offline mode
 
 # Price history settings
-HISTORY_RETENTION_DAYS = 30  # Keep price history for this many days
+HISTORY_RETENTION_DAYS = 365  # Keep price history for this many days
 
 # Request settings
 REQUEST_DELAY = 3.0  # seconds between requests (be respectful)
