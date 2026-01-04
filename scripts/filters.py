@@ -146,9 +146,17 @@ EXCLUDED_TITLE_KEYWORDS_BY_CATEGORY = {
         "underwear", "socks", "shoes", "boots",
         "baseball cap", "trucker cap", "snapback",
     ],
+    "food_beverages": [
+        "coke", "pepsi", "sprite", "fanta", "powerade", "gatorade",
+        "chocolate bar", "chocolate chip", "candy bar", "energy drink",
+        "water 600ml", "water 750ml", "water bottle",
+    ],
+    "test_products": [
+        "test product", "xyz",
+    ],
     "misc": [
-        "water bottle", "summer cat badge",
-        "new moon", "twilight saga", "energy drink", "nootropic drink", "charged drink",
+        "summer cat badge", "k9 service dog",
+        "new moon", "twilight saga", "nootropic drink", "charged drink",
         "precision screwdriver set", "excel 55662",
         "top loaders", "card dividers", "inner sleeves", "ultimate guard",
         "card protector", "deck protector",
