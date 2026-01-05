@@ -1,19 +1,31 @@
 {
-  "lastUpdated": "2026-01-05T04:57:57.403961+00:00",
-  "duration": 643.41,
+  "lastUpdated": "2026-01-05T05:36:50.263757+00:00",
+  "duration": 583.54,
   "stores": [
     {
       "name": "Command Elite Hobbies",
       "url": "https://www.commandelitehobbies.com",
       "platform": "shopify",
-      "fetched": 6241,
-      "filtered": 4600,
+      "fetched": 6240,
+      "filtered": 4599,
       "final": 2639,
       "inStock": 1463,
       "outOfStock": 1176,
       "error": null,
-      "duration": 93.66,
+      "duration": 88.94,
       "filteredProducts": [
+        {
+          "title": "Tornado RC 1/18 4WD RTR High speed truck 2.4g 35KM 20 Minute runtime Body",
+          "reason": "title",
+          "keyword": "4wd rtr",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Thunder 1/18 4WD RTR High speed truck 2.4g 35KM 20 Minute runtime",
+          "reason": "title",
+          "keyword": "4wd rtr",
+          "filterCategory": "rc_parts_and_brands"
+        },
         {
           "title": "Team Magic S901 Servo 9kg",
           "reason": "title",
@@ -11979,12 +11991,6 @@
           "filterCategory": "misc"
         },
         {
-          "title": "TRAXXAS FORD F-150 RAPTOR - FOX",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
           "title": "Shakira - Fijacion Oral Vol. 1 Pop! Vinyl Album",
           "reason": "category",
           "keyword": "collectible",
@@ -19329,12 +19335,6 @@
           "filterCategory": "rc_parts_and_brands"
         },
         {
-          "title": "Traxxas 1/10 Maxx 4S 4WD Electric Brushless Off Road RC Truck",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
           "title": "TRAXXAS TYRE & WHEEL GLUED (SCT SS BLK/BLUE 4WD)",
           "reason": "title",
           "keyword": "traxxas",
@@ -22438,12 +22438,6 @@
         },
         {
           "title": "Traxxas 4-Tec 3.0 Chassis, Corvette Stingray 1/10 on road RTR Black",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "Traxxas Ford Raptor F-150 RTR Slash 1/10 2WD Truck - FOX",
           "reason": "title",
           "keyword": "traxxas",
           "filterCategory": "rc_parts_and_brands"
@@ -27617,139 +27611,139 @@
       ],
       "logs": [
         {
-          "time": "04:47:13",
+          "time": "05:27:06",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:47:14",
+          "time": "05:27:07",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:47:18",
+          "time": "05:27:10",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:47:22",
+          "time": "05:27:14",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:47:25",
+          "time": "05:27:17",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "04:47:29",
+          "time": "05:27:21",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "04:47:33",
+          "time": "05:27:24",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "04:47:36",
+          "time": "05:27:28",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "04:47:40",
+          "time": "05:27:31",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "04:47:44",
+          "time": "05:27:35",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "04:47:48",
+          "time": "05:27:38",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "04:47:51",
+          "time": "05:27:42",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "04:47:55",
+          "time": "05:27:45",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "04:47:59",
+          "time": "05:27:49",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "04:48:02",
+          "time": "05:27:53",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "04:48:06",
+          "time": "05:27:56",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "04:48:10",
+          "time": "05:28:00",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "04:48:14",
+          "time": "05:28:03",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "04:48:18",
+          "time": "05:28:07",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "04:48:21",
+          "time": "05:28:11",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "04:48:25",
+          "time": "05:28:14",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "04:48:29",
+          "time": "05:28:18",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "04:48:33",
+          "time": "05:28:22",
           "level": "INFO",
           "message": "Page 22: 250 products"
         },
         {
-          "time": "04:48:36",
+          "time": "05:28:25",
           "level": "INFO",
           "message": "Page 23: 250 products"
         },
         {
-          "time": "04:48:40",
+          "time": "05:28:28",
           "level": "INFO",
           "message": "Page 24: 250 products"
         },
         {
-          "time": "04:48:44",
+          "time": "05:28:32",
           "level": "INFO",
-          "message": "Page 25: 241 products"
+          "message": "Page 25: 240 products"
         },
         {
-          "time": "04:48:47",
+          "time": "05:28:35",
           "level": "INFO",
-          "message": "Done: 6241 products fetched"
+          "message": "Done: 6240 products fetched"
         }
       ]
     },
@@ -27763,7 +27757,7 @@
       "inStock": 1330,
       "outOfStock": 1796,
       "error": null,
-      "duration": 38.47,
+      "duration": 37.38,
       "filteredProducts": [
         {
           "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
@@ -27954,62 +27948,62 @@
       ],
       "logs": [
         {
-          "time": "04:48:48",
+          "time": "05:28:36",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:48:49",
+          "time": "05:28:37",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:48:53",
+          "time": "05:28:41",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:48:57",
+          "time": "05:28:44",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:49:01",
+          "time": "05:28:48",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "04:49:05",
+          "time": "05:28:52",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "04:49:09",
+          "time": "05:28:56",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "04:49:13",
+          "time": "05:29:00",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "04:49:16",
+          "time": "05:29:03",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "04:49:20",
+          "time": "05:29:07",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "04:49:23",
+          "time": "05:29:10",
           "level": "INFO",
           "message": "Page 10: 60 products"
         },
         {
-          "time": "04:49:26",
+          "time": "05:29:13",
           "level": "INFO",
           "message": "Done: 2310 products fetched"
         }
@@ -28025,7 +28019,7 @@
       "inStock": 846,
       "outOfStock": 115,
       "error": null,
-      "duration": 12.24,
+      "duration": 11.71,
       "filteredProducts": [
         {
           "title": "HPA tank refill",
@@ -28060,27 +28054,27 @@
       ],
       "logs": [
         {
-          "time": "04:49:27",
+          "time": "05:29:14",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:49:29",
+          "time": "05:29:15",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:49:33",
+          "time": "05:29:19",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:49:37",
+          "time": "05:29:23",
           "level": "INFO",
           "message": "Page 3: 160 products"
         },
         {
-          "time": "04:49:40",
+          "time": "05:29:26",
           "level": "INFO",
           "message": "Done: 660 products fetched"
         }
@@ -28096,7 +28090,7 @@
       "inStock": 998,
       "outOfStock": 253,
       "error": null,
-      "duration": 19.05,
+      "duration": 18.53,
       "filteredProducts": [
         {
           "title": "Deadpool Head Keychain",
@@ -28497,37 +28491,37 @@
       ],
       "logs": [
         {
-          "time": "04:49:40",
+          "time": "05:29:26",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:49:41",
+          "time": "05:29:27",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:49:44",
+          "time": "05:29:31",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:49:48",
+          "time": "05:29:34",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:49:52",
+          "time": "05:29:38",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "04:49:56",
+          "time": "05:29:42",
           "level": "INFO",
           "message": "Page 5: 65 products"
         },
         {
-          "time": "04:49:59",
+          "time": "05:29:45",
           "level": "INFO",
           "message": "Done: 1065 products fetched"
         }
@@ -28543,7 +28537,7 @@
       "inStock": 802,
       "outOfStock": 420,
       "error": null,
-      "duration": 17.61,
+      "duration": 16.88,
       "filteredProducts": [
         {
           "title": "Iain Sinclair CardSharp Travel Wallet Knife",
@@ -28602,32 +28596,32 @@
       ],
       "logs": [
         {
-          "time": "04:49:59",
+          "time": "05:29:45",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:50:01",
+          "time": "05:29:47",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:50:05",
+          "time": "05:29:51",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:50:09",
+          "time": "05:29:55",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:50:13",
+          "time": "05:29:58",
           "level": "INFO",
           "message": "Page 4: 196 products"
         },
         {
-          "time": "04:50:17",
+          "time": "05:30:02",
           "level": "INFO",
           "message": "Done: 946 products fetched"
         }
@@ -28643,7 +28637,7 @@
       "inStock": 823,
       "outOfStock": 1093,
       "error": null,
-      "duration": 23.16,
+      "duration": 24.15,
       "filteredProducts": [
         {
           "title": "CZ Shadow 2 T Shirt XL-5XL Sizes",
@@ -28762,42 +28756,42 @@
       ],
       "logs": [
         {
-          "time": "04:50:17",
+          "time": "05:30:02",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:50:18",
+          "time": "05:30:03",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:50:22",
+          "time": "05:30:08",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:50:26",
+          "time": "05:30:12",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:50:30",
+          "time": "05:30:16",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "04:50:34",
+          "time": "05:30:20",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "04:50:37",
+          "time": "05:30:23",
           "level": "INFO",
           "message": "Page 6: 75 products"
         },
         {
-          "time": "04:50:40",
+          "time": "05:30:26",
           "level": "INFO",
           "message": "Done: 1325 products fetched"
         }
@@ -28813,7 +28807,7 @@
       "inStock": 786,
       "outOfStock": 59,
       "error": null,
-      "duration": 17.75,
+      "duration": 17.58,
       "filteredProducts": [
         {
           "title": "GSH-18 Shell Ejecting Laser Pistol \u2013 Realistic Training & Display Model",
@@ -29346,32 +29340,32 @@
       ],
       "logs": [
         {
-          "time": "04:50:41",
+          "time": "05:30:27",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:50:43",
+          "time": "05:30:29",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:50:47",
+          "time": "05:30:33",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:50:52",
+          "time": "05:30:38",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:50:55",
+          "time": "05:30:41",
           "level": "INFO",
           "message": "Page 4: 37 products"
         },
         {
-          "time": "04:50:58",
+          "time": "05:30:44",
           "level": "INFO",
           "message": "Done: 787 products fetched"
         }
@@ -29387,7 +29381,7 @@
       "inStock": 310,
       "outOfStock": 281,
       "error": null,
-      "duration": 11.93,
+      "duration": 11.79,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -29404,27 +29398,27 @@
       ],
       "logs": [
         {
-          "time": "04:50:59",
+          "time": "05:30:45",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:00",
+          "time": "05:30:46",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:51:04",
+          "time": "05:30:50",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:51:07",
+          "time": "05:30:53",
           "level": "INFO",
           "message": "Page 3: 63 products"
         },
         {
-          "time": "04:51:11",
+          "time": "05:30:56",
           "level": "INFO",
           "message": "Done: 563 products fetched"
         }
@@ -29437,10 +29431,10 @@
       "fetched": 615,
       "filtered": 23,
       "final": 650,
-      "inStock": 455,
-      "outOfStock": 195,
+      "inStock": 454,
+      "outOfStock": 196,
       "error": null,
-      "duration": 11.99,
+      "duration": 12.09,
       "filteredProducts": [
         {
           "title": "Shot gun 1887 Manual Nerf Gun",
@@ -29583,27 +29577,27 @@
       ],
       "logs": [
         {
-          "time": "04:51:11",
+          "time": "05:30:57",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:12",
+          "time": "05:30:58",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:51:16",
+          "time": "05:31:02",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:51:19",
+          "time": "05:31:05",
           "level": "INFO",
           "message": "Page 3: 115 products"
         },
         {
-          "time": "04:51:23",
+          "time": "05:31:09",
           "level": "INFO",
           "message": "Done: 615 products fetched"
         }
@@ -29616,10 +29610,10 @@
       "fetched": 785,
       "filtered": 12,
       "final": 1169,
-      "inStock": 609,
-      "outOfStock": 560,
+      "inStock": 608,
+      "outOfStock": 561,
       "error": null,
-      "duration": 15.95,
+      "duration": 16.05,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -29696,32 +29690,32 @@
       ],
       "logs": [
         {
-          "time": "04:51:23",
+          "time": "05:31:09",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:24",
+          "time": "05:31:10",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:51:28",
+          "time": "05:31:14",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:51:32",
+          "time": "05:31:18",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "04:51:36",
+          "time": "05:31:22",
           "level": "INFO",
           "message": "Page 4: 35 products"
         },
         {
-          "time": "04:51:39",
+          "time": "05:31:25",
           "level": "INFO",
           "message": "Done: 785 products fetched"
         }
@@ -29737,21 +29731,21 @@
       "inStock": 110,
       "outOfStock": 2,
       "error": null,
-      "duration": 3.81,
+      "duration": 3.76,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "04:51:39",
+          "time": "05:31:25",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:40",
+          "time": "05:31:26",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "04:51:43",
+          "time": "05:31:29",
           "level": "INFO",
           "message": "Done: 100 products fetched"
         }
@@ -29767,7 +29761,7 @@
       "inStock": 406,
       "outOfStock": 263,
       "error": null,
-      "duration": 11.0,
+      "duration": 11.3,
       "filteredProducts": [
         {
           "title": "Chocolate Bar",
@@ -29844,27 +29838,27 @@
       ],
       "logs": [
         {
-          "time": "04:51:43",
+          "time": "05:31:29",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:43",
+          "time": "05:31:30",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "04:51:48",
+          "time": "05:31:34",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "04:51:51",
+          "time": "05:31:37",
           "level": "INFO",
           "message": "Page 3: 35 products"
         },
         {
-          "time": "04:51:54",
+          "time": "05:31:40",
           "level": "INFO",
           "message": "Done: 535 products fetched"
         }
@@ -29880,7 +29874,7 @@
       "inStock": 278,
       "outOfStock": 75,
       "error": null,
-      "duration": 22.0,
+      "duration": 23.02,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -30125,49 +30119,122 @@
       ],
       "logs": [
         {
-          "time": "04:51:54",
+          "time": "05:31:40",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:54",
+          "time": "05:31:41",
           "level": "INFO",
           "message": "Offset 0: 89 products"
         },
         {
-          "time": "04:51:57",
+          "time": "05:31:44",
           "level": "INFO",
           "message": "Offset 20: 69 products"
         },
         {
-          "time": "04:52:01",
+          "time": "05:31:47",
           "level": "INFO",
           "message": "Offset 40: 60 products"
         },
         {
-          "time": "04:52:04",
+          "time": "05:31:51",
           "level": "INFO",
           "message": "Offset 60: 54 products"
         },
         {
-          "time": "04:52:07",
+          "time": "05:31:54",
           "level": "INFO",
           "message": "Offset 80: 41 products"
         },
         {
-          "time": "04:52:10",
+          "time": "05:31:57",
           "level": "INFO",
           "message": "Offset 100: 23 products"
         },
         {
-          "time": "04:52:13",
+          "time": "05:32:00",
           "level": "INFO",
           "message": "Offset 120: 5 products"
         },
         {
-          "time": "04:52:16",
+          "time": "05:32:03",
           "level": "INFO",
           "message": "Done: 341 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Cyber Trigger",
+      "url": "https://www.cybertrigger.com.au",
+      "platform": "woocommerce",
+      "fetched": 300,
+      "filtered": 6,
+      "final": 430,
+      "inStock": 374,
+      "outOfStock": 56,
+      "error": null,
+      "duration": 20.35,
+      "simple": 206,
+      "variable": 94,
+      "variations": 230,
+      "filteredProducts": [],
+      "logs": [
+        {
+          "time": "05:31:40",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "05:31:45",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "05:31:51",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "05:31:57",
+          "level": "INFO",
+          "message": "Page 3: 100 products"
+        },
+        {
+          "time": "05:32:01",
+          "level": "INFO",
+          "message": "Done: 300 products fetched"
+        },
+        {
+          "time": "05:32:01",
+          "level": "INFO",
+          "message": "Found 94 variable products, fetching variations..."
+        },
+        {
+          "time": "05:32:03",
+          "level": "INFO",
+          "message": "Variations page 1: 100 items"
+        },
+        {
+          "time": "05:32:08",
+          "level": "INFO",
+          "message": "Variations page 2: 100 items"
+        },
+        {
+          "time": "05:32:13",
+          "level": "INFO",
+          "message": "Variations page 3: 30 items"
+        },
+        {
+          "time": "05:32:13",
+          "level": "INFO",
+          "message": "Fetched 230 variations, enriched 214"
+        },
+        {
+          "time": "05:32:13",
+          "level": "INFO",
+          "message": "Total: 206 simple + 230 variations = 436"
         }
       ]
     },
@@ -30181,7 +30248,7 @@
       "inStock": 280,
       "outOfStock": 598,
       "error": null,
-      "duration": 27.35,
+      "duration": 30.58,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -30345,84 +30412,1071 @@
       ],
       "logs": [
         {
-          "time": "04:51:54",
+          "time": "05:31:40",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:56",
+          "time": "05:31:43",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "04:51:59",
+          "time": "05:31:47",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "04:52:03",
+          "time": "05:31:51",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "04:52:07",
+          "time": "05:31:55",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "04:52:11",
+          "time": "05:31:59",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "04:52:14",
+          "time": "05:32:03",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "04:52:18",
+          "time": "05:32:07",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "04:52:21",
+          "time": "05:32:11",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "04:52:21",
+          "time": "05:32:11",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "04:52:21",
+          "time": "05:32:11",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "04:52:22",
+          "time": "05:32:12",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "04:52:26",
+          "time": "05:32:16",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "04:52:29",
+          "time": "05:32:19",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "04:52:29",
+          "time": "05:32:19",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "04:52:29",
+          "time": "05:32:19",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
+        }
+      ]
+    },
+    {
+      "name": "Safari Zoomer Tactical",
+      "url": "https://safarizoomertactical.com",
+      "platform": "woocommerce",
+      "fetched": 1560,
+      "filtered": 149,
+      "final": 1414,
+      "inStock": 1105,
+      "outOfStock": 309,
+      "error": null,
+      "duration": 93.04,
+      "simple": 1559,
+      "variable": 1,
+      "variations": 4,
+      "filteredProducts": [
+        {
+          "title": "FIRST STRIKE ROUNDS (150 ROUNDS) .68 CALIBER Green",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "EMF100 EMF200 DYE DAM CF20 PRO 20 Round Magazine",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 and Scout Magazine 30 Rounds Clear",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 16 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 8 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Minecraft Pistol Toy &#8211; Blue",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Pistol Toy &#8211; Green / Yellow",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Pistol Toy &#8211; Black",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Hammer &#8211; Green",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Hammer &#8211; Blue",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Rifle &#8211; Blue",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Rifle &#8211; Grey",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Rifle &#8211; Yellow",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Pickaxe &#8211; Grey",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Pickaxe &#8211; Blue",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Pickaxe &#8211; Yellow",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Diamond Sword &#8211; Grey",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Diamond Sword &#8211; Blue with Black",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Diamond Sword &#8211; Light Blue",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Minecraft Diamond Sword &#8211; Yellow",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 5XLARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 4XLARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 2XLARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 3XLARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; XLARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; LARGE",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Small Plastic Knife &#8211; Black",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "M9 Plastic Knife &#8211; Black",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Large Plastic Knife",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Tactical Patch Wall &#8211; Large  Tan",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Patch Wall &#8211; Large Black",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Patch Wall &#8211; Standard Multicam",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Patch Wall &#8211; Standard Tan",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Patch Wall &#8211; Standard Black",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARI ZOOMER / EPIC ADVENTURES Magazine Band &#8211; 1 piece #5",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC GELWARS / STAY PAWSITIVE Magazine Band &#8211; 1 piece #2",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARI ZOOMER / KINGS SWORDS Magazine Band &#8211; 1 piece #1",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC GELWARS / GELX SA Magazine Band &#8211; 1 piece #4",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC / GATEAWAY MAGAZINE BAND &#8211; 1 piece #3",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 16 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Harrier/Seagull roller prime slider Worker",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Nightingale 2.0 FULL AUTO Pro / Ultra Soft Dart Worker Blaster &#8211; White",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Nightingale 2.0 SEMI AUTO Pro / Ultra Soft Dart Worker Blaster &#8211; White",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Seagull Worker Foam Dart Blaster &#8211; Khaki",
+          "reason": "title",
+          "keyword": "foam dart",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Seagull Worker Foam Dart Blaster &#8211; White",
+          "reason": "title",
+          "keyword": "foam dart",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Worker Mod 1.6mm-250mm Wire Spring Coil for Harrier Blaster",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "EMF100 EMEK -Eclipse &#8211; Black",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Milsig Magic Core Black HPA tank &#038; 13CI Stock- contact store",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Milsig M79A1 100mm Foam Dart Blaster &#8211; Yellow",
+          "reason": "title",
+          "keyword": "foam dart",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Worker mod Harrier plunger replacement for Harrier Blaster",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod Bamboo Short Darts Three-ring mold for Foam Blaster Toy",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod Metal Barrel Tube for Harrier Blaster 550mm",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod Metal Barrel Tube for Harrier Blaster 450mm",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod 1.6mm-300mm Wire Spring Coil for Harrier Blaster",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod 10-Darts Talon Stefan Short Darts Magazine for Nerf Modfiy Toys",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod 15-Darts Talon Stefan Magazine Short Darts Clip for Nerf Modify Toy Color Black",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "WORKER MOD 200PCS Bambo Stefan Short Darts for Nerf Modify Toy &#8211; Orange",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod 200pcs Bamboo Stefan Short Darts for Nerf Blaster Modify Toy -Black",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Mod 200pcs Gen3+ Stefan Short Darts Color Red Orange",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Milsig M79 200mm Foam Dart Blaster &#8211; Red",
+          "reason": "title",
+          "keyword": "foam dart",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Unicorn Soft Blaster",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Harrier Blaster -Orange (Soft Dart)",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Worker Harrier Blaster -White (Soft Dart)",
+          "reason": "category",
+          "keyword": "soft dart",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "$35 Flat rate Shipping fee",
+          "reason": "title",
+          "keyword": "flat rate shipping",
+          "filterCategory": "shipping_services"
+        },
+        {
+          "title": "$20 Flat rate Shipping fee",
+          "reason": "title",
+          "keyword": "flat rate shipping",
+          "filterCategory": "shipping_services"
+        },
+        {
+          "title": "FIRST STRIKE ROUNDS (600 ROUNDS) .68 CALIBER",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "FIRST STRIKE ROUNDS (150 ROUNDS) .68 CALIBER Orange",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 BALL LATCH DETENT",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 PAINTBALL GUN ANTI CHOP LOK BOLT(TM) WITH A5 OR COCKER BARREL THREAD &#8211; Auto Cocker Barrel Thread",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 PAINTBALL GUN ANTI CHOP LOK BOLT(TM) WITH A5 OR COCKER BARREL THREAD &#8211; A5 Thread",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 DROP DOWN ASA STANDARD",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 A5 BARREL ADAPTER",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 20 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 18 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HECKLER &#038; KOCH SFP9 VP9 T4E PAINTBALL PISTOL QUICK PIERCING MAGAZINE",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Nos Gas Car Key Chain &#8211; 1 pc",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Comic Online Games Model Gun Toys Keychain NO69002",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Comic Online Games Model Gun Toys Keychain NO69001",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Walking Unicorn &#8211; MUSIC AND DANCE",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 12 inch (",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 7 inch",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T4E GLOCK 17 GEN5 QUICK PIERCING MAGAZINE",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "SMITH AND WESSON M&#038;P T4E PAINTBALL PISTOL QUICK PIERCING MAGAZINE",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": ".43 CALIBER PAINTBALLS &#8211; 150g about 200CT (Orange)",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": ".43 CALIBER PAINTBALLS &#8211; 150g about 200CT (Blue)",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "FSC PAINTBALL PISTOL",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T4E GLOCK 17 GEN5 PAINTBALL PISTOL -one left",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T4E HDX .68 CALIBER PAINTBALL PUMP ACTION SHOTGUN &#8211; one left",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HDR PAINTBALL REVOLVER .68 CAL PISTOL T4E HDR 68",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "SMITH AND WESSON M&#038;P T4E PAINTBALL PISTOL (BLACK)",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "HECKLER &#038; KOCH SFP9 VP9 T4E PAINTBALL PISTOL (BLACK)",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "FIRST STRIKE ROUNDS (600 ROUNDS) .68 CALIBER- Green",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 HOPPER ADAPTER",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "MCS GEN2 BOX DRIVE MAGAZINE FOR T15 PAINTBALL MARKER",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 MAGAZINE 20 ROUNDS",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "SOLID REMOTE LINE ADAPTER (MILSPEC) BUTTSTOCK BUFFER TUBE",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Custom T15 DMR Paintball Marker",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "T15 M4 PAINTBALL MARKER",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "EPIC SUPPORTER JERSEY",
+          "reason": "title",
+          "keyword": "jersey",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Wolverine 2\u2033 Round MTW Forged Series Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Wolverine Cuddles Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patches &#8211; New Arrival",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SPEEDY PANTS",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC HOODIES Grey",
+          "reason": "title",
+          "keyword": "hoodie",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "EPIC HOODIES BLACK",
+          "reason": "title",
+          "keyword": "hoodie",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "SAFARI CAP -White",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC CAP",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC CAP -WHITE",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC T SHIRT &#8211; WHITE SILK PRINT &#8211;",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC T SHIRT &#8211; COLOUR PRINT",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "EPIC T SHIRT -SILVER PRINT",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARIZOOMER CUP",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARI T Shirt",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARI MASK B",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SAFARI MASK A",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "12 GUN KEY SAFE \u2013 S3CH CATEGORY \u2013 A/B/C EXTERNAL H",
+          "reason": "title",
+          "keyword": "gun key safe",
+          "filterCategory": "gun_safes"
+        },
+        {
+          "title": "12 GUN KEY SAFE \u2013S3 CATEGORY \u2013 A/B",
+          "reason": "title",
+          "keyword": "gun key safe",
+          "filterCategory": "gun_safes"
+        },
+        {
+          "title": "8 GUN KEY SAFE \u2013S2CH CATEGORY \u2013 A/B/C EXTERNAL H",
+          "reason": "title",
+          "keyword": "gun key safe",
+          "filterCategory": "gun_safes"
+        },
+        {
+          "title": "8 GUN KEY SAFE \u2013 S2 CATEGORY \u2013 A/B",
+          "reason": "title",
+          "keyword": "gun key safe",
+          "filterCategory": "gun_safes"
+        },
+        {
+          "title": "4 GUN KEY SAFE \u2013S1 CATEGORY \u2013 A/B",
+          "reason": "title",
+          "keyword": "gun key safe",
+          "filterCategory": "gun_safes"
+        },
+        {
+          "title": "M4SS yellow motherboard switch",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "SKD G18 Motherboard",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "M92 motherboard",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Aug Mother Board",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Vector Motherboard",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "M4SS Motherboard",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Pen",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Key Chain",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "UMP45 gel blaster metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Metal feel ACR model gel blaster sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "White color kriss vector gel blaster metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Red color kriss vector gel blaster metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Safari zoomer 9*8CM sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "G18 glock metal feel stickers black / white color",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "M4 Gold Silver Color metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "M4 Black white silver color metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "M4 gel blaster black white color metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "ACR gel blaster metal feel sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tape Camo Large",
+          "reason": "category",
+          "keyword": "tape",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Tape Camo standard (reusable)",
+          "reason": "category",
+          "keyword": "tape",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Tape Grey standard (reusable)",
+          "reason": "category",
+          "keyword": "tape",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "SafariZoomer Tactical Patches",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patches &#8211; Rectangle",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        }
+      ],
+      "logs": [
+        {
+          "time": "05:31:40",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "05:31:45",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "05:31:52",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "05:31:58",
+          "level": "INFO",
+          "message": "Page 3: 100 products"
+        },
+        {
+          "time": "05:32:04",
+          "level": "INFO",
+          "message": "Page 4: 100 products"
+        },
+        {
+          "time": "05:32:11",
+          "level": "INFO",
+          "message": "Page 5: 100 products"
+        },
+        {
+          "time": "05:32:17",
+          "level": "INFO",
+          "message": "Page 6: 100 products"
+        },
+        {
+          "time": "05:32:23",
+          "level": "INFO",
+          "message": "Page 7: 100 products"
+        },
+        {
+          "time": "05:32:29",
+          "level": "INFO",
+          "message": "Page 8: 100 products"
+        },
+        {
+          "time": "05:32:34",
+          "level": "INFO",
+          "message": "Page 9: 100 products"
+        },
+        {
+          "time": "05:32:40",
+          "level": "INFO",
+          "message": "Page 10: 100 products"
+        },
+        {
+          "time": "05:32:46",
+          "level": "INFO",
+          "message": "Page 11: 100 products"
+        },
+        {
+          "time": "05:32:51",
+          "level": "INFO",
+          "message": "Page 12: 100 products"
+        },
+        {
+          "time": "05:32:57",
+          "level": "INFO",
+          "message": "Page 13: 100 products"
+        },
+        {
+          "time": "05:33:03",
+          "level": "INFO",
+          "message": "Page 14: 100 products"
+        },
+        {
+          "time": "05:33:08",
+          "level": "INFO",
+          "message": "Page 15: 100 products"
+        },
+        {
+          "time": "05:33:13",
+          "level": "INFO",
+          "message": "Page 16: 60 products"
+        },
+        {
+          "time": "05:33:13",
+          "level": "INFO",
+          "message": "Done: 1560 products fetched"
+        },
+        {
+          "time": "05:33:13",
+          "level": "INFO",
+          "message": "Found 1 variable products, fetching variations..."
+        },
+        {
+          "time": "05:33:15",
+          "level": "INFO",
+          "message": "Variations page 1: 4 items"
+        },
+        {
+          "time": "05:33:15",
+          "level": "INFO",
+          "message": "Fetched 4 variations, enriched 4"
+        },
+        {
+          "time": "05:33:15",
+          "level": "INFO",
+          "message": "Total: 1559 simple + 4 variations = 1563"
         }
       ]
     },
@@ -30436,7 +31490,7 @@
       "inStock": 1458,
       "outOfStock": 212,
       "error": null,
-      "duration": 78.62,
+      "duration": 75.45,
       "simple": 1433,
       "variable": 210,
       "variations": 782,
@@ -33708,152 +34762,152 @@
       ],
       "logs": [
         {
-          "time": "04:52:16",
+          "time": "05:32:04",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:52:19",
+          "time": "05:32:06",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "04:52:23",
+          "time": "05:32:11",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "04:52:28",
+          "time": "05:32:15",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "04:52:32",
+          "time": "05:32:20",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "04:52:37",
+          "time": "05:32:24",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "04:52:42",
+          "time": "05:32:29",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "04:52:46",
+          "time": "05:32:33",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "04:52:51",
+          "time": "05:32:38",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "04:52:55",
+          "time": "05:32:42",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "04:53:00",
+          "time": "05:32:47",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "04:53:05",
+          "time": "05:32:52",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "04:53:11",
+          "time": "05:32:56",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "04:53:16",
+          "time": "05:33:01",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "04:53:21",
+          "time": "05:33:06",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "04:53:26",
+          "time": "05:33:11",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "04:53:31",
+          "time": "05:33:15",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "04:53:35",
+          "time": "05:33:19",
           "level": "INFO",
           "message": "Page 17: 43 products"
         },
         {
-          "time": "04:53:35",
+          "time": "05:33:19",
           "level": "INFO",
           "message": "Done: 1643 products fetched"
         },
         {
-          "time": "04:53:35",
+          "time": "05:33:19",
           "level": "INFO",
           "message": "Found 210 variable products, fetching variations..."
         },
         {
-          "time": "04:53:36",
+          "time": "05:33:20",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "04:53:41",
+          "time": "05:33:25",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "04:53:46",
+          "time": "05:33:29",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "04:53:50",
+          "time": "05:33:33",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "04:53:54",
+          "time": "05:33:37",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "04:53:59",
+          "time": "05:33:42",
           "level": "INFO",
           "message": "Variations page 6: 100 items"
         },
         {
-          "time": "04:54:03",
+          "time": "05:33:46",
           "level": "INFO",
           "message": "Variations page 7: 100 items"
         },
         {
-          "time": "04:54:07",
+          "time": "05:33:50",
           "level": "INFO",
           "message": "Variations page 8: 82 items"
         },
         {
-          "time": "04:54:07",
+          "time": "05:33:50",
           "level": "INFO",
           "message": "Fetched 782 variations, enriched 772"
         },
         {
-          "time": "04:54:07",
+          "time": "05:33:50",
           "level": "INFO",
           "message": "Total: 1433 simple + 782 variations = 2215"
         }
@@ -33863,14 +34917,14 @@
       "name": "X-Force Tactical",
       "url": "https://x-forcetactical.com.au",
       "platform": "woocommerce",
-      "fetched": 2696,
+      "fetched": 2697,
       "filtered": 285,
-      "final": 2807,
+      "final": 2808,
       "inStock": 1649,
-      "outOfStock": 1158,
+      "outOfStock": 1159,
       "error": null,
-      "duration": 158.29,
-      "simple": 2554,
+      "duration": 142.02,
+      "simple": 2555,
       "variable": 142,
       "variations": 538,
       "filteredProducts": [
@@ -35575,1115 +36629,212 @@
       ],
       "logs": [
         {
-          "time": "04:51:54",
+          "time": "05:31:40",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "04:51:59",
+          "time": "05:31:45",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "04:52:05",
+          "time": "05:31:51",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "04:52:12",
+          "time": "05:31:56",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "04:52:18",
+          "time": "05:32:02",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "04:52:24",
+          "time": "05:32:07",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "04:52:30",
+          "time": "05:32:13",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "04:52:37",
+          "time": "05:32:18",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "04:52:43",
+          "time": "05:32:24",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "04:52:49",
+          "time": "05:32:30",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "04:52:55",
+          "time": "05:32:35",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "04:53:01",
+          "time": "05:32:41",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "04:53:07",
+          "time": "05:32:46",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "04:53:12",
+          "time": "05:32:51",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "04:53:18",
+          "time": "05:32:56",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "04:53:24",
+          "time": "05:33:01",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "04:53:30",
+          "time": "05:33:07",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "04:53:36",
+          "time": "05:33:12",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "04:53:42",
+          "time": "05:33:17",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "04:53:48",
+          "time": "05:33:22",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "04:53:54",
+          "time": "05:33:27",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "04:54:00",
+          "time": "05:33:32",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "04:54:05",
+          "time": "05:33:38",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "04:54:11",
+          "time": "05:33:43",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "04:54:16",
+          "time": "05:33:48",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "04:54:21",
+          "time": "05:33:53",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "04:54:27",
+          "time": "05:33:57",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "04:54:32",
+          "time": "05:34:02",
           "level": "INFO",
-          "message": "Page 27: 96 products"
+          "message": "Page 27: 97 products"
         },
         {
-          "time": "04:54:32",
+          "time": "05:34:02",
           "level": "INFO",
-          "message": "Done: 2696 products fetched"
+          "message": "Done: 2697 products fetched"
         },
         {
-          "time": "04:54:32",
+          "time": "05:34:02",
           "level": "INFO",
           "message": "Found 142 variable products, fetching variations..."
         },
         {
-          "time": "04:54:35",
+          "time": "05:34:04",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "04:54:40",
+          "time": "05:34:09",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "04:54:46",
+          "time": "05:34:14",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "04:54:51",
+          "time": "05:34:19",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "04:54:56",
+          "time": "05:34:24",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "04:55:01",
+          "time": "05:34:28",
           "level": "INFO",
           "message": "Variations page 6: 38 items"
         },
         {
-          "time": "04:55:01",
+          "time": "05:34:28",
           "level": "INFO",
           "message": "Fetched 538 variations, enriched 528"
         },
         {
-          "time": "04:55:01",
+          "time": "05:34:28",
           "level": "INFO",
-          "message": "Total: 2554 simple + 538 variations = 3092"
+          "message": "Total: 2555 simple + 538 variations = 3093"
         }
       ]
-    },
-    {
-      "name": "Cyber Trigger",
-      "url": "https://www.cybertrigger.com.au",
-      "platform": "woocommerce",
-      "fetched": 434,
-      "filtered": 4,
-      "filteredProducts": [],
-      "final": 430,
-      "inStock": 374,
-      "outOfStock": 56,
-      "error": null,
-      "duration": 0.11,
-      "cached_at": "2026-01-05T03:09:35.767081+00:00",
-      "logs": [
-        {
-          "time": "cache",
-          "level": "INFO",
-          "message": "Loaded from cache (2026-01-05T03:09:35.767081+00:00)"
-        }
-      ],
-      "warning": "Using cache: HTTPSConnectionPool(host='www.cybertrigger.com.au', port=443): Max retries exceeded with url: /wp-json/wc/store/v1/products?per_page=100&page=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='www.cybertrigger.com.au', port=443) at 0x7f441a2dd4c0>, 'Connection to www.cybertrigger.com.au timed out. (connect timeout=30)'))"
-    },
-    {
-      "name": "Safari Zoomer Tactical",
-      "url": "https://safarizoomertactical.com",
-      "platform": "woocommerce",
-      "fetched": 1563,
-      "filtered": 149,
-      "filteredProducts": [
-        {
-          "title": "FIRST STRIKE ROUNDS (150 ROUNDS) .68 CALIBER Green",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "EMF100 EMF200 DYE DAM CF20 PRO 20 Round Magazine",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 and Scout Magazine 30 Rounds Clear",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 16 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 8 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Minecraft Pistol Toy &#8211; Blue",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Pistol Toy &#8211; Green / Yellow",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Pistol Toy &#8211; Black",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Hammer &#8211; Green",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Hammer &#8211; Blue",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Rifle &#8211; Blue",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Rifle &#8211; Grey",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Rifle &#8211; Yellow",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Pickaxe &#8211; Grey",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Pickaxe &#8211; Blue",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Pickaxe &#8211; Yellow",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Diamond Sword &#8211; Grey",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Diamond Sword &#8211; Blue with Black",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Diamond Sword &#8211; Light Blue",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Minecraft Diamond Sword &#8211; Yellow",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 5XLARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 4XLARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 2XLARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; 3XLARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; XLARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI ZOOMER JERSEY &#8211; SHORT SLEEVES &#8211; LARGE",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Small Plastic Knife &#8211; Black",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "M9 Plastic Knife &#8211; Black",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Large Plastic Knife",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Tactical Patch Wall &#8211; Large  Tan",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Patch Wall &#8211; Large Black",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Patch Wall &#8211; Standard Multicam",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Patch Wall &#8211; Standard Tan",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tactical Patch Wall &#8211; Standard Black",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARI ZOOMER / EPIC ADVENTURES Magazine Band &#8211; 1 piece #5",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC GELWARS / STAY PAWSITIVE Magazine Band &#8211; 1 piece #2",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARI ZOOMER / KINGS SWORDS Magazine Band &#8211; 1 piece #1",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC GELWARS / GELX SA Magazine Band &#8211; 1 piece #4",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC / GATEAWAY MAGAZINE BAND &#8211; 1 piece #3",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 16 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Harrier/Seagull roller prime slider Worker",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Nightingale 2.0 FULL AUTO Pro / Ultra Soft Dart Worker Blaster &#8211; White",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Nightingale 2.0 SEMI AUTO Pro / Ultra Soft Dart Worker Blaster &#8211; White",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Seagull Worker Foam Dart Blaster &#8211; Khaki",
-          "reason": "title",
-          "keyword": "foam dart",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Seagull Worker Foam Dart Blaster &#8211; White",
-          "reason": "title",
-          "keyword": "foam dart",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Worker Mod 1.6mm-250mm Wire Spring Coil for Harrier Blaster",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "EMF100 EMEK -Eclipse &#8211; Black",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Milsig Magic Core Black HPA tank &#038; 13CI Stock- contact store",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Milsig M79A1 100mm Foam Dart Blaster &#8211; Yellow",
-          "reason": "title",
-          "keyword": "foam dart",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Worker mod Harrier plunger replacement for Harrier Blaster",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod Bamboo Short Darts Three-ring mold for Foam Blaster Toy",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod Metal Barrel Tube for Harrier Blaster 550mm",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod Metal Barrel Tube for Harrier Blaster 450mm",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod 1.6mm-300mm Wire Spring Coil for Harrier Blaster",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod 10-Darts Talon Stefan Short Darts Magazine for Nerf Modfiy Toys",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod 15-Darts Talon Stefan Magazine Short Darts Clip for Nerf Modify Toy Color Black",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "WORKER MOD 200PCS Bambo Stefan Short Darts for Nerf Modify Toy &#8211; Orange",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod 200pcs Bamboo Stefan Short Darts for Nerf Blaster Modify Toy -Black",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Mod 200pcs Gen3+ Stefan Short Darts Color Red Orange",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Milsig M79 200mm Foam Dart Blaster &#8211; Red",
-          "reason": "title",
-          "keyword": "foam dart",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Unicorn Soft Blaster",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Harrier Blaster -Orange (Soft Dart)",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "Worker Harrier Blaster -White (Soft Dart)",
-          "reason": "category",
-          "keyword": "soft dart",
-          "filterCategory": "toys_rc"
-        },
-        {
-          "title": "$35 Flat rate Shipping fee",
-          "reason": "title",
-          "keyword": "flat rate shipping",
-          "filterCategory": "shipping_services"
-        },
-        {
-          "title": "$20 Flat rate Shipping fee",
-          "reason": "title",
-          "keyword": "flat rate shipping",
-          "filterCategory": "shipping_services"
-        },
-        {
-          "title": "FIRST STRIKE ROUNDS (600 ROUNDS) .68 CALIBER",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "FIRST STRIKE ROUNDS (150 ROUNDS) .68 CALIBER Orange",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 BALL LATCH DETENT",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 PAINTBALL GUN ANTI CHOP LOK BOLT(TM) WITH A5 OR COCKER BARREL THREAD &#8211; Auto Cocker Barrel Thread",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 PAINTBALL GUN ANTI CHOP LOK BOLT(TM) WITH A5 OR COCKER BARREL THREAD &#8211; A5 Thread",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 DROP DOWN ASA STANDARD",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 A5 BARREL ADAPTER",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 20 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 18 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HECKLER &#038; KOCH SFP9 VP9 T4E PAINTBALL PISTOL QUICK PIERCING MAGAZINE",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Nos Gas Car Key Chain &#8211; 1 pc",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "Comic Online Games Model Gun Toys Keychain NO69002",
-          "reason": "title",
-          "keyword": "keychain",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "Comic Online Games Model Gun Toys Keychain NO69001",
-          "reason": "title",
-          "keyword": "keychain",
-          "filterCategory": "general_toys"
-        },
-        {
-          "title": "Walking Unicorn &#8211; MUSIC AND DANCE",
-          "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 12 inch (",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HAMMERHEAD ONESHOT FS/SHAPED ROUNDS OPTIMIZED RIFLED BARREL FOR T15 (22MM MUZZLE THREADS) LENGTH 7 inch",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T4E GLOCK 17 GEN5 QUICK PIERCING MAGAZINE",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "SMITH AND WESSON M&#038;P T4E PAINTBALL PISTOL QUICK PIERCING MAGAZINE",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": ".43 CALIBER PAINTBALLS &#8211; 150g about 200CT (Orange)",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": ".43 CALIBER PAINTBALLS &#8211; 150g about 200CT (Blue)",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "FSC PAINTBALL PISTOL",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T4E GLOCK 17 GEN5 PAINTBALL PISTOL -one left",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T4E HDX .68 CALIBER PAINTBALL PUMP ACTION SHOTGUN &#8211; one left",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HDR PAINTBALL REVOLVER .68 CAL PISTOL T4E HDR 68",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "SMITH AND WESSON M&#038;P T4E PAINTBALL PISTOL (BLACK)",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "HECKLER &#038; KOCH SFP9 VP9 T4E PAINTBALL PISTOL (BLACK)",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "FIRST STRIKE ROUNDS (600 ROUNDS) .68 CALIBER- Green",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 HOPPER ADAPTER",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "MCS GEN2 BOX DRIVE MAGAZINE FOR T15 PAINTBALL MARKER",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 MAGAZINE 20 ROUNDS",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "SOLID REMOTE LINE ADAPTER (MILSPEC) BUTTSTOCK BUFFER TUBE",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "Custom T15 DMR Paintball Marker",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "T15 M4 PAINTBALL MARKER",
-          "reason": "category",
-          "keyword": "paint",
-          "filterCategory": "hobby_supplies"
-        },
-        {
-          "title": "EPIC SUPPORTER JERSEY",
-          "reason": "title",
-          "keyword": "jersey",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Wolverine 2\u2033 Round MTW Forged Series Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Wolverine Cuddles Patch",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patches &#8211; New Arrival",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SPEEDY PANTS",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC HOODIES Grey",
-          "reason": "title",
-          "keyword": "hoodie",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "EPIC HOODIES BLACK",
-          "reason": "title",
-          "keyword": "hoodie",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "SAFARI CAP -White",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC CAP",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC CAP -WHITE",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC T SHIRT &#8211; WHITE SILK PRINT &#8211;",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC T SHIRT &#8211; COLOUR PRINT",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "EPIC T SHIRT -SILVER PRINT",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARIZOOMER CUP",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARI T Shirt",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARI MASK B",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "SAFARI MASK A",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "12 GUN KEY SAFE \u2013 S3CH CATEGORY \u2013 A/B/C EXTERNAL H",
-          "reason": "title",
-          "keyword": "gun key safe",
-          "filterCategory": "gun_safes"
-        },
-        {
-          "title": "12 GUN KEY SAFE \u2013S3 CATEGORY \u2013 A/B",
-          "reason": "title",
-          "keyword": "gun key safe",
-          "filterCategory": "gun_safes"
-        },
-        {
-          "title": "8 GUN KEY SAFE \u2013S2CH CATEGORY \u2013 A/B/C EXTERNAL H",
-          "reason": "title",
-          "keyword": "gun key safe",
-          "filterCategory": "gun_safes"
-        },
-        {
-          "title": "8 GUN KEY SAFE \u2013 S2 CATEGORY \u2013 A/B",
-          "reason": "title",
-          "keyword": "gun key safe",
-          "filterCategory": "gun_safes"
-        },
-        {
-          "title": "4 GUN KEY SAFE \u2013S1 CATEGORY \u2013 A/B",
-          "reason": "title",
-          "keyword": "gun key safe",
-          "filterCategory": "gun_safes"
-        },
-        {
-          "title": "M4SS yellow motherboard switch",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "SKD G18 Motherboard",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "M92 motherboard",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Aug Mother Board",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Vector Motherboard",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "M4SS Motherboard",
-          "reason": "category",
-          "keyword": "board",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Pen",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Key Chain",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "UMP45 gel blaster metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Metal feel ACR model gel blaster sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "White color kriss vector gel blaster metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Red color kriss vector gel blaster metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Safari zoomer 9*8CM sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "G18 glock metal feel stickers black / white color",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "M4 Gold Silver Color metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "M4 Black white silver color metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "M4 gel blaster black white color metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "ACR gel blaster metal feel sticker",
-          "reason": "category",
-          "keyword": "sticker",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Tape Camo Large",
-          "reason": "category",
-          "keyword": "tape",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Tape Camo standard (reusable)",
-          "reason": "category",
-          "keyword": "tape",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "Tape Grey standard (reusable)",
-          "reason": "category",
-          "keyword": "tape",
-          "filterCategory": "misc"
-        },
-        {
-          "title": "SafariZoomer Tactical Patches",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patches &#8211; Rectangle",
-          "reason": "category",
-          "keyword": "patch",
-          "filterCategory": "apparel_merch"
-        }
-      ],
-      "final": 1414,
-      "inStock": 1105,
-      "outOfStock": 309,
-      "error": null,
-      "duration": 0.38,
-      "cached_at": "2026-01-05T03:11:16.396290+00:00",
-      "logs": [
-        {
-          "time": "cache",
-          "level": "INFO",
-          "message": "Loaded from cache (2026-01-05T03:11:16.396290+00:00)"
-        }
-      ],
-      "warning": "Using cache: HTTPSConnectionPool(host='safarizoomertactical.com', port=443): Max retries exceeded with url: /wp-json/wc/store/v1/products?per_page=100&page=1 (Caused by ConnectTimeoutError(<HTTPSConnection(host='safarizoomertactical.com', port=443) at 0x7f441a2dd0a0>, 'Connection to safarizoomertactical.com timed out. (connect timeout=30)'))"
     }
   ],
   "totals": {
-    "rawProducts": 23380,
-    "afterFilter": 22703,
-    "uniqueItems": 22450,
-    "productGroups": 20553,
-    "skuMatched": 10862,
+    "rawProducts": 23243,
+    "afterFilter": 22704,
+    "uniqueItems": 22451,
+    "productGroups": 20554,
+    "skuMatched": 10863,
     "titleMatched": 9691,
     "multiVendor": 1511,
-    "inStock": 12766,
-    "outOfStock": 7785
+    "inStock": 12764,
+    "outOfStock": 7788
   },
   "tracking": {
-    "new": 0,
-    "changed": 4,
-    "unchanged": 22446
+    "new": 1,
+    "changed": 3,
+    "unchanged": 22447
   }
 }
