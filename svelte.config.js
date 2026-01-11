@@ -10,7 +10,7 @@ const config = {
 			pages: 'dist',
 			assets: 'dist',
 			fallback: undefined,
-			precompress: false,
+			precompress: true,
 			strict: true
 		}),
 		paths: {
@@ -18,8 +18,13 @@ const config = {
 		},
 		prerender: {
 			handleHttpError: ({ path, message }) => {
-				// Ignore missing favicon during prerender
-				if (path === '/favicon.ico') {
+				// Ignore missing favicon/icon files during prerender (user will add later)
+				if (
+					path === '/favicon.ico' ||
+					path.startsWith('/favicon-') ||
+					path === '/apple-touch-icon.png' ||
+					path === '/og-default.png'
+				) {
 					return;
 				}
 				throw new Error(message);

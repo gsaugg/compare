@@ -18,6 +18,7 @@
 	import { replaceState } from '$app/navigation';
 	import { calculateDistance } from '$lib/components/map/distance';
 	import storesConfig from '../../../stores.json';
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 
 	// Build store name lookup from stores.json (single source of truth)
 	const storeNames: Record<string, string> = Object.fromEntries(
@@ -248,18 +249,11 @@
 	);
 </script>
 
-<svelte:head>
-	<title>Map - GSAU.gg</title>
-	<meta
-		name="description"
-		content="Find gel blaster stores and fields across Australia. Browse locations, get directions, and discover places to play."
-	/>
-	<link rel="canonical" href="https://www.gsau.gg/map" />
-	<meta property="og:title" content="Map - GSAU.gg" />
-	<meta property="og:description" content="Find gel blaster stores and fields across Australia." />
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.gsau.gg/map" />
-</svelte:head>
+<MetaTags
+	title="Map - GSAU.gg"
+	description="Find gel blaster stores and fields across Australia. Browse locations, get directions, and discover places to play."
+	url="https://www.gsau.gg/map"
+/>
 
 {#if locations.isLoading}
 	<div class="flex h-[calc(100dvh-56px-48px)] items-center justify-center">

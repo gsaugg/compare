@@ -7,6 +7,7 @@
 	import { Separator } from '$lib/components/ui/separator';
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import * as Alert from '$lib/components/ui/alert';
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 
 	// Fetch items and item history
 	const items = createQuery(() => ({
@@ -312,21 +313,11 @@
 	}
 </script>
 
-<svelte:head>
-	<title>Tracker - GSAU.gg</title>
-	<meta
-		name="description"
-		content="Track price and stock changes on gel blaster products. See the latest price drops, restocks, and deals across Australian retailers."
-	/>
-	<link rel="canonical" href="https://www.gsau.gg/tracker" />
-	<meta property="og:title" content="Tracker - GSAU.gg" />
-	<meta
-		property="og:description"
-		content="Track price and stock changes on gel blaster products. See the latest price drops, restocks, and deals."
-	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.gsau.gg/tracker" />
-</svelte:head>
+<MetaTags
+	title="Tracker - GSAU.gg"
+	description="Track price and stock changes on gel blaster products. See the latest price drops, restocks, and deals across Australian retailers."
+	url="https://www.gsau.gg/tracker"
+/>
 
 <div class="space-y-4">
 	<!-- Compact header -->

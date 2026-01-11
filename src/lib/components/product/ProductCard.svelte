@@ -77,6 +77,9 @@
 		<img
 			src={imageSrc}
 			alt={product.title}
+			width="300"
+			height="200"
+			decoding="async"
 			class="h-full w-full object-contain p-2 transition-transform group-hover:scale-105"
 			loading="lazy"
 			onerror={() => (imageError = true)}

@@ -2,6 +2,7 @@
 	import { page } from '$app/stores';
 	import { Button } from '$lib/components/ui/button';
 	import * as Alert from '$lib/components/ui/alert';
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 
 	const statusCode = $derived($page.status);
 	const errorMessage = $derived($page.error?.message ?? 'An unexpected error occurred');
@@ -17,9 +18,7 @@
 	}
 </script>
 
-<svelte:head>
-	<title>{title} - GSAU.gg</title>
-</svelte:head>
+<MetaTags title="{title} - GSAU.gg" {description} url="https://www.gsau.gg/" noindex={true} />
 
 <div class="flex min-h-[60vh] flex-col items-center justify-center px-4 text-center">
 	<div class="max-w-md space-y-6">

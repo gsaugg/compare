@@ -15,6 +15,7 @@
 	import CircleCheck from '@lucide/svelte/icons/circle-check';
 	import CircleAlert from '@lucide/svelte/icons/circle-alert';
 	import Clock from '@lucide/svelte/icons/clock';
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 
 	// Fetch stats data
 	const stats = createQuery(() => ({
@@ -118,21 +119,12 @@
 	});
 </script>
 
-<svelte:head>
-	<title>Scraper Status - GSAU.gg</title>
-	<meta
-		name="description"
-		content="Monitor store scraper health and logs. Real-time monitoring of gel blaster store data collection."
-	/>
-	<link rel="canonical" href="https://www.gsau.gg/status" />
-	<meta property="og:title" content="Scraper Status - GSAU.gg" />
-	<meta
-		property="og:description"
-		content="Real-time monitoring of store data collection for gel blaster retailers."
-	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.gsau.gg/status" />
-</svelte:head>
+<MetaTags
+	title="Scraper Status - GSAU.gg"
+	description="Monitor store scraper health and logs. Real-time monitoring of gel blaster store data collection."
+	url="https://www.gsau.gg/status"
+	noindex={true}
+/>
 
 <div class="space-y-4 sm:space-y-6">
 	<!-- Header -->

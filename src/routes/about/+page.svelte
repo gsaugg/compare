@@ -1,22 +1,12 @@
 <script lang="ts">
-	// About page - static content, no data fetching needed
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 </script>
 
-<svelte:head>
-	<title>About - GSAU.gg</title>
-	<meta
-		name="description"
-		content="Learn about GSAU.gg, the Australian gel blaster price comparison tool built by the Gelsoft AU Discord community."
-	/>
-	<link rel="canonical" href="https://www.gsau.gg/about" />
-	<meta property="og:title" content="About - GSAU.gg" />
-	<meta
-		property="og:description"
-		content="Learn about GSAU.gg, the Australian gel blaster price comparison tool built by the Gelsoft AU Discord community."
-	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.gsau.gg/about" />
-</svelte:head>
+<MetaTags
+	title="About - GSAU.gg"
+	description="Learn about GSAU.gg, the Australian gel blaster price comparison tool built by the Gelsoft AU Discord community."
+	url="https://www.gsau.gg/about"
+/>
 
 <article class="prose prose-slate dark:prose-invert mx-auto max-w-3xl">
 	<h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-foreground">About This Project</h1>

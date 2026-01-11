@@ -12,6 +12,7 @@
 	import * as Tooltip from '$lib/components/ui/tooltip';
 	import * as Alert from '$lib/components/ui/alert';
 	import { Progress } from '$lib/components/ui/progress';
+	import MetaTags from '$lib/components/seo/MetaTags.svelte';
 
 	// Sync filters from URL when navigating to this page
 	$effect(() => {
@@ -110,31 +111,36 @@
 
 <svelte:window onresize={handleResize} />
 
+<MetaTags
+	title="GSAU.gg - Gel Blaster Price Comparison"
+	description="Compare prices across 14+ Australian gel blaster retailers. Find the best deals on gel blasters, accessories, and more."
+	url="https://www.gsau.gg/"
+/>
+
 <svelte:head>
-	<title>GSAU.gg - Gel Blaster Price Comparison</title>
-	<meta
-		name="description"
-		content="Compare prices across 14+ Australian gel blaster retailers. Find the best deals on gel blasters, accessories, and more."
-	/>
-	<link rel="canonical" href="https://www.gsau.gg/" />
-	<meta property="og:title" content="GSAU.gg - Gel Blaster Price Comparison" />
-	<meta
-		property="og:description"
-		content="Compare prices across 14+ Australian gel blaster retailers. Find the best deals on gel blasters, accessories, and more."
-	/>
-	<meta property="og:type" content="website" />
-	<meta property="og:url" content="https://www.gsau.gg/" />
 	{@html `<script type="application/ld+json">${JSON.stringify({
 		'@context': 'https://schema.org',
-		'@type': 'WebSite',
-		name: 'GSAU.gg',
-		description: 'Compare prices across 14+ Australian gel blaster retailers',
-		url: 'https://www.gsau.gg/',
-		potentialAction: {
-			'@type': 'SearchAction',
-			target: 'https://www.gsau.gg/?q={search_term_string}',
-			'query-input': 'required name=search_term_string'
-		}
+		'@graph': [
+			{
+				'@type': 'WebSite',
+				name: 'GSAU.gg',
+				description: 'Compare prices across 14+ Australian gel blaster retailers',
+				url: 'https://www.gsau.gg/',
+				potentialAction: {
+					'@type': 'SearchAction',
+					target: 'https://www.gsau.gg/?q={search_term_string}',
+					'query-input': 'required name=search_term_string'
+				}
+			},
+			{
+				'@type': 'Organization',
+				name: 'GSAU.gg',
+				url: 'https://www.gsau.gg/',
+				description:
+					'Australian gel blaster price comparison tool by the Gelsoft AU Discord community',
+				sameAs: ['https://discord.gg/rmfZtWD95f', 'https://github.com/gsaugg/compare']
+			}
+		]
 	})}</script>`}
 </svelte:head>
 
