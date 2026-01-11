@@ -170,28 +170,6 @@ def prune_old_entries(history_data: dict, days: int = HISTORY_RETENTION_DAYS) ->
     return removed
 
 
-def cleanup_orphaned_items(history_data: dict, current_item_ids: set[str]) -> int:
-    """Remove history for items that no longer exist.
-
-    Returns:
-        Number of orphaned items removed
-    """
-    orphaned = [
-        item_id
-        for item_id in history_data.get("history", {}).keys()
-        if item_id not in current_item_ids
-    ]
-
-    for item_id in orphaned:
-        del history_data["history"][item_id]
-
-    if orphaned:
-        sample = orphaned[:5]
-        logger.info(f"Cleaned up {len(orphaned)} orphaned items from history: {sample}")
-
-    return len(orphaned)
-
-
 def track_items(items: dict, history_data: dict) -> dict:
     """Track item changes (price and stock) for all items.
 

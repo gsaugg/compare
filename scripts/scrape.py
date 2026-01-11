@@ -38,7 +38,6 @@ from item_history import (
     save_history as save_item_history,
     track_items,
     prune_old_entries,
-    cleanup_orphaned_items,
     ITEM_HISTORY_FILE,
 )
 from generate_frontend import generate_frontend_data
@@ -471,7 +470,6 @@ def main():
     history_data = load_item_history()
     price_stats = track_items(items_dict, history_data)
     prune_old_entries(history_data)
-    cleanup_orphaned_items(history_data, set(items_dict.keys()))
     save_item_history(history_data)
     print(f"  {price_stats['new']} new, {price_stats['changed']} changed, "
           f"{price_stats['unchanged']} unchanged")
