@@ -27,7 +27,7 @@ Price comparison tool for Australian gel blaster products. Aggregates pricing fr
 - **Charts:** Chart.js (lazy loaded)
 - **Search:** Fuse.js
 - **Validation:** Zod
-- **Analytics:** Google Analytics 4 (with store click tracking)
+- **Analytics:** Google Analytics 4 (store clicks, search, filter tracking)
 - **Scraper:** Python (requests, rapidfuzz, pyahocorasick)
 - **Build:** Vite
 - **Hosting:** GitHub Pages (static adapter)
