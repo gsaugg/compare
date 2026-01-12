@@ -1,5 +1,6 @@
 import { browser } from '$app/environment';
 import { replaceState } from '$app/navigation';
+import { trackSearch, trackFilterChange } from '$lib/utils/format';
 
 // Filter state interface
 export interface FilterState {
@@ -121,48 +122,58 @@ function createFilterStore() {
 			state = { ...state, search };
 			if (browser) {
 				syncToUrl(state);
+				if (search) trackSearch(search);
 			}
 		},
 		toggleCategory(category: string) {
-			const categories = state.categories.includes(category)
+			const wasSelected = state.categories.includes(category);
+			const categories = wasSelected
 				? state.categories.filter((c) => c !== category)
 				: [...state.categories, category];
 			state = { ...state, categories };
 			if (browser) {
 				syncToUrl(state);
+				trackFilterChange('category', wasSelected ? `removed:${category}` : category);
 			}
 		},
 		toggleStore(store: string) {
-			const stores = state.stores.includes(store)
+			const wasSelected = state.stores.includes(store);
+			const stores = wasSelected
 				? state.stores.filter((s) => s !== store)
 				: [...state.stores, store];
 			state = { ...state, stores };
 			if (browser) {
 				syncToUrl(state);
+				trackFilterChange('store', wasSelected ? `removed:${store}` : store);
 			}
 		},
 		setPriceRange(min: number | null, max: number | null) {
 			state = { ...state, minPrice: min, maxPrice: max };
 			if (browser) {
 				syncToUrl(state);
+				const range = min !== null || max !== null ? `${min ?? 0}-${max ?? 'max'}` : 'cleared';
+				trackFilterChange('price_range', range);
 			}
 		},
 		setInStockOnly(inStockOnly: boolean) {
 			state = { ...state, inStockOnly };
 			if (browser) {
 				syncToUrl(state);
+				trackFilterChange('in_stock_only', String(inStockOnly));
 			}
 		},
 		setOnSaleOnly(onSaleOnly: boolean) {
 			state = { ...state, onSaleOnly };
 			if (browser) {
 				syncToUrl(state);
+				trackFilterChange('on_sale_only', String(onSaleOnly));
 			}
 		},
 		setSortBy(sortBy: FilterState['sortBy']) {
 			state = { ...state, sortBy };
 			if (browser) {
 				syncToUrl(state);
+				trackFilterChange('sort_by', sortBy);
 			}
 		}
 	};

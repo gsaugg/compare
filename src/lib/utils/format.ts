@@ -80,3 +80,26 @@ export function trackStoreClick(storeName: string): void {
 		});
 	}
 }
+
+/**
+ * Track search event in GA4
+ */
+export function trackSearch(searchTerm: string): void {
+	if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+		window.gtag('event', 'search', {
+			search_term: searchTerm
+		});
+	}
+}
+
+/**
+ * Track filter change event in GA4
+ */
+export function trackFilterChange(filterType: string, filterValue: string): void {
+	if (typeof window !== 'undefined' && typeof window.gtag === 'function') {
+		window.gtag('event', 'filter_change', {
+			filter_type: filterType,
+			filter_value: filterValue
+		});
+	}
+}
