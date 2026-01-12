@@ -1,5 +1,5 @@
 // Enable prerendering for all pages (static site)
 export const prerender = true;
 
-// Disable SSR for client-side only app
-export const ssr = false;
+// Enable SSR so <svelte:head> renders meta tags during prerendering
+export const ssr = true;

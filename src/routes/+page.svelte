@@ -113,7 +113,7 @@
 
 <MetaTags
 	title="GSAU.gg - Gel Blaster Price Comparison"
-	description="Compare prices across 14+ Australian gel blaster retailers. Find the best deals on gel blasters, accessories, and more."
+	description="Compare gel blaster prices across 18 Australian stores. 20,000+ products, updated hourly. A Gelsoft AU community project."
 	url="https://www.gsau.gg/"
 />
 
@@ -124,7 +124,8 @@
 			{
 				'@type': 'WebSite',
 				name: 'GSAU.gg',
-				description: 'Compare prices across 14+ Australian gel blaster retailers',
+				description:
+					'Compare gel blaster prices across 18 Australian stores. 20,000+ products, updated hourly.',
 				url: 'https://www.gsau.gg/',
 				potentialAction: {
 					'@type': 'SearchAction',
@@ -136,8 +137,7 @@
 				'@type': 'Organization',
 				name: 'GSAU.gg',
 				url: 'https://www.gsau.gg/',
-				description:
-					'Australian gel blaster price comparison tool by the Gelsoft AU Discord community',
+				description: 'Gel blaster price comparison tool. A Gelsoft AU community project.',
 				sameAs: ['https://discord.gg/rmfZtWD95f', 'https://github.com/gsaugg/compare']
 			}
 		]

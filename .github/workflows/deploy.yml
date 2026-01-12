@@ -76,3 +76,20 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
+      - name: Purge Cloudflare cache
+        if: success()
+        run: |
+          curl -X POST "https://api.cloudflare.com/client/v4/zones/${{ secrets.CF_ZONE_ID }}/purge_cache" \
+            -H "Authorization: Bearer ${{ secrets.CF_API_TOKEN }}" \
+            -H "Content-Type: application/json" \
+            --data '{"files":[
+              "https://www.gsau.gg/og-default.png",
+              "https://www.gsau.gg/favicon.ico",
+              "https://www.gsau.gg/favicon-16x16.png",
+              "https://www.gsau.gg/favicon-32x32.png",
+              "https://www.gsau.gg/favicon-192x192.png",
+              "https://www.gsau.gg/favicon-512x512.png",
+              "https://www.gsau.gg/apple-touch-icon.png",
+              "https://www.gsau.gg/site.webmanifest"
+            ]}'
