@@ -1,12 +1,12 @@
 # GSAU.gg
 
-Price comparison tool for Australian gel blaster products. Aggregates pricing from 17 retailers and updates hourly.
+Price comparison tool for Australian gel blaster products. Aggregates pricing from 18 retailers and updates hourly.
 
 **Live site:** https://www.gsau.gg
 
 ## Features
 
-- Search and filter across 20,000+ products from 17 stores
+- Search and filter across 20,000+ products from 18 stores
 - Compare prices from multiple stores side-by-side
 - **1-year price history** with interactive charts per vendor
 - **Price change badges** (↓/↑ %) for changes within the last 7 days
