@@ -11,7 +11,7 @@ import re
 
 from rapidfuzz import fuzz, process
 
-from config import FUZZY_THRESHOLD
+from config import FUZZY_THRESHOLD, FUZZY_THRESHOLD_MIXED
 
 log = logging.getLogger(__name__)
 
@@ -125,10 +125,13 @@ def match_items(items: dict) -> list[dict]:
     # Track all matches for efficient lookup
     all_matches: list[dict] = []
 
+    # Track whether any item in each group has a valid SKU (for mixed threshold)
+    group_has_sku: dict[str, bool] = {}
+
     # Keys for fuzzy matching (normalized titles)
     title_keys: list[str] = []
 
-    stats = {"sku_matches": 0, "fuzzy_matches": 0, "new_groups": 0, "same_store_skipped": 0}
+    stats = {"sku_matches": 0, "fuzzy_matches": 0, "new_groups": 0, "same_store_skipped": 0, "mixed_blocked": 0}
 
     # Sort items for deterministic matching
     sorted_items = sorted(items.items(), key=lambda x: (normalize_title(x[1]["title"]), x[0]))
@@ -157,6 +160,7 @@ def match_items(items: dict) -> list[dict]:
 
         # 2. Try fuzzy title match (if no SKU match)
         # Use token_sort_ratio to ignore word order differences
+        item_has_sku = is_valid_sku(sku)
         if not matched and title_keys:
             result = process.extractOne(
                 normalized, title_keys, scorer=fuzz.token_sort_ratio, score_cutoff=FUZZY_THRESHOLD
@@ -164,15 +168,32 @@ def match_items(items: dict) -> list[dict]:
             if result:
                 match_key = result[0]
                 match_group = title_groups[match_key]
+                old_group_id = match_group["id"]
+                target_has_sku = group_has_sku.get(old_group_id, False)
+
+                # Require higher threshold (95%) when mixing SKU and non-SKU items
+                # This prevents false positives like "Carbine" matching "SBR"
+                if item_has_sku != target_has_sku:
+                    if result[1] < FUZZY_THRESHOLD_MIXED:
+                        stats["mixed_blocked"] += 1
+                        result = None  # Block low-confidence mixed match
+
+            if result:
+                match_key = result[0]
+                match_group = title_groups[match_key]
+                old_group_id = match_group["id"]
 
                 # Only match if from a different store (cross-store matching only)
-                old_group_id = match_group["id"]
                 if store_id not in group_stores.get(old_group_id, set()):
                     match_group["items"].append(item_id)
                     group_stores[old_group_id].add(store_id)
 
+                    # Update group SKU status if this item has a SKU
+                    if item_has_sku:
+                        group_has_sku[old_group_id] = True
+
                     # Also register this item's SKU for future matches
-                    if is_valid_sku(sku):
+                    if item_has_sku:
                         sku_normalized = normalize_sku(sku)
                         if sku_normalized not in sku_groups:
                             sku_groups[sku_normalized] = match_group
@@ -181,8 +202,9 @@ def match_items(items: dict) -> list[dict]:
                                 match_group["matchedBy"] = "sku"
                                 new_group_id = f"sku-{sku_normalized}"
                                 match_group["id"] = new_group_id
-                                # Update group_stores with new ID
+                                # Update group_stores and group_has_sku with new ID
                                 group_stores[new_group_id] = group_stores.pop(old_group_id)
+                                group_has_sku[new_group_id] = group_has_sku.pop(old_group_id, True)
 
                     stats["fuzzy_matches"] += 1
                     matched = True
@@ -216,6 +238,9 @@ def match_items(items: dict) -> list[dict]:
             # Track which stores are in this group
             group_stores[match_id] = {store_id}
 
+            # Track whether this group started with a SKU item
+            group_has_sku[match_id] = is_valid_sku(sku)
+
             # Register in appropriate lookup
             if is_valid_sku(sku):
                 sku_groups[sku_normalized] = new_group
@@ -228,7 +253,7 @@ def match_items(items: dict) -> list[dict]:
     log.info(
         f"Matching complete: {stats['new_groups']} groups, "
         f"{stats['sku_matches']} SKU matches, {stats['fuzzy_matches']} fuzzy matches, "
-        f"{stats['same_store_skipped']} same-store skipped"
+        f"{stats['mixed_blocked']} mixed blocked, {stats['same_store_skipped']} same-store skipped"
     )
 
     return all_matches

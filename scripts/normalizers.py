@@ -246,7 +246,17 @@ class ShopifyNormalizer(ProductNormalizer):
 
     def get_variant_regular_price(self, product: dict, variant: dict) -> float | None:
         compare_price = variant.get("compare_at_price")
-        return float(compare_price) if compare_price else None
+        if not compare_price:
+            return None
+
+        compare_price_float = float(compare_price)
+        price = float(variant.get("price", 0))
+
+        # Reject invalid: regularPrice must be >= salePrice
+        if compare_price_float < price:
+            return None
+
+        return compare_price_float
 
     def get_image(self, product: dict) -> str | None:
         images = product.get("images", [])

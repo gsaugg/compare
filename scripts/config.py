@@ -28,6 +28,7 @@ FUTURE_TIMEOUT = 300  # seconds to wait for each store fetch (5 min)
 # Data quality
 MIN_PRICE = 0.50  # Reject products under this price
 FUZZY_THRESHOLD = 90  # Minimum similarity score for fuzzy matching (0-100)
+FUZZY_THRESHOLD_MIXED = 95  # Higher threshold when mixing SKU and non-SKU items
 MAX_TAGS = 10  # Maximum tags per product
 MAX_ID_LENGTH = 50  # Maximum length for product IDs
 
