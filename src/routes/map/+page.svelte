@@ -252,7 +252,7 @@
 <MetaTags
 	title="Map - GSAU.gg"
 	description="Find gel blaster stores and fields across Australia. Browse locations, get directions, and discover places to play."
-	url="https://www.gsau.gg/map"
+	url="https://www.gsau.gg/map/"
 />
 
 {#if locations.isLoading}

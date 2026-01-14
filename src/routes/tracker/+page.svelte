@@ -316,7 +316,7 @@
 <MetaTags
 	title="Tracker - GSAU.gg"
 	description="Track price and stock changes on gel blaster products. See the latest price drops, restocks, and deals across Australian retailers."
-	url="https://www.gsau.gg/tracker"
+	url="https://www.gsau.gg/tracker/"
 />
 
 <div class="space-y-4">
