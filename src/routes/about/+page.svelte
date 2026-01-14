@@ -5,7 +5,7 @@
 <MetaTags
 	title="About - GSAU.gg"
 	description="Learn about GSAU.gg, the Australian gel blaster price comparison tool built by the Gelsoft AU Discord community."
-	url="https://www.gsau.gg/about"
+	url="https://www.gsau.gg/about/"
 />
 
 <article class="prose prose-slate dark:prose-invert mx-auto max-w-3xl">

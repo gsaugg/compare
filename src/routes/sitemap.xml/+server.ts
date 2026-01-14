@@ -25,19 +25,19 @@ export const GET: RequestHandler = async ({ fetch }) => {
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.gsau.gg/tracker</loc>
+    <loc>https://www.gsau.gg/tracker/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>hourly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.gsau.gg/map</loc>
+    <loc>https://www.gsau.gg/map/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://www.gsau.gg/about</loc>
+    <loc>https://www.gsau.gg/about/</loc>
     <lastmod>${lastmod}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -122,7 +122,7 @@
 <MetaTags
 	title="Scraper Status - GSAU.gg"
 	description="Monitor store scraper health and logs. Real-time monitoring of gel blaster store data collection."
-	url="https://www.gsau.gg/status"
+	url="https://www.gsau.gg/status/"
 	noindex={true}
 />
 

@@ -138,7 +138,7 @@
 				name: 'GSAU.gg',
 				url: 'https://www.gsau.gg/',
 				description: 'Gel blaster price comparison tool. A Gelsoft AU community project.',
-				sameAs: ['https://discord.gg/rmfZtWD95f', 'https://github.com/gsaugg/compare']
+				sameAs: ['https://discord.gg/rmfZtWD95f', 'https://github.com/gsaugg/compare/']
 			}
 		]
 	})}</script>`}
