@@ -2,4 +2,25 @@ User-agent: *
 Allow: /
 Disallow: /status/
 
+# Prevent crawling of URL parameter variations
+# These pages use canonical tags but we prefer they aren't crawled at all
+
+# Home page filters
+Disallow: /*?q=
+Disallow: /*?cat=
+Disallow: /*?store=
+Disallow: /*?min=
+Disallow: /*?max=
+Disallow: /*?instock=
+Disallow: /*?sale=
+Disallow: /*?sort=
+
+# Map page filters
+Disallow: /*?type=
+Disallow: /*?state=
+Disallow: /*?selected=
+
+# Canonical domain
+Host: www.gsau.gg
+
 Sitemap: https://www.gsau.gg/sitemap.xml
