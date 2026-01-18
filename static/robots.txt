@@ -5,6 +5,8 @@ Disallow: /status/
 # Prevent crawling of URL parameter variations
 # These pages use canonical tags but we prefer they aren't crawled at all
 Disallow: /*?q=
+Disallow: /*?stock=
+Disallow: /*?sort=
 Disallow: /*?type=
 Disallow: /*?state=
 Disallow: /*?selected=
