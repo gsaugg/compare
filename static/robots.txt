@@ -2,4 +2,14 @@ User-agent: *
 Allow: /
 Disallow: /status/
 
+# Prevent crawling of URL parameter variations
+# These pages use canonical tags but we prefer they aren't crawled at all
+Disallow: /*?q=
+Disallow: /*?type=
+Disallow: /*?state=
+Disallow: /*?selected=
+
+# Canonical domain
+Host: www.gsau.gg
+
 Sitemap: https://www.gsau.gg/sitemap.xml
