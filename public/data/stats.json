@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-02-20T14:01:10.363890+00:00",
-  "duration": 598.39,
+  "lastUpdated": "2026-02-20T14:41:13.964889+00:00",
+  "duration": 606.2,
   "stores": [
     {
       "name": "Command Elite Hobbies",
@@ -12,7 +12,7 @@
       "inStock": 1469,
       "outOfStock": 870,
       "error": null,
-      "duration": 81.26,
+      "duration": 95.61,
       "filteredProducts": [
         {
           "title": "Pok\u00e9mon TCG: Mega Evolution\u2014Ascended Heroes Collection\u2014Erika/Larry",
@@ -22895,122 +22895,137 @@
       ],
       "logs": [
         {
-          "time": "13:51:11",
+          "time": "14:31:07",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:51:12",
+          "time": "14:31:07",
+          "level": "WARNING",
+          "message": "Page 1 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "14:31:13",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:51:16",
+          "time": "14:31:17",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:51:20",
+          "time": "14:31:21",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:51:24",
+          "time": "14:31:24",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "13:51:27",
+          "time": "14:31:28",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "13:51:31",
+          "time": "14:31:32",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "13:51:34",
+          "time": "14:31:35",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "13:51:38",
+          "time": "14:31:39",
+          "level": "WARNING",
+          "message": "Page 8 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "14:31:44",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "13:51:42",
+          "time": "14:31:48",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "13:51:45",
+          "time": "14:31:51",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "13:51:49",
+          "time": "14:31:55",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "13:51:52",
+          "time": "14:31:58",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "13:51:56",
+          "time": "14:32:01",
+          "level": "WARNING",
+          "message": "Page 13 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "14:32:07",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "13:52:00",
+          "time": "14:32:11",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "13:52:04",
+          "time": "14:32:14",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "13:52:08",
+          "time": "14:32:18",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "13:52:11",
+          "time": "14:32:22",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "13:52:15",
+          "time": "14:32:26",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "13:52:19",
+          "time": "14:32:29",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "13:52:22",
+          "time": "14:32:33",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "13:52:26",
+          "time": "14:32:36",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "13:52:29",
+          "time": "14:32:40",
           "level": "INFO",
           "message": "Page 22: 17 products"
         },
         {
-          "time": "13:52:33",
+          "time": "14:32:43",
           "level": "INFO",
           "message": "Done: 5267 products fetched"
         }
@@ -23026,7 +23041,7 @@
       "inStock": 1301,
       "outOfStock": 1745,
       "error": null,
-      "duration": 36.61,
+      "duration": 37.37,
       "filteredProducts": [
         {
           "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
@@ -23211,57 +23226,57 @@
       ],
       "logs": [
         {
-          "time": "13:52:33",
+          "time": "14:32:44",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:52:34",
+          "time": "14:32:45",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:52:38",
+          "time": "14:32:49",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:52:42",
+          "time": "14:32:53",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:52:47",
+          "time": "14:32:58",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "13:52:51",
+          "time": "14:33:02",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "13:52:55",
+          "time": "14:33:06",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "13:52:59",
+          "time": "14:33:10",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "13:53:03",
+          "time": "14:33:14",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "13:53:07",
+          "time": "14:33:18",
           "level": "INFO",
           "message": "Page 9: 225 products"
         },
         {
-          "time": "13:53:10",
+          "time": "14:33:21",
           "level": "INFO",
           "message": "Done: 2225 products fetched"
         }
@@ -23277,7 +23292,7 @@
       "inStock": 822,
       "outOfStock": 114,
       "error": null,
-      "duration": 12.32,
+      "duration": 13.7,
       "filteredProducts": [
         {
           "title": "KELe Luger P08 Shell Ejecting Laser Pistol",
@@ -23318,27 +23333,27 @@
       ],
       "logs": [
         {
-          "time": "13:53:11",
+          "time": "14:33:22",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:53:12",
+          "time": "14:33:24",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:53:17",
+          "time": "14:33:28",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:53:20",
+          "time": "14:33:32",
           "level": "INFO",
           "message": "Page 3: 135 products"
         },
         {
-          "time": "13:53:23",
+          "time": "14:33:36",
           "level": "INFO",
           "message": "Done: 635 products fetched"
         }
@@ -23354,7 +23369,7 @@
       "inStock": 1039,
       "outOfStock": 168,
       "error": null,
-      "duration": 20.6,
+      "duration": 18.18,
       "filteredProducts": [
         {
           "title": "Classic Western Dark Leather Gun Belt - Ornate Cowboy Design",
@@ -23761,37 +23776,37 @@
       ],
       "logs": [
         {
-          "time": "13:53:24",
+          "time": "14:33:36",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:53:25",
+          "time": "14:33:36",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:53:29",
+          "time": "14:33:40",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:53:33",
+          "time": "14:33:44",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:53:37",
+          "time": "14:33:47",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "13:53:41",
+          "time": "14:33:51",
           "level": "INFO",
           "message": "Page 5: 44 products"
         },
         {
-          "time": "13:53:44",
+          "time": "14:33:54",
           "level": "INFO",
           "message": "Done: 1044 products fetched"
         }
@@ -23807,7 +23822,7 @@
       "inStock": 826,
       "outOfStock": 436,
       "error": null,
-      "duration": 17.75,
+      "duration": 19.59,
       "filteredProducts": [
         {
           "title": "Iain Sinclair CardSharp Travel Wallet Knife",
@@ -23866,32 +23881,32 @@
       ],
       "logs": [
         {
-          "time": "13:53:44",
+          "time": "14:33:54",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:53:46",
+          "time": "14:33:56",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:53:51",
+          "time": "14:34:01",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:53:55",
+          "time": "14:34:06",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:53:59",
+          "time": "14:34:10",
           "level": "INFO",
           "message": "Page 4: 226 products"
         },
         {
-          "time": "13:54:02",
+          "time": "14:34:14",
           "level": "INFO",
           "message": "Done: 976 products fetched"
         }
@@ -23907,7 +23922,7 @@
       "inStock": 801,
       "outOfStock": 1131,
       "error": null,
-      "duration": 24.8,
+      "duration": 26.36,
       "filteredProducts": [
         {
           "title": "CZ Shadow 2 T Shirt XL-5XL Sizes",
@@ -24026,42 +24041,42 @@
       ],
       "logs": [
         {
-          "time": "13:54:02",
+          "time": "14:34:14",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:54:04",
+          "time": "14:34:16",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:54:08",
+          "time": "14:34:20",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:54:12",
+          "time": "14:34:25",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:54:17",
+          "time": "14:34:29",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "13:54:21",
+          "time": "14:34:34",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "13:54:24",
+          "time": "14:34:37",
           "level": "INFO",
           "message": "Page 6: 91 products"
         },
         {
-          "time": "13:54:27",
+          "time": "14:34:40",
           "level": "INFO",
           "message": "Done: 1341 products fetched"
         }
@@ -24077,7 +24092,7 @@
       "inStock": 752,
       "outOfStock": 49,
       "error": null,
-      "duration": 15.03,
+      "duration": 16.86,
       "filteredProducts": [
         {
           "title": "ViperTac Velcro Patch",
@@ -24580,27 +24595,27 @@
       ],
       "logs": [
         {
-          "time": "13:54:28",
+          "time": "14:34:41",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:54:30",
+          "time": "14:34:43",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:54:35",
+          "time": "14:34:49",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:54:39",
+          "time": "14:34:54",
           "level": "INFO",
           "message": "Page 3: 237 products"
         },
         {
-          "time": "13:54:43",
+          "time": "14:34:58",
           "level": "INFO",
           "message": "Done: 737 products fetched"
         }
@@ -24616,7 +24631,7 @@
       "inStock": 311,
       "outOfStock": 275,
       "error": null,
-      "duration": 11.65,
+      "duration": 11.47,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -24633,27 +24648,27 @@
       ],
       "logs": [
         {
-          "time": "13:54:43",
+          "time": "14:34:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:54:44",
+          "time": "14:34:59",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:54:48",
+          "time": "14:35:03",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:54:51",
+          "time": "14:35:06",
           "level": "INFO",
           "message": "Page 3: 58 products"
         },
         {
-          "time": "13:54:55",
+          "time": "14:35:09",
           "level": "INFO",
           "message": "Done: 558 products fetched"
         }
@@ -24669,7 +24684,7 @@
       "inStock": 479,
       "outOfStock": 204,
       "error": null,
-      "duration": 12.33,
+      "duration": 11.65,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -24806,27 +24821,27 @@
       ],
       "logs": [
         {
-          "time": "13:54:55",
+          "time": "14:35:09",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:54:56",
+          "time": "14:35:11",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:55:00",
+          "time": "14:35:15",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:55:04",
+          "time": "14:35:18",
           "level": "INFO",
           "message": "Page 3: 147 products"
         },
         {
-          "time": "13:55:07",
+          "time": "14:35:21",
           "level": "INFO",
           "message": "Done: 647 products fetched"
         }
@@ -24842,7 +24857,7 @@
       "inStock": 603,
       "outOfStock": 569,
       "error": null,
-      "duration": 15.18,
+      "duration": 17.95,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -24919,32 +24934,32 @@
       ],
       "logs": [
         {
-          "time": "13:55:07",
+          "time": "14:35:21",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:08",
+          "time": "14:35:23",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:55:12",
+          "time": "14:35:27",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:55:16",
+          "time": "14:35:33",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "13:55:19",
+          "time": "14:35:36",
           "level": "INFO",
           "message": "Page 4: 37 products"
         },
         {
-          "time": "13:55:22",
+          "time": "14:35:39",
           "level": "INFO",
           "message": "Done: 787 products fetched"
         }
@@ -24960,21 +24975,21 @@
       "inStock": 113,
       "outOfStock": 4,
       "error": null,
-      "duration": 4.01,
+      "duration": 3.66,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "13:55:23",
+          "time": "14:35:40",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:24",
+          "time": "14:35:40",
           "level": "INFO",
           "message": "Page 1: 106 products"
         },
         {
-          "time": "13:55:27",
+          "time": "14:35:43",
           "level": "INFO",
           "message": "Done: 106 products fetched"
         }
@@ -24990,7 +25005,7 @@
       "inStock": 401,
       "outOfStock": 274,
       "error": null,
-      "duration": 11.09,
+      "duration": 11.29,
       "filteredProducts": [
         {
           "title": "Chocolate Bar",
@@ -25067,27 +25082,27 @@
       ],
       "logs": [
         {
-          "time": "13:55:27",
+          "time": "14:35:43",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:27",
+          "time": "14:35:44",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "13:55:31",
+          "time": "14:35:48",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "13:55:35",
+          "time": "14:35:51",
           "level": "INFO",
           "message": "Page 3: 36 products"
         },
         {
-          "time": "13:55:38",
+          "time": "14:35:54",
           "level": "INFO",
           "message": "Done: 536 products fetched"
         }
@@ -25103,7 +25118,7 @@
       "inStock": 278,
       "outOfStock": 75,
       "error": null,
-      "duration": 21.88,
+      "duration": 22.52,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -25348,47 +25363,47 @@
       ],
       "logs": [
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Offset 0: 89 products"
         },
         {
-          "time": "13:55:41",
+          "time": "14:35:58",
           "level": "INFO",
           "message": "Offset 20: 69 products"
         },
         {
-          "time": "13:55:44",
+          "time": "14:36:01",
           "level": "INFO",
           "message": "Offset 40: 60 products"
         },
         {
-          "time": "13:55:47",
+          "time": "14:36:04",
           "level": "INFO",
           "message": "Offset 60: 54 products"
         },
         {
-          "time": "13:55:51",
+          "time": "14:36:08",
           "level": "INFO",
           "message": "Offset 80: 41 products"
         },
         {
-          "time": "13:55:54",
+          "time": "14:36:11",
           "level": "INFO",
           "message": "Offset 100: 23 products"
         },
         {
-          "time": "13:55:57",
+          "time": "14:36:14",
           "level": "INFO",
           "message": "Offset 120: 5 products"
         },
         {
-          "time": "13:56:00",
+          "time": "14:36:17",
           "level": "INFO",
           "message": "Done: 341 products fetched"
         }
@@ -25404,7 +25419,7 @@
       "inStock": 378,
       "outOfStock": 76,
       "error": null,
-      "duration": 22.26,
+      "duration": 21.78,
       "simple": 195,
       "variable": 108,
       "variations": 265,
@@ -25436,62 +25451,62 @@
       ],
       "logs": [
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:43",
+          "time": "14:35:59",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "13:55:49",
+          "time": "14:36:06",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "13:55:56",
+          "time": "14:36:12",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "13:56:00",
+          "time": "14:36:16",
           "level": "INFO",
           "message": "Page 4: 3 products"
         },
         {
-          "time": "13:56:00",
+          "time": "14:36:16",
           "level": "INFO",
           "message": "Done: 303 products fetched"
         },
         {
-          "time": "13:56:00",
+          "time": "14:36:16",
           "level": "INFO",
           "message": "Found 108 variable products, fetching variations..."
         },
         {
-          "time": "13:56:03",
+          "time": "14:36:19",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "13:56:08",
+          "time": "14:36:24",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "13:56:13",
+          "time": "14:36:29",
           "level": "INFO",
           "message": "Variations page 3: 65 items"
         },
         {
-          "time": "13:56:13",
+          "time": "14:36:29",
           "level": "INFO",
           "message": "Fetched 265 variations, enriched 245"
         },
         {
-          "time": "13:56:13",
+          "time": "14:36:29",
           "level": "INFO",
           "message": "Total: 195 simple + 265 variations = 460"
         }
@@ -25507,7 +25522,7 @@
       "inStock": 281,
       "outOfStock": 597,
       "error": null,
-      "duration": 27.81,
+      "duration": 28.22,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -25671,82 +25686,82 @@
       ],
       "logs": [
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:39",
+          "time": "14:35:56",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "13:55:43",
+          "time": "14:36:00",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "13:55:47",
+          "time": "14:36:04",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "13:55:51",
+          "time": "14:36:08",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "13:55:55",
+          "time": "14:36:12",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "13:55:58",
+          "time": "14:36:15",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "13:56:02",
+          "time": "14:36:19",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "13:56:06",
+          "time": "14:36:23",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "13:56:06",
+          "time": "14:36:23",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "13:56:06",
+          "time": "14:36:23",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "13:56:07",
+          "time": "14:36:24",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "13:56:10",
+          "time": "14:36:27",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "13:56:14",
+          "time": "14:36:31",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "13:56:14",
+          "time": "14:36:31",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "13:56:14",
+          "time": "14:36:31",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
         }
@@ -25762,7 +25777,7 @@
       "inStock": 1112,
       "outOfStock": 314,
       "error": null,
-      "duration": 104.03,
+      "duration": 101.54,
       "simple": 1571,
       "variable": 1,
       "variations": 4,
@@ -26628,112 +26643,112 @@
       ],
       "logs": [
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:45",
+          "time": "14:36:03",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "13:55:52",
+          "time": "14:36:09",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "13:55:58",
+          "time": "14:36:15",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "13:56:05",
+          "time": "14:36:21",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "13:56:12",
+          "time": "14:36:27",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "13:56:19",
+          "time": "14:36:34",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "13:56:25",
+          "time": "14:36:40",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "13:56:32",
+          "time": "14:36:47",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "13:56:38",
+          "time": "14:36:53",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "13:56:45",
+          "time": "14:36:59",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "13:56:52",
+          "time": "14:37:06",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "13:56:58",
+          "time": "14:37:12",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "13:57:04",
+          "time": "14:37:18",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "13:57:10",
+          "time": "14:37:24",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "13:57:16",
+          "time": "14:37:30",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:36",
           "level": "INFO",
           "message": "Page 16: 72 products"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:36",
           "level": "INFO",
           "message": "Done: 1572 products fetched"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:36",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "13:57:24",
+          "time": "14:37:38",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "13:57:24",
+          "time": "14:37:38",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "13:57:24",
+          "time": "14:37:38",
           "level": "INFO",
           "message": "Total: 1571 simple + 4 variations = 1575"
         }
@@ -26749,7 +26764,7 @@
       "inStock": 1498,
       "outOfStock": 219,
       "error": null,
-      "duration": 81.69,
+      "duration": 82.75,
       "simple": 1445,
       "variable": 222,
       "variations": 822,
@@ -30051,157 +30066,157 @@
       ],
       "logs": [
         {
-          "time": "13:56:00",
+          "time": "14:36:17",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:56:03",
+          "time": "14:36:20",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "13:56:08",
+          "time": "14:36:25",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "13:56:13",
+          "time": "14:36:31",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "13:56:17",
+          "time": "14:36:35",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "13:56:22",
+          "time": "14:36:40",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "13:56:27",
+          "time": "14:36:45",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "13:56:31",
+          "time": "14:36:50",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "13:56:37",
+          "time": "14:36:55",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "13:56:41",
+          "time": "14:37:00",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "13:56:46",
+          "time": "14:37:05",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "13:56:51",
+          "time": "14:37:10",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "13:56:56",
+          "time": "14:37:15",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "13:57:01",
+          "time": "14:37:20",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "13:57:06",
+          "time": "14:37:25",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "13:57:12",
+          "time": "14:37:31",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "13:57:17",
+          "time": "14:37:36",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:40",
           "level": "INFO",
           "message": "Page 17: 67 products"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:40",
           "level": "INFO",
           "message": "Done: 1667 products fetched"
         },
         {
-          "time": "13:57:22",
+          "time": "14:37:40",
           "level": "INFO",
           "message": "Found 222 variable products, fetching variations..."
         },
         {
-          "time": "13:57:24",
+          "time": "14:37:41",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "13:57:28",
+          "time": "14:37:46",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "13:57:32",
+          "time": "14:37:50",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "13:57:37",
+          "time": "14:37:55",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "13:57:41",
+          "time": "14:37:59",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "13:57:46",
+          "time": "14:38:04",
           "level": "INFO",
           "message": "Variations page 6: 100 items"
         },
         {
-          "time": "13:57:51",
+          "time": "14:38:08",
           "level": "INFO",
           "message": "Variations page 7: 100 items"
         },
         {
-          "time": "13:57:55",
+          "time": "14:38:13",
           "level": "INFO",
           "message": "Variations page 8: 100 items"
         },
         {
-          "time": "13:57:59",
+          "time": "14:38:17",
           "level": "INFO",
           "message": "Variations page 9: 22 items"
         },
         {
-          "time": "13:57:59",
+          "time": "14:38:17",
           "level": "INFO",
           "message": "Fetched 822 variations, enriched 812"
         },
         {
-          "time": "13:57:59",
+          "time": "14:38:17",
           "level": "INFO",
           "message": "Total: 1445 simple + 822 variations = 2267"
         }
@@ -30217,7 +30232,7 @@
       "inStock": 1694,
       "outOfStock": 1150,
       "error": null,
-      "duration": 166.27,
+      "duration": 163.3,
       "simple": 2601,
       "variable": 142,
       "variations": 538,
@@ -30405,8 +30420,8 @@
         {
           "title": "Dual Wield Tracer&#8217;s PULSE Pistols from Overwatch &#8211; Bundle Pack",
           "reason": "category",
-          "keyword": "toy",
-          "filterCategory": "trading_cards_games"
+          "keyword": "cosplay corner",
+          "filterCategory": "misc"
         },
         {
           "title": "Spider Water Gun \u2013 Superhero Water Blaster",
@@ -31065,8 +31080,8 @@
         {
           "title": "Tracer&#8217;s PULSE Pistol Gel Blaster from Overwatch",
           "reason": "category",
-          "keyword": "cosplay corner",
-          "filterCategory": "misc"
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
         },
         {
           "title": "Tactical Belt &#8211; Camo",
@@ -31983,197 +31998,197 @@
       ],
       "logs": [
         {
-          "time": "13:55:38",
+          "time": "14:35:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "13:55:43",
+          "time": "14:36:00",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "13:55:50",
+          "time": "14:36:07",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "13:55:56",
+          "time": "14:36:13",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "13:56:03",
+          "time": "14:36:19",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "13:56:09",
+          "time": "14:36:25",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "13:56:15",
+          "time": "14:36:31",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "13:56:23",
+          "time": "14:36:39",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "13:56:29",
+          "time": "14:36:45",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "13:56:35",
+          "time": "14:36:52",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "13:56:42",
+          "time": "14:36:59",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "13:56:49",
+          "time": "14:37:05",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "13:56:54",
+          "time": "14:37:10",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "13:57:00",
+          "time": "14:37:16",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "13:57:06",
+          "time": "14:37:22",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "13:57:11",
+          "time": "14:37:27",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "13:57:18",
+          "time": "14:37:33",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "13:57:24",
+          "time": "14:37:39",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "13:57:29",
+          "time": "14:37:44",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "13:57:35",
+          "time": "14:37:50",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "13:57:41",
+          "time": "14:37:55",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "13:57:46",
+          "time": "14:38:01",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "13:57:51",
+          "time": "14:38:06",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "13:57:57",
+          "time": "14:38:11",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "13:58:02",
+          "time": "14:38:17",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "13:58:08",
+          "time": "14:38:22",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "13:58:13",
+          "time": "14:38:28",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "13:58:19",
+          "time": "14:38:33",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "13:58:24",
+          "time": "14:38:38",
           "level": "INFO",
           "message": "Page 28: 43 products"
         },
         {
-          "time": "13:58:24",
+          "time": "14:38:38",
           "level": "INFO",
           "message": "Done: 2743 products fetched"
         },
         {
-          "time": "13:58:24",
+          "time": "14:38:38",
           "level": "INFO",
           "message": "Found 142 variable products, fetching variations..."
         },
         {
-          "time": "13:58:26",
+          "time": "14:38:40",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "13:58:32",
+          "time": "14:38:45",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "13:58:37",
+          "time": "14:38:50",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "13:58:42",
+          "time": "14:38:55",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "13:58:47",
+          "time": "14:39:00",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "13:58:51",
+          "time": "14:39:05",
           "level": "INFO",
           "message": "Variations page 6: 38 items"
         },
         {
-          "time": "13:58:51",
+          "time": "14:39:05",
           "level": "INFO",
           "message": "Fetched 538 variations, enriched 528"
         },
         {
-          "time": "13:58:51",
+          "time": "14:39:05",
           "level": "INFO",
           "message": "Total: 2601 simple + 538 variations = 3139"
         }
