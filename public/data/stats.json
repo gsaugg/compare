@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-03-28T20:29:41.818326+00:00",
-  "duration": 833.76,
+  "lastUpdated": "2026-03-28T21:28:15.961402+00:00",
+  "duration": 592.67,
   "stores": [
     {
       "name": "Command Elite Hobbies",
@@ -12,7 +12,7 @@
       "inStock": 1477,
       "outOfStock": 838,
       "error": null,
-      "duration": 140.73,
+      "duration": 90.0,
       "filteredProducts": [
         {
           "title": "Magic: The Gathering - Teenage Mutant Ninja Turtles - Pizza Bundle",
@@ -25043,177 +25043,127 @@
       ],
       "logs": [
         {
-          "time": "20:15:48",
+          "time": "21:18:23",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:15:49",
+          "time": "21:18:24",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:15:53",
+          "time": "21:18:28",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:15:57",
+          "time": "21:18:32",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:16:00",
-          "level": "WARNING",
-          "message": "Page 4 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:16:05",
-          "level": "WARNING",
-          "message": "Page 4 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:16:11",
+          "time": "21:18:36",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "20:16:16",
+          "time": "21:18:40",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "20:16:19",
-          "level": "WARNING",
-          "message": "Page 6 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:16:25",
+          "time": "21:18:44",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "20:16:29",
+          "time": "21:18:47",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "20:16:32",
-          "level": "WARNING",
-          "message": "Page 8 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:16:38",
+          "time": "21:18:51",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "20:16:41",
+          "time": "21:18:55",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "20:16:45",
-          "level": "WARNING",
-          "message": "Page 10 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:16:50",
+          "time": "21:18:59",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "20:16:54",
+          "time": "21:19:03",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "20:16:58",
+          "time": "21:19:07",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "20:17:01",
+          "time": "21:19:10",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "20:17:06",
+          "time": "21:19:14",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "20:17:09",
-          "level": "WARNING",
-          "message": "Page 15 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:17:15",
+          "time": "21:19:19",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "20:17:19",
+          "time": "21:19:23",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "20:17:22",
-          "level": "WARNING",
-          "message": "Page 17 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:17:27",
+          "time": "21:19:27",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "20:17:31",
-          "level": "WARNING",
-          "message": "Page 18 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:17:36",
+          "time": "21:19:31",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "20:17:40",
+          "time": "21:19:35",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "20:17:44",
+          "time": "21:19:39",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "20:17:48",
+          "time": "21:19:42",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "20:17:51",
-          "level": "WARNING",
-          "message": "Page 22 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:17:57",
+          "time": "21:19:46",
           "level": "INFO",
           "message": "Page 22: 250 products"
         },
         {
-          "time": "20:18:00",
-          "level": "WARNING",
-          "message": "Page 23 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:18:05",
+          "time": "21:19:49",
           "level": "INFO",
           "message": "Page 23: 111 products"
         },
         {
-          "time": "20:18:08",
+          "time": "21:19:53",
           "level": "INFO",
           "message": "Done: 5611 products fetched"
         }
@@ -25229,7 +25179,7 @@
       "inStock": 1265,
       "outOfStock": 1746,
       "error": null,
-      "duration": 93.78,
+      "duration": 41.36,
       "filteredProducts": [
         {
           "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
@@ -25414,107 +25364,57 @@
       ],
       "logs": [
         {
-          "time": "20:18:09",
+          "time": "21:19:54",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:18:11",
+          "time": "21:19:55",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:18:14",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:18:20",
+          "time": "21:19:59",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:18:23",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:18:28",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:18:34",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 3), retrying in 5s..."
-        },
-        {
-          "time": "20:18:40",
+          "time": "21:20:04",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:18:45",
+          "time": "21:20:09",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "20:18:49",
+          "time": "21:20:14",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "20:18:53",
+          "time": "21:20:19",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "20:19:00",
+          "time": "21:20:23",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "20:19:03",
-          "level": "WARNING",
-          "message": "Page 8 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:19:08",
-          "level": "WARNING",
-          "message": "Page 8 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:19:13",
-          "level": "WARNING",
-          "message": "Page 8 failed (attempt 3), retrying in 5s..."
-        },
-        {
-          "time": "20:19:20",
+          "time": "21:20:28",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "20:19:23",
-          "level": "WARNING",
-          "message": "Page 9 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:19:28",
-          "level": "WARNING",
-          "message": "Page 9 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:19:34",
-          "level": "WARNING",
-          "message": "Page 9 failed (attempt 3), retrying in 5s..."
-        },
-        {
-          "time": "20:19:39",
+          "time": "21:20:31",
           "level": "INFO",
           "message": "Page 9: 201 products"
         },
         {
-          "time": "20:19:43",
+          "time": "21:20:35",
           "level": "INFO",
           "message": "Done: 2201 products fetched"
         }
@@ -25530,7 +25430,7 @@
       "inStock": 846,
       "outOfStock": 113,
       "error": null,
-      "duration": 26.42,
+      "duration": 12.23,
       "filteredProducts": [
         {
           "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
@@ -25583,37 +25483,27 @@
       ],
       "logs": [
         {
-          "time": "20:19:44",
+          "time": "21:20:36",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:19:47",
+          "time": "21:20:37",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:19:50",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:19:57",
+          "time": "21:20:41",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:20:00",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:20:07",
+          "time": "21:20:45",
           "level": "INFO",
           "message": "Page 3: 159 products"
         },
         {
-          "time": "20:20:10",
+          "time": "21:20:48",
           "level": "INFO",
           "message": "Done: 659 products fetched"
         }
@@ -25629,7 +25519,7 @@
       "inStock": 1039,
       "outOfStock": 185,
       "error": null,
-      "duration": 40.53,
+      "duration": 19.32,
       "filteredProducts": [
         {
           "title": "Replacement Blade - Ex Demo",
@@ -26324,57 +26214,37 @@
       ],
       "logs": [
         {
-          "time": "20:20:10",
+          "time": "21:20:48",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:20:11",
+          "time": "21:20:49",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:20:14",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:20:20",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:20:25",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 3), retrying in 5s..."
-        },
-        {
-          "time": "20:20:31",
+          "time": "21:20:53",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:20:34",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:20:40",
+          "time": "21:20:57",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:20:44",
+          "time": "21:21:01",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "20:20:47",
+          "time": "21:21:04",
           "level": "INFO",
           "message": "Page 5: 105 products"
         },
         {
-          "time": "20:20:51",
+          "time": "21:21:08",
           "level": "INFO",
           "message": "Done: 1105 products fetched"
         }
@@ -26390,7 +26260,7 @@
       "inStock": 821,
       "outOfStock": 442,
       "error": null,
-      "duration": 32.14,
+      "duration": 17.0,
       "filteredProducts": [
         {
           "title": "Iain Sinclair CardSharp Travel Wallet Knife",
@@ -26449,42 +26319,32 @@
       ],
       "logs": [
         {
-          "time": "20:20:51",
+          "time": "21:21:08",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:20:53",
+          "time": "21:21:09",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:20:56",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:21:03",
+          "time": "21:21:14",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:21:06",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:21:14",
+          "time": "21:21:18",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:21:20",
+          "time": "21:21:22",
           "level": "INFO",
           "message": "Page 4: 229 products"
         },
         {
-          "time": "20:21:23",
+          "time": "21:21:25",
           "level": "INFO",
           "message": "Done: 979 products fetched"
         }
@@ -26500,7 +26360,7 @@
       "inStock": 788,
       "outOfStock": 1166,
       "error": null,
-      "duration": 43.56,
+      "duration": 24.28,
       "filteredProducts": [
         {
           "title": "3D PVC Morale Velcro Patch",
@@ -26631,57 +26491,42 @@
       ],
       "logs": [
         {
-          "time": "20:21:24",
+          "time": "21:21:25",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:21:26",
+          "time": "21:21:26",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:21:31",
+          "time": "21:21:30",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:21:35",
+          "time": "21:21:35",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:21:39",
-          "level": "WARNING",
-          "message": "Page 4 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:21:46",
+          "time": "21:21:39",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "20:21:49",
-          "level": "WARNING",
-          "message": "Page 5 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:21:54",
-          "level": "WARNING",
-          "message": "Page 5 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:22:00",
+          "time": "21:21:43",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "20:22:04",
+          "time": "21:21:46",
           "level": "INFO",
           "message": "Page 6: 115 products"
         },
         {
-          "time": "20:22:07",
+          "time": "21:21:50",
           "level": "INFO",
           "message": "Done: 1365 products fetched"
         }
@@ -26697,7 +26542,7 @@
       "inStock": 711,
       "outOfStock": 60,
       "error": null,
-      "duration": 23.06,
+      "duration": 14.38,
       "filteredProducts": [
         {
           "title": "Puff Dino Camouflage Paint For Gel Blasters - Black",
@@ -27206,32 +27051,27 @@
       ],
       "logs": [
         {
-          "time": "20:22:08",
+          "time": "21:21:50",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:22:11",
+          "time": "21:21:52",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:22:16",
+          "time": "21:21:56",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:22:19",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:22:27",
+          "time": "21:22:01",
           "level": "INFO",
           "message": "Page 3: 210 products"
         },
         {
-          "time": "20:22:31",
+          "time": "21:22:04",
           "level": "INFO",
           "message": "Done: 710 products fetched"
         }
@@ -27247,7 +27087,7 @@
       "inStock": 307,
       "outOfStock": 277,
       "error": null,
-      "duration": 30.21,
+      "duration": 11.53,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -27264,42 +27104,27 @@
       ],
       "logs": [
         {
-          "time": "20:22:31",
+          "time": "21:22:05",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:22:31",
-          "level": "WARNING",
-          "message": "Page 1 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:22:37",
+          "time": "21:22:06",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:22:40",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:22:47",
+          "time": "21:22:10",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:22:52",
+          "time": "21:22:13",
           "level": "INFO",
           "message": "Page 3: 56 products"
         },
         {
-          "time": "20:22:55",
-          "level": "WARNING",
-          "message": "Page 4 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:23:01",
+          "time": "21:22:16",
           "level": "INFO",
           "message": "Done: 556 products fetched"
         }
@@ -27315,7 +27140,7 @@
       "inStock": 473,
       "outOfStock": 214,
       "error": null,
-      "duration": 15.07,
+      "duration": 11.85,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -27452,27 +27277,27 @@
       ],
       "logs": [
         {
-          "time": "20:23:01",
+          "time": "21:22:16",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:23:03",
+          "time": "21:22:17",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:23:08",
+          "time": "21:22:21",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:23:12",
+          "time": "21:22:25",
           "level": "INFO",
           "message": "Page 3: 151 products"
         },
         {
-          "time": "20:23:16",
+          "time": "21:22:28",
           "level": "INFO",
           "message": "Done: 651 products fetched"
         }
@@ -27488,7 +27313,7 @@
       "inStock": 592,
       "outOfStock": 582,
       "error": null,
-      "duration": 35.49,
+      "duration": 15.99,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -27565,47 +27390,32 @@
       ],
       "logs": [
         {
-          "time": "20:23:16",
+          "time": "21:22:28",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:23:20",
+          "time": "21:22:29",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:23:25",
+          "time": "21:22:34",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:23:28",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:23:33",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:23:38",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 3), retrying in 5s..."
-        },
-        {
-          "time": "20:23:45",
+          "time": "21:22:38",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "20:23:48",
+          "time": "21:22:41",
           "level": "INFO",
           "message": "Page 4: 39 products"
         },
         {
-          "time": "20:23:52",
+          "time": "21:22:44",
           "level": "INFO",
           "message": "Done: 789 products fetched"
         }
@@ -27621,36 +27431,21 @@
       "inStock": 106,
       "outOfStock": 8,
       "error": null,
-      "duration": 19.18,
+      "duration": 3.81,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "20:23:52",
+          "time": "21:22:45",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:23:53",
-          "level": "WARNING",
-          "message": "Page 1 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:23:58",
+          "time": "21:22:45",
           "level": "INFO",
           "message": "Page 1: 103 products"
         },
         {
-          "time": "20:24:01",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:24:06",
-          "level": "WARNING",
-          "message": "Page 2 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:24:11",
+          "time": "21:22:48",
           "level": "INFO",
           "message": "Done: 103 products fetched"
         }
@@ -27666,7 +27461,7 @@
       "inStock": 405,
       "outOfStock": 283,
       "error": null,
-      "duration": 23.08,
+      "duration": 12.23,
       "filteredProducts": [
         {
           "title": "Chocolate Bar",
@@ -27743,37 +27538,27 @@
       ],
       "logs": [
         {
-          "time": "20:24:12",
+          "time": "21:22:48",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:13",
+          "time": "21:22:49",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "20:24:17",
+          "time": "21:22:54",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "20:24:20",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "20:24:25",
-          "level": "WARNING",
-          "message": "Page 3 failed (attempt 2), retrying in 5s..."
-        },
-        {
-          "time": "20:24:31",
+          "time": "21:22:57",
           "level": "INFO",
           "message": "Page 3: 36 products"
         },
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Done: 536 products fetched"
         }
@@ -27789,7 +27574,7 @@
       "inStock": 278,
       "outOfStock": 75,
       "error": null,
-      "duration": 22.24,
+      "duration": 21.87,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -28034,47 +27819,47 @@
       ],
       "logs": [
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Offset 0: 89 products"
         },
         {
-          "time": "20:24:38",
+          "time": "21:23:04",
           "level": "INFO",
           "message": "Offset 20: 69 products"
         },
         {
-          "time": "20:24:41",
+          "time": "21:23:07",
           "level": "INFO",
           "message": "Offset 40: 60 products"
         },
         {
-          "time": "20:24:44",
+          "time": "21:23:10",
           "level": "INFO",
           "message": "Offset 60: 54 products"
         },
         {
-          "time": "20:24:48",
+          "time": "21:23:13",
           "level": "INFO",
           "message": "Offset 80: 41 products"
         },
         {
-          "time": "20:24:51",
+          "time": "21:23:17",
           "level": "INFO",
           "message": "Offset 100: 23 products"
         },
         {
-          "time": "20:24:54",
+          "time": "21:23:20",
           "level": "INFO",
           "message": "Offset 120: 5 products"
         },
         {
-          "time": "20:24:57",
+          "time": "21:23:23",
           "level": "INFO",
           "message": "Done: 341 products fetched"
         }
@@ -28090,7 +27875,7 @@
       "inStock": 366,
       "outOfStock": 91,
       "error": null,
-      "duration": 21.23,
+      "duration": 20.28,
       "simple": 198,
       "variable": 108,
       "variations": 265,
@@ -28122,62 +27907,62 @@
       ],
       "logs": [
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:40",
+          "time": "21:23:06",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "20:24:46",
+          "time": "21:23:11",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "20:24:52",
+          "time": "21:23:17",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "20:24:56",
+          "time": "21:23:21",
           "level": "INFO",
           "message": "Page 4: 6 products"
         },
         {
-          "time": "20:24:56",
+          "time": "21:23:21",
           "level": "INFO",
           "message": "Done: 306 products fetched"
         },
         {
-          "time": "20:24:56",
+          "time": "21:23:21",
           "level": "INFO",
           "message": "Found 108 variable products, fetching variations..."
         },
         {
-          "time": "20:24:58",
+          "time": "21:23:24",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "20:25:04",
+          "time": "21:23:29",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "20:25:08",
+          "time": "21:23:33",
           "level": "INFO",
           "message": "Variations page 3: 65 items"
         },
         {
-          "time": "20:25:08",
+          "time": "21:23:33",
           "level": "INFO",
           "message": "Fetched 265 variations, enriched 245"
         },
         {
-          "time": "20:25:08",
+          "time": "21:23:33",
           "level": "INFO",
           "message": "Total: 198 simple + 265 variations = 463"
         }
@@ -28193,7 +27978,7 @@
       "inStock": 279,
       "outOfStock": 599,
       "error": null,
-      "duration": 29.93,
+      "duration": 27.55,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -28357,82 +28142,82 @@
       ],
       "logs": [
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:37",
+          "time": "21:23:02",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "20:24:41",
+          "time": "21:23:06",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "20:24:45",
+          "time": "21:23:10",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "20:24:49",
+          "time": "21:23:14",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "20:24:53",
+          "time": "21:23:17",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "20:24:57",
+          "time": "21:23:21",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "20:25:01",
+          "time": "21:23:25",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "20:25:05",
+          "time": "21:23:28",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "20:25:05",
+          "time": "21:23:28",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "20:25:05",
+          "time": "21:23:28",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "20:25:05",
+          "time": "21:23:29",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "20:25:09",
+          "time": "21:23:33",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "20:25:13",
+          "time": "21:23:36",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "20:25:13",
+          "time": "21:23:36",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "20:25:13",
+          "time": "21:23:36",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
         }
@@ -28448,54 +28233,54 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "403 Client Error: Forbidden for url: https://www.ihobby.com.au/wp-json/wc/store/v1/products?per_page=100&page=1",
-      "duration": 25.87,
+      "duration": 25.71,
       "simple": 0,
       "variable": 0,
       "variations": 0,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "20:24:57",
+          "time": "21:23:23",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:58",
+          "time": "21:23:23",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "20:25:03",
+          "time": "21:23:28",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "20:25:08",
+          "time": "21:23:33",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "20:25:13",
+          "time": "21:23:38",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "20:25:18",
+          "time": "21:23:44",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "20:25:23",
+          "time": "21:23:49",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 403 Client Error: Forbidden for url: https://www.ihobby.com.au/wp-json/wc/store/v1/products?per_page=100&page=1"
         },
         {
-          "time": "20:25:23",
+          "time": "21:23:49",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         },
         {
-          "time": "20:25:23",
+          "time": "21:23:49",
           "level": "INFO",
           "message": "Total: 0 simple + 0 variations = 0"
         }
@@ -28511,7 +28296,7 @@
       "inStock": 1112,
       "outOfStock": 314,
       "error": null,
-      "duration": 96.69,
+      "duration": 103.01,
       "simple": 1571,
       "variable": 1,
       "variations": 4,
@@ -29377,112 +29162,112 @@
       ],
       "logs": [
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:40",
+          "time": "21:23:07",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "20:24:46",
+          "time": "21:23:14",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "20:24:52",
+          "time": "21:23:21",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "20:24:59",
+          "time": "21:23:28",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "20:25:06",
+          "time": "21:23:35",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "20:25:12",
+          "time": "21:23:42",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "20:25:19",
+          "time": "21:23:49",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "20:25:25",
+          "time": "21:23:56",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "20:25:31",
+          "time": "21:24:03",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "20:25:37",
+          "time": "21:24:08",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "20:25:43",
+          "time": "21:24:15",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "20:25:49",
+          "time": "21:24:21",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "20:25:55",
+          "time": "21:24:27",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "20:26:00",
+          "time": "21:24:32",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "20:26:06",
+          "time": "21:24:38",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "20:26:11",
+          "time": "21:24:44",
           "level": "INFO",
           "message": "Page 16: 72 products"
         },
         {
-          "time": "20:26:11",
+          "time": "21:24:44",
           "level": "INFO",
           "message": "Done: 1572 products fetched"
         },
         {
-          "time": "20:26:11",
+          "time": "21:24:44",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "20:26:13",
+          "time": "21:24:46",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "20:26:13",
+          "time": "21:24:46",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "20:26:13",
+          "time": "21:24:46",
           "level": "INFO",
           "message": "Total: 1571 simple + 4 variations = 1575"
         }
@@ -29498,7 +29283,7 @@
       "inStock": 1703,
       "outOfStock": 1179,
       "error": null,
-      "duration": 163.12,
+      "duration": 166.46,
       "simple": 2634,
       "variable": 143,
       "variations": 542,
@@ -31270,197 +31055,197 @@
       ],
       "logs": [
         {
-          "time": "20:24:35",
+          "time": "21:23:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "20:24:40",
+          "time": "21:23:06",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "20:24:47",
+          "time": "21:23:14",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "20:24:54",
+          "time": "21:23:20",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "20:25:00",
+          "time": "21:23:27",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "20:25:07",
+          "time": "21:23:33",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "20:25:13",
+          "time": "21:23:39",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "20:25:20",
+          "time": "21:23:46",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "20:25:26",
+          "time": "21:23:52",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "20:25:32",
+          "time": "21:23:58",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "20:25:38",
+          "time": "21:24:05",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "20:25:44",
+          "time": "21:24:11",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "20:25:50",
+          "time": "21:24:17",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "20:25:56",
+          "time": "21:24:23",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "20:26:02",
+          "time": "21:24:29",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "20:26:08",
+          "time": "21:24:35",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "20:26:13",
+          "time": "21:24:41",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "20:26:19",
+          "time": "21:24:46",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "20:26:24",
+          "time": "21:24:52",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "20:26:30",
+          "time": "21:24:58",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "20:26:35",
+          "time": "21:25:03",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "20:26:40",
+          "time": "21:25:09",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "20:26:46",
+          "time": "21:25:14",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "20:26:51",
+          "time": "21:25:20",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "20:26:56",
+          "time": "21:25:25",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "20:27:01",
+          "time": "21:25:30",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "20:27:07",
+          "time": "21:25:36",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "20:27:12",
+          "time": "21:25:42",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "20:27:18",
+          "time": "21:25:47",
           "level": "INFO",
           "message": "Page 28: 77 products"
         },
         {
-          "time": "20:27:18",
+          "time": "21:25:47",
           "level": "INFO",
           "message": "Done: 2777 products fetched"
         },
         {
-          "time": "20:27:18",
+          "time": "21:25:47",
           "level": "INFO",
           "message": "Found 143 variable products, fetching variations..."
         },
         {
-          "time": "20:27:20",
+          "time": "21:25:49",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "20:27:25",
+          "time": "21:25:55",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "20:27:30",
+          "time": "21:26:00",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "20:27:35",
+          "time": "21:26:04",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "20:27:40",
+          "time": "21:26:10",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "20:27:45",
+          "time": "21:26:14",
           "level": "INFO",
           "message": "Variations page 6: 42 items"
         },
         {
-          "time": "20:27:45",
+          "time": "21:26:14",
           "level": "INFO",
           "message": "Fetched 542 variations, enriched 534"
         },
         {
-          "time": "20:27:45",
+          "time": "21:26:14",
           "level": "INFO",
           "message": "Total: 2634 simple + 542 variations = 3176"
         }
