@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-04-07T22:36:12.768814+00:00",
-  "duration": 635.05,
+  "lastUpdated": "2026-04-07T23:37:15.479395+00:00",
+  "duration": 626.8,
   "stores": [
     {
       "name": "Command Elite Hobbies",
@@ -12,7 +12,7 @@
       "inStock": 1493,
       "outOfStock": 846,
       "error": null,
-      "duration": 85.02,
+      "duration": 113.78,
       "filteredProducts": [
         {
           "title": "Child's Play - Chucky & Tiffany Valentines Bouquet Bitty Pop! Vinyl 2-Pack",
@@ -25685,127 +25685,147 @@
       ],
       "logs": [
         {
-          "time": "22:25:37",
+          "time": "23:26:48",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:25:38",
+          "time": "23:26:49",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:25:41",
+          "time": "23:26:53",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:25:45",
+          "time": "23:26:57",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:25:49",
+          "time": "23:27:02",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "22:25:52",
+          "time": "23:27:07",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "22:25:56",
+          "time": "23:27:10",
+          "level": "WARNING",
+          "message": "Page 6 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "23:27:15",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "22:26:00",
+          "time": "23:27:19",
+          "level": "WARNING",
+          "message": "Page 7 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "23:27:24",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "22:26:04",
+          "time": "23:27:28",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "22:26:07",
+          "time": "23:27:32",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "22:26:11",
+          "time": "23:27:36",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "22:26:14",
+          "time": "23:27:40",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "22:26:18",
+          "time": "23:27:44",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "22:26:22",
+          "time": "23:27:47",
+          "level": "WARNING",
+          "message": "Page 13 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "23:27:52",
+          "level": "WARNING",
+          "message": "Page 13 failed (attempt 2), retrying in 5s..."
+        },
+        {
+          "time": "23:27:58",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "22:26:25",
+          "time": "23:28:02",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "22:26:29",
+          "time": "23:28:07",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "22:26:33",
+          "time": "23:28:11",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "22:26:37",
+          "time": "23:28:15",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "22:26:40",
+          "time": "23:28:19",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "22:26:44",
+          "time": "23:28:23",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "22:26:48",
+          "time": "23:28:27",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "22:26:52",
+          "time": "23:28:31",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "22:26:55",
+          "time": "23:28:35",
           "level": "INFO",
           "message": "Page 22: 250 products"
         },
         {
-          "time": "22:26:59",
+          "time": "23:28:39",
           "level": "INFO",
           "message": "Page 23: 242 products"
         },
         {
-          "time": "22:27:02",
+          "time": "23:28:42",
           "level": "INFO",
           "message": "Done: 5742 products fetched"
         }
@@ -25821,7 +25841,7 @@
       "inStock": 1261,
       "outOfStock": 1747,
       "error": null,
-      "duration": 38.13,
+      "duration": 39.31,
       "filteredProducts": [
         {
           "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
@@ -26006,57 +26026,57 @@
       ],
       "logs": [
         {
-          "time": "22:27:03",
+          "time": "23:28:43",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:27:04",
+          "time": "23:28:44",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:27:08",
+          "time": "23:28:49",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:27:12",
+          "time": "23:28:53",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:27:17",
+          "time": "23:28:58",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "22:27:22",
+          "time": "23:29:02",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "22:27:26",
+          "time": "23:29:07",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "22:27:30",
+          "time": "23:29:11",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "22:27:34",
+          "time": "23:29:15",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "22:27:38",
+          "time": "23:29:19",
           "level": "INFO",
           "message": "Page 9: 199 products"
         },
         {
-          "time": "22:27:41",
+          "time": "23:29:22",
           "level": "INFO",
           "message": "Done: 2199 products fetched"
         }
@@ -26072,7 +26092,7 @@
       "inStock": 841,
       "outOfStock": 118,
       "error": null,
-      "duration": 13.49,
+      "duration": 12.23,
       "filteredProducts": [
         {
           "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
@@ -26125,27 +26145,27 @@
       ],
       "logs": [
         {
-          "time": "22:27:42",
+          "time": "23:29:23",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:27:44",
+          "time": "23:29:24",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:27:49",
+          "time": "23:29:28",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:27:52",
+          "time": "23:29:32",
           "level": "INFO",
           "message": "Page 3: 159 products"
         },
         {
-          "time": "22:27:56",
+          "time": "23:29:35",
           "level": "INFO",
           "message": "Done: 659 products fetched"
         }
@@ -26158,10 +26178,10 @@
       "fetched": 1095,
       "filtered": 115,
       "final": 1210,
-      "inStock": 1007,
-      "outOfStock": 203,
+      "inStock": 1006,
+      "outOfStock": 204,
       "error": null,
-      "duration": 19.27,
+      "duration": 21.37,
       "filteredProducts": [
         {
           "title": "WE TECH SIG P226 Classic Gas Blow Back Gel Blaster  (Model only)",
@@ -26856,37 +26876,37 @@
       ],
       "logs": [
         {
-          "time": "22:27:56",
+          "time": "23:29:35",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:27:57",
+          "time": "23:29:37",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:28:00",
+          "time": "23:29:41",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:28:04",
+          "time": "23:29:46",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:28:08",
+          "time": "23:29:50",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "22:28:12",
+          "time": "23:29:53",
           "level": "INFO",
           "message": "Page 5: 95 products"
         },
         {
-          "time": "22:28:15",
+          "time": "23:29:57",
           "level": "INFO",
           "message": "Done: 1095 products fetched"
         }
@@ -26902,7 +26922,7 @@
       "inStock": 814,
       "outOfStock": 449,
       "error": null,
-      "duration": 20.36,
+      "duration": 17.41,
       "filteredProducts": [
         {
           "title": "Iain Sinclair CardSharp Travel Wallet Knife",
@@ -26961,32 +26981,32 @@
       ],
       "logs": [
         {
-          "time": "22:28:15",
+          "time": "23:29:57",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:28:18",
+          "time": "23:29:59",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:28:23",
+          "time": "23:30:03",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:28:28",
+          "time": "23:30:07",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:28:32",
+          "time": "23:30:11",
           "level": "INFO",
           "message": "Page 4: 229 products"
         },
         {
-          "time": "22:28:36",
+          "time": "23:30:14",
           "level": "INFO",
           "message": "Done: 979 products fetched"
         }
@@ -27002,7 +27022,7 @@
       "inStock": 791,
       "outOfStock": 1169,
       "error": null,
-      "duration": 29.09,
+      "duration": 25.15,
       "filteredProducts": [
         {
           "title": "3D PVC Morale Velcro Patch",
@@ -27133,42 +27153,42 @@
       ],
       "logs": [
         {
-          "time": "22:28:36",
+          "time": "23:30:15",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:28:38",
+          "time": "23:30:16",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:28:43",
+          "time": "23:30:21",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:28:49",
+          "time": "23:30:26",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:28:54",
+          "time": "23:30:29",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "22:28:58",
+          "time": "23:30:33",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "22:29:02",
+          "time": "23:30:37",
           "level": "INFO",
           "message": "Page 6: 120 products"
         },
         {
-          "time": "22:29:05",
+          "time": "23:30:40",
           "level": "INFO",
           "message": "Done: 1370 products fetched"
         }
@@ -27184,7 +27204,7 @@
       "inStock": 709,
       "outOfStock": 62,
       "error": null,
-      "duration": 26.4,
+      "duration": 15.24,
       "filteredProducts": [
         {
           "title": "Puff Dino Camouflage Paint For Gel Blasters - Black",
@@ -27693,32 +27713,27 @@
       ],
       "logs": [
         {
-          "time": "22:29:06",
+          "time": "23:30:40",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:29:09",
-          "level": "WARNING",
-          "message": "Page 1 failed (attempt 1), retrying in 5s..."
-        },
-        {
-          "time": "22:29:17",
+          "time": "23:30:42",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:29:23",
+          "time": "23:30:48",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:29:29",
+          "time": "23:30:52",
           "level": "INFO",
           "message": "Page 3: 210 products"
         },
         {
-          "time": "22:29:32",
+          "time": "23:30:56",
           "level": "INFO",
           "message": "Done: 710 products fetched"
         }
@@ -27728,13 +27743,13 @@
       "name": "AusGel",
       "url": "https://ausgel.com.au",
       "platform": "shopify",
-      "fetched": 556,
+      "fetched": 555,
       "filtered": 2,
-      "final": 584,
+      "final": 583,
       "inStock": 306,
-      "outOfStock": 278,
+      "outOfStock": 277,
       "error": null,
-      "duration": 12.04,
+      "duration": 11.95,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -27751,29 +27766,29 @@
       ],
       "logs": [
         {
-          "time": "22:29:32",
+          "time": "23:30:56",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:29:33",
+          "time": "23:30:57",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:29:37",
+          "time": "23:31:01",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:29:41",
+          "time": "23:31:05",
           "level": "INFO",
-          "message": "Page 3: 56 products"
+          "message": "Page 3: 55 products"
         },
         {
-          "time": "22:29:44",
+          "time": "23:31:08",
           "level": "INFO",
-          "message": "Done: 556 products fetched"
+          "message": "Done: 555 products fetched"
         }
       ]
     },
@@ -27787,7 +27802,7 @@
       "inStock": 467,
       "outOfStock": 220,
       "error": null,
-      "duration": 12.58,
+      "duration": 11.74,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -27924,27 +27939,27 @@
       ],
       "logs": [
         {
-          "time": "22:29:44",
+          "time": "23:31:08",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:29:46",
+          "time": "23:31:09",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:29:50",
+          "time": "23:31:13",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:29:53",
+          "time": "23:31:16",
           "level": "INFO",
           "message": "Page 3: 151 products"
         },
         {
-          "time": "22:29:57",
+          "time": "23:31:20",
           "level": "INFO",
           "message": "Done: 651 products fetched"
         }
@@ -27960,7 +27975,7 @@
       "inStock": 592,
       "outOfStock": 583,
       "error": null,
-      "duration": 17.19,
+      "duration": 16.74,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -28037,32 +28052,32 @@
       ],
       "logs": [
         {
-          "time": "22:29:57",
+          "time": "23:31:20",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:29:59",
+          "time": "23:31:21",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:30:03",
+          "time": "23:31:26",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:30:08",
+          "time": "23:31:30",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "22:30:11",
+          "time": "23:31:33",
           "level": "INFO",
           "message": "Page 4: 40 products"
         },
         {
-          "time": "22:30:14",
+          "time": "23:31:37",
           "level": "INFO",
           "message": "Done: 790 products fetched"
         }
@@ -28078,21 +28093,21 @@
       "inStock": 103,
       "outOfStock": 6,
       "error": null,
-      "duration": 4.23,
+      "duration": 3.99,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "22:30:15",
+          "time": "23:31:37",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:15",
+          "time": "23:31:37",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "22:30:19",
+          "time": "23:31:41",
           "level": "INFO",
           "message": "Done: 100 products fetched"
         }
@@ -28108,7 +28123,7 @@
       "inStock": 401,
       "outOfStock": 289,
       "error": null,
-      "duration": 12.14,
+      "duration": 11.73,
       "filteredProducts": [
         {
           "title": "Chocolate Bar",
@@ -28185,27 +28200,27 @@
       ],
       "logs": [
         {
-          "time": "22:30:19",
+          "time": "23:31:41",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:20",
+          "time": "23:31:42",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "22:30:24",
+          "time": "23:31:46",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "22:30:28",
+          "time": "23:31:49",
           "level": "INFO",
           "message": "Page 3: 37 products"
         },
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Done: 537 products fetched"
         }
@@ -28221,7 +28236,7 @@
       "inStock": 272,
       "outOfStock": 81,
       "error": null,
-      "duration": 22.14,
+      "duration": 21.64,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -28466,49 +28481,304 @@
       ],
       "logs": [
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Offset 0: 89 products"
         },
         {
-          "time": "22:30:34",
+          "time": "23:31:56",
           "level": "INFO",
           "message": "Offset 20: 69 products"
         },
         {
-          "time": "22:30:38",
+          "time": "23:31:59",
           "level": "INFO",
           "message": "Offset 40: 60 products"
         },
         {
-          "time": "22:30:41",
+          "time": "23:32:02",
           "level": "INFO",
           "message": "Offset 60: 54 products"
         },
         {
-          "time": "22:30:44",
+          "time": "23:32:05",
           "level": "INFO",
           "message": "Offset 80: 41 products"
         },
         {
-          "time": "22:30:47",
+          "time": "23:32:08",
           "level": "INFO",
           "message": "Offset 100: 23 products"
         },
         {
-          "time": "22:30:50",
+          "time": "23:32:11",
           "level": "INFO",
           "message": "Offset 120: 5 products"
         },
         {
-          "time": "22:30:53",
+          "time": "23:32:14",
           "level": "INFO",
           "message": "Done: 341 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Big Boss Tactical",
+      "url": "https://bigbosstactical.com.au",
+      "platform": "woocommerce",
+      "fetched": 771,
+      "filtered": 27,
+      "final": 878,
+      "inStock": 279,
+      "outOfStock": 599,
+      "error": null,
+      "duration": 27.51,
+      "simple": 667,
+      "variable": 104,
+      "variations": 238,
+      "filteredProducts": [
+        {
+          "title": "20x Nylon Lock Cable Zip Ties &#8211; 200mm Long",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pair Set XT90 XT 90 Battery Wiring Male / Female Connector Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "1 Pair TRAXXAS TRX Male / Female Plugs With Terminal Plug Pins",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "20x Nylon Lock Zip Cable Ties &#8211; 200mm Long",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pairs of Dean Plug Connecters / T-Connectors / 2x Male Plugs and 2x Female Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Male Mini Tamiya to Female Dean Deans T Wire Connector for Gel Blasters",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Male JST to Female XT60 Wire Connector for Gel Blasters",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pair Set XT60 XT 60 Battery Wiring Male / Female Connector Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "25x High Impact NERF RIVAL Rubber AMMO Balls",
+          "reason": "title",
+          "keyword": "nerf rival",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Nerf Rival Kronos XVIII-500 PHANTOM CORPS PISTOL",
+          "reason": "title",
+          "keyword": "nerf rival",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Nerf Rival Helios XVIII-700 BLASTER GUN",
+          "reason": "title",
+          "keyword": "nerf rival",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Adjustable Military Polyester CAP / HAT",
+          "reason": "title",
+          "keyword": "polyester cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Adjustable Military Polyester CAP / HAT",
+          "reason": "title",
+          "keyword": "polyester cap",
+          "filterCategory": "clothing"
+        }
+      ],
+      "logs": [
+        {
+          "time": "23:31:53",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "23:31:54",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "23:31:58",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "23:32:02",
+          "level": "INFO",
+          "message": "Page 3: 100 products"
+        },
+        {
+          "time": "23:32:05",
+          "level": "INFO",
+          "message": "Page 4: 100 products"
+        },
+        {
+          "time": "23:32:09",
+          "level": "INFO",
+          "message": "Page 5: 100 products"
+        },
+        {
+          "time": "23:32:13",
+          "level": "INFO",
+          "message": "Page 6: 100 products"
+        },
+        {
+          "time": "23:32:17",
+          "level": "INFO",
+          "message": "Page 7: 100 products"
+        },
+        {
+          "time": "23:32:20",
+          "level": "INFO",
+          "message": "Page 8: 71 products"
+        },
+        {
+          "time": "23:32:20",
+          "level": "INFO",
+          "message": "Done: 771 products fetched"
+        },
+        {
+          "time": "23:32:20",
+          "level": "INFO",
+          "message": "Found 104 variable products, fetching variations..."
+        },
+        {
+          "time": "23:32:21",
+          "level": "INFO",
+          "message": "Variations page 1: 100 items"
+        },
+        {
+          "time": "23:32:25",
+          "level": "INFO",
+          "message": "Variations page 2: 100 items"
+        },
+        {
+          "time": "23:32:28",
+          "level": "INFO",
+          "message": "Variations page 3: 38 items"
+        },
+        {
+          "time": "23:32:28",
+          "level": "INFO",
+          "message": "Fetched 238 variations, enriched 238"
+        },
+        {
+          "time": "23:32:28",
+          "level": "INFO",
+          "message": "Total: 667 simple + 238 variations = 905"
         }
       ]
     },
@@ -28522,7 +28792,7 @@
       "inStock": 366,
       "outOfStock": 91,
       "error": null,
-      "duration": 22.07,
+      "duration": 22.8,
       "simple": 198,
       "variable": 108,
       "variations": 265,
@@ -28554,62 +28824,62 @@
       ],
       "logs": [
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:36",
+          "time": "23:31:58",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "22:30:42",
+          "time": "23:32:05",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "22:30:49",
+          "time": "23:32:11",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "22:30:53",
+          "time": "23:32:16",
           "level": "INFO",
           "message": "Page 4: 6 products"
         },
         {
-          "time": "22:30:53",
+          "time": "23:32:16",
           "level": "INFO",
           "message": "Done: 306 products fetched"
         },
         {
-          "time": "22:30:53",
+          "time": "23:32:16",
           "level": "INFO",
           "message": "Found 108 variable products, fetching variations..."
         },
         {
-          "time": "22:30:55",
+          "time": "23:32:18",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "22:31:01",
+          "time": "23:32:24",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "22:31:06",
+          "time": "23:32:29",
           "level": "INFO",
           "message": "Variations page 3: 65 items"
         },
         {
-          "time": "22:31:06",
+          "time": "23:32:29",
           "level": "INFO",
           "message": "Fetched 265 variations, enriched 245"
         },
         {
-          "time": "22:31:06",
+          "time": "23:32:29",
           "level": "INFO",
           "message": "Total: 198 simple + 265 variations = 463"
         }
@@ -28625,7 +28895,7 @@
       "inStock": 1113,
       "outOfStock": 314,
       "error": null,
-      "duration": 103.76,
+      "duration": 107.23,
       "simple": 1572,
       "variable": 1,
       "variations": 4,
@@ -29491,112 +29761,112 @@
       ],
       "logs": [
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:42",
+          "time": "23:31:59",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "22:30:49",
+          "time": "23:32:06",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "22:30:55",
+          "time": "23:32:13",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "22:31:01",
+          "time": "23:32:20",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "22:31:07",
+          "time": "23:32:27",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "22:31:14",
+          "time": "23:32:35",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "22:31:20",
+          "time": "23:32:42",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "22:31:27",
+          "time": "23:32:48",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "22:31:33",
+          "time": "23:32:55",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "22:31:39",
+          "time": "23:33:02",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "22:31:46",
+          "time": "23:33:09",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "22:31:52",
+          "time": "23:33:15",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "22:31:58",
+          "time": "23:33:21",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "22:32:04",
+          "time": "23:33:28",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "22:32:09",
+          "time": "23:33:34",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "22:32:15",
+          "time": "23:33:40",
           "level": "INFO",
           "message": "Page 16: 73 products"
         },
         {
-          "time": "22:32:15",
+          "time": "23:33:40",
           "level": "INFO",
           "message": "Done: 1573 products fetched"
         },
         {
-          "time": "22:32:15",
+          "time": "23:33:40",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "22:32:16",
+          "time": "23:33:42",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "22:32:16",
+          "time": "23:33:42",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "22:32:16",
+          "time": "23:33:42",
           "level": "INFO",
           "message": "Total: 1572 simple + 4 variations = 1576"
         }
@@ -29612,7 +29882,7 @@
       "inStock": 1698,
       "outOfStock": 1194,
       "error": null,
-      "duration": 163.37,
+      "duration": 169.78,
       "simple": 2641,
       "variable": 144,
       "variations": 545,
@@ -31384,396 +31654,217 @@
       ],
       "logs": [
         {
-          "time": "22:30:31",
+          "time": "23:31:53",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "22:30:37",
+          "time": "23:31:58",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "22:30:44",
+          "time": "23:32:05",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "22:30:50",
+          "time": "23:32:12",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "22:30:56",
+          "time": "23:32:19",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "22:31:03",
+          "time": "23:32:25",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "22:31:09",
+          "time": "23:32:32",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "22:31:15",
+          "time": "23:32:38",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "22:31:22",
+          "time": "23:32:44",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "22:31:28",
+          "time": "23:32:51",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "22:31:34",
+          "time": "23:32:57",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "22:31:40",
+          "time": "23:33:04",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "22:31:46",
+          "time": "23:33:10",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "22:31:52",
+          "time": "23:33:15",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "22:31:57",
+          "time": "23:33:21",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "22:32:03",
+          "time": "23:33:28",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "22:32:08",
+          "time": "23:33:33",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "22:32:14",
+          "time": "23:33:39",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "22:32:19",
+          "time": "23:33:45",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "22:32:25",
+          "time": "23:33:50",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "22:32:30",
+          "time": "23:33:56",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "22:32:36",
+          "time": "23:34:02",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "22:32:41",
+          "time": "23:34:08",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "22:32:47",
+          "time": "23:34:14",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "22:32:52",
+          "time": "23:34:19",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "22:32:57",
+          "time": "23:34:25",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "22:33:03",
+          "time": "23:34:31",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "22:33:09",
+          "time": "23:34:37",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "22:33:14",
+          "time": "23:34:43",
           "level": "INFO",
           "message": "Page 28: 85 products"
         },
         {
-          "time": "22:33:14",
+          "time": "23:34:43",
           "level": "INFO",
           "message": "Done: 2785 products fetched"
         },
         {
-          "time": "22:33:14",
+          "time": "23:34:43",
           "level": "INFO",
           "message": "Found 144 variable products, fetching variations..."
         },
         {
-          "time": "22:33:17",
+          "time": "23:34:45",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "22:33:22",
+          "time": "23:34:50",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "22:33:27",
+          "time": "23:34:56",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "22:33:32",
+          "time": "23:35:01",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "22:33:37",
+          "time": "23:35:06",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "22:33:42",
+          "time": "23:35:11",
           "level": "INFO",
           "message": "Variations page 6: 45 items"
         },
         {
-          "time": "22:33:42",
+          "time": "23:35:11",
           "level": "INFO",
           "message": "Fetched 545 variations, enriched 537"
         },
         {
-          "time": "22:33:42",
+          "time": "23:35:11",
           "level": "INFO",
           "message": "Total: 2641 simple + 545 variations = 3186"
         }
       ]
-    },
-    {
-      "name": "Big Boss Tactical",
-      "url": "https://bigbosstactical.com.au",
-      "platform": "woocommerce",
-      "fetched": 905,
-      "filtered": 27,
-      "filteredProducts": [
-        {
-          "title": "20x Nylon Lock Cable Zip Ties &#8211; 200mm Long",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pair Set XT90 XT 90 Battery Wiring Male / Female Connector Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "1 Pair TRAXXAS TRX Male / Female Plugs With Terminal Plug Pins",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "20x Nylon Lock Zip Cable Ties &#8211; 200mm Long",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pairs of Dean Plug Connecters / T-Connectors / 2x Male Plugs and 2x Female Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "Male Mini Tamiya to Female Dean Deans T Wire Connector for Gel Blasters",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "Male JST to Female XT60 Wire Connector for Gel Blasters",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pair Set XT60 XT 60 Battery Wiring Male / Female Connector Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "25x High Impact NERF RIVAL Rubber AMMO Balls",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Nerf Rival Kronos XVIII-500 PHANTOM CORPS PISTOL",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Nerf Rival Helios XVIII-700 BLASTER GUN",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Adjustable Military Polyester CAP / HAT",
-          "reason": "title",
-          "keyword": "polyester cap",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Adjustable Military Polyester CAP / HAT",
-          "reason": "title",
-          "keyword": "polyester cap",
-          "filterCategory": "clothing"
-        }
-      ],
-      "final": 878,
-      "inStock": 279,
-      "outOfStock": 599,
-      "error": null,
-      "duration": 0.17,
-      "cached_at": "2026-04-07T21:37:53.068211+00:00",
-      "logs": [
-        {
-          "time": "cache",
-          "level": "INFO",
-          "message": "Loaded from cache (2026-04-07T21:37:53.068211+00:00)"
-        }
-      ],
-      "warning": "Using cache: HTTPSConnectionPool(host='bigbosstactical.com.au', port=443): Max retries exceeded with url: /wp-json/wc/store/v1/products?per_page=100&page=1 (Caused by NewConnectionError(\"HTTPSConnection(host='bigbosstactical.com.au', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     }
   ],
   "totals": {
-    "rawProducts": 21298,
-    "afterFilter": 20762,
-    "uniqueItems": 20509,
-    "productGroups": 19107,
+    "rawProducts": 21163,
+    "afterFilter": 20761,
+    "uniqueItems": 20508,
+    "productGroups": 19106,
     "skuMatched": 9588,
-    "titleMatched": 9519,
+    "titleMatched": 9518,
     "multiVendor": 1167,
     "inStock": 11527,
-    "outOfStock": 7579
+    "outOfStock": 7578
   },
   "tracking": {
     "new": 0,
-    "changed": 1,
-    "unchanged": 20508
+    "changed": 16,
+    "unchanged": 20492
   }
 }
