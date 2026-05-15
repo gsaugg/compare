@@ -26,3 +26,6 @@ updates:
       interval: 'weekly'
     commit-message:
       prefix: 'actions'
+    groups:
+      github-actions:
+        patterns: ['*']
