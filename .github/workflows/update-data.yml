@@ -73,7 +73,7 @@ jobs:
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             git commit -m "Update product data"
-            git pull --rebase
+            git pull --rebase --autostash
             git push
             echo "changed=true" >> $GITHUB_OUTPUT
           fi
