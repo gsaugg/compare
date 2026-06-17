@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-06-17T14:30:05.342298+00:00",
-  "duration": 586.34,
+  "lastUpdated": "2026-06-17T17:50:30.825020+00:00",
+  "duration": 587.72,
   "stores": [
     {
       "name": "Command Elite Hobbies",
@@ -12,7 +12,7 @@
       "inStock": 1506,
       "outOfStock": 883,
       "error": null,
-      "duration": 105.48,
+      "duration": 125.53,
       "filteredProducts": [
         {
           "title": "White Dwarf - Issue 524 (June 2026)",
@@ -31715,152 +31715,172 @@
       ],
       "logs": [
         {
-          "time": "14:20:19",
+          "time": "17:40:43",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:20:19",
+          "time": "17:40:43",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:20:23",
+          "time": "17:40:47",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:20:26",
+          "time": "17:40:51",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:20:30",
+          "time": "17:40:55",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "14:20:34",
+          "time": "17:40:59",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "14:20:38",
+          "time": "17:41:03",
           "level": "INFO",
           "message": "Page 6: 250 products"
         },
         {
-          "time": "14:20:41",
+          "time": "17:41:06",
           "level": "INFO",
           "message": "Page 7: 250 products"
         },
         {
-          "time": "14:20:46",
+          "time": "17:41:10",
+          "level": "WARNING",
+          "message": "Page 8 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "17:41:15",
           "level": "INFO",
           "message": "Page 8: 250 products"
         },
         {
-          "time": "14:20:49",
+          "time": "17:41:19",
           "level": "INFO",
           "message": "Page 9: 250 products"
         },
         {
-          "time": "14:20:53",
+          "time": "17:41:22",
           "level": "INFO",
           "message": "Page 10: 250 products"
         },
         {
-          "time": "14:20:57",
+          "time": "17:41:26",
           "level": "INFO",
           "message": "Page 11: 250 products"
         },
         {
-          "time": "14:21:00",
+          "time": "17:41:30",
           "level": "INFO",
           "message": "Page 12: 250 products"
         },
         {
-          "time": "14:21:04",
+          "time": "17:41:33",
+          "level": "WARNING",
+          "message": "Page 13 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "17:41:39",
           "level": "INFO",
           "message": "Page 13: 250 products"
         },
         {
-          "time": "14:21:08",
+          "time": "17:41:42",
           "level": "INFO",
           "message": "Page 14: 250 products"
         },
         {
-          "time": "14:21:12",
+          "time": "17:41:46",
           "level": "INFO",
           "message": "Page 15: 250 products"
         },
         {
-          "time": "14:21:15",
+          "time": "17:41:50",
           "level": "INFO",
           "message": "Page 16: 250 products"
         },
         {
-          "time": "14:21:19",
+          "time": "17:41:53",
           "level": "INFO",
           "message": "Page 17: 250 products"
         },
         {
-          "time": "14:21:23",
+          "time": "17:41:57",
           "level": "INFO",
           "message": "Page 18: 250 products"
         },
         {
-          "time": "14:21:27",
+          "time": "17:42:01",
           "level": "INFO",
           "message": "Page 19: 250 products"
         },
         {
-          "time": "14:21:31",
+          "time": "17:42:05",
           "level": "INFO",
           "message": "Page 20: 250 products"
         },
         {
-          "time": "14:21:35",
+          "time": "17:42:08",
+          "level": "WARNING",
+          "message": "Page 21 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "17:42:14",
           "level": "INFO",
           "message": "Page 21: 250 products"
         },
         {
-          "time": "14:21:39",
+          "time": "17:42:17",
           "level": "INFO",
           "message": "Page 22: 250 products"
         },
         {
-          "time": "14:21:43",
+          "time": "17:42:21",
           "level": "INFO",
           "message": "Page 23: 250 products"
         },
         {
-          "time": "14:21:47",
+          "time": "17:42:24",
           "level": "INFO",
           "message": "Page 24: 250 products"
         },
         {
-          "time": "14:21:50",
+          "time": "17:42:29",
           "level": "INFO",
           "message": "Page 25: 250 products"
         },
         {
-          "time": "14:21:54",
+          "time": "17:42:33",
           "level": "INFO",
           "message": "Page 26: 250 products"
         },
         {
-          "time": "14:21:58",
+          "time": "17:42:36",
+          "level": "WARNING",
+          "message": "Page 27 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "17:42:42",
           "level": "INFO",
           "message": "Page 27: 250 products"
         },
         {
-          "time": "14:22:01",
+          "time": "17:42:45",
           "level": "INFO",
           "message": "Page 28: 40 products"
         },
         {
-          "time": "14:22:04",
+          "time": "17:42:48",
           "level": "INFO",
           "message": "Done: 6790 products fetched"
         }
@@ -31876,7 +31896,7 @@
       "inStock": 1213,
       "outOfStock": 612,
       "error": null,
-      "duration": 19.09,
+      "duration": 19.22,
       "filteredProducts": [
         {
           "title": "Blue Kids Double Barrel Action Shotgun - Foam Dart Blaster",
@@ -32037,37 +32057,37 @@
       ],
       "logs": [
         {
-          "time": "14:22:05",
+          "time": "17:42:49",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:22:06",
+          "time": "17:42:50",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:22:09",
+          "time": "17:42:54",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:22:13",
+          "time": "17:42:58",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:22:17",
+          "time": "17:43:02",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "14:22:21",
+          "time": "17:43:05",
           "level": "INFO",
           "message": "Page 5: 83 products"
         },
         {
-          "time": "14:22:24",
+          "time": "17:43:08",
           "level": "INFO",
           "message": "Done: 1083 products fetched"
         }
@@ -32083,7 +32103,7 @@
       "inStock": 979,
       "outOfStock": 195,
       "error": null,
-      "duration": 20.04,
+      "duration": 19.13,
       "filteredProducts": [
         {
           "title": "WE TECH SIG P226 Classic Gas Blow Back Gel Blaster  (Model only)",
@@ -32736,37 +32756,37 @@
       ],
       "logs": [
         {
-          "time": "14:22:24",
+          "time": "17:43:09",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:22:25",
+          "time": "17:43:09",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:22:29",
+          "time": "17:43:13",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:22:33",
+          "time": "17:43:17",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:22:37",
+          "time": "17:43:21",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "14:22:41",
+          "time": "17:43:24",
           "level": "INFO",
           "message": "Page 5: 67 products"
         },
         {
-          "time": "14:22:44",
+          "time": "17:43:28",
           "level": "INFO",
           "message": "Done: 1067 products fetched"
         }
@@ -32841,32 +32861,32 @@
       ],
       "logs": [
         {
-          "time": "14:22:45",
+          "time": "17:43:28",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:22:46",
+          "time": "17:43:29",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:22:51",
+          "time": "17:43:34",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:22:55",
+          "time": "17:43:38",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:22:58",
+          "time": "17:43:41",
           "level": "INFO",
           "message": "Page 4: 226 products"
         },
         {
-          "time": "14:23:02",
+          "time": "17:43:45",
           "level": "INFO",
           "message": "Done: 976 products fetched"
         }
@@ -32882,7 +32902,7 @@
       "inStock": 704,
       "outOfStock": 1246,
       "error": null,
-      "duration": 23.91,
+      "duration": 23.84,
       "filteredProducts": [
         {
           "title": "3D PVC Morale Velcro Patch",
@@ -33013,42 +33033,42 @@
       ],
       "logs": [
         {
-          "time": "14:23:02",
+          "time": "17:43:45",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:23:03",
+          "time": "17:43:46",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:23:07",
+          "time": "17:43:50",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:23:12",
+          "time": "17:43:55",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:23:15",
+          "time": "17:43:59",
           "level": "INFO",
           "message": "Page 4: 250 products"
         },
         {
-          "time": "14:23:19",
+          "time": "17:44:03",
           "level": "INFO",
           "message": "Page 5: 250 products"
         },
         {
-          "time": "14:23:23",
+          "time": "17:44:06",
           "level": "INFO",
           "message": "Page 6: 109 products"
         },
         {
-          "time": "14:23:26",
+          "time": "17:44:09",
           "level": "INFO",
           "message": "Done: 1359 products fetched"
         }
@@ -33064,7 +33084,7 @@
       "inStock": 683,
       "outOfStock": 21,
       "error": null,
-      "duration": 14.02,
+      "duration": 13.36,
       "filteredProducts": [
         {
           "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Tan and CP Camouflage",
@@ -33561,27 +33581,27 @@
       ],
       "logs": [
         {
-          "time": "14:23:26",
+          "time": "17:44:10",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:23:28",
+          "time": "17:44:11",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:23:33",
+          "time": "17:44:16",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:23:37",
+          "time": "17:44:20",
           "level": "INFO",
           "message": "Page 3: 180 products"
         },
         {
-          "time": "14:23:40",
+          "time": "17:44:23",
           "level": "INFO",
           "message": "Done: 680 products fetched"
         }
@@ -33597,46 +33617,46 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "401 Client Error: Unauthorized for url: https://ausgel.com.au/products.json?limit=250&page=1",
-      "duration": 26.21,
+      "duration": 26.28,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "14:23:40",
+          "time": "17:44:23",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:23:41",
+          "time": "17:44:23",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "14:23:46",
+          "time": "17:44:28",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "14:23:51",
+          "time": "17:44:34",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "14:23:56",
+          "time": "17:44:39",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "14:24:02",
+          "time": "17:44:44",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "14:24:07",
+          "time": "17:44:49",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 401 Client Error: Unauthorized for url: https://ausgel.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "14:24:07",
+          "time": "17:44:49",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -33652,7 +33672,7 @@
       "inStock": 467,
       "outOfStock": 226,
       "error": null,
-      "duration": 12.01,
+      "duration": 11.84,
       "filteredProducts": [
         {
           "title": "Water Bottle & Holder w/belt attachment",
@@ -33789,27 +33809,27 @@
       ],
       "logs": [
         {
-          "time": "14:24:07",
+          "time": "17:44:49",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:08",
+          "time": "17:44:51",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:24:12",
+          "time": "17:44:55",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:24:15",
+          "time": "17:44:58",
           "level": "INFO",
           "message": "Page 3: 157 products"
         },
         {
-          "time": "14:24:19",
+          "time": "17:45:01",
           "level": "INFO",
           "message": "Done: 657 products fetched"
         }
@@ -33825,7 +33845,7 @@
       "inStock": 552,
       "outOfStock": 625,
       "error": null,
-      "duration": 16.09,
+      "duration": 15.9,
       "filteredProducts": [
         {
           "title": "Whoop Ass Velcro PVC Patch - Gel Blaster Parts & Accessories For Sale",
@@ -33902,32 +33922,32 @@
       ],
       "logs": [
         {
-          "time": "14:24:19",
+          "time": "17:45:01",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:20",
+          "time": "17:45:03",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:24:24",
+          "time": "17:45:07",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:24:29",
+          "time": "17:45:11",
           "level": "INFO",
           "message": "Page 3: 250 products"
         },
         {
-          "time": "14:24:32",
+          "time": "17:45:14",
           "level": "INFO",
           "message": "Page 4: 42 products"
         },
         {
-          "time": "14:24:35",
+          "time": "17:45:17",
           "level": "INFO",
           "message": "Done: 792 products fetched"
         }
@@ -33943,21 +33963,21 @@
       "inStock": 96,
       "outOfStock": 10,
       "error": null,
-      "duration": 3.61,
+      "duration": 3.98,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "14:24:35",
+          "time": "17:45:18",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:36",
+          "time": "17:45:19",
           "level": "INFO",
           "message": "Page 1: 99 products"
         },
         {
-          "time": "14:24:39",
+          "time": "17:45:22",
           "level": "INFO",
           "message": "Done: 99 products fetched"
         }
@@ -33973,7 +33993,7 @@
       "inStock": 377,
       "outOfStock": 339,
       "error": null,
-      "duration": 11.7,
+      "duration": 11.5,
       "filteredProducts": [
         {
           "title": "Bullethole - Who's Next!?",
@@ -34074,27 +34094,27 @@
       ],
       "logs": [
         {
-          "time": "14:24:39",
+          "time": "17:45:22",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:40",
+          "time": "17:45:22",
           "level": "INFO",
           "message": "Page 1: 250 products"
         },
         {
-          "time": "14:24:44",
+          "time": "17:45:26",
           "level": "INFO",
           "message": "Page 2: 250 products"
         },
         {
-          "time": "14:24:48",
+          "time": "17:45:30",
           "level": "INFO",
           "message": "Page 3: 54 products"
         },
         {
-          "time": "14:24:51",
+          "time": "17:45:33",
           "level": "INFO",
           "message": "Done: 554 products fetched"
         }
@@ -34110,357 +34130,56 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "403 Client Error: Forbidden for url: https://www.cybertrigger.com.au/wp-json/wc/store/v1/products?per_page=100&page=1",
-      "duration": 25.6,
+      "duration": 25.43,
       "simple": 0,
       "variable": 0,
       "variations": 0,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "14:24:51",
+          "time": "17:45:33",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:51",
+          "time": "17:45:34",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "14:24:56",
+          "time": "17:45:39",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "14:25:01",
+          "time": "17:45:44",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "14:25:06",
+          "time": "17:45:49",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "14:25:11",
+          "time": "17:45:54",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "14:25:16",
+          "time": "17:45:59",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 403 Client Error: Forbidden for url: https://www.cybertrigger.com.au/wp-json/wc/store/v1/products?per_page=100&page=1"
         },
         {
-          "time": "14:25:16",
+          "time": "17:45:59",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         },
         {
-          "time": "14:25:16",
+          "time": "17:45:59",
           "level": "INFO",
           "message": "Total: 0 simple + 0 variations = 0"
-        }
-      ]
-    },
-    {
-      "name": "Urban Gel Ball",
-      "url": "https://www.urbangelball.com.au",
-      "platform": "squarespace",
-      "fetched": 341,
-      "filtered": 40,
-      "final": 353,
-      "inStock": 272,
-      "outOfStock": 81,
-      "error": null,
-      "duration": 27.37,
-      "filteredProducts": [
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Patch - Urban Gelball",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Eat My Gels",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Blood Bath",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - EMG Reaper",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - US Flag Multicam",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Australian Flag",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - Titan",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Patch - UGB Round Logo",
-          "reason": "category",
-          "keyword": "merch",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        }
-      ],
-      "logs": [
-        {
-          "time": "14:24:51",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "14:24:51",
-          "level": "INFO",
-          "message": "Offset 0: 89 products"
-        },
-        {
-          "time": "14:24:54",
-          "level": "INFO",
-          "message": "Offset 20: 69 products"
-        },
-        {
-          "time": "14:24:58",
-          "level": "INFO",
-          "message": "Offset 40: 60 products"
-        },
-        {
-          "time": "14:25:01",
-          "level": "INFO",
-          "message": "Offset 60: 54 products"
-        },
-        {
-          "time": "14:25:09",
-          "level": "INFO",
-          "message": "Offset 80: 41 products"
-        },
-        {
-          "time": "14:25:12",
-          "level": "INFO",
-          "message": "Offset 100: 23 products"
-        },
-        {
-          "time": "14:25:15",
-          "level": "INFO",
-          "message": "Offset 120: 5 products"
-        },
-        {
-          "time": "14:25:18",
-          "level": "INFO",
-          "message": "Done: 341 products fetched"
         }
       ]
     },
@@ -35346,6 +35065,484 @@
       "warning": "Using cache: HTTPSConnectionPool(host='safarizoomertactical.com', port=443): Max retries exceeded with url: /wp-json/wc/store/v1/products?per_page=100&page=1 (Caused by NewConnectionError(\"HTTPSConnection(host='safarizoomertactical.com', port=443): Failed to establish a new connection: [Errno 111] Connection refused\"))"
     },
     {
+      "name": "Urban Gel Ball",
+      "url": "https://www.urbangelball.com.au",
+      "platform": "squarespace",
+      "fetched": 341,
+      "filtered": 40,
+      "final": 353,
+      "inStock": 272,
+      "outOfStock": 81,
+      "error": null,
+      "duration": 31.6,
+      "filteredProducts": [
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Patch - Urban Gelball",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Eat My Gels",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Blood Bath",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - EMG Reaper",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - US Flag Multicam",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Australian Flag",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - Titan",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Patch - UGB Round Logo",
+          "reason": "category",
+          "keyword": "merch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Urban Gelball Web Store Gift Card - $50/$100/$200",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        }
+      ],
+      "logs": [
+        {
+          "time": "17:45:33",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "17:45:34",
+          "level": "INFO",
+          "message": "Offset 0: 89 products"
+        },
+        {
+          "time": "17:45:44",
+          "level": "INFO",
+          "message": "Offset 20: 69 products"
+        },
+        {
+          "time": "17:45:47",
+          "level": "INFO",
+          "message": "Offset 40: 60 products"
+        },
+        {
+          "time": "17:45:51",
+          "level": "INFO",
+          "message": "Offset 60: 54 products"
+        },
+        {
+          "time": "17:45:55",
+          "level": "INFO",
+          "message": "Offset 80: 41 products"
+        },
+        {
+          "time": "17:45:58",
+          "level": "INFO",
+          "message": "Offset 100: 23 products"
+        },
+        {
+          "time": "17:46:02",
+          "level": "INFO",
+          "message": "Offset 120: 5 products"
+        },
+        {
+          "time": "17:46:05",
+          "level": "INFO",
+          "message": "Done: 341 products fetched"
+        }
+      ]
+    },
+    {
+      "name": "Azraels Armoury",
+      "url": "https://www.azraelsarmoury.com",
+      "platform": "woocommerce",
+      "fetched": 1013,
+      "filtered": 18,
+      "final": 1368,
+      "inStock": 1297,
+      "outOfStock": 71,
+      "error": null,
+      "duration": 40.96,
+      "simple": 882,
+      "variable": 131,
+      "variations": 504,
+      "filteredProducts": [
+        {
+          "title": "UDL SPAS 12 Mini Nerf Dart Shotgun Shells 6 Pack",
+          "reason": "title",
+          "keyword": "nerf dart",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "New Galaxy G19x Metal Slide Electric Gel Blaster / Laser Pistol",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "KELe Luger P08 Shell Ejecting Laser Pistol",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        }
+      ],
+      "logs": [
+        {
+          "time": "17:45:33",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "17:45:35",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "17:45:39",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "17:45:43",
+          "level": "INFO",
+          "message": "Page 3: 100 products"
+        },
+        {
+          "time": "17:45:47",
+          "level": "INFO",
+          "message": "Page 4: 100 products"
+        },
+        {
+          "time": "17:45:51",
+          "level": "INFO",
+          "message": "Page 5: 100 products"
+        },
+        {
+          "time": "17:45:55",
+          "level": "INFO",
+          "message": "Page 6: 100 products"
+        },
+        {
+          "time": "17:45:59",
+          "level": "INFO",
+          "message": "Page 7: 100 products"
+        },
+        {
+          "time": "17:46:03",
+          "level": "INFO",
+          "message": "Page 8: 100 products"
+        },
+        {
+          "time": "17:46:07",
+          "level": "INFO",
+          "message": "Page 9: 100 products"
+        },
+        {
+          "time": "17:46:11",
+          "level": "INFO",
+          "message": "Page 10: 100 products"
+        },
+        {
+          "time": "17:46:14",
+          "level": "INFO",
+          "message": "Page 11: 13 products"
+        },
+        {
+          "time": "17:46:14",
+          "level": "INFO",
+          "message": "Done: 1013 products fetched"
+        },
+        {
+          "time": "17:46:14",
+          "level": "INFO",
+          "message": "Found 131 variable products, fetching variations..."
+        },
+        {
+          "time": "17:46:15",
+          "level": "INFO",
+          "message": "Variations page 1: 100 items"
+        },
+        {
+          "time": "17:46:19",
+          "level": "INFO",
+          "message": "Variations page 2: 100 items"
+        },
+        {
+          "time": "17:46:23",
+          "level": "INFO",
+          "message": "Variations page 3: 100 items"
+        },
+        {
+          "time": "17:46:26",
+          "level": "INFO",
+          "message": "Variations page 4: 100 items"
+        },
+        {
+          "time": "17:46:30",
+          "level": "INFO",
+          "message": "Variations page 5: 100 items"
+        },
+        {
+          "time": "17:46:33",
+          "level": "INFO",
+          "message": "Variations page 6: 4 items"
+        },
+        {
+          "time": "17:46:33",
+          "level": "INFO",
+          "message": "Fetched 504 variations, enriched 498"
+        },
+        {
+          "time": "17:46:33",
+          "level": "INFO",
+          "message": "Total: 882 simple + 504 variations = 1386"
+        }
+      ]
+    },
+    {
       "name": "Big Boss Tactical",
       "url": "https://bigbosstactical.com.au",
       "platform": "woocommerce",
@@ -35355,7 +35552,7 @@
       "inStock": 278,
       "outOfStock": 600,
       "error": null,
-      "duration": 28.61,
+      "duration": 29.84,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -35519,261 +35716,84 @@
       ],
       "logs": [
         {
-          "time": "14:25:16",
+          "time": "17:45:59",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:25:18",
+          "time": "17:46:01",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "14:25:22",
+          "time": "17:46:05",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "14:25:26",
+          "time": "17:46:09",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "14:25:30",
+          "time": "17:46:13",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "14:25:34",
+          "time": "17:46:17",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "14:25:38",
+          "time": "17:46:21",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "14:25:41",
+          "time": "17:46:25",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "14:25:45",
+          "time": "17:46:29",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "14:25:45",
+          "time": "17:46:29",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "14:25:45",
+          "time": "17:46:29",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "14:25:46",
+          "time": "17:46:30",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "14:25:50",
+          "time": "17:46:33",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "14:25:53",
+          "time": "17:46:37",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "14:25:53",
+          "time": "17:46:37",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "14:25:53",
+          "time": "17:46:37",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
-        }
-      ]
-    },
-    {
-      "name": "Azraels Armoury",
-      "url": "https://www.azraelsarmoury.com",
-      "platform": "woocommerce",
-      "fetched": 1013,
-      "filtered": 18,
-      "final": 1368,
-      "inStock": 1297,
-      "outOfStock": 71,
-      "error": null,
-      "duration": 72.52,
-      "simple": 882,
-      "variable": 131,
-      "variations": 504,
-      "filteredProducts": [
-        {
-          "title": "UDL SPAS 12 Mini Nerf Dart Shotgun Shells 6 Pack",
-          "reason": "title",
-          "keyword": "nerf dart",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "New Galaxy G19x Metal Slide Electric Gel Blaster / Laser Pistol",
-          "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
-        },
-        {
-          "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
-          "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
-        },
-        {
-          "title": "KELe Luger P08 Shell Ejecting Laser Pistol",
-          "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
-          "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
-        }
-      ],
-      "logs": [
-        {
-          "time": "14:24:51",
-          "level": "INFO",
-          "message": "Fetching..."
-        },
-        {
-          "time": "14:24:56",
-          "level": "INFO",
-          "message": "Page 1: 100 products"
-        },
-        {
-          "time": "14:25:03",
-          "level": "INFO",
-          "message": "Page 2: 100 products"
-        },
-        {
-          "time": "14:25:10",
-          "level": "INFO",
-          "message": "Page 3: 100 products"
-        },
-        {
-          "time": "14:25:17",
-          "level": "INFO",
-          "message": "Page 4: 100 products"
-        },
-        {
-          "time": "14:25:24",
-          "level": "INFO",
-          "message": "Page 5: 100 products"
-        },
-        {
-          "time": "14:25:30",
-          "level": "INFO",
-          "message": "Page 6: 100 products"
-        },
-        {
-          "time": "14:25:37",
-          "level": "INFO",
-          "message": "Page 7: 100 products"
-        },
-        {
-          "time": "14:25:44",
-          "level": "INFO",
-          "message": "Page 8: 100 products"
-        },
-        {
-          "time": "14:25:52",
-          "level": "INFO",
-          "message": "Page 9: 100 products"
-        },
-        {
-          "time": "14:25:59",
-          "level": "INFO",
-          "message": "Page 10: 100 products"
-        },
-        {
-          "time": "14:26:03",
-          "level": "INFO",
-          "message": "Page 11: 13 products"
-        },
-        {
-          "time": "14:26:03",
-          "level": "INFO",
-          "message": "Done: 1013 products fetched"
-        },
-        {
-          "time": "14:26:03",
-          "level": "INFO",
-          "message": "Found 131 variable products, fetching variations..."
-        },
-        {
-          "time": "14:26:07",
-          "level": "INFO",
-          "message": "Variations page 1: 100 items"
-        },
-        {
-          "time": "14:26:13",
-          "level": "INFO",
-          "message": "Variations page 2: 100 items"
-        },
-        {
-          "time": "14:26:19",
-          "level": "INFO",
-          "message": "Variations page 3: 100 items"
-        },
-        {
-          "time": "14:26:26",
-          "level": "INFO",
-          "message": "Variations page 4: 100 items"
-        },
-        {
-          "time": "14:26:33",
-          "level": "INFO",
-          "message": "Variations page 5: 100 items"
-        },
-        {
-          "time": "14:26:37",
-          "level": "INFO",
-          "message": "Variations page 6: 4 items"
-        },
-        {
-          "time": "14:26:37",
-          "level": "INFO",
-          "message": "Fetched 504 variations, enriched 498"
-        },
-        {
-          "time": "14:26:37",
-          "level": "INFO",
-          "message": "Total: 882 simple + 504 variations = 1386"
         }
       ]
     },
@@ -35787,7 +35807,7 @@
       "inStock": 1691,
       "outOfStock": 1246,
       "error": null,
-      "duration": 184.52,
+      "duration": 163.44,
       "simple": 2695,
       "variable": 144,
       "variations": 546,
@@ -37619,202 +37639,202 @@
       ],
       "logs": [
         {
-          "time": "14:24:51",
+          "time": "17:45:33",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "14:24:57",
+          "time": "17:45:38",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "14:25:04",
+          "time": "17:45:45",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "14:25:11",
+          "time": "17:45:51",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "14:25:18",
+          "time": "17:45:57",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "14:25:25",
+          "time": "17:46:04",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "14:25:31",
+          "time": "17:46:10",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "14:25:38",
+          "time": "17:46:16",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "14:25:45",
+          "time": "17:46:22",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "14:25:52",
+          "time": "17:46:28",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "14:25:58",
+          "time": "17:46:34",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "14:26:05",
+          "time": "17:46:40",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "14:26:11",
+          "time": "17:46:46",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "14:26:17",
+          "time": "17:46:51",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "14:26:24",
+          "time": "17:46:57",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "14:26:30",
+          "time": "17:47:02",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "14:26:36",
+          "time": "17:47:08",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "14:26:42",
+          "time": "17:47:14",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "14:26:48",
+          "time": "17:47:19",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "14:26:53",
+          "time": "17:47:24",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "14:26:59",
+          "time": "17:47:29",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "14:27:05",
+          "time": "17:47:35",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "14:27:11",
+          "time": "17:47:40",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "14:27:17",
+          "time": "17:47:45",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "14:27:22",
+          "time": "17:47:50",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "14:27:28",
+          "time": "17:47:55",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "14:27:34",
+          "time": "17:48:01",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "14:27:44",
+          "time": "17:48:06",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "14:27:50",
+          "time": "17:48:12",
           "level": "INFO",
           "message": "Page 28: 100 products"
         },
         {
-          "time": "14:27:55",
+          "time": "17:48:17",
           "level": "INFO",
           "message": "Page 29: 39 products"
         },
         {
-          "time": "14:27:55",
+          "time": "17:48:17",
           "level": "INFO",
           "message": "Done: 2839 products fetched"
         },
         {
-          "time": "14:27:55",
+          "time": "17:48:17",
           "level": "INFO",
           "message": "Found 144 variable products, fetching variations..."
         },
         {
-          "time": "14:27:58",
+          "time": "17:48:19",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "14:28:03",
+          "time": "17:48:24",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "14:28:09",
+          "time": "17:48:30",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "14:28:15",
+          "time": "17:48:35",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "14:28:20",
+          "time": "17:48:41",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "14:28:25",
+          "time": "17:48:45",
           "level": "INFO",
           "message": "Variations page 6: 46 items"
         },
         {
-          "time": "14:28:25",
+          "time": "17:48:45",
           "level": "INFO",
           "message": "Fetched 546 variations, enriched 538"
         },
         {
-          "time": "14:28:25",
+          "time": "17:48:45",
           "level": "INFO",
           "message": "Total: 2695 simple + 546 variations = 3241"
         }
