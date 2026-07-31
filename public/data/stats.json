@@ -1,89 +1,1415 @@
 {
-  "lastUpdated": "2026-07-31T06:46:23.419609+00:00",
-  "duration": 5182.92,
+  "lastUpdated": "2026-07-31T09:52:32.934680+00:00",
+  "duration": 5194.01,
   "stores": [
     {
       "name": "Command Elite Hobbies",
       "url": "https://www.commandelitehobbies.com",
       "platform": "shopify",
-      "fetched": 0,
-      "filtered": 0,
-      "final": 0,
-      "inStock": 0,
-      "outOfStock": 0,
-      "error": "429 Client Error: Too Many Requests for url: https://www.commandelitehobbies.com/products.json?limit=250&page=1",
-      "duration": 386.03,
-      "filteredProducts": [],
+      "fetched": 250,
+      "filtered": 215,
+      "final": 39,
+      "inStock": 31,
+      "outOfStock": 8,
+      "error": "429 Client Error: Too Many Requests for url: https://www.commandelitehobbies.com/products.json?limit=250&page=2",
+      "duration": 584.91,
+      "filteredProducts": [
+        {
+          "title": "Lilo & Stitch (2025) \u2013 3D PVC Bag Clips Blind Bag",
+          "reason": "title",
+          "keyword": "bag clips",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Sonic \u2013 Mini Vinyl Figures ASST (12ct)",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Warhammer Infernus Marines + Paints",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Introductory Set",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Getting Started with Space Marines",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Getting Started with Orks",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Disney Lorcana Set 13 Play Booster Box: Attack of the Vine",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Disney Lorcana Illumineers Trove: Attack of the Vine Set 13",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Disney Lorcana Attack of the Vine Booster Pack: Set 13",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "ITALERI 1/24 TOYOTA LAND CRUISER SAFARI",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "ITALERI 1/72 F-15E STRIKE EAGLE",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "ITALERI 1/72 BF109 G-6 ACES",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "REVELL 1/144 LOCKHEED L.1049G SUPER CONSTELLATION LUFTHANSA",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - GREEN",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - BLACK - Matte",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - BLUE",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - PURPLE",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - RED",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - Mag-Lock One-Touch Case - 35pt",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - MintFit Inner Sleeves - Standard Size - 100pc",
+          "reason": "title",
+          "keyword": "inner sleeves",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Ultra Pro - Pokemon Lillie and Clefairy Playmat",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "2nd hand APS XTP Gas Blowback",
+          "reason": "category",
+          "keyword": "2nd hand",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Side Effects: Cure Your Mental Diseases",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Alloy Empire beretta Gen 5 Keyring",
+          "reason": "category",
+          "keyword": "keychain",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Disney Lorcana: S11 - Stitch Collection Starter Set",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "YuGiOh Chaos Origins 3-Booster Tuck Box",
+          "reason": "title",
+          "keyword": "yugioh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "YuGiOh Chaos Origins - 9 x Card Blister",
+          "reason": "title",
+          "keyword": "yugioh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Aetherdrift: Living Energy Commander Deck",
+          "reason": "title",
+          "keyword": "commander deck",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Aetherdrift: Eternal Might Commander Deck",
+          "reason": "title",
+          "keyword": "commander deck",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "OKNIFE LK Folding Pocket Knife with Rechargeable Flashlight",
+          "reason": "title",
+          "keyword": "pocket knife",
+          "filterCategory": "knives"
+        },
+        {
+          "title": "Alloy Empire 1911 Gen 5 Keyring",
+          "reason": "category",
+          "keyword": "keychain",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Alloy Empire SIG P226 Gen 5 Keyring",
+          "reason": "category",
+          "keyword": "keychain",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Riftbound Unleashed Booster Box",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound Unleashed Booster Pack",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound Champion Deck : Jinx",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Enduro24 Crawler RTR, Sendero Trail Truck, red and blue",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Warhammer age of sigmar: Battleforce: Hedonites of Slaanesh \u2013 The Decadent Host",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer Age of Sigmar - Spearhead: City of Ash",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer Age of Sigmar: General's Handbook 2026-27",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Beyblade - X - Double Extreme Motorized Stadium",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "MTG Secret Lair Release: Fallout Vault Beyond Vault 33",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Ultra Pro - Pikachu TOPLOADER\u00ae and PENNY SLEEVES\u00ae Combo Pack 25per Pack",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Beyblade X: Wand Wizard 5-70DB Starter Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Pok\u00e9mon TCG Mega Greninja ex Premium Collection",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Beyblade X: Lance Knight 480HN Starter Set",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "TAMIYA RC 1/10 THE HORNET 2004",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT PRO MONSTER TRUCK - FLUORO GREEN",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS WINCH KIT WITH WIRELESS CONTROLLER TRX-4",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SERVO SUB-MICRO WATERPROOF",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SLIPPER CLUTCH CMPLT MINI MAXX",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS CASTER BLOCKS L&R",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SUSP.PINS 2.5x31.5MM",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS ATTACHMENT SCREWS",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SHOULDER SCREWS (6)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/18 ATOM AT1 4WD ELECTRIC TRUCK",
+          "reason": "category",
+          "keyword": "rc 4x4",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "MAVERICK 1/10 PHANTOM MT RTR MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT FLUX MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TAMIYA RC 1/10 THE GRASSHOPPER 2005",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "MAVERICK 1/24 MICROBE BUGGY",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "TCG Graded 9 Near Mint -2021 -Dito Vmax",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TCG Graded 9.5 Near Mint -2022 -Oranguru",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA Graded 8 Near Mint -2022 -POKEMON Go Dito",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Armaggedon : Operation imperator",
+          "reason": "category",
+          "keyword": "warhammer",
+          "filterCategory": "tabletop_gaming"
+        },
+        {
+          "title": "1/8 scale 3DPrinted RC hub caps",
+          "reason": "title",
+          "keyword": "1/8 scale",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "dual sky SE-150mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "omp SE-75mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "omp SE-150mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Collector Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Play Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Scene Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Beginner Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Commander Decks",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Collector Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Bundle",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pokemon TCG World Championships Deck",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG: First Partner Illustration Collection\u2014Series 2",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Jumpstart Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Play Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Gift Bundle",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Jumpstart Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "One Piece TCG: Booster Box \u2013 The Time of Battle [OP-16]",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "White Dwarf - Issue 524 (June 2026)",
+          "reason": "title",
+          "keyword": "white dwarf",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "One Piece Card Game Official Sleeves Set 15",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Goku w/Flocked Wings Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku Nyoibou GW Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Riftbound League of Legends TCG: Spiritforged Booster Box",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound League of Legends TCG: Spiritforged Booster Pack",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "LotR - Treebeard w/Merry & Pippin 6\" Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Arwen (Coronation) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Gandalf (Door of Durin) Pop! Deluxe",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Legolas Greenleaf Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Smeagol (Transformation) Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Faramir Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Gimli Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Boromir Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Bilbo Pop! Nook",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Lord of the Rings - Gimli Pop! Sayings",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku & Nimbus Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku w/Nyoibo Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Harry Potter - Luna Lovegood Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku (Kamehameha) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Legends - Luke Skywalker GW Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Super - Golden Frieza Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Gohan SS Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Frieza 100% Final Form Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Goku SS 1st App Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Death Star Bitty Pop! Playset",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Dragon Ball Z - Burter GW Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Clone Wars - Fives (ARC Trooper) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Impressions - Samurai Cad Bane Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Dabura NY24 EXC Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - SSGoku w/Kamehameha Wv GW Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Mace Windu (May the Fourth Retro) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Count Dooku (Retro) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Cell (vs Gohan) B-A-S Pop! Deluxe",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Rebels - Loth Cat Pop! NYCC EXC RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat (2021) - Sonya Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat - Scorpion (Fire Hands) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Kylo Ren (The First Order) Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat - Liu Kang (God of Fire) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat - Sub Zero (Ice Hands) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Deleted Scenes - Sandtrooper (Survival Backpack) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Clone Wars - Hondo w/Pikk Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat 2 - Johnny Cage Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Mortal Kombat 2 - Kitana Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Mandalorian - IG-11 Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Chopper (Blueprint) Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - R2-D2 (Blueprint) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Revenge of the Sith - Mace Windu Electricity GW Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars: Rebels - Ezra w/Loth Cat Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Blackbeard (Black Hole) Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers - Pudgy Pig Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers 30th - Red Zord Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers: Turbo - Red Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers - Green Ranger w/Megazord Bitty Pop! Bot",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Power Rangers Zeo - Green Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers Zeo - Pink Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers Zeo - Yellow Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Shanks Pop! Plus",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers Zeo - Blue Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Power Rangers Zeo - Gold Ranger Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Nami Bitty Pop! 4PK",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "One Piece - Usopp Bitty Pop! 4PK",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Trek: TOS - Mirror Kirk Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek: TOS - Mirror Spock Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek: TOS - Kirk & Spock Pop! Moment RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Sanji Bitty Pop! 4PK",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Trek - Spock w/Weapon Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Luffy Bitty Pop! 4PK",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Trek: Lower Decks - D'Vana Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Harry Potter - Harry w/Knight Bus Pop! Ride",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek: First Contact - Locutus of Borg Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Stranger Things - Steve Harrington Pop! Ride",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Hello Kitty - 3D PVC Bag Clips S1 Blind Bag 24ct CDU",
+          "reason": "title",
+          "keyword": "bag clips",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Sakamoto Days - Sakamoto Squishy Toy",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece (Netflix) - Squishy Gum Gum Fruit Keychain",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "One Piece (Netflix) - Gum Gum Fruit Squishy",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Sakamoto Days - Ramen Noodles Squishy Toy",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek: First Contact - The Borg Queen Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek - Transporting William T. Riker Pop! Plus",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek - Transporting James T. Kirk Pop! Plus",
+          "reason": "category",
+          "keyword": "pop",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Sakamoto Days - Pork Bun Squishy Toy",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Trek: Beyond - Krall Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "One Piece - Chopper Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Charmed - Prue Halliwell Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Charmed - Phoebe Halliwell Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Charmed - Piper Halliwell Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Back to the Future - Doc w/Helmet Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Rebel Four Pack Pop! 4PK",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Five Night's at Freddy's - Bitty Pop! Arcade",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Sandman - Lucifer Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Chainsaw Man - Denji Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Michael Jackson - Michael Jackson (Rock With You) Glitter Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ghostbusters II (1989) - Dr. Peter Venkman Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Beauty and the Beast - Gaston Flexing Disney Villains Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Killer Klowns from Outer Space - Frank Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Naruto: Shippuden - Ino Yamanaka Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Tom & Jerry - Tom with Ice Cream Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Child's Play - Good Guy Chucky in Pumpkin Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Trek: Picard - Jean-Luc Picard Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Game of Thrones: House of the Dragon - Alicent Hightower (Teal Cloak) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Lilo & Stitch - Stitch Smiling Seated Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Wars: The Acolyte - Qimir Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Naruto: Shippuden - Rin Nohara Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Scooby-Doo - Shaggy with 3D Glasses Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Black Clover - Magna Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Yu-Gi-Oh! - Magician's Valkyria Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "yu-gi-oh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Wednesday (2022) - Marilyn Thornhill Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Iron Maiden - Senjutsu Eddie Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Demon Slayer - Tamayo Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Bride of Chucky - Chucky Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Emperor's New Groove - Yzma Disney Villains Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Twilight Zone - The Narrator Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Marvel: Strange Tales - Mephisto Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "ZAP PT-25 20 GRAM ZAP-O FOAM SAFE CA",
+          "reason": "title",
+          "keyword": "zap pt-",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "(DG) ZAP PT-28 2OZ. ZAP FOAM SAFE KICKER - PUMP SPRAY",
+          "reason": "title",
+          "keyword": "zap pt-",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "1/18 4WD RTR High speed truck Li-ion Battery Pack (7.4V 1200mAh)",
+          "reason": "title",
+          "keyword": "4wd rtr",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Prerelease Pack",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Black Edition High torque servo 21kg",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "EXCEL 16001 EXCEL K1 KNIFE W/SAFETY CAP",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "EXCEL 16002 EXCEL K2 KNIFE W/SAFETY CAP",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "EXCEL 16018 EXCEL K18 SOFT GRIP KNIFE NON ROLL WITH SAFETY CAP",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "CR-CHAMP 1.0\" CRAWLER TIRE 7MM HEX 1/18 & 1/24 SCALE",
+          "reason": "tag",
+          "keyword": "wheels/tyres",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "CR-Ardent Super Soft Crawler Tyre 1.9\"",
+          "reason": "tag",
+          "keyword": "wheels/tyres",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Beyblade Flame Cerberus W 5-80WB Starter",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "One Piece TCG: Booster Pack \u2013 The Time of Battle [OP-16]",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "FT Steel Pinion Gear, 16t-Mod 1, 5mm Shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FT Steel Pinion Gear, 17t-Mod 1, 5mm Shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Team Corally - RC Car Tool Set - Incl. Tool Bag - 16 pcs Tools",
+          "reason": "title",
+          "keyword": "rc car",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "FMS 1:10 FCX10 LC80 Toyota Land Cruiser 80 RS",
+          "reason": "title",
+          "keyword": "fms 1:10",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "2S LIPO BATTERY 7.4V 4400mAh 30C",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "CR-SIXGEAR Super Soft Crawler Tyre 1.9 Supersoft",
+          "reason": "tag",
+          "keyword": "wheels/tyres",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Enduro12 Trail Truck Bushido RTR",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "UDIRC 1/18 2.4G 4WD Off-Road Crawler Black colour Authorized Toyota Land Cruiser LC79",
+          "reason": "title",
+          "keyword": "udirc",
+          "filterCategory": "rc_parts_and_brands"
+        }
+      ],
       "logs": [
         {
-          "time": "05:20:00",
+          "time": "08:25:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "05:20:00",
+          "time": "08:25:59",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:21:00",
+          "time": "08:26:59",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "05:21:05",
+          "time": "08:27:04",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:22:05",
+          "time": "08:28:04",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "05:22:11",
+          "time": "08:28:09",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:23:11",
+          "time": "08:29:09",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "05:23:16",
-          "level": "WARNING",
-          "message": "Rate limited, waiting 60s..."
-        },
-        {
-          "time": "05:24:16",
-          "level": "WARNING",
-          "message": "Page 1 failed (attempt 4), retrying in 5s..."
-        },
-        {
-          "time": "05:24:21",
-          "level": "WARNING",
-          "message": "Rate limited, waiting 60s..."
-        },
-        {
-          "time": "05:25:21",
-          "level": "WARNING",
-          "message": "Page 1 failed (attempt 5), retrying in 5s..."
-        },
-        {
-          "time": "05:25:26",
-          "level": "WARNING",
-          "message": "Rate limited, waiting 60s..."
-        },
-        {
-          "time": "05:26:26",
-          "level": "ERROR",
-          "message": "Page 1 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://www.commandelitehobbies.com/products.json?limit=250&page=1"
-        },
-        {
-          "time": "05:26:26",
+          "time": "08:29:14",
           "level": "INFO",
-          "message": "Done: 0 products fetched"
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "08:29:18",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:30:18",
+          "level": "WARNING",
+          "message": "Page 2 failed (attempt 1), retrying in 5s..."
+        },
+        {
+          "time": "08:30:23",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:31:23",
+          "level": "WARNING",
+          "message": "Page 2 failed (attempt 2), retrying in 5s..."
+        },
+        {
+          "time": "08:31:28",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:32:28",
+          "level": "WARNING",
+          "message": "Page 2 failed (attempt 3), retrying in 5s..."
+        },
+        {
+          "time": "08:32:33",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:33:33",
+          "level": "WARNING",
+          "message": "Page 2 failed (attempt 4), retrying in 5s..."
+        },
+        {
+          "time": "08:33:38",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:34:38",
+          "level": "WARNING",
+          "message": "Page 2 failed (attempt 5), retrying in 5s..."
+        },
+        {
+          "time": "08:34:43",
+          "level": "WARNING",
+          "message": "Rate limited, waiting 60s..."
+        },
+        {
+          "time": "08:35:43",
+          "level": "ERROR",
+          "message": "Page 2 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://www.commandelitehobbies.com/products.json?limit=250&page=2"
+        },
+        {
+          "time": "08:35:43",
+          "level": "INFO",
+          "message": "Done: 250 products fetched"
         }
       ]
     },
@@ -147,7 +1473,7 @@
       "inStock": 1171,
       "outOfStock": 420,
       "error": null,
-      "duration": 0.25,
+      "duration": 0.22,
       "cached_at": "2026-07-30T18:24:10.728612+00:00",
       "logs": [
         {
@@ -168,76 +1494,76 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "429 Client Error: Too Many Requests for url: https://tacticaledge.com.au/products.json?limit=250&page=1",
-      "duration": 390.78,
+      "duration": 390.82,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "05:32:52",
+          "time": "08:42:10",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "05:32:53",
+          "time": "08:42:10",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:33:53",
+          "time": "08:43:11",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "05:33:59",
+          "time": "08:43:16",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:34:59",
+          "time": "08:44:17",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "05:35:05",
+          "time": "08:44:22",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:36:05",
+          "time": "08:45:23",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "05:36:11",
+          "time": "08:45:28",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:37:12",
+          "time": "08:46:29",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "05:37:17",
+          "time": "08:46:34",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:38:17",
+          "time": "08:47:34",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "05:38:23",
+          "time": "08:47:40",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:39:23",
+          "time": "08:48:40",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://tacticaledge.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "05:39:23",
+          "time": "08:48:40",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -309,7 +1635,7 @@
       "inStock": 800,
       "outOfStock": 478,
       "error": null,
-      "duration": 0.26,
+      "duration": 0.25,
       "cached_at": "2026-07-31T02:18:00.640611+00:00",
       "logs": [
         {
@@ -330,76 +1656,76 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "429 Client Error: Too Many Requests for url: https://armouredheaven.com.au/products.json?limit=250&page=1",
-      "duration": 386.67,
+      "duration": 386.68,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "05:45:51",
+          "time": "08:55:08",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "05:45:51",
+          "time": "08:55:08",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:46:51",
+          "time": "08:56:09",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "05:46:56",
+          "time": "08:56:14",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:47:56",
+          "time": "08:57:14",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "05:48:01",
+          "time": "08:57:19",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:49:01",
+          "time": "08:58:19",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "05:49:07",
+          "time": "08:58:24",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:50:07",
+          "time": "08:59:25",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "05:50:12",
+          "time": "08:59:30",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:51:12",
+          "time": "09:00:30",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "05:51:17",
+          "time": "09:00:35",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "05:52:17",
+          "time": "09:01:35",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://armouredheaven.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "05:52:17",
+          "time": "09:01:35",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -906,7 +2232,7 @@
           "message": "Loaded from cache (2026-07-31T02:48:37.117086+00:00)"
         }
       ],
-      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://vipertac.com.au/products.json?limit=250&page=2"
+      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://vipertac.com.au/products.json?limit=250&page=1"
     },
     {
       "name": "AusGel",
@@ -918,76 +2244,71 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "429 Client Error: Too Many Requests for url: https://ausgel.com.au/products.json?limit=250&page=1",
-      "duration": 386.76,
+      "duration": 326.63,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "06:02:05",
+          "time": "09:08:04",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:02:05",
+          "time": "09:08:04",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:03:06",
+          "time": "09:09:04",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "06:03:11",
+          "time": "09:09:10",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:04:11",
+          "time": "09:10:10",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "06:04:16",
-          "level": "WARNING",
-          "message": "Rate limited, waiting 60s..."
-        },
-        {
-          "time": "06:05:16",
+          "time": "09:10:15",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "06:05:21",
+          "time": "09:10:20",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:06:21",
+          "time": "09:11:20",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "06:06:27",
+          "time": "09:11:25",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:07:27",
+          "time": "09:12:25",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "06:07:32",
+          "time": "09:12:31",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:08:32",
+          "time": "09:13:31",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://ausgel.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "06:08:32",
+          "time": "09:13:31",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -1146,7 +2467,7 @@
           "message": "Loaded from cache (2026-07-31T03:01:45.935496+00:00)"
         }
       ],
-      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://geltactical.com.au/products.json?limit=250&page=3"
+      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://geltactical.com.au/products.json?limit=250&page=1"
     },
     {
       "name": "Sting Ops Tactical",
@@ -1232,7 +2553,7 @@
       "inStock": 501,
       "outOfStock": 685,
       "error": null,
-      "duration": 0.3,
+      "duration": 0.29,
       "cached_at": "2026-07-30T19:15:09.034090+00:00",
       "logs": [
         {
@@ -1241,7 +2562,7 @@
           "message": "Loaded from cache (2026-07-30T19:15:09.034090+00:00)"
         }
       ],
-      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://www.stingopstactical.com.au/products.json?limit=250&page=1"
+      "warning": "Using cache: 429 Client Error: Too Many Requests for url: https://www.stingopstactical.com.au/products.json?limit=250&page=2"
     },
     {
       "name": "AK Gelblaster AU",
@@ -1253,76 +2574,76 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "429 Client Error: Too Many Requests for url: https://akgelblasterau.com/products.json?limit=250&page=1",
-      "duration": 385.98,
+      "duration": 385.94,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "06:27:01",
+          "time": "09:33:04",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:27:01",
+          "time": "09:33:04",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:28:01",
+          "time": "09:34:04",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "06:28:06",
+          "time": "09:34:09",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:29:06",
+          "time": "09:35:09",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "06:29:11",
+          "time": "09:35:14",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:30:11",
+          "time": "09:36:14",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "06:30:16",
+          "time": "09:36:19",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:31:16",
+          "time": "09:37:19",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "06:31:21",
+          "time": "09:37:24",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:32:21",
+          "time": "09:38:25",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "06:32:26",
+          "time": "09:38:30",
           "level": "WARNING",
           "message": "Rate limited, waiting 60s..."
         },
         {
-          "time": "06:33:27",
+          "time": "09:39:30",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 429 Client Error: Too Many Requests for url: https://akgelblasterau.com/products.json?limit=250&page=1"
         },
         {
-          "time": "06:33:27",
+          "time": "09:39:30",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -1463,7 +2784,7 @@
       "inStock": 271,
       "outOfStock": 82,
       "error": null,
-      "duration": 22.5,
+      "duration": 21.66,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -1708,47 +3029,47 @@
       ],
       "logs": [
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Offset 0: 89 products"
         },
         {
-          "time": "06:42:11",
+          "time": "09:48:14",
           "level": "INFO",
           "message": "Offset 20: 69 products"
         },
         {
-          "time": "06:42:14",
+          "time": "09:48:17",
           "level": "INFO",
           "message": "Offset 40: 60 products"
         },
         {
-          "time": "06:42:17",
+          "time": "09:48:20",
           "level": "INFO",
           "message": "Offset 60: 54 products"
         },
         {
-          "time": "06:42:21",
+          "time": "09:48:23",
           "level": "INFO",
           "message": "Offset 80: 41 products"
         },
         {
-          "time": "06:42:24",
+          "time": "09:48:26",
           "level": "INFO",
           "message": "Offset 100: 23 products"
         },
         {
-          "time": "06:42:27",
+          "time": "09:48:29",
           "level": "INFO",
           "message": "Offset 120: 5 products"
         },
         {
-          "time": "06:42:30",
+          "time": "09:48:32",
           "level": "INFO",
           "message": "Done: 341 products fetched"
         }
@@ -1764,54 +3085,54 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "400 Client Error: Bad Request for url: https://www.cybertrigger.com.au/wp-json/wc/store/v1/products?per_page=100&page=1",
-      "duration": 25.7,
+      "duration": 25.44,
       "simple": 0,
       "variable": 0,
       "variations": 0,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "06:42:13",
+          "time": "09:48:16",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "06:42:18",
+          "time": "09:48:21",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "06:42:23",
+          "time": "09:48:26",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "06:42:28",
+          "time": "09:48:31",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "06:42:33",
+          "time": "09:48:36",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 400 Client Error: Bad Request for url: https://www.cybertrigger.com.au/wp-json/wc/store/v1/products?per_page=100&page=1"
         },
         {
-          "time": "06:42:33",
+          "time": "09:48:36",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         },
         {
-          "time": "06:42:33",
+          "time": "09:48:36",
           "level": "INFO",
           "message": "Total: 0 simple + 0 variations = 0"
         }
@@ -1827,7 +3148,7 @@
       "inStock": 308,
       "outOfStock": 570,
       "error": null,
-      "duration": 27.31,
+      "duration": 26.98,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -1991,82 +3312,82 @@
       ],
       "logs": [
         {
-          "time": "06:42:30",
+          "time": "09:48:32",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:32",
+          "time": "09:48:34",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "06:42:35",
+          "time": "09:48:37",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "06:42:39",
+          "time": "09:48:41",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "06:42:43",
+          "time": "09:48:45",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "06:42:47",
+          "time": "09:48:48",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "06:42:50",
+          "time": "09:48:52",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "06:42:54",
+          "time": "09:48:56",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "06:42:58",
+          "time": "09:48:59",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "06:42:58",
+          "time": "09:48:59",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "06:42:58",
+          "time": "09:48:59",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "06:42:58",
+          "time": "09:49:00",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "06:43:02",
+          "time": "09:49:04",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "06:43:05",
+          "time": "09:49:07",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "06:43:05",
+          "time": "09:49:07",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "06:43:05",
+          "time": "09:49:07",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
         }
@@ -2082,7 +3403,7 @@
       "inStock": 1291,
       "outOfStock": 79,
       "error": null,
-      "duration": 44.74,
+      "duration": 44.84,
       "simple": 881,
       "variable": 134,
       "variations": 508,
@@ -2132,112 +3453,112 @@
       ],
       "logs": [
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:10",
+          "time": "09:48:13",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "06:42:14",
+          "time": "09:48:17",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "06:42:18",
+          "time": "09:48:21",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "06:42:23",
+          "time": "09:48:25",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "06:42:27",
+          "time": "09:48:30",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "06:42:31",
+          "time": "09:48:34",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "06:42:36",
+          "time": "09:48:39",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "06:42:40",
+          "time": "09:48:43",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "06:42:44",
+          "time": "09:48:47",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "06:42:48",
+          "time": "09:48:52",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "06:42:52",
+          "time": "09:48:55",
           "level": "INFO",
           "message": "Page 11: 15 products"
         },
         {
-          "time": "06:42:52",
+          "time": "09:48:55",
           "level": "INFO",
           "message": "Done: 1015 products fetched"
         },
         {
-          "time": "06:42:52",
+          "time": "09:48:55",
           "level": "INFO",
           "message": "Found 134 variable products, fetching variations..."
         },
         {
-          "time": "06:42:53",
+          "time": "09:48:56",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "06:42:57",
+          "time": "09:49:00",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "06:43:01",
+          "time": "09:49:04",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "06:43:05",
+          "time": "09:49:08",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "06:43:09",
+          "time": "09:49:12",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "06:43:12",
+          "time": "09:49:15",
           "level": "INFO",
           "message": "Variations page 6: 8 items"
         },
         {
-          "time": "06:43:12",
+          "time": "09:49:15",
           "level": "INFO",
           "message": "Fetched 508 variations, enriched 501"
         },
         {
-          "time": "06:43:12",
+          "time": "09:49:15",
           "level": "INFO",
           "message": "Total: 881 simple + 508 variations = 1389"
         }
@@ -2253,7 +3574,7 @@
       "inStock": 1105,
       "outOfStock": 315,
       "error": null,
-      "duration": 105.25,
+      "duration": 97.22,
       "simple": 1565,
       "variable": 1,
       "variations": 4,
@@ -3119,112 +4440,112 @@
       ],
       "logs": [
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:16",
+          "time": "09:48:16",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "06:42:23",
+          "time": "09:48:22",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "06:42:29",
+          "time": "09:48:28",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "06:42:36",
+          "time": "09:48:34",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "06:42:43",
+          "time": "09:48:41",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "06:42:50",
+          "time": "09:48:48",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "06:42:57",
+          "time": "09:48:53",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "06:43:03",
+          "time": "09:49:00",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "06:43:10",
+          "time": "09:49:06",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "06:43:16",
+          "time": "09:49:12",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "06:43:23",
+          "time": "09:49:18",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "06:43:29",
+          "time": "09:49:25",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "06:43:35",
+          "time": "09:49:30",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "06:43:41",
+          "time": "09:49:36",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "06:43:47",
+          "time": "09:49:42",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "06:43:53",
+          "time": "09:49:48",
           "level": "INFO",
           "message": "Page 16: 66 products"
         },
         {
-          "time": "06:43:53",
+          "time": "09:49:48",
           "level": "INFO",
           "message": "Done: 1566 products fetched"
         },
         {
-          "time": "06:43:53",
+          "time": "09:49:48",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "06:43:54",
+          "time": "09:49:49",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "06:43:54",
+          "time": "09:49:49",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "06:43:54",
+          "time": "09:49:49",
           "level": "INFO",
           "message": "Total: 1565 simple + 4 variations = 1569"
         }
@@ -3237,10 +4558,10 @@
       "fetched": 2839,
       "filtered": 303,
       "final": 2940,
-      "inStock": 1684,
-      "outOfStock": 1256,
+      "inStock": 1683,
+      "outOfStock": 1257,
       "error": null,
-      "duration": 175.57,
+      "duration": 182.94,
       "simple": 2696,
       "variable": 143,
       "variations": 547,
@@ -5066,202 +6387,202 @@
       ],
       "logs": [
         {
-          "time": "06:42:08",
+          "time": "09:48:11",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "06:42:13",
+          "time": "09:48:16",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "06:42:20",
+          "time": "09:48:23",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "06:42:27",
+          "time": "09:48:31",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "06:42:34",
+          "time": "09:48:37",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "06:42:41",
+          "time": "09:48:44",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "06:42:47",
+          "time": "09:48:51",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "06:42:54",
+          "time": "09:48:58",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "06:43:01",
+          "time": "09:49:05",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "06:43:08",
+          "time": "09:49:11",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "06:43:14",
+          "time": "09:49:18",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "06:43:21",
+          "time": "09:49:24",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "06:43:27",
+          "time": "09:49:31",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "06:43:33",
+          "time": "09:49:37",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "06:43:39",
+          "time": "09:49:44",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "06:43:45",
+          "time": "09:49:50",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "06:43:51",
+          "time": "09:49:56",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "06:43:57",
+          "time": "09:50:06",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "06:44:02",
+          "time": "09:50:12",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "06:44:08",
+          "time": "09:50:18",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "06:44:13",
+          "time": "09:50:23",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "06:44:19",
+          "time": "09:50:29",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "06:44:25",
+          "time": "09:50:35",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "06:44:30",
+          "time": "09:50:40",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "06:44:36",
+          "time": "09:50:46",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "06:44:41",
+          "time": "09:50:51",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "06:44:47",
+          "time": "09:50:57",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "06:44:52",
+          "time": "09:51:02",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "06:44:58",
+          "time": "09:51:09",
           "level": "INFO",
           "message": "Page 28: 100 products"
         },
         {
-          "time": "06:45:03",
+          "time": "09:51:13",
           "level": "INFO",
           "message": "Page 29: 39 products"
         },
         {
-          "time": "06:45:03",
+          "time": "09:51:13",
           "level": "INFO",
           "message": "Done: 2839 products fetched"
         },
         {
-          "time": "06:45:03",
+          "time": "09:51:13",
           "level": "INFO",
           "message": "Found 143 variable products, fetching variations..."
         },
         {
-          "time": "06:45:06",
+          "time": "09:51:16",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "06:45:12",
+          "time": "09:51:22",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "06:45:18",
+          "time": "09:51:28",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "06:45:23",
+          "time": "09:51:33",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "06:45:29",
+          "time": "09:51:38",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "06:45:34",
+          "time": "09:51:43",
           "level": "INFO",
           "message": "Variations page 6: 47 items"
         },
         {
-          "time": "06:45:34",
+          "time": "09:51:43",
           "level": "INFO",
           "message": "Fetched 547 variations, enriched 536"
         },
         {
-          "time": "06:45:34",
+          "time": "09:51:43",
           "level": "INFO",
           "message": "Total: 2696 simple + 547 variations = 3243"
         }
@@ -5269,19 +6590,19 @@
     }
   ],
   "totals": {
-    "rawProducts": 11021,
-    "afterFilter": 13282,
-    "uniqueItems": 13029,
-    "productGroups": 12314,
-    "skuMatched": 6112,
-    "titleMatched": 6202,
-    "multiVendor": 677,
-    "inStock": 7992,
-    "outOfStock": 4320
+    "rawProducts": 11271,
+    "afterFilter": 13321,
+    "uniqueItems": 13068,
+    "productGroups": 12352,
+    "skuMatched": 6148,
+    "titleMatched": 6204,
+    "multiVendor": 678,
+    "inStock": 8022,
+    "outOfStock": 4328
   },
   "tracking": {
     "new": 0,
-    "changed": 0,
-    "unchanged": 13029
+    "changed": 1,
+    "unchanged": 13067
   }
 }
