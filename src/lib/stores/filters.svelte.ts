@@ -12,13 +12,7 @@ export interface FilterState {
 	inStockOnly: boolean;
 	onSaleOnly: boolean;
 	sortBy:
-		| 'discount-$'
-		| 'discount-%'
-		| 'price-asc'
-		| 'price-desc'
-		| 'name-asc'
-		| 'name-desc'
-		| 'newest';
+		'discount-$' | 'discount-%' | 'price-asc' | 'price-desc' | 'name-asc' | 'name-desc' | 'newest';
 }
 
 // Default filter state

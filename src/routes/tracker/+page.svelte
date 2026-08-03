@@ -32,12 +32,7 @@
 
 	// Event type filter
 	type EventType =
-		| 'all'
-		| 'new'
-		| 'price_drop'
-		| 'price_increase'
-		| 'back_in_stock'
-		| 'out_of_stock';
+		'all' | 'new' | 'price_drop' | 'price_increase' | 'back_in_stock' | 'out_of_stock';
 	let eventFilter = $state<EventType>('all');
 
 	const timeFilterMs = $derived(
