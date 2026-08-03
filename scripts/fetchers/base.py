@@ -10,7 +10,16 @@ from typing import Any
 
 import requests
 
-from config import REQUEST_DELAY, REQUEST_TIMEOUT, REQUEST_RETRIES, RETRY_DELAY, USER_AGENT, MAX_PAGES
+from config import (
+    REQUEST_DELAY,
+    REQUEST_TIMEOUT,
+    REQUEST_RETRIES,
+    RETRY_DELAY,
+    RATE_LIMIT_MAX_WAIT,
+    RATE_LIMIT_RETRIES,
+    USER_AGENT,
+    MAX_PAGES,
+)
 from utils import count_in_stock
 
 logger = logging.getLogger(__name__)
@@ -67,7 +76,7 @@ class BaseFetcher(ABC):
         - _build_page_url(page): Build URL for each page
         - _extract_products(data): Extract products from response
         - _is_last_page(data, page): Check if pagination is complete
-        - _handle_rate_limit(response): Handle rate limiting (optional)
+        - _rate_limit_wait(response): Capped wait (s) when rate limited (optional)
         - _parse_response(response): Parse response to JSON (optional)
 
         Returns:
@@ -87,17 +96,33 @@ class BaseFetcher(ABC):
         while page <= MAX_PAGES:
             url = self._build_page_url(page)
 
-            # Retry loop for network failures
+            # Retry loop for network failures. Rate-limit (429) waits are
+            # capped and counted separately, so they don't multiply against
+            # the network-retry budget the way an unbounded Retry-After would.
             data = None
             last_error = None
-            for attempt in range(REQUEST_RETRIES + 1):
+            rate_limit_hits = 0
+            attempt = 0
+            while attempt <= REQUEST_RETRIES:
                 try:
                     response = self._make_request(url)
 
-                    # Let subclass handle rate limiting
-                    response = self._handle_rate_limit(response, url)
-                    if response is None:
-                        break  # Subclass decided to stop
+                    # Handle rate limiting (429) with a capped, bounded wait.
+                    wait = self._rate_limit_wait(response)
+                    if wait is not None:
+                        rate_limit_hits += 1
+                        if rate_limit_hits > RATE_LIMIT_RETRIES:
+                            last_error = requests.HTTPError(
+                                f"still rate limited (429) after {RATE_LIMIT_RETRIES} retries"
+                            )
+                            self.log.error(f"Page {page}: {last_error}, giving up (will try cache)")
+                            break
+                        self.log.warning(
+                            f"Page {page}: rate limited, waiting {wait}s "
+                            f"(retry {rate_limit_hits}/{RATE_LIMIT_RETRIES})..."
+                        )
+                        time.sleep(wait)
+                        continue  # retry same page without consuming the network-retry budget
 
                     response.raise_for_status()
                     data = self._parse_response(response)
@@ -105,8 +130,9 @@ class BaseFetcher(ABC):
 
                 except requests.RequestException as e:
                     last_error = e
-                    if attempt < REQUEST_RETRIES:
-                        self.log.warning(f"Page {page} failed (attempt {attempt + 1}), retrying in {RETRY_DELAY}s...")
+                    attempt += 1
+                    if attempt <= REQUEST_RETRIES:
+                        self.log.warning(f"Page {page} failed (attempt {attempt}), retrying in {RETRY_DELAY}s...")
                         time.sleep(RETRY_DELAY)
                     else:
                         self.log.error(f"Page {page} failed after {REQUEST_RETRIES + 1} attempts: {e}")
@@ -158,9 +184,19 @@ class BaseFetcher(ABC):
         """Check if this is the last page. Override for custom logic."""
         return False  # Default: continue until empty response
 
-    def _handle_rate_limit(self, response: requests.Response, url: str) -> requests.Response | None:
-        """Handle rate limiting. Override for platform-specific handling."""
-        return response  # Default: no rate limit handling
+    def _rate_limit_wait(self, response: requests.Response) -> int | None:
+        """Return capped seconds to wait when rate limited, or None if not.
+
+        Default handling covers HTTP 429 for any platform: honor the server's
+        ``Retry-After`` header when present, but cap it at ``RATE_LIMIT_MAX_WAIT``
+        so a large value can't stall the run. Override for platform-specific
+        rate-limit signals.
+        """
+        if response.status_code == 429:
+            retry_after = response.headers.get("Retry-After", "")
+            wait = int(retry_after) if retry_after.isdigit() else RETRY_DELAY
+            return min(wait, RATE_LIMIT_MAX_WAIT)
+        return None
 
     def _parse_response(self, response: requests.Response) -> Any:
         """Parse response to JSON. Override for custom parsing."""
