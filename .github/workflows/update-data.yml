@@ -28,6 +28,7 @@ permissions:
 jobs:
   scrape:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     concurrency:
       group: scrape
       cancel-in-progress: true
