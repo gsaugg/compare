@@ -77,27 +77,27 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Update product data"
-
-          # Push with retry — avoid rebase hangs on data-only commits
+          # Stash our data changes (not committed yet)
+          # Strategy: always push on top of latest remote — no rebase needed
+          # since cancel-in-progress ensures only one scrape runs at a time
           for i in $(seq 1 "$MAX_RETRIES"); do
             echo "Push attempt $i/$MAX_RETRIES..."
-            # Fetch latest and rebase with a timeout to avoid hangs
-            if timeout 60 git pull --rebase --autostash; then
-              if timeout 30 git push; then
-                echo "changed=true" >> $GITHUB_OUTPUT
-                exit 0
-              fi
-            else
-              echo "Rebase failed or timed out, resetting and re-applying..."
-              git rebase --abort 2>/dev/null || true
-              # Reset to remote, re-apply our data changes on top
-              git reset --soft HEAD~1
-              git fetch origin main
-              git reset --mixed origin/main
-              git add public/data/ .cache/
-              git commit -m "Update product data"
+
+            # Reset to latest remote main, then re-apply our data on top
+            git reset HEAD -- .  # unstage
+            git stash --include-untracked
+            git fetch origin main
+            git reset --hard origin/main
+            git stash pop
+            git add public/data/ .cache/
+            git commit -m "Update product data"
+
+            if timeout 30 git push; then
+              echo "changed=true" >> $GITHUB_OUTPUT
+              exit 0
             fi
+
+            echo "Push rejected, retrying..."
             sleep 5
           done
 
