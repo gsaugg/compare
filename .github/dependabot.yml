@@ -10,6 +10,11 @@ updates:
     groups:
       dev-dependencies:
         dependency-type: 'development'
+    ignore:
+      # @sveltejs/kit doesn't support TS 7 yet (Go rewrite, no stable API).
+      # Expected fix in TS 7.1 (~Oct 2026). Remove this when kit supports it.
+      - dependency-name: 'typescript'
+        versions: ['>=7.0.0']
 
   # Python dependencies (uv/pip)
   - package-ecosystem: 'pip'
