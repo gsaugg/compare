@@ -1,49 +1,3909 @@
 {
-  "lastUpdated": "2026-10-13T16:44:01.358330+00:00",
-  "duration": 796.28,
+  "lastUpdated": "2026-10-13T21:51:59.267566+00:00",
+  "duration": 956.79,
   "stores": [
     {
       "name": "Command Elite Hobbies",
       "url": "https://www.commandelitehobbies.com",
       "platform": "shopify",
-      "fetched": 0,
-      "filtered": 0,
-      "final": 0,
-      "inStock": 0,
-      "outOfStock": 0,
+      "fetched": 750,
+      "filtered": 639,
+      "final": 124,
+      "inStock": 104,
+      "outOfStock": 20,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.62,
-      "filteredProducts": [],
+      "duration": 112.53,
+      "filteredProducts": [
+        {
+          "title": "Disney Lorcana - Set 13 Attack of the Vine! The Great Hunny Rescue Illumineer's Trove",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Ethan\u2019s Magcargo Art Rare 197/193 M2a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Machoke Art Rare 177/165 SV2a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Archaludon Art Rare 113/102 SV7 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Toxtricity Art Rare 181/172 S12a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Zamazenta Art Rare 107/098 SV10 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Gardevoir Art Rare 072/068 S11a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Steelix Art Rare 073/063 M1L Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Rocket\u2019s Raticate Art Rare 108/098 SV10 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 N\u2019s Zekrom Art Rare 210/193 M2a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MTG Reality Fracture - Bundle",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Cynthia\u2019s Spiritomb Art Rare 208/193 M2a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Exeggutor Art Rare 066/063 M1L Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Vallejo - Game Colour - Polyurethane Matt Varnish 60ml",
+          "reason": "title",
+          "keyword": "vallejo",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "PSA 9 Noctowl Art Rare 114/102 SV7 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Absol Art Rare 191/172 S12a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Hop\u2019s Trevenant Art Rare 204/193 M2a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Rocket's Wobbuffet Art Rare 103/098 SV10 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Arctibax Art Rare 076/071 SV2P Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Nymble Art Rare 082/080 M2 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Mesprit Art Rare 114/106 SV8 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Wigglytuff Art Rare 091/080 M2 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Beyblade X Ridge Triceratops 9-80GN Booster Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "PSA 9 Bewear Art Rare 076/064 SV6a Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Tyrunt Art Rare 089/080 M3 Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Beyblade X Mirage Clock 9-65B UX Booster Pack Set",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Pok\u00e9mon TCG 30th Anniversary Celebration Charizard Figure Collection Box (Simplified Chinese)",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG: 30th Celebration Booster Pack 30thC (S-Chinese)",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG: 30th Celebration Booster Box 30thC (S-Chinese)",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Beyblade X Cobalt Drake 4-60F Booster Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Japanese SV10 The Glory of Team Rocket Team Rocket\u2019s Weezing Art Rare #105 PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Japanese M2a Mega Dream ex Team Rocket\u2019s Dugtrio Art Rare #206 PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Skarmory Art Rare 073/064 \u2014 2024 Pok\u00e9mon Japanese SV7a Paradise Dragona",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Medicham Art Rare 207/193 \u2014 2025 Pok\u00e9mon Japanese M2a Mega Dream ex",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Ambipom Art Rare 092/080 \u2014 2025 Pok\u00e9mon Japanese M2 Inferno X",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Castform Character Rare 211/184 \u2014 2021 Pok\u00e9mon Japanese VMAX Climax",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Galarian Obstagoon Art Rare 209/193 \u2014 2025 Pok\u00e9mon Japanese M2a",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Veluza Art Rare 070/066 \u2014 2023 Pok\u00e9mon Japanese SV4K Ancient Roar",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Japanese M2a MEGA Dream ex Snorunt #200 Art Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2022 Pok\u00e9mon Japanese S12a VSTAR Universe Oricorio #176 Art Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2024 Pok\u00e9mon Japanese SV5a Crimson Haze Phione #071 Art Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Japanese SV4K Ancient Roar Loudred #078 Art Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Japanese SV11B Black Bolt Zekrom ex #174 BW Rare PSA 10",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Alakazam Art Rare 071/063 \u2014 2025 Pok\u00e9mon Japanese M1S Mega Symphonia",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG Abyss Eye Booster Pack M5 Japanese (Copy)",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG Abyss Eye Booster Box M5 Japanese",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MEGA 30th Celebration M6a Booster Pack - Japanese Pok\u00e9mon TCG",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MEGA 30th Celebration M6a Booster Box - Japanese Pok\u00e9mon TCG",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Yu-Gi-Oh - Beyond the Brave Booster Pack (9 Cards)",
+          "reason": "title",
+          "keyword": "yu-gi-oh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Yu-Gi-Oh - Beyond the Brave Booster Box (Display of 24)",
+          "reason": "title",
+          "keyword": "yu-gi-oh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Jurassic World - Terraventure TS02 Welcome to Jurassic World Blind Box Figure (Single Unit)",
+          "reason": "title",
+          "keyword": "blind box",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Hello Kitty and Friends - Chef Cinnamoroll with Caf\u00e9 Cinnamoroll Bitty Pop! Town Vinyl Figure",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Fate of the Furious - Dom\u2019s 1971 Plymouth GTX 1/24th Scale Metals Die-Cast Vehicle Replica",
+          "reason": "tag",
+          "keyword": "fast & furious",
+          "filterCategory": "diecast"
+        },
+        {
+          "title": "Fast & Furious - 1970 Dodge Charger (Silver Finish) 1/24th Scale Die-Cast Vehicle Replica",
+          "reason": "tag",
+          "keyword": "fast & furious",
+          "filterCategory": "diecast"
+        },
+        {
+          "title": "IT (1990) - Pennywise Figural PVC Money Bank",
+          "reason": "category",
+          "keyword": "money box",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Simplified Chinese Surfing Pikachu V 021/024 Z 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Japanese Nihil Zero Espurr AR 087/080 Z 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Japanese Ninja Spinner Claydol AR 090/083 Z 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Simplified Chinese Primordial Arts Gengar Holo 041/125 Z 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Japanese MEGA Dream ex Mega Hawlucha ex MA 229/193 Z 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon JPN SV9 Battle Partners Swinub 106/100 AR Graded 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon CHN 151C Blastoise ex 009/151 RR Graded 10 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TCG Grading 9 Salamence ex 177/159 Full Art Holo Journey Together Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "BCTC 9.5 Flygon V 110/100 SR Japanese Star Birth Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CGC 10 Toxtricity ex 215 Black Star Promo Illustration Contest 2024 Winner Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CGC 10 Dondozo 082/078 AR Holo Japanese Scarlet ex Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Mew ex 001/045 Battle Partners Deck Build Box CGC 9 Mint Japanese Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Oracle 138/144 Skyridge CGC 9 Mint Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CGC 9 Mewtwo 51/108 Evolutions 2016 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Diglett 47/102 1st Edition Shadowless Base Set 1999 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CGC 8.5 Mew 011/025 Holo Celebrations 2021 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CGA 9 Dark Flareon 35/82 1st Edition Team Rocket 2000 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 10 Charmander 46/102 Shadowless Base Set 1999 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Pikachu VMAX TG29/TG30 Lost Origin Trainer Gallery 2022 Pok\u00e9mon Card",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Butterfree Holo No.012 \u2014 2000 Pok\u00e9mon Japanese Neo 2",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2nd Hand DB SIG SAUER 1911 SPARTAN .45 Gel blaster Gas POWERED Blowback",
+          "reason": "tag",
+          "keyword": "2nd hand",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "PSA 10 Tinkatink Shiny Rare 165/091 \u2014 2024 Pok\u00e9mon Paldean Fates",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 10 Tinkatink Art Rare 076/071 \u2014 2023 Pok\u00e9mon Japanese SV2D Clay Burst",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 8 Dark Slowbro Holo 12/82 \u2014 2000 Pok\u00e9mon Team Rocket",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 9 Chatot Art Rare 081/071 \u2014 2024 Pok\u00e9mon Japanese SV5K Wild Force",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 10 Chansey Art Rare 113/101 \u2014 2024 Pok\u00e9mon Japanese SV6 Mask of Change",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA 10 Toxtricity Art Rare 089/080 \u2014 2025 Pok\u00e9mon Japanese M2 Inferno X",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2nd Hand Poseidon Orion  Performance Gel Blaster",
+          "reason": "tag",
+          "keyword": "2nd hand",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "MTG Foundations - Starter Commander Decks",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon TCG: 30th Celebration Elite Trainer Box",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Gatherers' Tavern - DOMARU Sleeves - Cinnamon Resting Rivals -100 pcs",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Gatherers' Tavern - DOMARU Playmat - Cinnamon Resting Rivals",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "CGA Graded Pokemon ME Phantasmal Flames #61 Mega Sharpedo Ex - Graded 9.5",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "FCX18II 1:18 FORD F-100 RTR BRUSHLESS BLACK",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "FMS FCX18II 1:18 FORD F-100 RTR BRUSHED",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "KILLERBODY NISSAN SKYLINE 1/10 RC Body",
+          "reason": "title",
+          "keyword": "killerbody",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "RC4WD Mud Slingers 2.2\" Tires",
+          "reason": "title",
+          "keyword": "rc4wd",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "RC4WD Interco Super Swamper 1.9\" TSL/Bogger Scale Tire",
+          "reason": "title",
+          "keyword": "rc4wd",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Hobbywing EZRUN MAX10 G2 80A Speed Control",
+          "reason": "title",
+          "keyword": "hobbywing",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "RC4WD Superlift Superide 80mm Scale Shock Absorbers",
+          "reason": "title",
+          "keyword": "rc4wd",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "WL Racing Shock Set",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Team Associated RIVAL MT8 Spur Gear, 48T, Mod 1",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Team Associated Pinion Gear, 16T, 2.3 mm shaft, .5 mod",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Team Associated Pinion Gear, 12T 32P",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Team Associated Spur Gear, 72T 48P Kimbrough",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "FlySky FS-GT5-LEDPJ-0800 LCD screen",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "FlySky FS-GT5-KGPJ-0400 Throttle trigger",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Team Associated SR7 Spur Gear, 45T, Mod 1",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "YuMe Hello Kitty and Friends Night Light Little Mushroom Light Series Blind Box",
+          "reason": "title",
+          "keyword": "blind box",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "What Do You Meme? Refresh",
+          "reason": "category",
+          "keyword": "card game",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "ULTRA PRO Specialty Holders - Stand Small - 5 Pack",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Steal A Brainrot Mystery Minifigures",
+          "reason": "title",
+          "keyword": "mystery mini",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Sonic Jelly Squishmes",
+          "reason": "category",
+          "keyword": "mini blind bags",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "NXE 11.1v 5000mah 45c Hard case Lipo w/Deans",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "HoBao Standard MEDIUM plug No5",
+          "reason": "title",
+          "keyword": "hobao",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MTG Reality Fracture - Commander Decks",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TAMIYA RC 1/10 CLOD BUSTER (2026)",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "TRAXXAS SPUR GEAR 46-T",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS ROD ENDS (4) (ASSMB STEEL PIVOT BALLS)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS GEAR 10-T PINION",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS ELECTRONIC SPEED CONTROL, WATERPROOF (BRUSHLESS)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 12T STEEL PINION GEAR (0.8 M / 32DP 3.175 SHAFT)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "TRAXXAS VXL 3M ELECTRONIC SPEED CONTROL",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 12MM HEX HUB (PLASTIC/4PCS)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "TRAXXAS SPUR GEAR 55-TOOTH",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SPUR GEAR 46-TOOTH STEEL (1.0 METRIC PITCH)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS HEX WHEEL HUBS/AXLE PINS",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Beyblade X and Marvel Collab Doctor Doom 0-80LO vs. Mister Fantastic 9-65A",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "MTG Reality Fracture - Collector Bundle",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MTG Reality Fracture - Collector Pack",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TRAXXAS GEAR 18-T PINION",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK ELEMENT 7.4V 1200MAH LI-ION BATTERY PACK",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "MAVERICK 16T ALUMINIUM PINION GEAR (0.8 M/32DP 3.175 SHAFT)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "TRAXXAS SLIPPER CLUTCH COMPLETE",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SERVO HORN STEEL",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS DIFFERENTIAL OIL KIT",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SPUR GEAR 61-TOOTH",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SPUR GEAR 50-TOOTH",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TAMIYA 1/24 BMW 320I RACING",
+          "reason": "title",
+          "keyword": "tamiya 1/",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "TRAXXAS GEAR 11-T (32-P)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TAMIYA CA CEMENT PRIMER FOR PP PE POM",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Beyblade X: Nether Incendio Z Starter Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Beyblade X: Whip Brachio OW 5-70Nr Starter Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Olight i3E Keychain Light - Sunwave Aqua",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "NexTool Mini Flagship F12 Keychain 13-in-1 Compact Multitool",
+          "reason": "title",
+          "keyword": "keychain",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "OKNIFE LK Zombie Green Folding Knife with Rechargeable Flashlight & RGB Light",
+          "reason": "title",
+          "keyword": "folding knife",
+          "filterCategory": "knives"
+        },
+        {
+          "title": "Water Pets",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Pok\u00e9mon TCG: Mini Portfolio",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon TCG: Mega Evoltions 2-Pack Blister",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MTG Reality Fracture - Booster Box",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MTG Reality Fracture - Play Booster",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MTG Reality Fracture - Pre-release Pack",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TRAXXAS STAMPEDE 4X4 WITH LED LIGHTS (EX Display)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "HX OUTDOORS TD-18B Fixed Blade Knife",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Beyblade X Suppress Superion 0-70LP BX Infinity Starter Pack Set",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Ultra Pro: UP86514 D&D Mimic Gamer Pouch",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Magic the Gathering - FINAL FANTASY Black Stitched Playmat Premium Z for MtG",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Magic the Gathering - FINAL FANTASY 100+ Deck Box v1 for MtG",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Magic the Gathering - FINAL FANTASY 100ct Deck Protector Sleeves v9 for MtG",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Magic the Gathering - FINAL FANTASY 100ct Deck Protector Sleeves v1 for MtG",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Space Marines - Adeptus Astartes Playmat - Stitched for Warhammer 40k",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Space Marines - Adeptus Astartes 105ct Apex Deck Protector sleeves Warhammer 40k",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "One Piece TCG Set Sail Deck Set SD-01",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering: Fallout Commander Decks",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "LAWMAN MK III 357 Magnum CTG. Revolver (Model only) White",
+          "reason": "title",
+          "keyword": "(model only)",
+          "filterCategory": "display_replicas"
+        },
+        {
+          "title": "LAWMAN MK III 357 Magnum CTG. Revolver (Model only) Black",
+          "reason": "title",
+          "keyword": "(model only)",
+          "filterCategory": "display_replicas"
+        },
+        {
+          "title": "Ultra Pro: Magic the Gathering - FINAL FANTASY Alcove Flip Deck Box Premium Z",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro: Magic The Gathering - Final Fantasy 105ct APEX Deck Protector Sleeves",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Revell - Focke Wulf TL Hunter \"Flitzer\" P-Series",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Revell - Westland Puma HC.1",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Revell - Fast & Furious 1969 Chevy Camaro Yenko",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Revell Boeing F-15C Eagle",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Revell 1/24 Fast & Furious Dominic's 1971 Plymouth GTX",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Secret Lair: Welcome To Stardew Valley",
+          "reason": "category",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Beyblade X: Feather Phoenix 2-60N Starter Set",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Pikachu #005/025 Full Art CGA 8 NM/MT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Mega Evolution: Perfect Order Meowth ex #107/088 CGA 9.5 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Japanese Ruler of the Black Flame Charizard ex #125/108 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Ludicolo #095/094 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2024 Pok\u00e9mon Stellar Crown Lileep #145/142 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2024 Pok\u00e9mon Surging Sparks Cyrano Full Art #230/191 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2024 Pok\u00e9mon Temporal Forces Eri Full Art #199/162 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Mew Holo #011/025 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Mew Holo #11/25 \u2013 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Mew Holo #11/25 \u2013 CGA 8 NM/MT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Destined Rivals Team Rocket\u2019s Mewtwo ex #081/182 CGA 9.5 GEM/MT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Zamazenta V #018/025 TCG 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Sacred Charm #093/094 Reverse Holo CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2020 Pok\u00e9mon Japanese Legendary Heartbeat Togekiss VMAX #059/076 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Journey Together Lillie\u2019s Pearl #151/159 Reverse Holo CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Mega Gengar ex #056/094 CGA 9.5 GEM MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Team Rocket\u2019s Giovanni #204/217 Ascended Heroes Reverse Holo CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Blaziken ex #024/159 Journey Together 2025 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Orthworm ex #162/142 Stellar Crown 2024 Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Precious Trolley #185/191 Surging Sparks 2024 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Lillie\u2019s Pearl #151/159 Journey Together 2025 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Warhammer: Age of Sigmar - Thanquol and Boneripper",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Avatar Aang: The Last Airbender - Katara Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Avatar Aang: The Last Airbender - Zuko Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Avatar Aang: The Last Airbender - Toph Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Avatar Aang: The Last Airbender - Sokka Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Wars - Anakin Skywalker (Padawan) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Street Fighter 6 - Ken Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Toy Story - Pizza Planet Truck Diecast Vehicle 1/32 Scale Die-Cast Vehicle Replica",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Demon Slayer: Infinity Castle - Tanjiro Kanado (Fire Breathing) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Magic Presents: The Hobbit Gift Bundle",
+          "reason": "category",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Carrie (1976) - Carrie (Bloody) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Street Fighter 6 - Akuma Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Scooby-Doo - Scooby-Doo in Vase Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Disney Lorcana S13 - Rapunzel Collection Starter Set",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Disney Pixar Cars Tow Mater 1:32 Scale Die-Cast Vehicle",
+          "reason": "category",
+          "keyword": "toy",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Funko Pop! Comic Covers: Marvel - Wolverine (The Incredible Hulk #181) Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Art Series: DC Batman Forever - Two-Face #66 Vinyl Figure with Hard Protector Case",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Town: Star Wars - Greedo and Cantina Vinyl Figure Set",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Rides: Sonic the Hedgehog - Sonic and Speed Star Lightning",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Marvel: X-Men - Gambit 4-Pack Mini Vinyl Figures",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Marvel: X-Men - Magneto 4-Pack Mini Vinyl Figures",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Marvel: X-Men - Jean Grey Mini-Figure 4-Pack",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Five Nights at Freddy's - Withered Golden Freddy Bitty Pop! Vinyl Figure 4-Pack",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Five Nights at Freddy's: Withered 4-Pack (Series 6)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Sonic the Hedgehog 4-Pack Mini Vinyl Figures",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Sonic the Hedgehog - Shadow 4-Pack Mini Vinyl Figures",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Stranger Things Bitty Pop! Mystery Blind Bag Mini Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko One Piece Mini Vinyl Figures",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko My Little Pony Mini Vinyl Figures Blind Box",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pocket Pop! Star Wars Valentine's Day Heart Box 4-Pack Vinyl Figures (2024 Edition)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Disney: A Wrinkle in Time - Mrs. Who, Mrs. Which & Mrs. Whatsit Vinyl Figures 3-Pack",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Beetlejuice Beetlejuice - Beetlejuice & Lydia Deetz Vinyl Figures 2-Pack",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pocket Pop! Keychain: Disney Winnie the Pooh - Eeyore with Heart (Flocked)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Five Nights at Freddy's 10th Anniversary - Withered Golden Freddy #1033 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Pok\u00e9mon - Ninetales Vinyl Figure (#1091)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko POP! Games: Baldur's Gate 3 - Astarion (Vampire Ascendant) #1245 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko POP! Games: Baldur's Gate 3 - The Emperor Vinyl Figure #1189",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Baldur's Gate 3 - Jaheira Vinyl Figure #1187",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Peanuts - Charlie Brown with Tree #1627 Holiday Pop! & Buddy Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Five Nights at Freddy's - Bonnie Vinyl Figure #1061",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Five Nights at Freddy's: Security Breach - Ruin - Eclipse Vinyl Figure (#988)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Pok\u00e9mon TCG: Mega Evolution\u2014Ascended Heroes Tin",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Funko Pop! Sanrio: Hello Kitty Kaiju - Sea Kaiju Vinyl Figure #41",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Baldur's Gate 3 - Astarion Vinyl Figure (#1017)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Deluxe Marvel Avengers: Infinity War - Guardians' Ship: Groot #1026",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Child's Play 2 - Chucky Vinyl Figure #56",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Avatar: The Last Airbender - Aang (Avatar State) Glow-in-the-Dark 6-Inch Super Sized Vinyl Figure #1000",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Super: Avatar: The Last Airbender - Aang (Avatar State) 6-Inch Vinyl Figure #1000",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Andor - Director Orson Krennic Vinyl Bobblehead (#785)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Rebels - Loth Cat (Diamond Collection) 2025 Fall Convention Exclusive #799",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: The Lord of the Rings - Legolas Greenleaf Vinyl Figure (#1577)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Gaming Greats - HK-47 (Legends) Vinyl Bobblehead Figure #730",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Annabelle - Annabelle in Chair #790 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Alien - Kane with Facehugger Vinyl Figure (#1987)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Legends - Luke Skywalker (Glow-in-the-Dark) Vinyl Figure #846",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: The Lord of the Rings - Peregrin Took Vinyl Figure (#1985)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Legends - Darth Vader (Infinities White Deco) Vinyl Figure #836",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Tales of the Empire - Admiral Thrawn Vinyl Bobblehead (#791)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: IT Chapter Two - Pennywise (Funhouse) #781 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Clone Wars - ARC Trooper Fives Vinyl Bobblehead (#851)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Count Dooku (Retro) Vinyl Bobblehead Figure (#833)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Mace Windu (Retro) Vinyl Bobblehead Figure #834",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Clone Wars - Commander Wolffe #850 Vinyl Bobblehead",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: The Lord of the Rings - \u00c9omer Vinyl Figure #1982",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Clone Wars - Plo Koon (Glow-in-the-Dark) Vinyl Bobblehead #852",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Force Awakens - Rey (Retro) Vinyl Bobblehead (#805)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Mandalorian - Praetorian Guard (#715)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Tales of the Jedi - Yaddle Vinyl Bobblehead (#811)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: The Force Awakens - Kylo Ren (The First Order) Vinyl Bobblehead #806",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: IT (2017) - Pennywise with Boat Vinyl Figure #472",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Dark Side - Emperor Palpatine (Force Lightning) #738 Vinyl Bobblehead",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Five Nights at Freddy's 10th Anniversary - Chica with Cupcake Vinyl Figure (#1063)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Arcane: League of Legends - Ekko Vinyl Figure #1603",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: The Simpsons: Treehouse of Horror - Crazy Homer Vinyl Figure #1743",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Adventure Time - Prince Gumball Vinyl Figure (#1904)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: The Addams Family - Gomez Addams with Jack-o'-Lantern Vinyl Figure #1548",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: The Simpsons - Mr. Burns Vinyl Figure #1739",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things Season 5 - Eleven in Wetsuit Vinyl Figure #1807",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Andor - Saw Gerrera Vinyl Bobblehead (#783)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: The Simpsons - Homer with Krusty Burger Vinyl Figure (#1737)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Plus: The Lord of the Rings - Frodo Baggins (Glow-in-the-Dark) Vinyl Figure #1832",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! & Buddy: The Simpsons - Lisa Simpson with Snowball II (#1740)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: The Simpsons - Fallout Boy (Milhouse) Vinyl Figure #1655",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Edward Scissorhands - Edward Scissorhands Vinyl Figure #979",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Episode I - The Phantom Menace 25th Anniversary - Jar Jar Binks with Booma Balls (Retro)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Basketball: NBA Memphis Grizzlies - Ja Morant (Association Edition / Home) Vinyl Figure #227",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! NBA: New Orleans Pelicans - Brandon Ingram Vinyl Figure (#168)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Disney: Frozen - Anna (Holiday / Nordic Deco) Vinyl Figure #1783",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Icons: D\u00eda de los Muertos - Ajolote (Axolotl) Glow-in-the-Dark Vinyl Figure #104",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Disney: Frozen - Elsa (Nordic Deco / Holiday) Vinyl Figure #1784",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Icons: D\u00eda de los Muertos - La Catrina (Azul) Black Light Vinyl Figure #101",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Disney: Frozen - Olaf (Holiday) Vinyl Figure #1785",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! NBA: Charlotte Hornets - LaMelo Ball (Association Edition / Home Uniform) Vinyl Figure #228",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Aquaman and the Lost Kingdom - Mera Vinyl Figure #1306",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Baldur's Gate 3 - Wyll Vinyl Figure #1148",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! NBA: Memphis Grizzlies - Marcus Smart #166 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Aquaman and the Lost Kingdom - Aquaman with Trident (Diamond Glitter Exclusive) Vinyl Figure #1301",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Icons: D\u00eda de los Muertos - Ajolote (Axolotl) Vinyl Figure #104",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Aquaman and the Lost Kingdom - Black Manta with Trident #1303 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Legends - Darth Bane #856 Vinyl Bobblehead Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Rocks: Aretha Franklin (The Andy Williams Show) Vinyl Figure #377",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Marvel: X-Men '97 - Beast (Casual) Vinyl Figure #1611",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Retro Toys: Barbie in the Nutcracker 25th Anniversary - Sugar Plum Fairy Barbie (Curtsy) #174",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Movies: Aquaman and the Lost Kingdom - Storm Vinyl Figure #1305",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Avatar: The Last Airbender - Floating Aang (Glow-in-the-Dark) Vinyl Figure #1439",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Retro Toys: Barbie in the Nutcracker - Sugar Plum Fairy Barbie (Arabesque) #173",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Retro Toys: Barbie in the Nutcracker 25th Anniversary - Prince Eric Vinyl Figure #175",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Marvel: X-Men '97 - Sabretooth Vinyl Figure #1609",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Jujutsu Kaisen - Yuji Itadori (#1111)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Chainsaw Man \u2013 Pochita on Floaty with Sunhat Vinyl Figure (2026 Summer Convention Exclusive)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Dragon Ball Z - Super Saiyan Goku with Kamehameha Wave Vinyl Figure (#948)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Nooks: Jason Universe - Jason Voorhees at Camp Crystal Lake Cabin Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Deluxe: One Piece - Buggy the Clown on Throne #1740 (2024 Fall Convention Exclusive)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Premium One Piece - Roronoa Zoro (Sleeping) #2391 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Super: Godzilla Minus One - Godzilla 6-Inch Vinyl Figure (Anime Expo 2025 Exclusive)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Deluxe Disney Villains: The Little Mermaid - Ursula (Stained Glass) Vinyl Figure #1638",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Moment: AC/DC - Angus Young Dancing on Stage Vinyl Figure #415",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Demon Slayer: Infinity Castle - Kaigaku #2506 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Demon Slayer: Infinity Castle - Zenitsu Agatsuma (7th Form) Pop! Premium Vinyl Figure #2502",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Demon Slayer: Infinity Castle - Akaza (Fist Fight) Vinyl Figure #2505",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Street Fighter 6 - Cammy Vinyl Figure #1260",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Demon Slayer: Infinity Castle - Giyu Tomioka Vinyl Figure (#2503)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Street Fighter 6 - Ryu Vinyl Figure #1257",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Street Fighter 6 Chun-Li Funko Pop! Vinyl Figure #1259",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Pok\u00e9mon - Lycanroc (Midday Form) #1210 Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Rides: One Piece - Monkey D. Luffy with Thousand Sunny",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: Demon Slayer: Infinity Castle - Shinobu Kocho (Dance of the Bee Sting) #2504 Pop! Premium Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: One Piece - Roronoa Zoro (Kid) with Katana Vinyl Figure #2403",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Darth Vader (Unarmored) Vinyl Bobblehead Figure #866",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Pok\u00e9mon - Wartortle Vinyl Figure #1212",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television Stranger Things: Tales from '85 - Eleven Vinyl Figure #2458",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Animation: One Piece - Young Luffy with Devil Fruit Vinyl Figure (#2402)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Bitty Pop! Star Wars: The Mandalorian Mystery Blind Box Mini-Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Games: Pok\u00e9mon - Lycanroc (Midnight Form) Vinyl Figure #1211",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things: Tales from '85 - Will Vinyl Figure (#2463)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things: Tales from '85 - Max Vinyl Figure (#2461)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things: Tales from '85 - Dustin Vinyl Figure (#2462)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things: Tales from '85 - Lucas Vinyl Figure (#2460)",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Television: Stranger Things \u2013 Tales from '85 Mike Vinyl Figure #2459",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "One Piece (Netflix) - Nano Metalfigs Blind Bag 24-Count Counter Display Unit (Series 1)",
+          "reason": "title",
+          "keyword": "blind bag",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Lilo & Stitch - Stitch Nano Metalfigs Blind Bag 24-Count Counter Display Unit (Series 1)",
+          "reason": "title",
+          "keyword": "blind bag",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Funko Pop! Movies: Avatar Aang: The Last Airbender - Aang Vinyl Figure #2106",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Funko Pop! Star Wars: Darth Vader (In Armor) Vinyl Bobblehead Figure #867",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Exorcist - Regan MacNeil Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "X-Men - Wolverine Vol. 1 Issue #1 Pop! Comic Covers Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "NBA Basketball - Kawhi Leonard Los Angeles Clippers Panini Mosaic Pop! Trading Cards Vinyl Figure",
+          "reason": "title",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Toy Story - Buzz Lightyear & RC 1/24th Scale Die-Cast Vehicle Replica",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "The Fantastic Four: First Steps (2025) - Bitty Pop! Vinyl Figure 4-Pack (2025 Summer Convention Exclusive)",
+          "reason": "title",
+          "keyword": "fanta",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Riftbound Vendetta Booster Pack",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Avatar: The Last Airbender - Aang Figural PVC Money Bank",
+          "reason": "category",
+          "keyword": "money box",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "How to Train Your Dragon - Toothless Figural PVC Money Bank",
+          "reason": "category",
+          "keyword": "money box",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Jurassic World - Terraventure Blind Box Figure",
+          "reason": "title",
+          "keyword": "blind box",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Toy Story - Woody & 1955 Chevrolet Bel Air 1/24th Scale Die-Cast Vehicle Replica",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Pok\u00e9mon Rocket\u2019s Zapdos #15/132 Holo Rare \u2013 Celebrations Classic Collection \u2013 TCG 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TAMIYA 1/12 SUZUKI GSX1300R HAYABUSA",
+          "reason": "title",
+          "keyword": "tamiya 1/",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "TAMIYA 1/12 KAWASAKI ZZR1400",
+          "reason": "title",
+          "keyword": "tamiya 1/",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "Pok\u00e9mon Scramble Switch #186/191 ACE SPEC Rare \u2013 Surging Sparks \u2013 CGA 9.5 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TAMIYA 1/12 KAWASAKI NINJA ZX-12R",
+          "reason": "title",
+          "keyword": "tamiya 1/",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "Pok\u00e9mon Black Kyurem ex #048/191 \u2013 Surging Sparks \u2013 CGA 9.5 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Frigibax #208/193 Illustration Rare \u2013 Paldea Evolved \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Gengar ex #193/162 Ultra Rare \u2013 Temporal Forces \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "MAVERICK 18T BRASS PINION GEAR (0.8 M / 32DP 3.175 SHAFT)",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Pok\u00e9mon Tapu Lele GX #60/145 \u2013 Celebrations Classic Collection \u2013 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Birthday Pikachu #24 Holo \u2013 Celebrations Classic Collection \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Squirtle #63/102 Base Set Unlimited \u2013 CGA 5 EX",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Rocket\u2019s Admin #86/109 Holo \u2013 Celebrations Classic Collection \u2013 CGA 9.5 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Imposter Professor Oak #73/102 Holo \u2013 Celebrations Classic Collection \u2013 TCG 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Flying Pikachu VMAX #007/025 Ultra Rare \u2013 Celebrations \u2013 TCG 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Donphan #107/123 Holo \u2013 Celebrations Classic Collection \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Rapidash #189/182 Illustration Rare \u2013 Destined Rivals \u2013 CGA 7 NM",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Charizard TG03/TG30 Trainer Gallery \u2013 Lost Origin \u2013 CGA 8 NM/MT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Sparkling Crystal #142/142 ACE SPEC Rare \u2013 Stellar Crown \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Team Rocket\u2019s Crobat ex #122/182 \u2013 Destined Rivals \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Pawmot #209/198 Illustration Rare \u2013 Scarlet & Violet \u2013 CGA 8.5 NM-MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Team Rocket\u2019s Mewtwo ex #081/182 \u2013 Destined Rivals \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Groudon #199/182 Illustration Rare \u2013 Paradox Rift \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Ultra Ball #213/217 Reverse Holo \u2013 Ascended Heroes \u2013 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "CARD SLEEVE - 2-1/2\"X 3-1/2\"Soft Card Sleeves (PK100)",
+          "reason": "title",
+          "keyword": "card sleeve",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Charizard ex #215/197 Obsidian Flames Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2024 Pok\u00e9mon Lisia\u2019s Appeal #234/191 Surging Sparks Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Team Rocket\u2019s Energy #217/217 Ascended Heroes CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Daisy\u2019s Help #195/165 Scarlet & Violet 151 Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Maushold ex #233/182 Paradox Rift Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Professor\u2019s Research #029/028 25th Anniversary Collection Japanese Full Art CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Hop\u2019s Zacian ex #176/159 Journey Together Full Art CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Miraidon ex #073/217 Mega Evolution \u2013 Ascended Heroes CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2026 Pok\u00e9mon Steven\u2019s Metagross ex #289/217 Mega Evolution \u2013 Ascended Heroes Special Illustration Rare CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Glaceon ex #026/131 Scarlet & Violet \u2013 Prismatic Evolutions CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Zacian V #018/028 25th Anniversary Collection Japanese CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Flying Pikachu V #023/028 25th Anniversary Collection Japanese CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Pikachu #001/028 25th Anniversary Collection Japanese Full Art CGA 10 PRISTINE",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Wailord #162/159 Journey Together Illustration Rare CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Aegislash ex #230/182 Paradox Rift Full Art CGA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "One Piece Card Game: The World's Strongest Warriors - Booster Pack [OP-17]",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TAMIYA 1/48 MESSERSCHMITT BF109 G-6 LATE MODEL",
+          "reason": "title",
+          "keyword": "tamiya 1/",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "TAMIYA RC 1/10 THE FROG 2005",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2000 ArtBox Dragon Ball Z Frieza Is Totally Confident... #63 Holochrome Foil TCG Grading 8 NM/MT",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TRAXXAS 2-CHANNEL WIRELESS-READY TQI 2.4 GHZ TRANSMITTER",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "2020 Dragon Ball Super SS Trunks, God-Sealing Technique SPR #BT10-044 TCG Grading 9 Mint",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Dragon Ball Super SS Trunks, Altering the Future SPR #BT13-093 PSA 10 GEM MT",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "TRAXXAS BUMPER FRONT/ WINCH/ WINCH MOUNT (ASSEMBLED)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "2000 ArtBox Dragon Ball Z Gohan Transforms Into a Giant Monkey #78 Chromium Archive Edition TCG Grading 9 Mint",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 SDBH Promo Trunks: Xeno #BMP-15 PSA 10 GEM MT",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2022 Dragon Ball Super Dark Broly, Overwhelming Evil BT11-064 SPR Foil TCG Grading 9 Mint",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2019 Super Dragon Ball Heroes Son Goku Xeno PUMS3-13 Promo CGA 8.5",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2021 Dragon Ball Super Saiyan Showdown Nuova Shenron, Power of Darkness BT15-134 SR CGA 9.5",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "TAMIYA AS-32 MED. SEA GRAY 2 RAF SPRAY PAINT",
+          "reason": "title",
+          "keyword": "tamiya as-",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "2021 Dragon Ball Super Goku Black, Unforeseen Darkness P-124 PR Foil Collector\u2019s Selection Vol. 1 TCG 9",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Dragon Ball Carddass Son Gohan & Trunks Premium Set Vol. 5 Part 20 Prism CGC 9",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2018 Super Dragon Ball Heroes Super Saiyan 2 Teen Gohan UM1-CP3 CP Campaign Promo TCG 8.5",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Dragon Ball Super Frieza & Cell, A Match Made in Hell BT12-029 SPR Vicious Rejuvenation TCG 10",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2000 Artbox Dragon Ball Z With Two Minutes Left Until Planet Namek #60 Chromium Archive Edition TCG 9.5",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2012 Dragon Ball Heroes Gogeta HG3-29 Galaxy Mission 3 PSA 7",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2013 Dragon Ball Heroes Gotenks HG10-CP5 Change Burst CP PSA 9",
+          "reason": "category",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "2021 Dragon Ball Super Gotenks, Battling the Forces of Evil BT12-041 SR PSA 10 Gem Mint",
+          "reason": "tag",
+          "keyword": "card game",
+          "filterCategory": "games"
+        },
+        {
+          "title": "1:18 1KG HIGHT TORQUE 3WIRE SERVO",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "SkyRC eN18 NiMH Peak Charger (Deans Style plug)",
+          "reason": "tag",
+          "keyword": "rc accessories",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "SkyRC eN18 NiMH Peak Charger (tamiya  Style plug)",
+          "reason": "tag",
+          "keyword": "rc accessories",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "FCX24M GEAR SET FOR TRANSMISSION GEAR BOX",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "1:18 LIFTING JACK (4PCS)",
+          "reason": "tag",
+          "keyword": "rc accessories",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Bruce Lee - Bruce Lee (Be Water) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Naruto: Shippuden - Obito Uchiha (Kid) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ghostbusters II (1989) - Egon Spengler Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Willy Wonka and the Chocolate Factory - Willy Wonka (Chocolate Bar) Scented Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "chocolate bar",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "UDIRC 1/18 2.4G 4WD Off-Road Crawler Tan colour Authorized Toyota Land Cruiser LC79",
+          "reason": "title",
+          "keyword": "udirc",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "The SpongeBob Movie: Search for SquarePants (2025) - Squidward Tentacles (Pirate) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FT Aluminum Pinion Gear, 18T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Jujutsu Kaisen - Noritoshi Kamo Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FT Aluminum Pinion Gear, 24T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Factory Team Aluminum Pinion Gear, 17T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Factory Team Aluminum Pinion Gear, 30T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Sonic the Hedgehog - Cream with Cheese Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FT Aluminum Pinion Gear, 20T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Five Nights at Freddy's - Foxy the Pirate Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Black Clover - Vanessa Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Dragon Ball GT - Vegeta Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Shawshank Redemption - Ellis 'Red' Boyd Redding Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Iron Maiden - Cyborg Eddie Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Killer Klowns from Outer Space - Chubby Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Kiss - Gene Simmons The Demon Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Sandman - The Corinthian Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FT Aluminum Pinion Gear, 19T 48P, 1/8 shaft",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "M3GAN - M3GAN (Dancing) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Wednesday (2022) - Pugsley Addams (Season 2) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Marvel: Spider-Man Comics - Chasm Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Army of Darkness - Evil Ash with Swords Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Cooling Fan MP4510SH, for EzRun Max5 ESC",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "FAN-2008SH-5V-15000RPM@5V-0.135A-BLACK (XR10 STOCK SPEC)",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Teenage Mutant Ninja Turtles - Donatello with Pizza Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Winnie the Pooh - Winnie the Pooh Holding Honeypot Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Crocodile Hunter - Steve Irwin with Sui Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ms. Marvel (2022) - Ms. Marvel Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Dragon Ball GT - Goku Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "My Hero Academia - Nana Shimura Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Michael Jackson: Michael Jackson Billie Jean Funko POP! Vinyl",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Tokyo Ghoul:re - Juzo Suzuya Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "QUICRUN Brushed 555-13T",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "The Twilight Zone - The Gremlin Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Scooby-Doo - Scooby-Doo with 3D Glasses Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Marvel: Strange Tales - Dormammu Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Diablo IV - Mephisto Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Lord of the Rings: The War of the Rohirrim - Helm Hammerhand Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Yu-Gi-Oh! - Zane Truesdale Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "yu-gi-oh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "One Piece - Roronoa Zoro with Swords Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Game of Thrones: House of the Dragon - Rhaenyra Targaryen in Dress Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Uncle Buck (1989) - Uncle Buck Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "MC31 Brushed Crawler RTR Rambler",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Felix the Cat: 105th Anniversary - Felix the Cat with Banjo Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Exorcist: Believer - Katherine (Possessed) Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Marvel's Spider-Man 2 - Black Suit Harry Osborn Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Star Wars: The Acolyte - Bazil Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "MC31 Brushed Crawler RTR",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Chainsaw Man - Himeno Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "The Muppets - First Mate Piggy Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Bleach - Sosuke Aizen Pop! Vinyl Figure",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Fan-COMBO C1 (1/10th) 36mm dia x 65mm",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Air Filter Foam-2PCS/SET",
+          "reason": "tag",
+          "keyword": "rc parts",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "ULTRA PRO BLACK BOX\u2122 Deck Box\u00ae",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro - Official PSA Grading Submission Kit",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro Deck Protectors - Platinum Series 2-1/2 x 3-1/2inch",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro ONE-TOUCH S (5 Count Retail Pack)",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro - ECLIPSE Gloss Standard DECK PROTECTOR Sleeves: Apple Red - 105ct",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Ultra Pro - PRO-Fit Standard Side Load Deck Protectors 100ct",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "ULTRA PRO Deck Box Vivid Alcove Flip - White",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "FCX18 Land Cruiser 80 TRANSMISSION GEAR BOX ASSEMBLY V2",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "ULTRA PRO PRO 15+ Card Box 3-pack: Black",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Pokemon - Poke Ball 1:1 Scale Life-Size Die-Cast Prop Replica",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound: Vendetta Showdown Deck \"Zed vs. Shen\" (English Edition)",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Magic: The Gathering The Hobbit Scene Box",
+          "reason": "title",
+          "keyword": "magic: the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 One Piece Japanese Promo Monkey D. Luffy #033 Weekly Shonen Jump #6\u20137 PSA 10 Gem Mint",
+          "reason": "tag",
+          "keyword": "card game",
+          "filterCategory": "games"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Mew #11/25 Holo CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Evolution Promo Mega Charizard X ex #23 Full Art B Star Promo CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Classic Collection Blastoise #2/102 Holo CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Evolution Oricorio ex #024 Full Art B Star Promo CGA 9.5 Gem Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Evolution Bulbasaur #133/132 Full Art ME Stamp CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Mega Charizard X ex #109/094 Full Art CGA 10 Pristine",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Classic Collection Mewtwo EX #54/99 CGA 9 Mint",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Umbreon ex #176 SVP Black Star Promo PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Switch #206/165 Scarlet & Violet 151 Hyper Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Venusaur ex #003/132 Mega Evolution PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Gengar ex #056/094 Phantasmal Flames PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Kangaskhan ex #104/132 Mega Evolution PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Dawn #118/094 Phantasmal Flames Ultra Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2023 Pok\u00e9mon Blastoise ex #009/165 Scarlet & Violet 151 PSA 10",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Piplup #098 Illustration Rare PSA 9",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Charizard X ex #023 Ultra-Premium Collection PSA 10",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Charizard X ex #023 Ultra-Premium Collection PSA 8",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG Black Kyurem Ex Box",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon Scarlet & Violet Booster Pack",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon Twilight Masquerade Booster Pack",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Meowth #106/094 Illustration Rare PSA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Espeon ex SVP #175 Premium Figure Collection Promo PSA 10 GEM MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon MEP Oricorio ex #024 Ultra-Premium Collection PSA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Dawn #129/094 Special Illustration Rare PSA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2021 Pok\u00e9mon Celebrations Classic Collection Umbreon Gold Star #17/17 CGA 8.5 NM/MT+",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2016 Pok\u00e9mon XY Evolutions Mewtwo #51/108 PSA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Phantasmal Flames Mega Charizard X ex #013/094 PSA 9 MINT",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pok\u00e9mon Mega Evolution Bulbasaur #133/132 Enhanced Booster Box Topper PSA 7 NM",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2020 Pok\u00e9mon Darkness Ablaze Charizard VMAX 020/189 PSA 8",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Spur gear 48P 80T",
+          "reason": "category",
+          "keyword": "rc parts",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "MJX 1/14 Hyper Go 4WD High-Speed Off-Road Brushless RC Rally car",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "wl toys 1:28 RC Rally car (30km/h)",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "WLTOYS 204006 RC Car 1/20 Scale 4WD Off-Road 2.4G RTR 50km/h",
+          "reason": "title",
+          "keyword": "wltoys",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Warhammer 40,000 Starter Set",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 - Neurolictor",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "White Dwarf - Issue 525 (July 2026)",
+          "reason": "title",
+          "keyword": "white dwarf",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Yu-Gi-Oh! TCG Legendary Arc-V Deck",
+          "reason": "title",
+          "keyword": "yu-gi-oh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic The Gathering: The Hobbit Collectors Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic The Gathering: The Hobbit Play Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic The Gathering: The Hobbit Play Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering: The Hobbit Bundle",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic The Gathering: The Hobbit Collectors Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pok\u00e9mon TCG: First Partner Illustration Collection\u2014Series 3",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "HPI 88037 One-Way Differential Set (E10)",
+          "reason": "title",
+          "keyword": "hpi ",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "HPI Screw Shaft M4x2.5x12mm (Black/6pcs) [86094]",
+          "reason": "title",
+          "keyword": "hpi ",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Olight Obulb Plus Rechargeable Orange Light with APP and Touch Control",
+          "reason": "title",
+          "keyword": "obulb",
+          "filterCategory": "standalone_lights"
+        },
+        {
+          "title": "2nd hand - SRC Gel Blaster 1.2M Carry Bag",
+          "reason": "tag",
+          "keyword": "2nd hand",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "2nd hand AAP GBB Gel Blaster - Black",
+          "reason": "category",
+          "keyword": "2nd hand",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "2nd hand - SRC Gel Blaster 1M Carry Bag",
+          "reason": "tag",
+          "keyword": "2nd hand",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "MTG Presents: The Hobbit Prerelease Event",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "STARTER DECK - Red Luffy - [ST-31]",
+          "reason": "category",
+          "keyword": "card game",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Lilo & Stitch (2025) \u2013 3D PVC Bag Clips Blind Bag",
+          "reason": "title",
+          "keyword": "bag clips",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Sonic \u2013 Mini Vinyl Figures ASST (12ct)",
+          "reason": "title",
+          "keyword": "vinyl figure",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Warhammer intercessors Marines + Paints",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Introductory Set",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Getting Started with Space Marines",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer 40,000 Getting Started with Orks",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Disney Lorcana Set 13 Play Booster Box: Attack of the Vine",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Disney Lorcana Illumineers Trove: Attack of the Vine Set 13",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Disney Lorcana Attack of the Vine Booster Pack: Set 13",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "ITALERI 1/24 TOYOTA LAND CRUISER SAFARI",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "ITALERI 1/72 F-15E STRIKE EAGLE",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "ITALERI 1/72 BF109 G-6 ACES",
+          "reason": "title",
+          "keyword": "italeri",
+          "filterCategory": "model_kits"
+        },
+        {
+          "title": "REVELL 1/144 LOCKHEED L.1049G SUPER CONSTELLATION LUFTHANSA",
+          "reason": "category",
+          "keyword": "model",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - GREEN",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - BLACK - Matte",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - BLUE",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - PURPLE",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - BLACKout Deck Sleeves - Standard - 100pc - RED",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - Mag-Lock One-Touch Case - 35pt",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Palms Off Gaming - MintFit Inner Sleeves - Standard Size - 100pc",
+          "reason": "title",
+          "keyword": "inner sleeves",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Ultra Pro - Pokemon Lillie and Clefairy Playmat",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "2nd hand APS XTP Gas Blowback",
+          "reason": "category",
+          "keyword": "2nd hand",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Side Effects: Cure Your Mental Diseases",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Alloy Empire Beretta Gen 5 Keyring Fidget Toy",
+          "reason": "title",
+          "keyword": "fidget toy",
+          "filterCategory": "fidget_toys"
+        },
+        {
+          "title": "Disney Lorcana: S11 - Stitch Collection Starter Set",
+          "reason": "title",
+          "keyword": "lorcana",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "YuGiOh Chaos Origins 3-Booster Tuck Box",
+          "reason": "title",
+          "keyword": "yugioh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "YuGiOh Chaos Origins - 9 x Card Blister",
+          "reason": "title",
+          "keyword": "yugioh",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Aetherdrift: Living Energy Commander Deck",
+          "reason": "title",
+          "keyword": "commander deck",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Aetherdrift: Eternal Might Commander Deck",
+          "reason": "title",
+          "keyword": "commander deck",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "OKNIFE LK Folding Pocket Knife with Rechargeable Flashlight",
+          "reason": "title",
+          "keyword": "pocket knife",
+          "filterCategory": "knives"
+        },
+        {
+          "title": "Alloy Empire 1911 Gen 5 Keyring Fidget Toy",
+          "reason": "title",
+          "keyword": "fidget toy",
+          "filterCategory": "fidget_toys"
+        },
+        {
+          "title": "Alloy Empire SIG P226 Gen 5 Keyring & Fidget Toy",
+          "reason": "title",
+          "keyword": "fidget toy",
+          "filterCategory": "fidget_toys"
+        },
+        {
+          "title": "Riftbound Unleashed Booster Box",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound Unleashed Booster Pack",
+          "reason": "title",
+          "keyword": "booster",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound Champion Deck : Jinx",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Enduro24 Crawler RTR, Sendero Trail Truck, red and blue",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Warhammer age of sigmar: Battleforce: Hedonites of Slaanesh \u2013 The Decadent Host",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer Age of Sigmar - Spearhead: City of Ash",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Warhammer Age of Sigmar: General's Handbook 2026-27",
+          "reason": "title",
+          "keyword": "warhammer",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "Beyblade - X - Double Extreme Motorized Stadium",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "MTG Secret Lair Release: Fallout Vault Beyond Vault 33",
+          "reason": "title",
+          "keyword": "mtg ",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Ultra Pro - Pikachu TOPLOADER\u00ae and PENNY SLEEVES\u00ae Combo Pack 25per Pack",
+          "reason": "title",
+          "keyword": "ultra pro",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Beyblade X: Wand Wizard 5-70DB Starter Pack",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "Pok\u00e9mon TCG Mega Greninja ex Premium Collection",
+          "reason": "title",
+          "keyword": "pok\u00e9mon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Beyblade X: Lance Knight 480HN Starter Set",
+          "reason": "title",
+          "keyword": "beyblade",
+          "filterCategory": "general_toys"
+        },
+        {
+          "title": "TAMIYA RC 1/10 THE HORNET 2004",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT PRO MONSTER TRUCK - FLURO GREEN",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS WINCH KIT WITH WIRELESS CONTROLLER TRX-4",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SERVO SUB-MICRO WATERPROOF",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SLIPPER CLUTCH CMPLT MINI MAXX",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS CASTER BLOCKS L&R",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SUSP.PINS 2.5x31.5MM",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS ATTACHMENT SCREWS",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TRAXXAS SHOULDER SCREWS (6)",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/18 ATOM AT1 4WD ELECTRIC TRUCK",
+          "reason": "category",
+          "keyword": "rc 4x4",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "MAVERICK 1/10 PHANTOM XT RTR TRUGGY",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "MAVERICK 1/10 PHANTOM MT RTR MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "MAVERICK 1/16 QBIT MT FLUX MONSTER TRUCK",
+          "reason": "title",
+          "keyword": "monster truck",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "TAMIYA RC 1/10 THE GRASSHOPPER 2005",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "MAVERICK 1/24 MICROBE BUGGY",
+          "reason": "category",
+          "keyword": "rc car",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "TCG Graded 9 Near Mint -2021 -Dito Vmax",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "TCG Graded 9.5 Near Mint -2022 -Oranguru",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "PSA Graded 8 Near Mint -2022 -POKEMON Go Dito",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Armaggedon : Operation imperator",
+          "reason": "category",
+          "keyword": "warhammer",
+          "filterCategory": "tabletop_gaming"
+        },
+        {
+          "title": "1/8 scale 3DPrinted RC hub caps",
+          "reason": "title",
+          "keyword": "1/8 scale",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "dual sky SE-150mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "omp SE-75mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "omp SE-150mm heavy duty servo extension stranded wire",
+          "reason": "title",
+          "keyword": "servo extension",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Collector Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Play Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Scene Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Beginner Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Commander Decks",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Collector Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Bundle",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "2025 Pokemon TCG World Championships Deck",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Pokemon TCG: First Partner Illustration Collection\u2014Series 2",
+          "reason": "title",
+          "keyword": "pokemon",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Jumpstart Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Play Booster Box",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Gift Bundle",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Magic the Gathering - Marvel Super Heroes - Jumpstart Booster",
+          "reason": "title",
+          "keyword": "magic the gathering",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "One Piece TCG: Booster Box \u2013 The Time of Battle [OP-16]",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "White Dwarf - Issue 524 (June 2026)",
+          "reason": "title",
+          "keyword": "white dwarf",
+          "filterCategory": "warhammer"
+        },
+        {
+          "title": "One Piece Card Game Official Sleeves Set 15",
+          "reason": "category",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Goku w/Flocked Wings Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku Nyoibou GW Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Riftbound League of Legends TCG: Spiritforged Booster Box",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Riftbound League of Legends TCG: Spiritforged Booster Pack",
+          "reason": "title",
+          "keyword": "tcg",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "LotR - Treebeard w/Merry & Pippin 6\" Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Arwen (Coronation) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Gandalf (Door of Durin) Pop! Deluxe",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Smeagol (Transformation) Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Faramir Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Gimli Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Boromir Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "LotR - Bilbo Pop! Nook",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Lord of the Rings - Gimli Pop! Sayings",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku & Nimbus Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku w/Nyoibo Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Harry Potter - Luna Lovegood Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball - Goku (Kamehameha) Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Super - Golden Frieza Pop! RS",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Gohan SS Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Frieza 100% Final Form Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Dragon Ball Z - Goku SS 1st App Pop!",
+          "reason": "category",
+          "keyword": "collectible",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "Star Wars - Death Star Bitty Pop! Playset",
+          "reason": "title",
+          "keyword": "bitty pop",
+          "filterCategory": "collectibles"
+        }
+      ],
       "logs": [
         {
-          "time": "16:30:45",
+          "time": "21:36:02",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:30:45",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
-        },
-        {
-          "time": "16:31:05",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
-        },
-        {
-          "time": "16:31:25",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
-        },
-        {
-          "time": "16:31:45",
-          "level": "ERROR",
-          "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
-        },
-        {
-          "time": "16:31:45",
+          "time": "21:36:03",
           "level": "INFO",
-          "message": "Done: 0 products fetched"
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "21:36:06",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:36:26",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 2/3)..."
+        },
+        {
+          "time": "21:36:47",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "21:36:51",
+          "level": "INFO",
+          "message": "Page 3: 250 products"
+        },
+        {
+          "time": "21:36:54",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:37:14",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 2/3)..."
+        },
+        {
+          "time": "21:37:34",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 3/3)..."
+        },
+        {
+          "time": "21:37:55",
+          "level": "ERROR",
+          "message": "Page 4: still rate limited (429) after 3 retries, giving up (will try cache)"
+        },
+        {
+          "time": "21:37:55",
+          "level": "INFO",
+          "message": "Done: 750 products fetched"
         }
       ]
     },
@@ -57,36 +3917,36 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.61,
+      "duration": 60.39,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:31:45",
+          "time": "21:37:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:31:46",
+          "time": "21:37:55",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:32:06",
+          "time": "21:38:15",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:32:26",
+          "time": "21:38:35",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
         },
         {
-          "time": "16:32:46",
+          "time": "21:38:55",
           "level": "ERROR",
           "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
         },
         {
-          "time": "16:32:46",
+          "time": "21:38:55",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -102,36 +3962,36 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 61.06,
+      "duration": 61.42,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:32:46",
+          "time": "21:38:55",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:32:46",
+          "time": "21:38:56",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:33:06",
+          "time": "21:39:16",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:33:27",
+          "time": "21:39:36",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
         },
         {
-          "time": "16:33:47",
+          "time": "21:39:57",
           "level": "ERROR",
           "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
         },
         {
-          "time": "16:33:47",
+          "time": "21:39:57",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -141,44 +4001,62 @@
       "name": "WAT Int",
       "url": "https://watint.com.au",
       "platform": "shopify",
-      "fetched": 0,
-      "filtered": 0,
-      "final": 0,
-      "inStock": 0,
-      "outOfStock": 0,
+      "fetched": 250,
+      "filtered": 3,
+      "final": 362,
+      "inStock": 260,
+      "outOfStock": 102,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.97,
-      "filteredProducts": [],
+      "duration": 66.27,
+      "filteredProducts": [
+        {
+          "title": "OPTAC Gel Ball Sorter Set Gen5 (Fit Coca Cola and Pepsi Bottle)",
+          "reason": "title",
+          "keyword": "pepsi",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Iain Sinclair CardSharp Travel Wallet Knife",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        }
+      ],
       "logs": [
         {
-          "time": "16:33:47",
+          "time": "21:39:57",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:33:47",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
-        },
-        {
-          "time": "16:34:08",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
-        },
-        {
-          "time": "16:34:28",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
-        },
-        {
-          "time": "16:34:48",
-          "level": "ERROR",
-          "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
-        },
-        {
-          "time": "16:34:48",
+          "time": "21:39:59",
           "level": "INFO",
-          "message": "Done: 0 products fetched"
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "21:40:02",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:40:22",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 2/3)..."
+        },
+        {
+          "time": "21:40:43",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 3/3)..."
+        },
+        {
+          "time": "21:41:03",
+          "level": "ERROR",
+          "message": "Page 2: still rate limited (429) after 3 retries, giving up (will try cache)"
+        },
+        {
+          "time": "21:41:03",
+          "level": "INFO",
+          "message": "Done: 250 products fetched"
         }
       ]
     },
@@ -192,36 +4070,36 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.5,
+      "duration": 60.39,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:34:48",
+          "time": "21:41:03",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:34:48",
+          "time": "21:41:03",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:35:08",
+          "time": "21:41:23",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:35:28",
+          "time": "21:41:43",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
         },
         {
-          "time": "16:35:49",
+          "time": "21:42:03",
           "level": "ERROR",
           "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
         },
         {
-          "time": "16:35:49",
+          "time": "21:42:03",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -237,46 +4115,46 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "404 Client Error: Not Found for url: https://armouredheaven.com.au/products.json?limit=250&page=1",
-      "duration": 30.11,
+      "duration": 31.32,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:35:49",
+          "time": "21:42:03",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:35:49",
+          "time": "21:42:05",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "16:35:55",
+          "time": "21:42:11",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "16:36:01",
+          "time": "21:42:17",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "16:36:07",
+          "time": "21:42:23",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "16:36:13",
+          "time": "21:42:29",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "16:36:19",
+          "time": "21:42:35",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 404 Client Error: Not Found for url: https://armouredheaven.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "16:36:19",
+          "time": "21:42:35",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -286,44 +4164,549 @@
       "name": "ViperTac",
       "url": "https://vipertac.com.au",
       "platform": "shopify",
-      "fetched": 0,
-      "filtered": 0,
-      "final": 0,
-      "inStock": 0,
-      "outOfStock": 0,
+      "fetched": 595,
+      "filtered": 79,
+      "final": 608,
+      "inStock": 590,
+      "outOfStock": 18,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 61.37,
-      "filteredProducts": [],
+      "duration": 135.92,
+      "filteredProducts": [
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Tan and CP Camouflage",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Puff Dino Camouflage Paint For Gel Blasters - Black",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "Puff Dino Camouflage Paint For Gel Blasters - Army Green (Olive Drab)",
+          "reason": "category",
+          "keyword": "paint",
+          "filterCategory": "hobby_supplies"
+        },
+        {
+          "title": "ViperTac Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "CrossFit 5.11 \u201cNow Who Wears The Pants\u201d Femme Fatale PVC Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Rubber Knife - Green",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Molle Belt Loop Hanging Water Bottle Holder - Tan",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Molle Belt Loop Hanging Water Bottle Holder - Black",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "WeTech G17 CNC Rocket/Poppet Valve - Gold",
+          "reason": "category",
+          "keyword": "pop",
+          "filterCategory": "trading_cards_games"
+        },
+        {
+          "title": "T238 Metal Decal Stickers - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Kriss Vector Decal Sticker Kit",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Colt MK18 MOD1 M4 Metal Decal Stickers - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "PolarStar Fusion Engine V2 Switchboard (Gen 2) \u2013 Replacement Trigger Board",
+          "reason": "category",
+          "keyword": "board",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "ViperTac Venoms Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Cytac Baseball Cap",
+          "reason": "title",
+          "keyword": "baseball cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Strike Industries Retro Trucker Cap - Yellow",
+          "reason": "title",
+          "keyword": "trucker cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Strike Industries Retro Trucker Cap - Red",
+          "reason": "title",
+          "keyword": "trucker cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Strike Industries Retro Trucker Cap - Blue",
+          "reason": "title",
+          "keyword": "trucker cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Special Forces Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Punisher Skull Decal Badge Sticker - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Keep Staring I May Do A Trick Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Deadpool Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Cute But Psycho Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Grim Reaper Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Vendetta Iron-On Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Death Card Iron-On Patch - Tan",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ace of Spades Death Card Iron-On Patch - Black",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Snake Decal Sticker - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Cobra Snake Decal Sticker - Silver",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Skull Decal Sticker - Gold",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Water Bottle Holder with Additional Pouch and Shoulder Strap - Multi-cam",
+          "reason": "title",
+          "keyword": "water bottle",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Star Wars Boba Fett #08 Funko Pop Vinyl Figure",
+          "reason": "title",
+          "keyword": "funko",
+          "filterCategory": "collectibles"
+        },
+        {
+          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Army Green Camouflage",
+          "reason": "title",
+          "keyword": "jacket",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Hooded Camouflage Spray Jacket / Wind breaker - Woodland",
+          "reason": "title",
+          "keyword": "jacket",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "4DRC V2 Mini Foldable Drone",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Drone Explorers HJ14W Wi-Fi Remote Control Aerial Photography Drone",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Rearhorse Mini R16 4K HD Camera Aerial Photography Drone - Black",
+          "reason": "category",
+          "keyword": "drone",
+          "filterCategory": "toys_rc"
+        },
+        {
+          "title": "Dog Tag Pendant Necklace - Tribal Design",
+          "reason": "category",
+          "keyword": "necklace",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Plastic US Army M16 / M4 Knife / Bayonet with Scabbard Replica",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "HPA Velcro Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Camouflage Shorts",
+          "reason": "category",
+          "keyword": "shorts",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "CP Camouflage Fast Dry T-shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Tactical Pants - Desert",
+          "reason": "category",
+          "keyword": "pants",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Tan and CP Multi-Cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Long Sleeve Frog Suit Top",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Amomax 9 Pouch Low Profile Chest Rig - Black",
+          "reason": "category",
+          "keyword": "clothes",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Sticker - Live Without Limits",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Python Kryptek",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve SWAT Military Combat Style - Black Camouflage",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "SpeedQB Velcro Patches",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Short Sleeve Shirt - Olive Drab",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black",
+          "reason": "title",
+          "keyword": "cargo pants",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black Camouflage",
+          "reason": "title",
+          "keyword": "cargo pants",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Tactical Military Style Cargo Pants - Black Python Kryptec",
+          "reason": "title",
+          "keyword": "cargo pants",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black Python Kryptek",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Cosplay Plastic Knife",
+          "reason": "category",
+          "keyword": "knife",
+          "filterCategory": "misc"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Black Camouflage",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve Military Style - Black",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "ViperTac Gift Card",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Tactical Shirt - Long Sleeve Military Style - Multi-cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Short Sleeve Military Tactical Shirt - Multi-cam",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Tactical Long Sleeve Quick Dry Camouflage Shirt",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Ladies Urban Camouflage Tank Top",
+          "reason": "title",
+          "keyword": "tank top",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ladies Urban Camouflage Singlet",
+          "reason": "title",
+          "keyword": "singlet",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ladies V Neck Urban Camouflage T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Electric Blue Urban Camouflage T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ladies Star T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Sig Sauer Logo T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Tactical Short Sleeve Shirt - Desert",
+          "reason": "category",
+          "keyword": "shirt",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "3D Metal Bat Decal Sticker",
+          "reason": "category",
+          "keyword": "sticker",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Paracord Survival Bracelet",
+          "reason": "category",
+          "keyword": "bracelet",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Mil-Tec Grey Urban Camouflage T-shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Mossimo & Co Urban Camouflage T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Military Shemagh - Tactical Scarf/Shawl",
+          "reason": "category",
+          "keyword": "clothes",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Special Forces T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Vietnam Airforce T-Shirt",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        }
+      ],
       "logs": [
         {
-          "time": "16:36:19",
+          "time": "21:42:35",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:36:19",
+          "time": "21:42:35",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:36:39",
+          "time": "21:42:55",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:37:00",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
-        },
-        {
-          "time": "16:37:20",
-          "level": "ERROR",
-          "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
-        },
-        {
-          "time": "16:37:20",
+          "time": "21:43:17",
           "level": "INFO",
-          "message": "Done: 0 products fetched"
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "21:43:22",
+          "level": "INFO",
+          "message": "Page 2: 250 products"
+        },
+        {
+          "time": "21:43:25",
+          "level": "WARNING",
+          "message": "Page 3: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:43:47",
+          "level": "INFO",
+          "message": "Page 3: 95 products"
+        },
+        {
+          "time": "21:43:50",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:44:10",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 2/3)..."
+        },
+        {
+          "time": "21:44:30",
+          "level": "WARNING",
+          "message": "Page 4: rate limited, waiting 20s (retry 3/3)..."
+        },
+        {
+          "time": "21:44:51",
+          "level": "ERROR",
+          "message": "Page 4: still rate limited (429) after 3 retries, giving up (will try cache)"
+        },
+        {
+          "time": "21:44:51",
+          "level": "INFO",
+          "message": "Done: 595 products fetched"
         }
       ]
     },
@@ -337,36 +4720,36 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 61.84,
+      "duration": 61.69,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:37:20",
+          "time": "21:44:51",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:37:21",
+          "time": "21:44:51",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:37:41",
+          "time": "21:45:12",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:38:01",
+          "time": "21:45:32",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
         },
         {
-          "time": "16:38:22",
+          "time": "21:45:52",
           "level": "ERROR",
           "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
         },
         {
-          "time": "16:38:22",
+          "time": "21:45:52",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -382,36 +4765,36 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.62,
+      "duration": 60.65,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "16:38:22",
+          "time": "21:45:52",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:38:22",
+          "time": "21:45:53",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
         },
         {
-          "time": "16:38:42",
+          "time": "21:46:13",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
         },
         {
-          "time": "16:39:02",
+          "time": "21:46:33",
           "level": "WARNING",
           "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
         },
         {
-          "time": "16:39:23",
+          "time": "21:46:53",
           "level": "ERROR",
           "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
         },
         {
-          "time": "16:39:23",
+          "time": "21:46:53",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -421,44 +4804,134 @@
       "name": "RPM Tech Shop",
       "url": "https://rpmtechshop.com.au",
       "platform": "shopify",
-      "fetched": 0,
-      "filtered": 0,
-      "final": 0,
-      "inStock": 0,
-      "outOfStock": 0,
+      "fetched": 250,
+      "filtered": 30,
+      "final": 477,
+      "inStock": 162,
+      "outOfStock": 315,
       "error": "still rate limited (429) after 3 retries",
-      "duration": 60.89,
-      "filteredProducts": [],
+      "duration": 64.62,
+      "filteredProducts": [
+        {
+          "title": "NSL Nations Cup 2025 Trading Card Booster",
+          "reason": "title",
+          "keyword": "trading card",
+          "filterCategory": "trading_cards"
+        },
+        {
+          "title": "Bullethole - Who's Next!?",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Explicit Overshooting - PVC Patch",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "WHO's NEXT!? - Collectors Patch - Silver",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "WHO's NEXT!? - Collectors Patch - Gold",
+          "reason": "category",
+          "keyword": "patch",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Chocolate Bar",
+          "reason": "title",
+          "keyword": "chocolate bar",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Powerade",
+          "reason": "title",
+          "keyword": "powerade",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Hire Mask",
+          "reason": "title",
+          "keyword": "hire mask",
+          "filterCategory": "services_fees"
+        },
+        {
+          "title": "Hire Mask",
+          "reason": "title",
+          "keyword": "hire mask",
+          "filterCategory": "services_fees"
+        },
+        {
+          "title": "Hire Mask",
+          "reason": "title",
+          "keyword": "hire mask",
+          "filterCategory": "services_fees"
+        },
+        {
+          "title": "Coke",
+          "reason": "title",
+          "keyword": "coke",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "Water 600ml",
+          "reason": "title",
+          "keyword": "water 600ml",
+          "filterCategory": "food_beverages"
+        },
+        {
+          "title": "xyz",
+          "reason": "title",
+          "keyword": "xyz",
+          "filterCategory": "test_products"
+        },
+        {
+          "title": "Hire Gels",
+          "reason": "title",
+          "keyword": "hire gels",
+          "filterCategory": "services_fees"
+        }
+      ],
       "logs": [
         {
-          "time": "16:39:23",
+          "time": "21:46:53",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:39:23",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 1/3)..."
-        },
-        {
-          "time": "16:39:43",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 2/3)..."
-        },
-        {
-          "time": "16:40:03",
-          "level": "WARNING",
-          "message": "Page 1: rate limited, waiting 20s (retry 3/3)..."
-        },
-        {
-          "time": "16:40:23",
-          "level": "ERROR",
-          "message": "Page 1: still rate limited (429) after 3 retries, giving up (will try cache)"
-        },
-        {
-          "time": "16:40:23",
+          "time": "21:46:54",
           "level": "INFO",
-          "message": "Done: 0 products fetched"
+          "message": "Page 1: 250 products"
+        },
+        {
+          "time": "21:46:57",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 1/3)..."
+        },
+        {
+          "time": "21:47:18",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 2/3)..."
+        },
+        {
+          "time": "21:47:38",
+          "level": "WARNING",
+          "message": "Page 2: rate limited, waiting 20s (retry 3/3)..."
+        },
+        {
+          "time": "21:47:58",
+          "level": "ERROR",
+          "message": "Page 2: still rate limited (429) after 3 retries, giving up (will try cache)"
+        },
+        {
+          "time": "21:47:58",
+          "level": "INFO",
+          "message": "Done: 250 products fetched"
         }
       ]
     },
@@ -472,7 +4945,7 @@
       "inStock": 308,
       "outOfStock": 93,
       "error": null,
-      "duration": 24.94,
+      "duration": 23.06,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -717,47 +5190,47 @@
       ],
       "logs": [
         {
-          "time": "16:40:23",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:40:24",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Offset 0: 92 products"
         },
         {
-          "time": "16:40:28",
+          "time": "21:48:01",
           "level": "INFO",
           "message": "Offset 20: 72 products"
         },
         {
-          "time": "16:40:31",
+          "time": "21:48:05",
           "level": "INFO",
           "message": "Offset 40: 63 products"
         },
         {
-          "time": "16:40:35",
+          "time": "21:48:08",
           "level": "INFO",
           "message": "Offset 60: 57 products"
         },
         {
-          "time": "16:40:38",
+          "time": "21:48:11",
           "level": "INFO",
           "message": "Offset 80: 44 products"
         },
         {
-          "time": "16:40:42",
+          "time": "21:48:14",
           "level": "INFO",
           "message": "Offset 100: 26 products"
         },
         {
-          "time": "16:40:45",
+          "time": "21:48:18",
           "level": "INFO",
           "message": "Offset 120: 7 products"
         },
         {
-          "time": "16:40:48",
+          "time": "21:48:21",
           "level": "INFO",
           "message": "Done: 361 products fetched"
         }
@@ -773,7 +5246,7 @@
       "inStock": 299,
       "outOfStock": 579,
       "error": null,
-      "duration": 31.84,
+      "duration": 28.35,
       "simple": 667,
       "variable": 104,
       "variations": 238,
@@ -937,82 +5410,82 @@
       ],
       "logs": [
         {
-          "time": "16:40:23",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:40:26",
+          "time": "21:47:59",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "16:40:30",
+          "time": "21:48:03",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "16:40:34",
+          "time": "21:48:07",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "16:40:38",
+          "time": "21:48:11",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "16:40:42",
+          "time": "21:48:15",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "16:40:47",
+          "time": "21:48:19",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "16:40:51",
+          "time": "21:48:22",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "16:40:55",
+          "time": "21:48:26",
           "level": "INFO",
           "message": "Page 8: 71 products"
         },
         {
-          "time": "16:40:55",
+          "time": "21:48:26",
           "level": "INFO",
           "message": "Done: 771 products fetched"
         },
         {
-          "time": "16:40:55",
+          "time": "21:48:26",
           "level": "INFO",
           "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "16:40:56",
+          "time": "21:48:27",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "16:41:00",
+          "time": "21:48:31",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "16:41:04",
+          "time": "21:48:34",
           "level": "INFO",
           "message": "Variations page 3: 38 items"
         },
         {
-          "time": "16:41:04",
+          "time": "21:48:34",
           "level": "INFO",
           "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "16:41:04",
+          "time": "21:48:34",
           "level": "INFO",
           "message": "Total: 667 simple + 238 variations = 905"
         }
@@ -1028,7 +5501,7 @@
       "inStock": 1286,
       "outOfStock": 85,
       "error": null,
-      "duration": 64.34,
+      "duration": 65.22,
       "simple": 885,
       "variable": 134,
       "variations": 501,
@@ -1090,112 +5563,112 @@
       ],
       "logs": [
         {
-          "time": "16:40:23",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:40:29",
+          "time": "21:48:02",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "16:40:34",
+          "time": "21:48:08",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "16:40:40",
+          "time": "21:48:15",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "16:40:46",
+          "time": "21:48:21",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "16:40:52",
+          "time": "21:48:27",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "16:40:58",
+          "time": "21:48:33",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "16:41:05",
+          "time": "21:48:39",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "16:41:11",
+          "time": "21:48:45",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "16:41:17",
+          "time": "21:48:52",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "16:41:23",
+          "time": "21:48:58",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "16:41:28",
+          "time": "21:49:03",
           "level": "INFO",
           "message": "Page 11: 19 products"
         },
         {
-          "time": "16:41:28",
+          "time": "21:49:03",
           "level": "INFO",
           "message": "Done: 1019 products fetched"
         },
         {
-          "time": "16:41:28",
+          "time": "21:49:03",
           "level": "INFO",
           "message": "Found 134 variable products, fetching variations..."
         },
         {
-          "time": "16:41:31",
+          "time": "21:49:06",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "16:41:36",
+          "time": "21:49:12",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "16:41:42",
+          "time": "21:49:18",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "16:41:48",
+          "time": "21:49:23",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "16:41:54",
+          "time": "21:49:29",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "16:41:58",
+          "time": "21:49:33",
           "level": "INFO",
           "message": "Variations page 6: 1 items"
         },
         {
-          "time": "16:41:58",
+          "time": "21:49:33",
           "level": "INFO",
           "message": "Fetched 501 variations, enriched 501"
         },
         {
-          "time": "16:41:58",
+          "time": "21:49:33",
           "level": "INFO",
           "message": "Total: 885 simple + 501 variations = 1386"
         }
@@ -1211,7 +5684,7 @@
       "inStock": 1122,
       "outOfStock": 313,
       "error": null,
-      "duration": 95.98,
+      "duration": 99.07,
       "simple": 1585,
       "variable": 1,
       "variations": 4,
@@ -2107,112 +6580,112 @@
       ],
       "logs": [
         {
-          "time": "16:40:23",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:40:28",
+          "time": "21:48:06",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "16:40:34",
+          "time": "21:48:12",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "16:40:41",
+          "time": "21:48:18",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "16:40:47",
+          "time": "21:48:25",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "16:40:53",
+          "time": "21:48:31",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "16:41:00",
+          "time": "21:48:37",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "16:41:06",
+          "time": "21:48:43",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "16:41:12",
+          "time": "21:48:50",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "16:41:18",
+          "time": "21:48:56",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "16:41:24",
+          "time": "21:49:02",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "16:41:30",
+          "time": "21:49:08",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "16:41:36",
+          "time": "21:49:14",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "16:41:42",
+          "time": "21:49:20",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "16:41:48",
+          "time": "21:49:26",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "16:41:54",
+          "time": "21:49:31",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "16:41:59",
+          "time": "21:49:37",
           "level": "INFO",
           "message": "Page 16: 86 products"
         },
         {
-          "time": "16:41:59",
+          "time": "21:49:37",
           "level": "INFO",
           "message": "Done: 1586 products fetched"
         },
         {
-          "time": "16:41:59",
+          "time": "21:49:37",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "16:42:01",
+          "time": "21:49:39",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "16:42:01",
+          "time": "21:49:39",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "16:42:01",
+          "time": "21:49:39",
           "level": "INFO",
           "message": "Total: 1585 simple + 4 variations = 1589"
         }
@@ -2222,17 +6695,23 @@
       "name": "X-Force Tactical",
       "url": "https://x-forcetactical.com.au",
       "platform": "woocommerce",
-      "fetched": 2978,
-      "filtered": 347,
+      "fetched": 2979,
+      "filtered": 348,
       "final": 3028,
-      "inStock": 1821,
-      "outOfStock": 1207,
+      "inStock": 1819,
+      "outOfStock": 1209,
       "error": null,
-      "duration": 176.53,
-      "simple": 2835,
+      "duration": 190.62,
+      "simple": 2836,
       "variable": 143,
       "variations": 540,
       "filteredProducts": [
+        {
+          "title": "Captain America&#8217;s Shield &#8211; Vibranium Alloy",
+          "reason": "category",
+          "keyword": "cosplay corner",
+          "filterCategory": "misc"
+        },
         {
           "title": "Guts Dragonslayer Cosplay Greatsword Replica",
           "reason": "category",
@@ -4318,227 +8797,227 @@
       ],
       "logs": [
         {
-          "time": "16:40:23",
+          "time": "21:47:58",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "16:40:29",
+          "time": "21:48:04",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "16:40:36",
+          "time": "21:48:11",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "16:40:42",
+          "time": "21:48:18",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "16:40:49",
+          "time": "21:48:25",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "16:40:56",
+          "time": "21:48:33",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "16:41:02",
+          "time": "21:48:40",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "16:41:08",
+          "time": "21:48:46",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "16:41:15",
+          "time": "21:48:54",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "16:41:22",
+          "time": "21:49:00",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "16:41:28",
+          "time": "21:49:07",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "16:41:34",
+          "time": "21:49:14",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "16:41:40",
+          "time": "21:49:21",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "16:41:47",
+          "time": "21:49:27",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "16:41:52",
+          "time": "21:49:34",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "16:41:58",
+          "time": "21:49:40",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "16:42:04",
+          "time": "21:49:46",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "16:42:10",
+          "time": "21:49:52",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "16:42:16",
+          "time": "21:49:58",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "16:42:21",
+          "time": "21:50:04",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "16:42:26",
+          "time": "21:50:10",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "16:42:32",
+          "time": "21:50:16",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "16:42:37",
+          "time": "21:50:22",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "16:42:43",
+          "time": "21:50:28",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "16:42:48",
+          "time": "21:50:34",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "16:42:53",
+          "time": "21:50:40",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "16:42:58",
+          "time": "21:50:45",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "16:43:04",
+          "time": "21:50:50",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "16:43:09",
+          "time": "21:50:56",
           "level": "INFO",
           "message": "Page 28: 100 products"
         },
         {
-          "time": "16:43:15",
+          "time": "21:51:03",
           "level": "INFO",
           "message": "Page 29: 100 products"
         },
         {
-          "time": "16:43:20",
+          "time": "21:51:08",
           "level": "INFO",
-          "message": "Page 30: 78 products"
+          "message": "Page 30: 79 products"
         },
         {
-          "time": "16:43:20",
+          "time": "21:51:08",
           "level": "INFO",
-          "message": "Done: 2978 products fetched"
+          "message": "Done: 2979 products fetched"
         },
         {
-          "time": "16:43:20",
+          "time": "21:51:08",
           "level": "INFO",
           "message": "Found 143 variable products, fetching variations..."
         },
         {
-          "time": "16:43:22",
+          "time": "21:51:11",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "16:43:27",
+          "time": "21:51:16",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "16:43:32",
+          "time": "21:51:21",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "16:43:37",
+          "time": "21:51:26",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "16:43:42",
+          "time": "21:51:32",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "16:43:46",
+          "time": "21:51:37",
           "level": "INFO",
           "message": "Variations page 6: 40 items"
         },
         {
-          "time": "16:43:46",
+          "time": "21:51:37",
           "level": "INFO",
           "message": "Fetched 540 variations, enriched 536"
         },
         {
-          "time": "16:43:46",
+          "time": "21:51:37",
           "level": "INFO",
-          "message": "Total: 2835 simple + 540 variations = 3375"
+          "message": "Total: 2836 simple + 540 variations = 3376"
         }
       ]
     }
   ],
   "totals": {
-    "rawProducts": 6715,
-    "afterFilter": 7113,
-    "uniqueItems": 6819,
-    "productGroups": 6481,
-    "skuMatched": 4590,
-    "titleMatched": 1891,
-    "multiVendor": 335,
-    "inStock": 4423,
-    "outOfStock": 2058
+    "rawProducts": 8561,
+    "afterFilter": 8684,
+    "uniqueItems": 8390,
+    "productGroups": 7963,
+    "skuMatched": 4951,
+    "titleMatched": 3012,
+    "multiVendor": 413,
+    "inStock": 5488,
+    "outOfStock": 2473
   },
   "tracking": {
-    "new": 0,
-    "changed": 0,
-    "unchanged": 6819
+    "new": 3,
+    "changed": 5,
+    "unchanged": 8382
   }
 }
