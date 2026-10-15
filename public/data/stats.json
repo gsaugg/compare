@@ -1,6 +1,6 @@
 {
-  "lastUpdated": "2026-10-15T01:16:25.149121+00:00",
-  "duration": 983.17,
+  "lastUpdated": "2026-10-15T05:52:47.929839+00:00",
+  "duration": 1014.81,
   "stores": [
     {
       "name": "Command Elite Hobbies",
@@ -35294,7 +35294,7 @@
       "inStock": 1372,
       "outOfStock": 1137,
       "error": null,
-      "duration": 0.62,
+      "duration": 0.6,
       "cached_at": "2026-10-14T22:46:24.816946+00:00",
       "logs": [
         {
@@ -36024,7 +36024,7 @@
       "inStock": 1005,
       "outOfStock": 264,
       "error": null,
-      "duration": 0.26,
+      "duration": 0.25,
       "cached_at": "2026-10-14T22:47:00.983848+00:00",
       "logs": [
         {
@@ -36150,46 +36150,46 @@
       "inStock": 0,
       "outOfStock": 0,
       "error": "404 Client Error: Not Found for url: https://armouredheaven.com.au/products.json?limit=250&page=1",
-      "duration": 30.17,
+      "duration": 31.5,
       "filteredProducts": [],
       "logs": [
         {
-          "time": "01:06:14",
+          "time": "05:41:02",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "01:06:15",
+          "time": "05:41:03",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 1), retrying in 5s..."
         },
         {
-          "time": "01:06:21",
+          "time": "05:41:09",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 2), retrying in 5s..."
         },
         {
-          "time": "01:06:27",
+          "time": "05:41:15",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 3), retrying in 5s..."
         },
         {
-          "time": "01:06:32",
+          "time": "05:41:22",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 4), retrying in 5s..."
         },
         {
-          "time": "01:06:38",
+          "time": "05:41:28",
           "level": "WARNING",
           "message": "Page 1 failed (attempt 5), retrying in 5s..."
         },
         {
-          "time": "01:06:44",
+          "time": "05:41:34",
           "level": "ERROR",
           "message": "Page 1 failed after 6 attempts: 404 Client Error: Not Found for url: https://armouredheaven.com.au/products.json?limit=250&page=1"
         },
         {
-          "time": "01:06:44",
+          "time": "05:41:34",
           "level": "INFO",
           "message": "Done: 0 products fetched"
         }
@@ -36931,7 +36931,7 @@
       "inStock": 473,
       "outOfStock": 715,
       "error": null,
-      "duration": 0.31,
+      "duration": 0.29,
       "cached_at": "2026-10-14T22:48:40.098265+00:00",
       "logs": [
         {
@@ -37065,7 +37065,7 @@
       "inStock": 308,
       "outOfStock": 93,
       "error": null,
-      "duration": 23.02,
+      "duration": 24.34,
       "filteredProducts": [
         {
           "title": "Patch - Urban Gelball",
@@ -37310,232 +37310,304 @@
       ],
       "logs": [
         {
-          "time": "01:11:17",
+          "time": "05:47:47",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "01:11:18",
+          "time": "05:47:47",
           "level": "INFO",
           "message": "Offset 0: 92 products"
         },
         {
-          "time": "01:11:21",
+          "time": "05:47:51",
           "level": "INFO",
           "message": "Offset 20: 72 products"
         },
         {
-          "time": "01:11:24",
+          "time": "05:47:54",
           "level": "INFO",
           "message": "Offset 40: 63 products"
         },
         {
-          "time": "01:11:27",
+          "time": "05:47:58",
           "level": "INFO",
           "message": "Offset 60: 57 products"
         },
         {
-          "time": "01:11:31",
+          "time": "05:48:01",
           "level": "INFO",
           "message": "Offset 80: 44 products"
         },
         {
-          "time": "01:11:34",
+          "time": "05:48:05",
           "level": "INFO",
           "message": "Offset 100: 26 products"
         },
         {
-          "time": "01:11:37",
+          "time": "05:48:08",
           "level": "INFO",
           "message": "Offset 120: 7 products"
         },
         {
-          "time": "01:11:40",
+          "time": "05:48:11",
           "level": "INFO",
           "message": "Done: 361 products fetched"
         }
       ]
     },
     {
-      "name": "Azraels Armoury",
-      "url": "https://www.azraelsarmoury.com",
+      "name": "Big Boss Tactical",
+      "url": "https://bigbosstactical.com.au",
       "platform": "woocommerce",
-      "fetched": 1019,
-      "filtered": 15,
-      "final": 1371,
-      "inStock": 1286,
-      "outOfStock": 85,
+      "fetched": 771,
+      "filtered": 27,
+      "final": 878,
+      "inStock": 299,
+      "outOfStock": 579,
       "error": null,
-      "duration": 66.73,
-      "simple": 885,
-      "variable": 134,
-      "variations": 501,
+      "duration": 28.89,
+      "simple": 667,
+      "variable": 104,
+      "variations": 238,
       "filteredProducts": [
         {
-          "title": "UDL SPAS 12 Mini Nerf Dart Shotgun Shells 6 Pack",
+          "title": "20x Nylon Lock Cable Zip Ties &#8211; 200mm Long",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pair Set XT90 XT 90 Battery Wiring Male / Female Connector Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "1 Pair TRAXXAS TRX Male / Female Plugs With Terminal Plug Pins",
           "reason": "title",
-          "keyword": "nerf dart",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "20x Nylon Lock Zip Cable Ties &#8211; 200mm Long",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pairs of Dean Plug Connecters / T-Connectors / 2x Male Plugs and 2x Female Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Male Mini Tamiya to Female Dean Deans T Wire Connector for Gel Blasters",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "Male JST to Female XT60 Wire Connector for Gel Blasters",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "2 Pair Set XT60 XT 60 Battery Wiring Male / Female Connector Plugs",
+          "reason": "tag",
+          "keyword": "rc car",
+          "filterCategory": "rc_vehicles"
+        },
+        {
+          "title": "25x High Impact NERF RIVAL Rubber AMMO Balls",
+          "reason": "title",
+          "keyword": "nerf rival",
           "filterCategory": "dart_foam_blasters"
         },
         {
-          "title": "New Galaxy G19x Metal Slide Electric Gel Blaster / Laser Pistol",
+          "title": "Nerf Rival Kronos XVIII-500 PHANTOM CORPS PISTOL",
           "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
+          "keyword": "nerf rival",
+          "filterCategory": "dart_foam_blasters"
         },
         {
-          "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
+          "title": "Nerf Rival Helios XVIII-700 BLASTER GUN",
           "reason": "title",
-          "keyword": "laser pistol",
-          "filterCategory": "laser_toys"
+          "keyword": "nerf rival",
+          "filterCategory": "dart_foam_blasters"
         },
         {
-          "title": "Aztech Innovations Patch",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Aztech Innovations Patch",
-          "reason": "category",
-          "keyword": "apparel",
-          "filterCategory": "apparel_merch"
-        },
-        {
-          "title": "Azraels Armoury Gift Card!",
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
           "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
         },
         {
-          "title": "Azraels Armoury Gift Card!",
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
           "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
         },
         {
-          "title": "Azraels Armoury Gift Card!",
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
           "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
         },
         {
-          "title": "Azraels Armoury Gift Card!",
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
           "reason": "title",
-          "keyword": "gift card",
-          "filterCategory": "gift_cards"
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
+          "reason": "title",
+          "keyword": "t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
+          "reason": "title",
+          "keyword": "traxxas",
+          "filterCategory": "rc_parts_and_brands"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
+          "reason": "title",
+          "keyword": "tactical t-shirt",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Adjustable Military Polyester CAP / HAT",
+          "reason": "title",
+          "keyword": "polyester cap",
+          "filterCategory": "clothing"
+        },
+        {
+          "title": "Adjustable Military Polyester CAP / HAT",
+          "reason": "title",
+          "keyword": "polyester cap",
+          "filterCategory": "clothing"
         }
       ],
       "logs": [
         {
-          "time": "01:11:17",
+          "time": "05:47:47",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "01:11:22",
+          "time": "05:47:48",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "01:11:30",
+          "time": "05:47:52",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "01:11:37",
+          "time": "05:47:56",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "01:11:42",
+          "time": "05:48:00",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "01:11:50",
+          "time": "05:48:04",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "01:11:56",
+          "time": "05:48:08",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "01:12:02",
+          "time": "05:48:12",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "01:12:08",
+          "time": "05:48:16",
           "level": "INFO",
-          "message": "Page 8: 100 products"
+          "message": "Page 8: 71 products"
         },
         {
-          "time": "01:12:14",
+          "time": "05:48:16",
           "level": "INFO",
-          "message": "Page 9: 100 products"
+          "message": "Done: 771 products fetched"
         },
         {
-          "time": "01:12:20",
+          "time": "05:48:16",
           "level": "INFO",
-          "message": "Page 10: 100 products"
+          "message": "Found 104 variable products, fetching variations..."
         },
         {
-          "time": "01:12:24",
-          "level": "INFO",
-          "message": "Page 11: 19 products"
-        },
-        {
-          "time": "01:12:24",
-          "level": "INFO",
-          "message": "Done: 1019 products fetched"
-        },
-        {
-          "time": "01:12:24",
-          "level": "INFO",
-          "message": "Found 134 variable products, fetching variations..."
-        },
-        {
-          "time": "01:12:26",
+          "time": "05:48:16",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "01:12:32",
+          "time": "05:48:20",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "01:12:38",
+          "time": "05:48:24",
           "level": "INFO",
-          "message": "Variations page 3: 100 items"
+          "message": "Variations page 3: 38 items"
         },
         {
-          "time": "01:12:44",
+          "time": "05:48:24",
           "level": "INFO",
-          "message": "Variations page 4: 100 items"
+          "message": "Fetched 238 variations, enriched 238"
         },
         {
-          "time": "01:12:49",
+          "time": "05:48:24",
           "level": "INFO",
-          "message": "Variations page 5: 100 items"
-        },
-        {
-          "time": "01:12:53",
-          "level": "INFO",
-          "message": "Variations page 6: 1 items"
-        },
-        {
-          "time": "01:12:53",
-          "level": "INFO",
-          "message": "Fetched 501 variations, enriched 501"
-        },
-        {
-          "time": "01:12:53",
-          "level": "INFO",
-          "message": "Total: 885 simple + 501 variations = 1386"
+          "message": "Total: 667 simple + 238 variations = 905"
         }
       ]
     },
@@ -37549,7 +37621,7 @@
       "inStock": 1122,
       "outOfStock": 313,
       "error": null,
-      "duration": 95.78,
+      "duration": 104.63,
       "simple": 1585,
       "variable": 1,
       "variations": 4,
@@ -38445,114 +38517,297 @@
       ],
       "logs": [
         {
-          "time": "01:11:17",
+          "time": "05:47:47",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "01:11:24",
+          "time": "05:47:52",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "01:11:31",
+          "time": "05:48:00",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "01:11:37",
+          "time": "05:48:06",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "01:11:44",
+          "time": "05:48:13",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "01:11:50",
+          "time": "05:48:20",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "01:11:56",
+          "time": "05:48:27",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "01:12:02",
+          "time": "05:48:33",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "01:12:08",
+          "time": "05:48:42",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "01:12:14",
+          "time": "05:48:49",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "01:12:20",
+          "time": "05:48:55",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "01:12:25",
+          "time": "05:49:02",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "01:12:31",
+          "time": "05:49:08",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "01:12:36",
+          "time": "05:49:14",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "01:12:42",
+          "time": "05:49:20",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "01:12:48",
+          "time": "05:49:26",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "01:12:53",
+          "time": "05:49:31",
           "level": "INFO",
           "message": "Page 16: 86 products"
         },
         {
-          "time": "01:12:53",
+          "time": "05:49:31",
           "level": "INFO",
           "message": "Done: 1586 products fetched"
         },
         {
-          "time": "01:12:53",
+          "time": "05:49:31",
           "level": "INFO",
           "message": "Found 1 variable products, fetching variations..."
         },
         {
-          "time": "01:12:54",
+          "time": "05:49:33",
           "level": "INFO",
           "message": "Variations page 1: 4 items"
         },
         {
-          "time": "01:12:54",
+          "time": "05:49:33",
           "level": "INFO",
           "message": "Fetched 4 variations, enriched 4"
         },
         {
-          "time": "01:12:54",
+          "time": "05:49:33",
           "level": "INFO",
           "message": "Total: 1585 simple + 4 variations = 1589"
+        }
+      ]
+    },
+    {
+      "name": "Azraels Armoury",
+      "url": "https://www.azraelsarmoury.com",
+      "platform": "woocommerce",
+      "fetched": 1019,
+      "filtered": 15,
+      "final": 1371,
+      "inStock": 1286,
+      "outOfStock": 85,
+      "error": null,
+      "duration": 72.52,
+      "simple": 885,
+      "variable": 134,
+      "variations": 501,
+      "filteredProducts": [
+        {
+          "title": "UDL SPAS 12 Mini Nerf Dart Shotgun Shells 6 Pack",
+          "reason": "title",
+          "keyword": "nerf dart",
+          "filterCategory": "dart_foam_blasters"
+        },
+        {
+          "title": "New Galaxy G19x Metal Slide Electric Gel Blaster / Laser Pistol",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "New Galaxy G17 Gen5 Metal Slide Electric Gel Blaster / Laser Pistol",
+          "reason": "title",
+          "keyword": "laser pistol",
+          "filterCategory": "laser_toys"
+        },
+        {
+          "title": "Aztech Innovations Patch",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Aztech Innovations Patch",
+          "reason": "category",
+          "keyword": "apparel",
+          "filterCategory": "apparel_merch"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        },
+        {
+          "title": "Azraels Armoury Gift Card!",
+          "reason": "title",
+          "keyword": "gift card",
+          "filterCategory": "gift_cards"
+        }
+      ],
+      "logs": [
+        {
+          "time": "05:47:47",
+          "level": "INFO",
+          "message": "Fetching..."
+        },
+        {
+          "time": "05:47:52",
+          "level": "INFO",
+          "message": "Page 1: 100 products"
+        },
+        {
+          "time": "05:47:58",
+          "level": "INFO",
+          "message": "Page 2: 100 products"
+        },
+        {
+          "time": "05:48:05",
+          "level": "INFO",
+          "message": "Page 3: 100 products"
+        },
+        {
+          "time": "05:48:12",
+          "level": "INFO",
+          "message": "Page 4: 100 products"
+        },
+        {
+          "time": "05:48:19",
+          "level": "INFO",
+          "message": "Page 5: 100 products"
+        },
+        {
+          "time": "05:48:27",
+          "level": "INFO",
+          "message": "Page 6: 100 products"
+        },
+        {
+          "time": "05:48:34",
+          "level": "INFO",
+          "message": "Page 7: 100 products"
+        },
+        {
+          "time": "05:48:40",
+          "level": "INFO",
+          "message": "Page 8: 100 products"
+        },
+        {
+          "time": "05:48:47",
+          "level": "INFO",
+          "message": "Page 9: 100 products"
+        },
+        {
+          "time": "05:48:54",
+          "level": "INFO",
+          "message": "Page 10: 100 products"
+        },
+        {
+          "time": "05:48:59",
+          "level": "INFO",
+          "message": "Page 11: 19 products"
+        },
+        {
+          "time": "05:48:59",
+          "level": "INFO",
+          "message": "Done: 1019 products fetched"
+        },
+        {
+          "time": "05:48:59",
+          "level": "INFO",
+          "message": "Found 134 variable products, fetching variations..."
+        },
+        {
+          "time": "05:49:05",
+          "level": "INFO",
+          "message": "Variations page 1: 100 items"
+        },
+        {
+          "time": "05:49:12",
+          "level": "INFO",
+          "message": "Variations page 2: 100 items"
+        },
+        {
+          "time": "05:49:20",
+          "level": "INFO",
+          "message": "Variations page 3: 100 items"
+        },
+        {
+          "time": "05:49:27",
+          "level": "INFO",
+          "message": "Variations page 4: 100 items"
+        },
+        {
+          "time": "05:49:35",
+          "level": "INFO",
+          "message": "Variations page 5: 100 items"
+        },
+        {
+          "time": "05:49:40",
+          "level": "INFO",
+          "message": "Variations page 6: 1 items"
+        },
+        {
+          "time": "05:49:40",
+          "level": "INFO",
+          "message": "Fetched 501 variations, enriched 501"
+        },
+        {
+          "time": "05:49:40",
+          "level": "INFO",
+          "message": "Total: 885 simple + 501 variations = 1386"
         }
       ]
     },
@@ -38560,17 +38815,23 @@
       "name": "X-Force Tactical",
       "url": "https://x-forcetactical.com.au",
       "platform": "woocommerce",
-      "fetched": 2984,
-      "filtered": 352,
-      "final": 3029,
-      "inStock": 1818,
-      "outOfStock": 1211,
+      "fetched": 2986,
+      "filtered": 353,
+      "final": 3030,
+      "inStock": 1823,
+      "outOfStock": 1207,
       "error": null,
-      "duration": 178.09,
-      "simple": 2841,
+      "duration": 183.52,
+      "simple": 2843,
       "variable": 143,
       "variations": 540,
       "filteredProducts": [
+        {
+          "title": "Medieval Crusader Knight Shield Cosplay Replica",
+          "reason": "category",
+          "keyword": "cosplay corner",
+          "filterCategory": "misc"
+        },
         {
           "title": "Sanemi Shinazugawa&#8217;s Nichirin Blade from Demon Slayer",
           "reason": "category",
@@ -40686,406 +40947,227 @@
       ],
       "logs": [
         {
-          "time": "01:11:17",
+          "time": "05:47:47",
           "level": "INFO",
           "message": "Fetching..."
         },
         {
-          "time": "01:11:22",
+          "time": "05:47:53",
           "level": "INFO",
           "message": "Page 1: 100 products"
         },
         {
-          "time": "01:11:30",
+          "time": "05:48:00",
           "level": "INFO",
           "message": "Page 2: 100 products"
         },
         {
-          "time": "01:11:36",
+          "time": "05:48:07",
           "level": "INFO",
           "message": "Page 3: 100 products"
         },
         {
-          "time": "01:11:44",
+          "time": "05:48:14",
           "level": "INFO",
           "message": "Page 4: 100 products"
         },
         {
-          "time": "01:11:51",
+          "time": "05:48:21",
           "level": "INFO",
           "message": "Page 5: 100 products"
         },
         {
-          "time": "01:11:57",
+          "time": "05:48:28",
           "level": "INFO",
           "message": "Page 6: 100 products"
         },
         {
-          "time": "01:12:03",
+          "time": "05:48:34",
           "level": "INFO",
           "message": "Page 7: 100 products"
         },
         {
-          "time": "01:12:09",
+          "time": "05:48:41",
           "level": "INFO",
           "message": "Page 8: 100 products"
         },
         {
-          "time": "01:12:16",
+          "time": "05:48:47",
           "level": "INFO",
           "message": "Page 9: 100 products"
         },
         {
-          "time": "01:12:22",
+          "time": "05:48:54",
           "level": "INFO",
           "message": "Page 10: 100 products"
         },
         {
-          "time": "01:12:29",
+          "time": "05:49:00",
           "level": "INFO",
           "message": "Page 11: 100 products"
         },
         {
-          "time": "01:12:34",
+          "time": "05:49:06",
           "level": "INFO",
           "message": "Page 12: 100 products"
         },
         {
-          "time": "01:12:41",
+          "time": "05:49:13",
           "level": "INFO",
           "message": "Page 13: 100 products"
         },
         {
-          "time": "01:12:47",
+          "time": "05:49:19",
           "level": "INFO",
           "message": "Page 14: 100 products"
         },
         {
-          "time": "01:12:52",
+          "time": "05:49:25",
           "level": "INFO",
           "message": "Page 15: 100 products"
         },
         {
-          "time": "01:12:58",
+          "time": "05:49:30",
           "level": "INFO",
           "message": "Page 16: 100 products"
         },
         {
-          "time": "01:13:04",
+          "time": "05:49:36",
           "level": "INFO",
           "message": "Page 17: 100 products"
         },
         {
-          "time": "01:13:10",
+          "time": "05:49:42",
           "level": "INFO",
           "message": "Page 18: 100 products"
         },
         {
-          "time": "01:13:15",
+          "time": "05:49:48",
           "level": "INFO",
           "message": "Page 19: 100 products"
         },
         {
-          "time": "01:13:21",
+          "time": "05:49:53",
           "level": "INFO",
           "message": "Page 20: 100 products"
         },
         {
-          "time": "01:13:26",
+          "time": "05:50:00",
           "level": "INFO",
           "message": "Page 21: 100 products"
         },
         {
-          "time": "01:13:31",
+          "time": "05:50:06",
           "level": "INFO",
           "message": "Page 22: 100 products"
         },
         {
-          "time": "01:13:37",
+          "time": "05:50:11",
           "level": "INFO",
           "message": "Page 23: 100 products"
         },
         {
-          "time": "01:13:42",
+          "time": "05:50:17",
           "level": "INFO",
           "message": "Page 24: 100 products"
         },
         {
-          "time": "01:13:47",
+          "time": "05:50:22",
           "level": "INFO",
           "message": "Page 25: 100 products"
         },
         {
-          "time": "01:13:53",
+          "time": "05:50:28",
           "level": "INFO",
           "message": "Page 26: 100 products"
         },
         {
-          "time": "01:13:58",
+          "time": "05:50:33",
           "level": "INFO",
           "message": "Page 27: 100 products"
         },
         {
-          "time": "01:14:04",
+          "time": "05:50:39",
           "level": "INFO",
           "message": "Page 28: 100 products"
         },
         {
-          "time": "01:14:09",
+          "time": "05:50:45",
           "level": "INFO",
           "message": "Page 29: 100 products"
         },
         {
-          "time": "01:14:15",
+          "time": "05:50:50",
           "level": "INFO",
-          "message": "Page 30: 84 products"
+          "message": "Page 30: 86 products"
         },
         {
-          "time": "01:14:15",
+          "time": "05:50:50",
           "level": "INFO",
-          "message": "Done: 2984 products fetched"
+          "message": "Done: 2986 products fetched"
         },
         {
-          "time": "01:14:15",
+          "time": "05:50:50",
           "level": "INFO",
           "message": "Found 143 variable products, fetching variations..."
         },
         {
-          "time": "01:14:18",
+          "time": "05:50:53",
           "level": "INFO",
           "message": "Variations page 1: 100 items"
         },
         {
-          "time": "01:14:23",
+          "time": "05:50:58",
           "level": "INFO",
           "message": "Variations page 2: 100 items"
         },
         {
-          "time": "01:14:29",
+          "time": "05:51:03",
           "level": "INFO",
           "message": "Variations page 3: 100 items"
         },
         {
-          "time": "01:14:34",
+          "time": "05:51:08",
           "level": "INFO",
           "message": "Variations page 4: 100 items"
         },
         {
-          "time": "01:14:40",
+          "time": "05:51:13",
           "level": "INFO",
           "message": "Variations page 5: 100 items"
         },
         {
-          "time": "01:14:45",
+          "time": "05:51:18",
           "level": "INFO",
           "message": "Variations page 6: 40 items"
         },
         {
-          "time": "01:14:45",
+          "time": "05:51:18",
           "level": "INFO",
           "message": "Fetched 540 variations, enriched 536"
         },
         {
-          "time": "01:14:45",
+          "time": "05:51:18",
           "level": "INFO",
-          "message": "Total: 2841 simple + 540 variations = 3381"
+          "message": "Total: 2843 simple + 540 variations = 3383"
         }
       ]
-    },
-    {
-      "name": "Big Boss Tactical",
-      "url": "https://bigbosstactical.com.au",
-      "platform": "woocommerce",
-      "fetched": 905,
-      "filtered": 27,
-      "filteredProducts": [
-        {
-          "title": "20x Nylon Lock Cable Zip Ties &#8211; 200mm Long",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pair Set XT90 XT 90 Battery Wiring Male / Female Connector Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "1 Pair TRAXXAS TRX Male / Female Plugs With Terminal Plug Pins",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "20x Nylon Lock Zip Cable Ties &#8211; 200mm Long",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pairs of Dean Plug Connecters / T-Connectors / 2x Male Plugs and 2x Female Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "Male Mini Tamiya to Female Dean Deans T Wire Connector for Gel Blasters",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "Male JST to Female XT60 Wire Connector for Gel Blasters",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "2 Pair Set XT60 XT 60 Battery Wiring Male / Female Connector Plugs",
-          "reason": "tag",
-          "keyword": "rc car",
-          "filterCategory": "rc_vehicles"
-        },
-        {
-          "title": "25x High Impact NERF RIVAL Rubber AMMO Balls",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Nerf Rival Kronos XVIII-500 PHANTOM CORPS PISTOL",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Nerf Rival Helios XVIII-700 BLASTER GUN",
-          "reason": "title",
-          "keyword": "nerf rival",
-          "filterCategory": "dart_foam_blasters"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Ultra Soft Tactical Dad Father&#8217;s Day T-Shirt (White)",
-          "reason": "title",
-          "keyword": "t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "4x Traxxas RC Remote Radio Control Car 12mm Alloy Wheel Hex Nut -7mm Thick",
-          "reason": "title",
-          "keyword": "traxxas",
-          "filterCategory": "rc_parts_and_brands"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Comfortable Cotton Big Boss Tactical T-Shirt",
-          "reason": "title",
-          "keyword": "tactical t-shirt",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Adjustable Military Polyester CAP / HAT",
-          "reason": "title",
-          "keyword": "polyester cap",
-          "filterCategory": "clothing"
-        },
-        {
-          "title": "Adjustable Military Polyester CAP / HAT",
-          "reason": "title",
-          "keyword": "polyester cap",
-          "filterCategory": "clothing"
-        }
-      ],
-      "final": 878,
-      "inStock": 299,
-      "outOfStock": 579,
-      "error": null,
-      "duration": 0.16,
-      "cached_at": "2026-10-14T22:49:33.577979+00:00",
-      "logs": [
-        {
-          "time": "cache",
-          "level": "INFO",
-          "message": "Loaded from cache (2026-10-14T22:49:33.577979+00:00)"
-        }
-      ],
-      "warning": "Using cache: HTTPSConnectionPool(host='bigbosstactical.com.au', port=443): Max retries exceeded with url: /wp-json/wc/store/v1/products?per_page=100&page=1 (Caused by NewConnectionError(\"HTTPSConnection(host='bigbosstactical.com.au', port=443): Failed to establish a new connection: [Errno 101] Network is unreachable\"))"
     }
   ],
   "totals": {
-    "rawProducts": 20273,
-    "afterFilter": 17618,
-    "uniqueItems": 17324,
-    "productGroups": 16077,
-    "skuMatched": 9418,
+    "rawProducts": 20141,
+    "afterFilter": 17619,
+    "uniqueItems": 17325,
+    "productGroups": 16078,
+    "skuMatched": 9419,
     "titleMatched": 6659,
     "multiVendor": 1084,
-    "inStock": 10478,
-    "outOfStock": 5597
+    "inStock": 10483,
+    "outOfStock": 5593
   },
   "tracking": {
-    "new": 0,
-    "changed": 2,
-    "unchanged": 17322
+    "new": 1,
+    "changed": 8,
+    "unchanged": 17316
   }
 }
